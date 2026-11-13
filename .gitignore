@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+out/
+*.db
+*.db-wal
+*.db-shm
+.pytest_cache/

@@ -1,0 +1,26 @@
+{
+  "global_concurrency": 4,
+  "per_source_concurrency": 2,
+  "start_interval": 0.1,
+  "max_depth": 3,
+  "max_pages": 60,
+  "timeout": 5.0,
+  "max_retries": 3,
+  "backoff_base": 0.2,
+  "backoff_cap": 2.0,
+  "circuit_threshold": 5,
+  "circuit_cooldown": 2.0,
+  "max_bytes": 5242880,
+  "user_agent": "snapshot-crawler/1.0",
+  "output_dir": "out",
+  "sources": [
+    {
+      "name": "example-a",
+      "root_url": "http://127.0.0.1:8001/"
+    },
+    {
+      "name": "example-b",
+      "root_url": "http://127.0.0.1:8002/"
+    }
+  ]
+}
