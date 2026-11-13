@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "game-dub-localizer"
+version = "1.0.0"
+description = "Deterministic multilingual cutscene dubbing, subtitles and MP4 muxing"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "numpy==1.26.4",
+  "soundfile==0.12.1",
+]
+
+[project.scripts]
+game-dub-localizer = "localizer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["localizer*"]
