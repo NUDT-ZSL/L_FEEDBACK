@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "replaymix"
+version = "1.0.0"
+description = "Deterministic offline esports voice-comms replay mixer"
+requires-python = ">=3.11"
+dependencies = ["numpy==1.26.0"]
+
+[project.scripts]
+replaymix = "replaymix.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["replaymix*"]
