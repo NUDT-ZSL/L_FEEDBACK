@@ -1,0 +1,10 @@
+status=error
+error=E_LIGHT_INVALID message=light intensity must be finite and positive: lights[0].intensity
+mode=full
+depth_bits=0 depth_max=0
+stencil_bits=0 stencil_overflow=0
+shadow_volume_triangles=0
+affected_tiles=[]
+frame_hash=
+depth_hash=
+combined_hash=

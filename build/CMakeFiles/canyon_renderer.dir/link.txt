@@ -1,0 +1,1 @@
+/home/liang/.local/bin/c++ -O3 -DNDEBUG CMakeFiles/canyon_renderer.dir/src/core.cpp.o CMakeFiles/canyon_renderer.dir/src/json.cpp.o CMakeFiles/canyon_renderer.dir/src/scene.cpp.o CMakeFiles/canyon_renderer.dir/src/renderer.cpp.o CMakeFiles/canyon_renderer.dir/src/main.cpp.o -o canyon_renderer

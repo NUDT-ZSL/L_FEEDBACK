@@ -1,0 +1,645 @@
+{
+  "seed": 1337,
+  "render": {
+    "width": 640,
+    "height": 360,
+    "tileSize": 16,
+    "depthBits": 24,
+    "stencilBits": 1,
+    "near": 0.1,
+    "far": 500.0,
+    "shadowExtrusion": 220.0,
+    "shadowDepthBiasUnits": 8
+  },
+  "camera": {
+    "position": [
+      0.0,
+      13.0,
+      36.0
+    ],
+    "target": [
+      0.0,
+      5.5,
+      -4.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fovYDeg": 55.0
+  },
+  "heightfield": {
+    "resolution": [
+      72,
+      72
+    ],
+    "extent": [
+      -32.0,
+      32.0,
+      -40.0,
+      38.0
+    ],
+    "heightRange": [
+      0.8,
+      14.0
+    ],
+    "wallStart": 5.0,
+    "wallEnd": 24.0,
+    "noiseOctaves": 4,
+    "erosionStrength": 1.8
+  },
+  "materials": {
+    "ambient": [
+      0.13,
+      0.15,
+      0.18
+    ],
+    "layers": [
+      {
+        "name": "fluvial_sandstone",
+        "color": [
+          0.52,
+          0.38,
+          0.22
+        ],
+        "slopeTint": [
+          0.34,
+          0.2,
+          0.12
+        ],
+        "heightStart": 0.0,
+        "heightEnd": 3.8
+      },
+      {
+        "name": "iron_oxide",
+        "color": [
+          0.64,
+          0.27,
+          0.14
+        ],
+        "slopeTint": [
+          0.46,
+          0.16,
+          0.09
+        ],
+        "heightStart": 3.8,
+        "heightEnd": 7.4
+      },
+      {
+        "name": "weathered_shale",
+        "color": [
+          0.31,
+          0.37,
+          0.41
+        ],
+        "slopeTint": [
+          0.2,
+          0.25,
+          0.3
+        ],
+        "heightStart": 7.4,
+        "heightEnd": 11.0
+      },
+      {
+        "name": "ochre_caprock",
+        "color": [
+          0.7,
+          0.56,
+          0.29
+        ],
+        "slopeTint": [
+          0.46,
+          0.33,
+          0.16
+        ],
+        "heightStart": 11.0,
+        "heightEnd": 15.0
+      }
+    ]
+  },
+  "lights": [
+    {
+      "type": "directional",
+      "direction": [
+        0.45,
+        -0.85,
+        0.25
+      ],
+      "color": [
+        1.0,
+        0.82,
+        0.58
+      ],
+      "intensity": 0.85
+    },
+    {
+      "type": "directional",
+      "direction": [
+        -0.55,
+        -0.7,
+        -0.2
+      ],
+      "color": [
+        0.55,
+        0.7,
+        1.0
+      ],
+      "intensity": 0.62
+    },
+    {
+      "type": "point",
+      "position": [
+        -9.0,
+        18.0,
+        7.0
+      ],
+      "color": [
+        1.0,
+        0.55,
+        0.25
+      ],
+      "intensity": 1.1,
+      "range": 42.0
+    }
+  ],
+  "rocks": [
+    {
+      "id": "overlap_0",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          8,
+          25,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "overlap_1",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          11,
+          30,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "overlap_2",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          14,
+          35,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "overlap_3",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          17,
+          40,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "overlap_4",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          20,
+          45,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "overlap_5",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          23,
+          50,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "overlap_6",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          26,
+          55,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "overlap_7",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          29,
+          60,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "overlap_8",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          32,
+          65,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "overlap_9",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          35,
+          70,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "overlap_10",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          38,
+          75,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "overlap_11",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          41,
+          80,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "overlap_12",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          44,
+          85,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "overlap_13",
+      "parent": null,
+      "transform": {
+        "translation": [
+          7.0,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          47,
+          90,
+          4
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    }
+  ],
+  "changes": []
+}

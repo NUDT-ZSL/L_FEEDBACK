@@ -1,0 +1,441 @@
+{
+  "seed": 1337,
+  "render": {
+    "width": 640,
+    "height": 360,
+    "tileSize": 16,
+    "depthBits": 24,
+    "stencilBits": 8,
+    "near": 0.1,
+    "far": 500.0,
+    "shadowExtrusion": 220.0,
+    "shadowDepthBiasUnits": 8
+  },
+  "camera": {
+    "position": [
+      0.0,
+      13.0,
+      36.0
+    ],
+    "target": [
+      0.0,
+      5.5,
+      -4.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fovYDeg": 55.0
+  },
+  "heightfield": {
+    "resolution": [
+      72,
+      72
+    ],
+    "extent": [
+      -32.0,
+      32.0,
+      -40.0,
+      38.0
+    ],
+    "heightRange": [
+      0.8,
+      14.0
+    ],
+    "wallStart": 5.0,
+    "wallEnd": 24.0,
+    "noiseOctaves": 4,
+    "erosionStrength": 1.8
+  },
+  "materials": {
+    "ambient": [
+      0.13,
+      0.15,
+      0.18
+    ],
+    "layers": [
+      {
+        "name": "fluvial_sandstone",
+        "color": [
+          0.52,
+          0.38,
+          0.22
+        ],
+        "slopeTint": [
+          0.34,
+          0.2,
+          0.12
+        ],
+        "heightStart": 0.0,
+        "heightEnd": 3.8
+      },
+      {
+        "name": "iron_oxide",
+        "color": [
+          0.64,
+          0.27,
+          0.14
+        ],
+        "slopeTint": [
+          0.46,
+          0.16,
+          0.09
+        ],
+        "heightStart": 3.8,
+        "heightEnd": 7.4
+      },
+      {
+        "name": "weathered_shale",
+        "color": [
+          0.31,
+          0.37,
+          0.41
+        ],
+        "slopeTint": [
+          0.2,
+          0.25,
+          0.3
+        ],
+        "heightStart": 7.4,
+        "heightEnd": 11.0
+      },
+      {
+        "name": "ochre_caprock",
+        "color": [
+          0.7,
+          0.56,
+          0.29
+        ],
+        "slopeTint": [
+          0.46,
+          0.33,
+          0.16
+        ],
+        "heightStart": 11.0,
+        "heightEnd": 15.0
+      }
+    ]
+  },
+  "lights": [
+    {
+      "type": "directional",
+      "direction": [
+        0.45,
+        -0.85,
+        0.25
+      ],
+      "color": [
+        1.0,
+        0.82,
+        0.58
+      ],
+      "intensity": 0.85
+    },
+    {
+      "type": "directional",
+      "direction": [
+        -0.55,
+        -0.7,
+        -0.2
+      ],
+      "color": [
+        0.55,
+        0.7,
+        1.0
+      ],
+      "intensity": 0.62
+    },
+    {
+      "type": "point",
+      "position": [
+        -9.0,
+        18.0,
+        7.0
+      ],
+      "color": [
+        1.0,
+        0.55,
+        0.25
+      ],
+      "intensity": 1.1,
+      "range": 42.0
+    }
+  ],
+  "rocks": [
+    {
+      "id": "canyon_spire",
+      "parent": null,
+      "transform": {
+        "translation": [
+          1e309,
+          11.0,
+          3.0
+        ],
+        "rotationDeg": [
+          8.0,
+          25.0,
+          4.0
+        ],
+        "scale": [
+          1.35,
+          0.92,
+          1.05
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.58,
+          0.43,
+          0.28
+        ],
+        "roughness": 0.82
+      },
+      "mesh": {
+        "radius": 1.35,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "spire_shard",
+      "parent": "canyon_spire",
+      "transform": {
+        "translation": [
+          2.05,
+          0.35,
+          0.2
+        ],
+        "rotationDeg": [
+          21.0,
+          13.0,
+          34.0
+        ],
+        "scale": [
+          0.58,
+          0.58,
+          0.58
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.72,
+          0.36,
+          0.2
+        ],
+        "roughness": 0.58
+      },
+      "mesh": {
+        "radius": 1.05,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "spire_chip",
+      "parent": "spire_shard",
+      "transform": {
+        "translation": [
+          0.85,
+          1.15,
+          -0.1
+        ],
+        "rotationDeg": [
+          42.0,
+          18.0,
+          -12.0
+        ],
+        "scale": [
+          0.55,
+          0.55,
+          0.55
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.44,
+          0.49,
+          0.55
+        ],
+        "roughness": 0.44
+      },
+      "mesh": {
+        "radius": 1.0,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "west_boulder",
+      "parent": null,
+      "transform": {
+        "translation": [
+          -8.0,
+          9.0,
+          -3.0
+        ],
+        "rotationDeg": [
+          -14.0,
+          38.0,
+          9.0
+        ],
+        "scale": [
+          1.02,
+          1.28,
+          0.92
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.49,
+          0.36,
+          0.26
+        ],
+        "roughness": 0.76
+      },
+      "mesh": {
+        "radius": 1.25,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "west_moon",
+      "parent": "west_boulder",
+      "transform": {
+        "translation": [
+          -2.15,
+          1.75,
+          0.3
+        ],
+        "rotationDeg": [
+          17.0,
+          -24.0,
+          8.0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.47,
+          0.55,
+          0.61
+        ],
+        "roughness": 0.36
+      },
+      "mesh": {
+        "radius": 1.15,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "east_drifter",
+      "parent": null,
+      "transform": {
+        "translation": [
+          9.5,
+          15.0,
+          -9.0
+        ],
+        "rotationDeg": [
+          33.0,
+          -17.0,
+          22.0
+        ],
+        "scale": [
+          0.92,
+          1.12,
+          0.82
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.61,
+          0.47,
+          0.31
+        ],
+        "roughness": 0.68
+      },
+      "mesh": {
+        "radius": 1.1,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "center_float",
+      "parent": null,
+      "transform": {
+        "translation": [
+          -2.0,
+          12.0,
+          -13.0
+        ],
+        "rotationDeg": [
+          12.0,
+          51.0,
+          -8.0
+        ],
+        "scale": [
+          0.86,
+          0.76,
+          1.1
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.54,
+          0.44,
+          0.35
+        ],
+        "roughness": 0.88
+      },
+      "mesh": {
+        "radius": 1.2,
+        "subdivisions": 1
+      },
+      "children": []
+    },
+    {
+      "id": "far_priest",
+      "parent": null,
+      "transform": {
+        "translation": [
+          4.0,
+          13.5,
+          -20.0
+        ],
+        "rotationDeg": [
+          -21.0,
+          7.0,
+          31.0
+        ],
+        "scale": [
+          0.72,
+          1.34,
+          0.74
+        ]
+      },
+      "material": {
+        "baseColor": [
+          0.57,
+          0.37,
+          0.24
+        ],
+        "roughness": 0.72
+      },
+      "mesh": {
+        "radius": 1.1,
+        "subdivisions": 1
+      },
+      "children": []
+    }
+  ],
+  "changes": []
+}

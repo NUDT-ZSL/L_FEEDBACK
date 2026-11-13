@@ -1,0 +1,10 @@
+status=error
+error=E_STENCIL_OVERFLOW message=template buffer counter overflowed during full render
+mode=full
+depth_bits=24 depth_max=16777215
+stencil_bits=1 stencil_overflow=1
+shadow_volume_triangles=50009
+affected_tiles=[]
+frame_hash=
+depth_hash=
+combined_hash=
