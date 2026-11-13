@@ -1,0 +1,7 @@
+/build/
+/build-*/
+/.tmp/
+/out/
+*.tmp
+*.bin
+__pycache__/
