@@ -1,0 +1,468 @@
+{
+  "all_frames_identical": true,
+  "errors": [],
+  "frames": 40,
+  "full_total_shaded": 21965,
+  "incr_total_shaded": 1531,
+  "mismatch_count": 0,
+  "per_frame": [
+    {
+      "changed_crystals": [],
+      "dirty_rect": [
+        0,
+        0,
+        160,
+        120
+      ],
+      "frame": 0,
+      "full_shaded": 590,
+      "identical": true,
+      "incr_shaded": 590,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 1,
+      "full_shaded": 590,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 2,
+      "full_shaded": 590,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        66,
+        8,
+        92,
+        33
+      ],
+      "frame": 3,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 70,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 4,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 5,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 6,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        66,
+        7,
+        89,
+        34
+      ],
+      "frame": 7,
+      "full_shaded": 590,
+      "identical": true,
+      "incr_shaded": 71,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 8,
+      "full_shaded": 590,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 9,
+      "full_shaded": 590,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 10,
+      "full_shaded": 590,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        66,
+        7,
+        87,
+        34
+      ],
+      "frame": 11,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 70,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 12,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_4"
+      ],
+      "dirty_rect": [
+        77,
+        58,
+        111,
+        93
+      ],
+      "frame": 13,
+      "full_shaded": 465,
+      "identical": true,
+      "incr_shaded": 20,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 14,
+      "full_shaded": 465,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        68,
+        7,
+        89,
+        34
+      ],
+      "frame": 15,
+      "full_shaded": 466,
+      "identical": true,
+      "incr_shaded": 71,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 16,
+      "full_shaded": 466,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 17,
+      "full_shaded": 466,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 18,
+      "full_shaded": 466,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        69,
+        7,
+        92,
+        34
+      ],
+      "frame": 19,
+      "full_shaded": 467,
+      "identical": true,
+      "incr_shaded": 72,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        69,
+        7,
+        92,
+        32
+      ],
+      "frame": 20,
+      "full_shaded": 467,
+      "identical": true,
+      "incr_shaded": 72,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 21,
+      "full_shaded": 467,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 22,
+      "full_shaded": 467,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        67,
+        7,
+        94,
+        32
+      ],
+      "frame": 23,
+      "full_shaded": 464,
+      "identical": true,
+      "incr_shaded": 69,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 24,
+      "full_shaded": 464,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 25,
+      "full_shaded": 464,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_4"
+      ],
+      "dirty_rect": [
+        77,
+        58,
+        111,
+        93
+      ],
+      "frame": 26,
+      "full_shaded": 588,
+      "identical": true,
+      "incr_shaded": 144,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        67,
+        7,
+        94,
+        29
+      ],
+      "frame": 27,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 70,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 28,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 29,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 30,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        67,
+        8,
+        94,
+        29
+      ],
+      "frame": 31,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 70,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 32,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 33,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 34,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        67,
+        10,
+        94,
+        32
+      ],
+      "frame": 35,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 70,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 36,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 37,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "frame": 38,
+      "full_shaded": 589,
+      "identical": true,
+      "incr_shaded": 0,
+      "max_channel_diff": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        69,
+        9,
+        94,
+        34
+      ],
+      "frame": 39,
+      "full_shaded": 591,
+      "identical": true,
+      "incr_shaded": 72,
+      "max_channel_diff": 0
+    }
+  ],
+  "single_change_frames": 13,
+  "single_change_incr_always_cheaper": true
+}

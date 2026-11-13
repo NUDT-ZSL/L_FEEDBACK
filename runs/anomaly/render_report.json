@@ -1,0 +1,220 @@
+{
+  "errors": [
+    {
+      "code": "E101",
+      "crystal_id": "bad_degenerate",
+      "message": "degenerate polygon: fewer than 3 vertices: vertices=2"
+    },
+    {
+      "code": "E102",
+      "crystal_id": "bad_zero_area",
+      "message": "zero-area crystal polygon"
+    },
+    {
+      "code": "E103",
+      "crystal_id": "bad_ior",
+      "message": "invalid index of refraction (need finite 1.0 < ior <= 3.0): ior=0.7"
+    },
+    {
+      "code": "E105",
+      "crystal_id": "bad_keyframe",
+      "message": "keyframe step out of range or not an integer: step=17 frames=12"
+    }
+  ],
+  "frames_written": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "mode": "incremental",
+  "per_frame": [
+    {
+      "changed_crystals": [],
+      "dirty_rect": [
+        0,
+        0,
+        96,
+        72
+      ],
+      "draw_sequence": [
+        "crystal_0",
+        "crystal_1",
+        "crystal_2",
+        "bad_keyframe"
+      ],
+      "frame": 0,
+      "shaded": 1605
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "draw_sequence": [
+        "crystal_0",
+        "crystal_1",
+        "crystal_2",
+        "bad_keyframe"
+      ],
+      "frame": 1,
+      "shaded": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "draw_sequence": [
+        "crystal_0",
+        "crystal_1",
+        "crystal_2",
+        "bad_keyframe"
+      ],
+      "frame": 2,
+      "shaded": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        13,
+        9,
+        96,
+        68
+      ],
+      "draw_sequence": [
+        "crystal_0",
+        "crystal_1",
+        "crystal_2",
+        "bad_keyframe"
+      ],
+      "frame": 3,
+      "shaded": 1607
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "draw_sequence": [
+        "crystal_0",
+        "crystal_1",
+        "crystal_2",
+        "bad_keyframe"
+      ],
+      "frame": 4,
+      "shaded": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "draw_sequence": [
+        "crystal_0",
+        "crystal_1",
+        "crystal_2",
+        "bad_keyframe"
+      ],
+      "frame": 5,
+      "shaded": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        13,
+        9,
+        96,
+        68
+      ],
+      "draw_sequence": [
+        "crystal_0",
+        "crystal_1",
+        "crystal_2",
+        "bad_keyframe"
+      ],
+      "frame": 6,
+      "shaded": 1607
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        13,
+        9,
+        96,
+        68
+      ],
+      "draw_sequence": [
+        "crystal_0",
+        "crystal_1",
+        "crystal_2",
+        "bad_keyframe"
+      ],
+      "frame": 7,
+      "shaded": 1604
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "draw_sequence": [
+        "crystal_0",
+        "crystal_1",
+        "crystal_2",
+        "bad_keyframe"
+      ],
+      "frame": 8,
+      "shaded": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "draw_sequence": [
+        "crystal_0",
+        "crystal_1",
+        "crystal_2",
+        "bad_keyframe"
+      ],
+      "frame": 9,
+      "shaded": 0
+    },
+    {
+      "changed_crystals": [],
+      "dirty_rect": null,
+      "draw_sequence": [
+        "crystal_0",
+        "crystal_1",
+        "crystal_2",
+        "bad_keyframe"
+      ],
+      "frame": 10,
+      "shaded": 0
+    },
+    {
+      "changed_crystals": [
+        "crystal_1"
+      ],
+      "dirty_rect": [
+        14,
+        9,
+        96,
+        68
+      ],
+      "draw_sequence": [
+        "crystal_0",
+        "crystal_1",
+        "crystal_2",
+        "bad_keyframe"
+      ],
+      "frame": 11,
+      "shaded": 1609
+    }
+  ],
+  "resumed_from": 0,
+  "total_shaded_fragments": 8032
+}

@@ -1,0 +1,401 @@
+{
+  "camera": {
+    "rotate": 0.0,
+    "scale": 1.0,
+    "translate": [
+      80.0,
+      60.0
+    ]
+  },
+  "crystals": [
+    {
+      "color": [
+        0.241,
+        0.596,
+        0.968,
+        0.6
+      ],
+      "depth_gradient": [
+        -0.01802,
+        -0.01116
+      ],
+      "id": "crystal_0",
+      "ior": 1.376,
+      "keyframes": [],
+      "layer": 0,
+      "refraction_strength": 6.783,
+      "transform": {
+        "rotate": 1.8395,
+        "scale": 1.0,
+        "translate": [
+          -50.669,
+          -32.103
+        ]
+      },
+      "vertices": [
+        [
+          13.5734,
+          4.2493
+        ],
+        [
+          8.8413,
+          5.9381
+        ],
+        [
+          -7.8857,
+          6.1308
+        ],
+        [
+          -10.1493,
+          -5.8134
+        ],
+        [
+          4.6695,
+          -9.7204
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "color": [
+        0.244,
+        0.242,
+        0.524,
+        0.62
+      ],
+      "depth_gradient": [
+        -0.00187,
+        -0.00801
+      ],
+      "id": "crystal_1",
+      "ior": 1.374,
+      "keyframes": [
+        {
+          "set": {
+            "rotate_by": 0.35
+          },
+          "step": 3
+        },
+        {
+          "set": {
+            "rotate_by": 0.35
+          },
+          "step": 7
+        },
+        {
+          "set": {
+            "rotate_by": 0.35
+          },
+          "step": 11
+        },
+        {
+          "set": {
+            "rotate_by": 0.35
+          },
+          "step": 15
+        },
+        {
+          "set": {
+            "rotate_by": 0.35
+          },
+          "step": 19
+        },
+        {
+          "set": {
+            "rotate_by": 0.35
+          },
+          "step": 23
+        },
+        {
+          "set": {
+            "rotate_by": 0.35
+          },
+          "step": 27
+        },
+        {
+          "set": {
+            "rotate_by": 0.35
+          },
+          "step": 31
+        },
+        {
+          "set": {
+            "rotate_by": 0.35
+          },
+          "step": 35
+        },
+        {
+          "set": {
+            "rotate_by": 0.35
+          },
+          "step": 39
+        },
+        {
+          "set": {
+            "color": [
+              0.9,
+              0.3,
+              0.4,
+              0.6
+            ]
+          },
+          "step": 20
+        }
+      ],
+      "layer": 1,
+      "refraction_strength": 7.972,
+      "transform": {
+        "rotate": 1.8396,
+        "scale": 1.0,
+        "translate": [
+          -0.463,
+          -39.292
+        ]
+      },
+      "vertices": [
+        [
+          5.6551,
+          5.1648
+        ],
+        [
+          5.6513,
+          7.2156
+        ],
+        [
+          -3.3699,
+          8.7544
+        ],
+        [
+          3.382,
+          -7.6661
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "color": [
+        0.853,
+        0.495,
+        0.977,
+        0.38
+      ],
+      "depth_gradient": [
+        -0.0064,
+        -0.00599
+      ],
+      "id": "crystal_2",
+      "ior": 1.271,
+      "keyframes": [],
+      "layer": 2,
+      "refraction_strength": 6.483,
+      "transform": {
+        "rotate": 2.5709,
+        "scale": 1.0,
+        "translate": [
+          51.572,
+          -25.012
+        ]
+      },
+      "vertices": [
+        [
+          -2.5437,
+          7.7872
+        ],
+        [
+          -3.5533,
+          5.3378
+        ],
+        [
+          -7.4666,
+          2.4867
+        ],
+        [
+          -6.7141,
+          0.2061
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "color": [
+        0.449,
+        0.628,
+        0.696,
+        0.44
+      ],
+      "depth_gradient": [
+        0.01667,
+        -0.00014
+      ],
+      "id": "crystal_3",
+      "ior": 1.57,
+      "keyframes": [],
+      "layer": 3,
+      "refraction_strength": 4.832,
+      "transform": {
+        "rotate": 1.25,
+        "scale": 1.0,
+        "translate": [
+          -46.16,
+          34.744
+        ]
+      },
+      "vertices": [
+        [
+          7.3624,
+          3.186
+        ],
+        [
+          6.9576,
+          4.6392
+        ],
+        [
+          -0.9479,
+          7.5268
+        ],
+        [
+          -3.1019,
+          7.8913
+        ],
+        [
+          -2.953,
+          -8.5446
+        ],
+        [
+          -0.8576,
+          -7.2105
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "color": [
+        0.612,
+        0.384,
+        0.402,
+        0.52
+      ],
+      "depth_gradient": [
+        0.00762,
+        0.00062
+      ],
+      "id": "crystal_4",
+      "ior": 1.342,
+      "keyframes": [
+        {
+          "set": {
+            "visible": false
+          },
+          "step": 13
+        },
+        {
+          "set": {
+            "visible": true
+          },
+          "step": 26
+        }
+      ],
+      "layer": 4,
+      "refraction_strength": 7.088,
+      "transform": {
+        "rotate": 2.9942,
+        "scale": 1.0,
+        "translate": [
+          7.163,
+          14.718
+        ]
+      },
+      "vertices": [
+        [
+          -2.0957,
+          11.6106
+        ],
+        [
+          -7.6499,
+          9.3939
+        ],
+        [
+          -7.447,
+          4.3854
+        ],
+        [
+          3.6902,
+          -7.9351
+        ],
+        [
+          5.9028,
+          -6.7821
+        ],
+        [
+          6.688,
+          -6.0181
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "color": [
+        0.48,
+        0.333,
+        0.991,
+        0.53
+      ],
+      "depth_gradient": [
+        0.00267,
+        0.00146
+      ],
+      "id": "crystal_5",
+      "ior": 1.341,
+      "keyframes": [],
+      "layer": 5,
+      "refraction_strength": 8.745,
+      "transform": {
+        "rotate": 0.3216,
+        "scale": 1.0,
+        "translate": [
+          16.704,
+          26.883
+        ]
+      },
+      "vertices": [
+        [
+          -4.195,
+          -8.9992
+        ],
+        [
+          6.3848,
+          -6.7159
+        ],
+        [
+          8.8308,
+          -2.754
+        ]
+      ],
+      "visible": true
+    }
+  ],
+  "env": {
+    "color_bottom": [
+      0.12,
+      0.06,
+      0.18
+    ],
+    "color_top": [
+      0.03,
+      0.04,
+      0.1
+    ],
+    "stripe_amplitude": 0.6,
+    "stripe_color": [
+      0.2,
+      0.26,
+      0.34
+    ],
+    "stripe_frequency": 0.05
+  },
+  "frames": 40,
+  "height": 120,
+  "seed": 7,
+  "snapshot_every": 7,
+  "width": 160
+}

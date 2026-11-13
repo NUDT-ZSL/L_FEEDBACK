@@ -1,0 +1,314 @@
+{
+  "camera": {
+    "rotate": 0.0,
+    "scale": 1.0,
+    "translate": [
+      48.0,
+      36.0
+    ]
+  },
+  "crystals": [
+    {
+      "color": [
+        0.644,
+        0.617,
+        0.638,
+        0.53
+      ],
+      "depth_gradient": [
+        0.01327,
+        -0.01747
+      ],
+      "id": "crystal_0",
+      "ior": 1.545,
+      "keyframes": [],
+      "layer": 0,
+      "refraction_strength": 4.178,
+      "transform": {
+        "rotate": 1.9576,
+        "scale": 1.0,
+        "translate": [
+          13.762,
+          6.483
+        ]
+      },
+      "vertices": [
+        [
+          8.3847,
+          21.1394
+        ],
+        [
+          -22.9939,
+          7.1796
+        ],
+        [
+          3.882,
+          -19.5366
+        ],
+        [
+          7.4609,
+          -21.1816
+        ],
+        [
+          11.9475,
+          -15.3935
+        ],
+        [
+          14.5295,
+          -18.2852
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "color": [
+        0.485,
+        0.586,
+        0.959,
+        0.38
+      ],
+      "depth_gradient": [
+        -0.01881,
+        0.00253
+      ],
+      "id": "crystal_1",
+      "ior": 1.427,
+      "keyframes": [
+        {
+          "set": {
+            "rotate_by": 0.35
+          },
+          "step": 3
+        },
+        {
+          "set": {
+            "rotate_by": 0.35
+          },
+          "step": 7
+        },
+        {
+          "set": {
+            "rotate_by": 0.35
+          },
+          "step": 11
+        },
+        {
+          "set": {
+            "color": [
+              0.9,
+              0.3,
+              0.4,
+              0.6
+            ]
+          },
+          "step": 6
+        }
+      ],
+      "layer": 1,
+      "refraction_strength": 4.54,
+      "transform": {
+        "rotate": 1.6113,
+        "scale": 1.0,
+        "translate": [
+          -14.17,
+          11.145
+        ]
+      },
+      "vertices": [
+        [
+          5.8156,
+          16.2565
+        ],
+        [
+          -8.1935,
+          15.7627
+        ],
+        [
+          -12.9308,
+          -8.3159
+        ],
+        [
+          2.8177,
+          -15.7884
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "color": [
+        0.886,
+        0.478,
+        0.444,
+        0.6
+      ],
+      "depth_gradient": [
+        -0.0067,
+        0.01856
+      ],
+      "id": "crystal_2",
+      "ior": 1.335,
+      "keyframes": [],
+      "layer": 2,
+      "refraction_strength": 7.79,
+      "transform": {
+        "rotate": 0.2738,
+        "scale": 1.0,
+        "translate": [
+          16.042,
+          -9.946
+        ]
+      },
+      "vertices": [
+        [
+          -13.5463,
+          11.7156
+        ],
+        [
+          11.4382,
+          -16.3164
+        ],
+        [
+          25.7585,
+          -6.9525
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "color": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "id": "bad_degenerate",
+      "ior": 1.3,
+      "layer": 3,
+      "vertices": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          10.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "color": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "id": "bad_zero_area",
+      "ior": 1.3,
+      "layer": 4,
+      "vertices": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          5.0,
+          0.0
+        ],
+        [
+          10.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "color": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "id": "bad_ior",
+      "ior": 0.7,
+      "layer": 5,
+      "vertices": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          8.0,
+          0.0
+        ],
+        [
+          4.0,
+          8.0
+        ]
+      ]
+    },
+    {
+      "color": [
+        0.6,
+        0.4,
+        0.8,
+        0.5
+      ],
+      "id": "bad_keyframe",
+      "ior": 1.25,
+      "keyframes": [
+        {
+          "set": {
+            "rotate_by": 0.5
+          },
+          "step": 17
+        }
+      ],
+      "layer": 6,
+      "transform": {
+        "rotate": 0.0,
+        "scale": 1.0,
+        "translate": [
+          10.0,
+          6.0
+        ]
+      },
+      "vertices": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          9.0,
+          1.0
+        ],
+        [
+          4.0,
+          9.0
+        ]
+      ]
+    }
+  ],
+  "env": {
+    "color_bottom": [
+      0.12,
+      0.06,
+      0.18
+    ],
+    "color_top": [
+      0.03,
+      0.04,
+      0.1
+    ],
+    "stripe_amplitude": 0.6,
+    "stripe_color": [
+      0.2,
+      0.26,
+      0.34
+    ],
+    "stripe_frequency": 0.05
+  },
+  "frames": 12,
+  "height": 72,
+  "seed": 11,
+  "snapshot_every": 7,
+  "width": 96
+}
