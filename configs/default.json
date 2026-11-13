@@ -1,0 +1,50 @@
+{
+  "backend": "software",
+  "camera": {
+    "eye": [
+      24.0,
+      22.0,
+      28.0
+    ],
+    "far": 200.0,
+    "fov_y_deg": 55.0,
+    "look_at": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "near": 0.25,
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "enable_stitching": true,
+  "height_scale": 6.0,
+  "image_height": 192,
+  "image_width": 256,
+  "light": {
+    "ambient": 0.18,
+    "diffuse_albedo": 0.82,
+    "direction": [
+      -0.45,
+      -0.8,
+      -0.4
+    ],
+    "gamma": 2.2
+  },
+  "max_depth": 4,
+  "noise_octaves": 4,
+  "output_contract": "artifacts/contract.json",
+  "output_png": "artifacts/terrain.png",
+  "root_min": [
+    -16.0,
+    -16.0
+  ],
+  "root_size": 32.0,
+  "seed": 20261113,
+  "sse_relative_tolerance": 1e-06,
+  "sse_threshold": 40.0,
+  "tile_resolution": 9
+}
