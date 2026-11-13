@@ -1,0 +1,30 @@
+{
+  "config_version": 1,
+  "scene": {
+    "seed": 20261114,
+    "bounds_min": [-10.0, -8.0, 0.0],
+    "bounds_max": [10.0, 8.0, 6.0],
+    "extra_boxes": 12,
+    "point_light_count": 4,
+    "emissive_box_count": 2
+  },
+  "layout": {
+    "spacing": 2.0,
+    "cull_distance": 0.4,
+    "normal_mode": "up"
+  },
+  "bake": {
+    "samples": 64,
+    "ray_epsilon": 1e-06,
+    "workers": 4,
+    "chunk_size": 16
+  },
+  "patch": {
+    "geometry_updates": {
+      "3": {
+        "albedo": [0.88, 0.16, 0.08]
+      }
+    }
+  }
+}
+

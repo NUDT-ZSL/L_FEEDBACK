@@ -1,0 +1,12 @@
+.venv/
+.python/
+.tools/
+.tmp/
+.pip-cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+artifacts/*.snapshot
+artifacts/*.tmp
+artifacts/workspace.json
+

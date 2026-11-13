@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ruin-bake"
+version = "0.1.0"
+description = "Deterministic offline one-bounce irradiance probe baker for procedural ruins"
+requires-python = ">=3.11,<3.12"
+dependencies = ["numpy==1.26.4"]
+
+[project.scripts]
+ruin-bake = "ruin_bake.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
