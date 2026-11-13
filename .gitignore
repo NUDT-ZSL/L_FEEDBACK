@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+demo/
+test-*/
+*.ckpt.json
+*.measure.raw
+*.final.raw
+*.tmp.wav

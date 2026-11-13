@@ -1,0 +1,3 @@
+# Requested local test environment. The mixer itself imports only the Python
+# standard library; NumPy is pinned here for environment reproducibility.
+numpy==1.26.4
