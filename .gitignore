@@ -1,0 +1,11 @@
+/build*/
+/out/
+/integration-work/
+/unit-test-work/
+/.work-tmp/
+/.work-zig-cache/
+/.tools/
+/-
+*.tmp
+__pycache__/
+
