@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.audio-pipeline-selftest/
+.audio-pipeline-tmp/
+.test-runtime-*/
+.test-tmp-*/
+renders/
+audio_pipeline_jobs.json
+audio_pipeline_result.json
