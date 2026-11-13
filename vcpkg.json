@@ -1,0 +1,10 @@
+{
+  "name": "terrain-lod-stitching",
+  "version-string": "1.0.0",
+  "description": "Deterministic quadtree terrain LOD with vertex-position stitching",
+  "dependencies": [
+    "glfw3",
+    "glm"
+  ]
+}
+

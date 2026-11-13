@@ -1,0 +1,62 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "windows-vcpkg",
+      "displayName": "Windows VS2022 + vcpkg",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build/windows",
+      "architecture": "x64",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "TERRAIN_BUILD_GL": "ON",
+        "TERRAIN_BUILD_TESTS": "ON"
+      }
+    },
+    {
+      "name": "local-software",
+      "displayName": "Headless core build",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/local",
+      "cacheVariables": {
+        "TERRAIN_BUILD_GL": "OFF",
+        "TERRAIN_BUILD_TESTS": "ON",
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "windows-vcpkg",
+      "configurePreset": "windows-vcpkg",
+      "configuration": "Release"
+    },
+    {
+      "name": "local-software",
+      "configurePreset": "local-software"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "windows-vcpkg",
+      "configurePreset": "windows-vcpkg",
+      "configuration": "Release",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "local-software",
+      "configurePreset": "local-software",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}
+
