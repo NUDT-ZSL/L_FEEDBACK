@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mxf-r128"
+version = "1.0.0"
+description = "Deterministic MXF to MP4 transcoding with EBU R128 QC"
+requires-python = ">=3.11"
+license = {text = "Proprietary"}
+
+[project.scripts]
+mxf-r128 = "mxf_r128.cli:main"
+
+[tool.setuptools]
+packages = ["mxf_r128"]
