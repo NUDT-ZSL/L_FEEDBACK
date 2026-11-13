@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.exe
+*.dll
+*.pdb
+*.obj
+*.ilk
+*.lib
+*.exp
+artifacts/*
+!artifacts/workspace.json

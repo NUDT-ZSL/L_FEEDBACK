@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {"function": "source_a", "param_index": 0, "type": "string"},
+    {"function": "missing_func", "param_index": 0, "type": "ptr"}
+  ],
+  "dangerous_apis": [],
+  "sanitizers": [],
+  "module_hints": ["warnings"]
+}

@@ -1,0 +1,7 @@
+{
+  "sources": [
+    {"function": "source_a", "param_index": 1, "type": "string"}
+  ],
+  "dangerous_apis": [],
+  "sanitizers": []
+}

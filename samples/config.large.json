@@ -1,0 +1,8 @@
+{
+  "sources": [
+    {"function": "large_function_00000", "param_index": 0, "type": "int"}
+  ],
+  "dangerous_apis": [],
+  "sanitizers": [],
+  "module_hints": ["large"]
+}

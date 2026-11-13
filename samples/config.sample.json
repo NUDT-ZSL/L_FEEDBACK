@@ -1,0 +1,8 @@
+{
+  "sources": [
+    {"function": "source_a", "param_index": 1, "type": "string"}
+  ],
+  "dangerous_apis": [],
+  "sanitizers": ["sanitize", "safe_copy"],
+  "module_hints": ["sample"]
+}
