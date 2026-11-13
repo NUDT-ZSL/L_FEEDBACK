@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+samples/
+samples2/
+out/
+verification/
+*.state.json
+*.part.wav
+*.manifest.json
+gamepost-tests-*/
+gamepost-verify-*/

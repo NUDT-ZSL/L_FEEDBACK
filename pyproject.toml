@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gamepost"
+version = "1.0.0"
+description = "Deterministic, resumable game-commentary post-production pipeline"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3"]
+
+[project.scripts]
+gamepost = "gamepost.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["gamepost*"]
+
