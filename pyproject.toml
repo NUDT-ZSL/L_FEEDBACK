@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "offline-frame-renderer"
+version = "1.0.0"
+description = "Deterministic offline ray-sphere frame chunk renderer and assembler"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "numpy==1.26.4",
+  "Pillow==10.2.0",
+]
+
+[project.scripts]
+frame-render = "frame_render.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["frame_render*"]
+
