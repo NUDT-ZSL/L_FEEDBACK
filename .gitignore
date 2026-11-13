@@ -1,0 +1,12 @@
+/build/
+/build-asan/
+/build-msvc/
+/.build-tmp/
+/out-*/
+/cache-*/
+/verification-run/
+*.user
+*.suo
+*.log
+__pycache__/
+*.pyc

@@ -1,0 +1,48 @@
+{
+  "resolution": {
+    "width": 96,
+    "height": 96
+  },
+  "samples": [
+    { "direction": [0.0, 0.0, 1.0] },
+    { "direction": [0.9238795, 0.0, 0.3826834] },
+    { "direction": [0.7071068, 0.0, 0.7071068] },
+    { "direction": [0.3826834, 0.0, 0.9238795] },
+    { "direction": [0.0, 0.0, -1.0] },
+    { "direction": [-0.3826834, 0.0, -0.9238795] },
+    { "direction": [-0.7071068, 0.0, -0.7071068] },
+    { "direction": [-0.9238795, 0.0, -0.3826834] }
+  ],
+  "layers": [
+    {
+      "baseColor": [0.78, 0.20, 0.12],
+      "roughness": 0.35,
+      "normalStrength": 0.18,
+      "emissionColor": [0.02, 0.005, 0.0]
+    },
+    {
+      "baseColor": [0.12, 0.48, 0.85],
+      "roughness": 0.68,
+      "normalStrength": 0.34,
+      "emissionColor": [0.0, 0.015, 0.04]
+    },
+    {
+      "baseColor": [0.95, 0.72, 0.25],
+      "roughness": 0.16,
+      "normalStrength": 0.55,
+      "emissionColor": [0.03, 0.02, 0.0]
+    }
+  ],
+  "lights": [
+    {
+      "direction": [0.6, 0.8, 0.35],
+      "color": [1.0, 0.95, 0.86],
+      "intensity": 1.0
+    },
+    {
+      "direction": [-0.55, 0.25, -0.8],
+      "color": [0.35, 0.5, 1.0],
+      "intensity": 0.65
+    }
+  ]
+}
