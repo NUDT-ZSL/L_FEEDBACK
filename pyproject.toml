@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "render-pipeline"
+version = "1.0.0"
+description = "Deterministic tiled deferred software renderer with persistent tile snapshots"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+packages = ["render_pipeline"]

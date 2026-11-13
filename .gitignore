@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.snapshots/
+*.report.json
+preview*.png
+out.ppm
+out2.ppm
+det_*.ppm
+only_*.json
+only_*.ppm
+only_*.png
+light_test*
