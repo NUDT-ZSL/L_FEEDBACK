@@ -1,0 +1,9 @@
+.venv/
+.bootstrap/
+__pycache__/
+*.pyc
+demo/
+demo_run/
+verify/
+demo_run_console.txt
+*.tmp.*
