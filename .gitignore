@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.material_baker_selftest/
+selftest-output/
+build/
+dist/
+*.egg-info/
+
