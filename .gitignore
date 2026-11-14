@@ -1,0 +1,6 @@
+**/bin/
+**/obj/
+.cli-home/
+.tmp/
+.nuget/packages/
+*.tmp-*
