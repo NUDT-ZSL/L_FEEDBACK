@@ -1,0 +1,28 @@
+{
+  "id": "peak_fail_scene",
+  "project_sample_rate": 48000,
+  "duration": 2.0,
+  "asset_dir": "assets",
+  "output": "out/peak_fail.wav",
+  "report": "out/peak_fail.report.json",
+  "loudness": {
+    "target_lufs": -12.0,
+    "peak_limit_dbfs": -30.0,
+    "peak_shortfall_tolerance_lu": 0.2
+  },
+  "tracks": [
+    {
+      "id": "hot",
+      "events": [
+        {
+          "id": "hot_tone",
+          "start": 0.0,
+          "duration": 2.0,
+          "frequency": 440.0,
+          "amplitude": 0.95,
+          "pan": 0.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+examples/assets/
+examples/out/
+examples/batch_assets/
+examples/batch_out/
+examples/batch_summary.json
+artifacts/

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audiomixer"
+version = "1.0.0"
+description = "Offline deterministic multi-track audio mixing processor (BS.1770-4 loudness, resampling, fades, pan)"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.scripts]
+audiomixer = "audiomixer.cli:main"
+
+[tool.setuptools]
+packages = ["audiomixer"]

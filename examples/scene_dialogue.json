@@ -1,0 +1,78 @@
+{
+  "id": "dialogue_scene",
+  "project_sample_rate": 48000,
+  "duration": 6.0,
+  "asset_dir": "assets",
+  "output": "out/dialogue_scene.wav",
+  "report": "out/dialogue_scene.report.json",
+  "output_sample_width": 4,
+  "loudness": {
+    "target_lufs": -23.0,
+    "peak_limit_dbfs": -1.0,
+    "peak_shortfall_tolerance_lu": 0.5,
+    "true_peak": false
+  },
+  "tracks": [
+    {
+      "id": "dialogue",
+      "gain_db": -2.0,
+      "events": [
+        {
+          "id": "line_1",
+          "start": 0.5,
+          "duration": 2.0,
+          "frequency": 220.0,
+          "amplitude": 0.5,
+          "pan": -0.4,
+          "sample_rate": 44100,
+          "fades": {"fade_in": 0.08, "fade_out": 0.12, "curve": "equal_power"}
+        },
+        {
+          "id": "line_2",
+          "start": 2.7,
+          "duration": 2.0,
+          "frequency": 330.0,
+          "amplitude": 0.45,
+          "pan": 0.4,
+          "sample_rate": 44100,
+          "fades": {"fade_in": 0.0, "fade_out": 0.1, "curve": "equal_power",
+                    "crossfade": 0.2, "crossfade_curve": "equal_power"}
+        }
+      ]
+    },
+    {
+      "id": "sfx",
+      "gain_db": 0.0,
+      "events": [
+        {
+          "id": "whoosh",
+          "start": 1.0,
+          "duration": 1.5,
+          "frequency": 880.0,
+          "amplitude": 0.3,
+          "pan": 0.8,
+          "sample_rate": 32000,
+          "fades": {"fade_in": 0.2, "fade_out": 0.3, "curve": "linear"}
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "gain_db": -6.0,
+      "muted": false,
+      "events": [
+        {
+          "id": "bed",
+          "start": 0.0,
+          "duration": 6.0,
+          "frequency": 110.0,
+          "amplitude": 0.35,
+          "pan": 0.0,
+          "sample_rate": 48000,
+          "channels": 2,
+          "fades": {"fade_in": 1.0, "fade_out": 1.5, "curve": "linear"}
+        }
+      ]
+    }
+  ]
+}
