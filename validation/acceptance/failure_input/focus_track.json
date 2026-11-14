@@ -1,0 +1,17 @@
+{
+  "time_unit": "seconds",
+  "keyframes": [
+    {
+      "time": 0.0,
+      "focus_distance": 2.0
+    },
+    {
+      "time": 0.25,
+      "focus_distance": 8.0
+    },
+    {
+      "time": 0.125,
+      "focus_distance": 4.0
+    }
+  ]
+}

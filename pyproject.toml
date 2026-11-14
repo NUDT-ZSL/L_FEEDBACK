@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "offline-dof-pipeline"
+version = "0.1.0"
+description = "Deterministic offline depth-of-field renderer for generated image/depth sequences"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24,<1.25",
+    "opencv-python>=4.8,<4.9",
+]
+
+[project.scripts]
+dof-pipeline = "dofpipe.cli:main"
+
+[tool.setuptools]
+packages = ["dofpipe"]

@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "checks": {
+    "png_sequence_count": true,
+    "png_hashes_byte_identical": true,
+    "report_equal_excluding_timing": true,
+    "slice_consistency_passed": true,
+    "circle_kernel_normalized": true,
+    "polygon_kernel_normalized": true,
+    "failure_exit_nonzero": true,
+    "partial_report_preserved": true,
+    "partial_and_conventional_match": true,
+    "rendered_frames_preserved_on_failure": true
+  },
+  "environment": {
+    "python": "3.11.18",
+    "numpy": "1.24.4",
+    "opencv": "4.8.1",
+    "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.43"
+  },
+  "sample": {
+    "width": 240,
+    "height": 135,
+    "frame_count": 8,
+    "fps": 12.0,
+    "seed": 12345
+  },
+  "slice_consistency": {
+    "max_abs_error_8bit": 1.0,
+    "threshold_max_abs_error_8bit": 2.0,
+    "mean_abs_error_8bit": 3.858024691358025e-06
+  },
+  "kernels": {
+    "circle_sum": 1.0,
+    "polygon_sum": 1.0,
+    "circle_shape": [
+      21,
+      21
+    ],
+    "polygon_shape": [
+      21,
+      21
+    ]
+  },
+  "failure_case": {
+    "exit_code": 2,
+    "status": "failed",
+    "error_frame_index": 2,
+    "partial_frames": 2,
+    "partial_total_frames": 2
+  },
+  "artifacts_root": "/home/liang/feedback/uid56/validation/acceptance"
+}

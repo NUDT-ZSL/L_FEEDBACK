@@ -1,0 +1,33 @@
+{
+  "frame_rate": 12.0,
+  "frame_start": 0,
+  "frame_count": 6,
+  "color_pattern": "color_{frame:04d}.png",
+  "depth_pattern": "depth_{frame:04d}.npy",
+  "focus_track": "focus_track.json",
+  "seed": 12345,
+  "lens": {
+    "focal_length_mm": 85.0,
+    "f_number": 1.2,
+    "sensor_width_mm": 36.0,
+    "near_plane_m": 0.5,
+    "far_plane_m": 20.0,
+    "max_blur_radius_px": 10.0,
+    "invalid_depth_fallback_m": 20.0,
+    "depth_tolerance_m": 0.001
+  },
+  "aperture": {
+    "blades": 6,
+    "rotation_deg": 0.0,
+    "supersample": 8
+  },
+  "render": {
+    "depth_slices": 8,
+    "gather_rounds": 2,
+    "png_compression": 3,
+    "output_pattern": "frame_{frame:04d}.png"
+  },
+  "validation": {
+    "slice_max_abs_error_8bit": 2.0
+  }
+}

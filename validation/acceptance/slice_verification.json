@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "threshold_max_abs_error_8bit": 2.0,
+  "max_abs_error_8bit": 1.0,
+  "mean_abs_error_8bit": 3.858024691358025e-06,
+  "depth_slices": 8,
+  "gather_rounds": 2,
+  "total_frames": 8,
+  "frames": [
+    {
+      "frame_index": 0,
+      "focus_distance_m": 1.8,
+      "max_abs_error_8bit": 0.0,
+      "mean_abs_error_8bit": 0.0
+    },
+    {
+      "frame_index": 1,
+      "focus_distance_m": 2.0453496245525207,
+      "max_abs_error_8bit": 0.0,
+      "mean_abs_error_8bit": 0.0
+    },
+    {
+      "frame_index": 2,
+      "focus_distance_m": 2.6782604699773565,
+      "max_abs_error_8bit": 1.0,
+      "mean_abs_error_8bit": 1.02880658436214e-05
+    },
+    {
+      "frame_index": 3,
+      "focus_distance_m": 3.544025493925417,
+      "max_abs_error_8bit": 0.0,
+      "mean_abs_error_8bit": 0.0
+    },
+    {
+      "frame_index": 4,
+      "focus_distance_m": 4.742359360770128,
+      "max_abs_error_8bit": 0.0,
+      "mean_abs_error_8bit": 0.0
+    },
+    {
+      "frame_index": 5,
+      "focus_distance_m": 6.701553604832631,
+      "max_abs_error_8bit": 1.0,
+      "mean_abs_error_8bit": 2.05761316872428e-05
+    },
+    {
+      "frame_index": 6,
+      "focus_distance_m": 9.0,
+      "max_abs_error_8bit": 0.0,
+      "mean_abs_error_8bit": 0.0
+    },
+    {
+      "frame_index": 7,
+      "focus_distance_m": 9.0,
+      "max_abs_error_8bit": 0.0,
+      "mean_abs_error_8bit": 0.0
+    }
+  ]
+}

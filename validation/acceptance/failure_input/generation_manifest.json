@@ -1,0 +1,11 @@
+{
+  "generator": "dofpipe.sample",
+  "width": 240,
+  "height": 135,
+  "frame_count": 6,
+  "frame_rate": 12.0,
+  "seed": 12345,
+  "color_pattern": "color_{frame:04d}.png",
+  "depth_pattern": "depth_{frame:04d}.npy",
+  "focus_track": "focus_track.json"
+}

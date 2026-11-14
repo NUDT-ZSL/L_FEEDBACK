@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "status": "failed",
+  "completed": false,
+  "error": {
+    "type": "FocusTrackError",
+    "frame_index": 2,
+    "reason": "keyframe 2 timestamp 0.125 s is not strictly after keyframe 1 timestamp 0.25 s",
+    "message": "focus track invalid at frame 2: keyframe 2 timestamp 0.125 s is not strictly after keyframe 1 timestamp 0.25 s"
+  },
+  "parameters": {
+    "frame_rate": 12.0,
+    "frame_start": 0,
+    "frame_count": 6,
+    "image_width": 240,
+    "image_height": 135,
+    "near_plane_m": 0.5,
+    "far_plane_m": 20.0,
+    "focal_length_mm": 85.0,
+    "f_number": 1.2,
+    "sensor_width_mm": 36.0,
+    "max_blur_radius_px": 10.0,
+    "invalid_depth_fallback_m": 20.0,
+    "depth_tolerance_m": 0.001,
+    "aperture_blades": 6,
+    "aperture_rotation_deg": 0.0,
+    "aperture_supersample": 8,
+    "depth_slices": 8,
+    "gather_rounds": 2,
+    "seed": 12345,
+    "coc_units": "pixel_radius",
+    "kernel_radius_quantization_px": 0.5,
+    "slice_max_abs_error_8bit": 2.0
+  },
+  "warnings": [
+    {
+      "code": "track_ends_before_sequence",
+      "frame_index": 4,
+      "message": "focus track ends at 0.25 s before the final frame at 0.416666667 s; frames 4..5 use the last keyframe value"
+    }
+  ],
+  "total_frames": 2,
+  "expected_total_frames": 6,
+  "frames": [
+    {
+      "frame_index": 0,
+      "sequence_index": 0,
+      "output_file": "frame_0000.png",
+      "focus_distance_m": 2.0,
+      "coc_min_px": 3.29703800421391,
+      "coc_max_px": 9.325133519177154,
+      "coc_mean_px": 8.408387370359842,
+      "coc_min_diameter_px": 6.59407600842782,
+      "coc_max_diameter_px": 18.650267038354308,
+      "coc_mean_diameter_px": 16.816774740719683,
+      "aperture_blades": 6,
+      "max_blur_radius_px": 10.0,
+      "invalid_depth_pixels": 0,
+      "clamped_depth_pixels": 0,
+      "render_time_ms": 480.094843
+    },
+    {
+      "frame_index": 1,
+      "sequence_index": 1,
+      "output_file": "frame_0001.png",
+      "focus_distance_m": 4.0,
+      "coc_min_px": 1.3791551771315458,
+      "coc_max_px": 3.9963772500648904,
+      "coc_mean_px": 3.533428003000033,
+      "coc_min_diameter_px": 2.7583103542630916,
+      "coc_max_diameter_px": 7.992754500129781,
+      "coc_mean_diameter_px": 7.066856006000066,
+      "aperture_blades": 6,
+      "max_blur_radius_px": 10.0,
+      "invalid_depth_pixels": 0,
+      "clamped_depth_pixels": 0,
+      "render_time_ms": 114.498115
+    }
+  ]
+}
