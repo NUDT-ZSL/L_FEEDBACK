@@ -1,0 +1,8 @@
+{
+  "target_sample_rate": 48000,
+  "target_channels": 1,
+  "fps": 30.0,
+  "languages": ["en", "ja", "es"],
+  "max_workers": 3,
+  "overflow_tolerance_ms": 100.0
+}
