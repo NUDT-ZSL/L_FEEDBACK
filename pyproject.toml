@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dialogue-master"
+version = "1.0.0"
+description = "Deterministic offline dialogue loudness and timeline mastering tool"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.23",
+    "soundfile>=0.12",
+]
+
+[project.scripts]
+dialogue-master = "dialogue_master.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dialogue_master*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
