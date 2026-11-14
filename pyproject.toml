@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telemetry-synth"
+version = "1.0.0"
+description = "Deterministic telemetry-driven racing audio synthesis"
+requires-python = ">=3.10,<3.12"
+dependencies = ["numpy>=1.24,<3.0"]
+
+[project.scripts]
+telemetry-synth = "telemetry_synth.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["telemetry_synth*"]
+

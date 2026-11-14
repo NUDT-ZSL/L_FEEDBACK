@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "model_id": "deterministic_race_demo_v1",
+  "engine": {
+    "rpm_min": 800.0,
+    "rpm_max": 9500.0,
+    "firing_order": 4.0,
+    "harmonics": [
+      {
+        "order": 0.5,
+        "gain": 0.26,
+        "phase_deg": 0.0
+      },
+      {
+        "order": 1.0,
+        "gain": 0.58,
+        "phase_deg": 37.0
+      },
+      {
+        "order": 2.0,
+        "gain": 0.27,
+        "phase_deg": 103.0
+      },
+      {
+        "order": 3.0,
+        "gain": 0.14,
+        "phase_deg": 191.0
+      },
+      {
+        "order": 4.0,
+        "gain": 0.075,
+        "phase_deg": 266.0
+      },
+      {
+        "order": 6.0,
+        "gain": 0.036,
+        "phase_deg": 319.0
+      }
+    ],
+    "base_amplitude": 0.24,
+    "throttle_amplitude": 0.94,
+    "shift_rpm_threshold": 1400.0,
+    "shift_crossfade_ms": 20.0,
+    "stereo_phase_spread_deg": 11.0
+  },
+  "tires": {
+    "level": 0.55,
+    "max_slip": 0.8,
+    "slip_threshold": 0.22,
+    "release_ratio": 0.65,
+    "attack_ms": 7.0,
+    "release_ms": 34.0,
+    "slip_full_scale": 0.52,
+    "slip_load_floor": 0.35,
+    "surfaces": {
+      "asphalt": {
+        "grip": {
+          "cutoff_hz": 920.0,
+          "gain": 0.18
+        },
+        "slip": {
+          "cutoff_hz": 2450.0,
+          "gain": 0.52
+        }
+      },
+      "gravel": {
+        "grip": {
+          "cutoff_hz": 1550.0,
+          "gain": 0.3
+        },
+        "slip": {
+          "cutoff_hz": 3900.0,
+          "gain": 0.66
+        }
+      },
+      "kerb": {
+        "grip": {
+          "cutoff_hz": 2900.0,
+          "gain": 0.26
+        },
+        "slip": {
+          "cutoff_hz": 5600.0,
+          "gain": 0.61
+        }
+      },
+      "grass": {
+        "grip": {
+          "cutoff_hz": 720.0,
+          "gain": 0.24
+        },
+        "slip": {
+          "cutoff_hz": 1900.0,
+          "gain": 0.47
+        }
+      }
+    }
+  },
+  "events": {
+    "overlap_window_ms": 45.0,
+    "overlap_attenuation": 0.68,
+    "types": {
+      "suspension_impact": {
+        "gain": 0.5,
+        "duration_ms": 86.0,
+        "attack_ms": 1.2,
+        "decay_ms": 25.0,
+        "waveform": "impact",
+        "frequency_hz": 72.0,
+        "frequency_end_hz": 43.0,
+        "noise_mix": 0.42
+      },
+      "surface_bump": {
+        "gain": 0.34,
+        "duration_ms": 62.0,
+        "attack_ms": 1.6,
+        "decay_ms": 18.0,
+        "waveform": "impact",
+        "frequency_hz": 118.0,
+        "frequency_end_hz": 84.0,
+        "noise_mix": 0.58
+      },
+      "shift_alert": {
+        "gain": 0.27,
+        "duration_ms": 124.0,
+        "attack_ms": 4.0,
+        "decay_ms": 76.0,
+        "waveform": "tone",
+        "frequency_hz": 930.0,
+        "frequency_end_hz": 690.0,
+        "noise_mix": 0.03
+      }
+    }
+  },
+  "mix": {
+    "engine_gain": 0.78,
+    "tire_gain": 0.8,
+    "event_gain": 0.88,
+    "master_gain": 0.72,
+    "soft_limit_threshold": 0.92
+  }
+}
