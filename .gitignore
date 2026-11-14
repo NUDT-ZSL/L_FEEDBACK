@@ -1,0 +1,4 @@
+/build*/
+/.deps/
+/audio_engine_test_artifacts/
+/artifacts/
