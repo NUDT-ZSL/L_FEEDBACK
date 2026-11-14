@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+samples/
+out/
+out-*/
+test-output/
+samples_*/
+*.stderr
+err_*.log
