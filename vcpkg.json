@@ -1,0 +1,10 @@
+{
+  "name": "lightcluster-deferred",
+  "version-string": "1.0.0",
+  "description": "Deterministic dynamic-light deferred renderer with GPU readback validation",
+  "dependencies": [
+    "glfw3",
+    "glm",
+    "glew"
+  ]
+}

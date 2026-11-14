@@ -1,0 +1,9 @@
+/build*/
+/out/
+/artifacts/validation/
+/.vs/
+/vcpkg_installed/
+*.user
+*.suo
+__pycache__/
+*.pyc
