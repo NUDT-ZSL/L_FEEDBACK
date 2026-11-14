@@ -1,0 +1,7 @@
+1
+00:00:00,800 --> 00:00:01,800
+Surround cue shifted to first speech
+
+2
+00:00:05,200 --> 00:00:06,200
+Surround cue already aligned

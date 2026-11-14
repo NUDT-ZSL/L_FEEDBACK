@@ -1,0 +1,7 @@
+1
+00:00:00,300 --> 00:00:01,300
+Dense loud cue shifted to first speech
+
+2
+00:00:04,200 --> 00:00:05,000
+Second dense cue already on speech

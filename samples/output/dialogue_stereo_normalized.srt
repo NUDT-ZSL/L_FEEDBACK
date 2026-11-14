@@ -1,0 +1,11 @@
+1
+00:00:01,000 --> 00:00:02,000
+Opening line inside the leading silence
+
+2
+00:00:04,500 --> 00:00:05,400
+Second line starts inside a short gap
+
+3
+00:00:08,000 --> 00:00:09,000
+Third line already on speech
