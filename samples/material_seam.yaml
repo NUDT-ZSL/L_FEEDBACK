@@ -1,0 +1,16 @@
+resolution: [64, 64]
+tangent_threshold_deg: 5.0
+uv_wrap: error
+view_dir: [0.0, 0.0, 1.0]
+lights:
+  - [0.5, 0.6, 0.8]
+uv_checks:
+  - [0.25, 0.25]
+name: seam_material
+layers:
+  - name: base
+    normal: textures/normal_seam.png
+    base_color: textures/color_base.png
+    roughness: textures/rough_base.png
+    weight: 1.0
+    mode: overlay
