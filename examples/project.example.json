@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "project": {
+    "sample_rate": 48000,
+    "output": "out/mix.wav",
+    "output_channels": 2,
+    "target_lufs": -23.0,
+    "true_peak_dbtp": -1.0,
+    "duration_seconds": 10.0
+  },
+  "tracks": [
+    {
+      "id": "dialogue",
+      "path": "dialogue.wav",
+      "start": 0.25,
+      "gain_db": 0.0,
+      "pan": 0.0,
+      "fade_in": {
+        "start": 0.25,
+        "end": 0.55,
+        "curve": "s_curve"
+      },
+      "fade_out": {
+        "start": 9.3,
+        "end": 9.8,
+        "curve": "s_curve"
+      },
+      "resample_to": 48000
+    },
+    {
+      "id": "music_a",
+      "path": "music_a.wav",
+      "start": 0.0,
+      "gain_db": -8.0,
+      "pan": 0.0
+    },
+    {
+      "id": "music_b",
+      "path": "music_b.wav",
+      "start": 4.0,
+      "gain_db": -8.0,
+      "pan": 0.0
+    }
+  ],
+  "crossfades": [
+    {
+      "from": "music_a",
+      "to": "music_b",
+      "start": 5.0,
+      "end": 7.0,
+      "curve": "equal_power"
+    }
+  ],
+  "limiter": {
+    "attack_ms": 5.0,
+    "release_ms": 120.0,
+    "ratio": 20.0,
+    "lookahead_ms": 7.0,
+    "safety_margin_db": 0.25
+  },
+  "adaptive_gain": {
+    "enabled": true,
+    "threshold_lufs": -23.0,
+    "max_cut_db": 8.0
+  }
+}

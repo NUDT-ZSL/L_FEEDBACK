@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cinemix"
+version = "1.0.0"
+description = "Deterministic offline multitrack dialogue/music/effects mixer with BS.1770 loudness and true-peak limiting"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3"]
+
+[project.scripts]
+cinemix = "cinemix.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cinemix*"]
+
