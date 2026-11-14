@@ -1,0 +1,93 @@
+sample_rate: 48000
+layout: stereo
+global_seed: 20261115
+block_size: 4096
+duration: 5.0
+min_distance: 1.0
+trajectory:
+- time: 0.0
+  position:
+  - 0.0
+  - 0.0
+  - 0.0
+  yaw: 0.0
+- time: 2.0
+  position:
+  - 2.0
+  - 0.0
+  - 0.0
+  yaw: 0.5
+- time: 5.0
+  position:
+  - 5.0
+  - 0.0
+  - 0.0
+  yaw: 1.0
+buses:
+- name: fx
+  gain_db: -1.0
+  limiter: true
+  delay_seconds: 0.1
+  delay_feedback: 0.25
+  route_to: master
+- name: master
+  gain_db: 0.0
+  limiter: true
+events:
+- id: ev_left
+  time: 0.2
+  source: sources/tone_mono.wav
+  position:
+  - -3.0
+  - 2.0
+  - 0.0
+  voice: voice_a
+  seed_offset: 11
+  bus: master
+  gain_curve:
+  - t: 0.0
+    value: -6.0
+  - t: 1.0
+    value: 0.0
+  lowpass_curve:
+  - t: 0.0
+    value: 500.0
+  - t: 1.0
+    value: 12000.0
+- id: ev_right
+  time: 1.5
+  source: sources/tone_mono_880.wav
+  position:
+  - 3.0
+  - -2.0
+  - 0.0
+  voice: voice_b
+  seed_offset: 22
+  bus: fx
+- id: ev_stereo
+  time: 2.5
+  source: sources/tone_stereo.wav
+  position:
+  - 0.0
+  - 4.0
+  - 0.0
+  seed_offset: 33
+  bus: master
+- id: ev_broken
+  time: 3.2
+  source: sources/broken.wav
+  position:
+  - 1.0
+  - 1.0
+  - 0.0
+  seed_offset: 44
+  bus: master
+- id: ev_rate_mismatch
+  time: 4.0
+  source: sources/tone_24k.wav
+  position:
+  - 1.0
+  - -1.0
+  - 0.0
+  seed_offset: 55
+  bus: master

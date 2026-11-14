@@ -1,0 +1,54 @@
+sample_rate: 48000
+layout: '5.1'
+global_seed: 20261115
+block_size: 4096
+duration: 5.0
+min_distance: 1.0
+trajectory:
+- time: 0.0
+  position:
+  - 0.0
+  - 0.0
+  - 0.0
+  yaw: 0.0
+- time: 2.0
+  position:
+  - 2.0
+  - 0.0
+  - 0.0
+  yaw: 0.5
+- time: 5.0
+  position:
+  - 5.0
+  - 0.0
+  - 0.0
+  yaw: 1.0
+buses:
+- name: fx
+  gain_db: -1.0
+  limiter: true
+  delay_seconds: 0.1
+  delay_feedback: 0.25
+  route_to: master
+- name: master
+  gain_db: 0.0
+  limiter: true
+events:
+- id: surround_mono
+  time: 0.3
+  source: sources/tone_mono.wav
+  position:
+  - -2.0
+  - -3.0
+  - 0.0
+  seed_offset: 66
+  bus: master
+- id: surround_downmix
+  time: 1.4
+  source: sources/tone_surround.wav
+  position:
+  - 2.0
+  - 3.0
+  - 0.0
+  seed_offset: 77
+  bus: master
