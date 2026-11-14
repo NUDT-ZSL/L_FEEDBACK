@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+artifacts/
+out/
+snapshots/
+*.wav
+*.snap
+*.npz
+*.tmp
+

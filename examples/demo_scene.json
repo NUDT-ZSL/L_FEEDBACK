@@ -1,0 +1,87 @@
+{
+  "sample_rate": 16000,
+  "duration_seconds": 1.0,
+  "bit_depth": 16,
+  "frame_size": 256,
+  "listener": {
+    "position": [0.0, 0.0, 0.0],
+    "forward": [0.0, 0.0, -1.0],
+    "up": [0.0, 1.0, 0.0]
+  },
+  "master_gain_db": 0.0,
+  "attenuation": {
+    "model": "inverse_distance",
+    "reference_distance": 1.0,
+    "rolloff": 1.0,
+    "min_distance": 0.1,
+    "max_distance": 100.0,
+    "max_gain": 1.0
+  },
+  "occlusion": {
+    "open_cutoff_hz": 12000.0,
+    "closed_cutoff_hz": 900.0
+  },
+  "reverb": {
+    "rt60_seconds": 0.7,
+    "pre_delay_seconds": 0.02,
+    "wet": 0.35,
+    "dry": 1.0,
+    "seed": 11,
+    "damping_hz": 5000.0
+  },
+  "assets": [
+    {
+      "id": "tone_440",
+      "type": "sine",
+      "frequency_hz": 440.0,
+      "amplitude": 0.25,
+      "phase": 0.0,
+      "duration_seconds": 1.0
+    },
+    {
+      "id": "noise_7",
+      "type": "noise",
+      "seed": 7,
+      "amplitude": 0.08,
+      "duration_seconds": 1.0
+    }
+  ],
+  "regions": [
+    {
+      "id": "reverb_zone",
+      "shape": "sphere",
+      "center": [0.0, 0.0, -3.0],
+      "radius": 2.0,
+      "reverb": {
+        "rt60_seconds": 0.8,
+        "pre_delay_seconds": 0.015,
+        "wet": 0.4,
+        "dry": 0.9,
+        "seed": 21
+      },
+      "lowpass": {
+        "cutoff_hz": 6000.0
+      }
+    }
+  ],
+  "emitters": [
+    {
+      "id": "tone_source",
+      "asset": "tone_440",
+      "position": [1.5, 0.0, -2.0],
+      "gain_db": -3.0,
+      "pan": "auto",
+      "occlusion": {
+        "amount": 0.25
+      }
+    },
+    {
+      "id": "noise_source",
+      "asset": "noise_7",
+      "position": [-2.0, 0.0, -5.0],
+      "gain_db": -9.0,
+      "pan": -0.7,
+      "occluded": false
+    }
+  ]
+}
