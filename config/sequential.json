@@ -1,0 +1,56 @@
+{
+  "schema": "radio-pipeline-config-v1",
+  "seed": 7,
+  "audio": {
+    "sample_rate": 48000,
+    "channels": 1,
+    "frame_ms": 20,
+    "duration_ms": 2000,
+    "amplitude": 0.22,
+    "base_frequency_hz": 180.0
+  },
+  "network": {
+    "ordering": "sequential",
+    "reorder_probability": 0.0,
+    "reorder_min_extra_ms": 0.0,
+    "reorder_max_extra_ms": 0.0,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.0,
+    "burst_length": 1,
+    "burst_probability": 0.0,
+    "arrival_jitter": {
+      "distribution": "none",
+      "scale_ms": 0.0,
+      "max_abs_ms": 0.0
+    },
+    "base_latency_ms": 8.0,
+    "corrupt_rate": 0.0,
+    "forced_bursts": [],
+    "forced_late_sequences": [],
+    "forced_corrupt_sequences": []
+  },
+  "jitter_buffer": {
+    "min_delay_ms": 60,
+    "max_delay_ms": 160,
+    "timeout_ms": 240,
+    "fast_consume_step_ms": 20,
+    "conservative_max_delay_ms": 320
+  },
+  "plc": {
+    "strategy": "adaptive",
+    "fade_ms": 6.0,
+    "pitch_min_hz": 80.0,
+    "pitch_max_hz": 500.0,
+    "pitch_decay": 0.94,
+    "isolated_decay": 0.70,
+    "comfort_noise_gain": 0.22,
+    "conservative_aggression": 0.45
+  },
+  "output": {
+    "wav_name": "clean.wav",
+    "ogg_name": "clean.ogg",
+    "opus_bitrate_bps": 64000,
+    "loudness_tolerance_lufs": 1.0,
+    "duration_tolerance_samples": 1
+  }
+}
