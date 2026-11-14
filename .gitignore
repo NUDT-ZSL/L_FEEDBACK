@@ -1,0 +1,8 @@
+/build/
+/build-*/
+/.local-deps/
+/*.deb
+/snapshots/*.dgsnap
+/artifacts/*.png
+/artifacts/corrupt/
+/artifacts/validation_run/

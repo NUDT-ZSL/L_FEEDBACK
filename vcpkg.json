@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "deferred-snapshot",
+  "version": "1.0.0",
+  "dependencies": [
+    "glfw3",
+    "glad",
+    "libpng",
+    "nlohmann-json"
+  ]
+}

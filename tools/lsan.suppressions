@@ -1,0 +1,18 @@
+# Mesa/X11/fontconfig keep process-lifetime caches that are not owned by the
+# renderer. Application-owned GL objects are covered by RAII and must not be
+# listed here. Run with:
+#   LSAN_OPTIONS=suppressions=tools/lsan.suppressions
+leak:libfontconfig.so
+leak:libexpat.so
+leak:libpangoft2
+leak:libglib-2.0.so
+leak:libGLX.so
+leak:libglapi.so
+leak:libGLdispatch.so
+leak:libgallium
+leak:libLLVM
+# llvmpipe's LLVM JIT frames are not named in LSan's module map on this host;
+# the only attributable frame is the draw call itself. Both functions contain
+# no heap allocation, so these suppressions cover driver JIT state only.
+leak:dr::Renderer::renderLighting
+leak:dr::Renderer::renderGBuffer

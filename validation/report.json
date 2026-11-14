@@ -1,0 +1,1288 @@
+{
+  "checks": {
+    "add_light": {
+      "header": {
+        "actual_file_size": 21123299,
+        "directional_lights": 8,
+        "file_size": 21123299,
+        "format_version": 1,
+        "height": 600,
+        "light_version": 2,
+        "magic": "DGSNAP01",
+        "point_lights": 65,
+        "width": 800
+      },
+      "new_snapshot": "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting.v2.dgsnap",
+      "parent": "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting.v1.dgsnap",
+      "parent_hash_unchanged": true
+    },
+    "address_sanitizer": {
+      "binary": "/home/liang/feedback/uid78/build-asan/deferred_renderer",
+      "cases": {
+        "corrupt_fallback": {
+          "image_comparison": {
+            "different_pixels": 0,
+            "event": "image_comparison",
+            "height": 600,
+            "max_channel_difference": 0,
+            "mean_absolute_difference": 0.0,
+            "passed": true,
+            "reference": "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+            "threshold": 1,
+            "width": 800
+          },
+          "returncode": 0,
+          "sanitizer_errors": 0
+        },
+        "snapshot_restore": {
+          "image_comparison": null,
+          "returncode": 0,
+          "sanitizer_errors": 0
+        },
+        "snapshot_save": {
+          "image_comparison": null,
+          "returncode": 0,
+          "sanitizer_errors": 0
+        }
+      },
+      "suppressions": "tools/lsan.suppressions (third-party Mesa/fontconfig caches only)"
+    },
+    "cli": {
+      "help_exit_code": 0,
+      "invalid_code": "ERR_ARGUMENTS",
+      "invalid_exit_code": 2
+    },
+    "corruption_fallback": {
+      "checksum": {
+        "code": "ERR_SNAPSHOT_CORRUPT",
+        "fallback": "realtime",
+        "format_version": 1,
+        "image_max_channel_difference": 0,
+        "light_version": 1
+      },
+      "missing": {
+        "code": "ERR_SNAPSHOT_NOT_FOUND",
+        "fallback": "realtime",
+        "format_version": 0,
+        "image_max_channel_difference": 0,
+        "light_version": 0
+      },
+      "truncated": {
+        "code": "ERR_SNAPSHOT_CORRUPT",
+        "fallback": "realtime",
+        "format_version": 1,
+        "image_max_channel_difference": 0,
+        "light_version": 1
+      },
+      "version": {
+        "code": "ERR_SNAPSHOT_VERSION",
+        "fallback": "realtime",
+        "format_version": 2,
+        "image_max_channel_difference": 0,
+        "light_version": 1
+      }
+    },
+    "performance": {
+      "cpu_ratio": 0.00808200503483208,
+      "gpu_ratio": 0.07575276468456942,
+      "image_max_channel_difference": 0,
+      "lights": 72,
+      "realtime": {
+        "cpu_ms_median": 110.209038,
+        "gpu_ms_median": 117.79644
+      },
+      "snapshot_restore": {
+        "cpu_ms_median": 0.89071,
+        "gpu_ms_median": 8.923406
+      },
+      "threshold": 0.8
+    },
+    "remove_light": {
+      "header": {
+        "actual_file_size": 21123256,
+        "directional_lights": 8,
+        "file_size": 21123256,
+        "format_version": 1,
+        "height": 600,
+        "light_version": 3,
+        "magic": "DGSNAP01",
+        "point_lights": 64,
+        "width": 800
+      },
+      "new_snapshot": "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting.v3.dgsnap",
+      "parent": "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting.v2.dgsnap",
+      "parent_hash_unchanged": true,
+      "restored_image_max_channel_difference": 0
+    },
+    "restore_pixel_match": {
+      "different_pixels": 0,
+      "max_channel_difference": 0,
+      "passed": true
+    },
+    "snapshot_saved": {
+      "header": {
+        "actual_file_size": 21123256,
+        "directional_lights": 8,
+        "file_size": 21123256,
+        "format_version": 1,
+        "height": 600,
+        "light_version": 1,
+        "magic": "DGSNAP01",
+        "point_lights": 64,
+        "width": 800
+      },
+      "path": "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting.v1.dgsnap",
+      "sha256": "a3d502bb6441907cc199dc9b01848f82cb8f755e6c59b21d9ddca717833ffe8d"
+    }
+  },
+  "commands": [
+    {
+      "arguments": [
+        "--snapshot-save",
+        "--scene",
+        "/home/liang/feedback/uid78/sample_scene.json",
+        "--snapshot",
+        "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting",
+        "--output",
+        "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+        "--frames",
+        "3",
+        "--warmup",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": [],
+      "stdout": [
+        {
+          "event": "startup",
+          "height": 600,
+          "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+          "version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+          "width": 800
+        },
+        {
+          "cpu_ms": 106.128474,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 1,
+          "gpu_ms": 113.336444,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 98.381711,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 2,
+          "gpu_ms": 107.39465,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 98.36121,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 3,
+          "gpu_ms": 106.508758,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms_mean": 100.95713166666667,
+          "cpu_ms_median": 98.381711,
+          "directional_lights": 8,
+          "event": "summary",
+          "frames": 3,
+          "gpu_ms_mean": 109.07995066666666,
+          "gpu_ms_median": 107.39465,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "event": "image_written",
+          "height": 600,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+          "width": 800
+        },
+        {
+          "directional_lights": 8,
+          "event": "snapshot_saved",
+          "format_version": 1,
+          "height": 600,
+          "light_version": 1,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting.v1.dgsnap",
+          "point_lights": 64,
+          "width": 800
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "--snapshot-load",
+        "--scene",
+        "/home/liang/feedback/uid78/sample_scene.json",
+        "--snapshot",
+        "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting.v1.dgsnap",
+        "--output",
+        "/home/liang/feedback/uid78/artifacts/validation_run/restore.png",
+        "--compare",
+        "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+        "--frames",
+        "3",
+        "--warmup",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": [],
+      "stdout": [
+        {
+          "event": "startup",
+          "height": 600,
+          "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+          "version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+          "width": 800
+        },
+        {
+          "cpu_ms": 0.625953,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 1,
+          "gpu_ms": 10.625328,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 0.622788,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 2,
+          "gpu_ms": 9.336772,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 0.693067,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 3,
+          "gpu_ms": 8.787843,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms_mean": 0.6472693333333334,
+          "cpu_ms_median": 0.625953,
+          "directional_lights": 8,
+          "event": "summary",
+          "frames": 3,
+          "gpu_ms_mean": 9.583314333333334,
+          "gpu_ms_median": 9.336772,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "event": "image_written",
+          "height": 600,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/restore.png",
+          "width": 800
+        },
+        {
+          "different_pixels": 0,
+          "event": "image_comparison",
+          "height": 600,
+          "max_channel_difference": 0,
+          "mean_absolute_difference": 0.0,
+          "passed": true,
+          "reference": "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+          "threshold": 1,
+          "width": 800
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "--snapshot-load",
+        "--scene",
+        "/home/liang/feedback/uid78/sample_scene.json",
+        "--snapshot",
+        "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting.v1.dgsnap",
+        "--add-light",
+        "p64:point:0,3.2,0:1.0,0.35,0.15:4.0:6.0",
+        "--output",
+        "/home/liang/feedback/uid78/artifacts/validation_run/added_light.png",
+        "--frames",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": [],
+      "stdout": [
+        {
+          "event": "startup",
+          "height": 600,
+          "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+          "version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+          "width": 800
+        },
+        {
+          "cpu_ms": 6.41876,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 1,
+          "gpu_ms": 14.233002,
+          "light_version": 2,
+          "mode": "snapshot_restore",
+          "point_lights": 65,
+          "total_lights": 73
+        },
+        {
+          "cpu_ms_mean": 6.41876,
+          "cpu_ms_median": 6.41876,
+          "directional_lights": 8,
+          "event": "summary",
+          "frames": 1,
+          "gpu_ms_mean": 14.233002,
+          "gpu_ms_median": 14.233002,
+          "light_version": 2,
+          "mode": "snapshot_restore",
+          "point_lights": 65,
+          "total_lights": 73
+        },
+        {
+          "event": "image_written",
+          "height": 600,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/added_light.png",
+          "width": 800
+        },
+        {
+          "directional_lights": 8,
+          "event": "snapshot_saved",
+          "format_version": 1,
+          "height": 600,
+          "light_version": 2,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting.v2.dgsnap",
+          "point_lights": 65,
+          "width": 800
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "--snapshot-load",
+        "--scene",
+        "/home/liang/feedback/uid78/sample_scene.json",
+        "--snapshot",
+        "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting.v2.dgsnap",
+        "--remove-light",
+        "p64",
+        "--output",
+        "/home/liang/feedback/uid78/artifacts/validation_run/removed_light.png",
+        "--compare",
+        "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+        "--frames",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": [],
+      "stdout": [
+        {
+          "event": "startup",
+          "height": 600,
+          "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+          "version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+          "width": 800
+        },
+        {
+          "cpu_ms": 4.704214,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 1,
+          "gpu_ms": 11.387123,
+          "light_version": 3,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms_mean": 4.704214,
+          "cpu_ms_median": 4.704214,
+          "directional_lights": 8,
+          "event": "summary",
+          "frames": 1,
+          "gpu_ms_mean": 11.387123,
+          "gpu_ms_median": 11.387123,
+          "light_version": 3,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "event": "image_written",
+          "height": 600,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/removed_light.png",
+          "width": 800
+        },
+        {
+          "different_pixels": 0,
+          "event": "image_comparison",
+          "height": 600,
+          "max_channel_difference": 0,
+          "mean_absolute_difference": 0.0,
+          "passed": true,
+          "reference": "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+          "threshold": 1,
+          "width": 800
+        },
+        {
+          "directional_lights": 8,
+          "event": "snapshot_saved",
+          "format_version": 1,
+          "height": 600,
+          "light_version": 3,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting.v3.dgsnap",
+          "point_lights": 64,
+          "width": 800
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "--help"
+      ],
+      "returncode": 0,
+      "stderr": [],
+      "stdout": []
+    },
+    {
+      "arguments": [
+        "--render",
+        "--add-light",
+        "p64:point:0,1,0:1,1,1:1:2"
+      ],
+      "returncode": 2,
+      "stderr": [
+        {
+          "code": "ERR_ARGUMENTS",
+          "event": "arguments",
+          "level": "error",
+          "message": "--add-light and --remove-light require --snapshot-load"
+        }
+      ],
+      "stdout": []
+    },
+    {
+      "arguments": [
+        "--snapshot-load",
+        "--scene",
+        "/home/liang/feedback/uid78/sample_scene.json",
+        "--snapshot",
+        "/home/liang/feedback/uid78/artifacts/validation_run/corrupt/checksum.dgsnap",
+        "--output",
+        "/home/liang/feedback/uid78/artifacts/validation_run/fallback_checksum.png",
+        "--compare",
+        "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+        "--frames",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": [
+        {
+          "code": "ERR_SNAPSHOT_CORRUPT",
+          "event": "snapshot_load",
+          "fallback": "realtime",
+          "format_version": 1,
+          "level": "error",
+          "light_version": 1,
+          "message": "snapshot payload checksum mismatch",
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/corrupt/checksum.dgsnap",
+          "supported_format_version": 1
+        }
+      ],
+      "stdout": [
+        {
+          "event": "startup",
+          "height": 600,
+          "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+          "version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+          "width": 800
+        },
+        {
+          "cpu_ms": 105.025457,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 1,
+          "gpu_ms": 112.176836,
+          "light_version": 1,
+          "mode": "realtime_fallback",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms_mean": 105.025457,
+          "cpu_ms_median": 105.025457,
+          "directional_lights": 8,
+          "event": "summary",
+          "frames": 1,
+          "gpu_ms_mean": 112.176836,
+          "gpu_ms_median": 112.176836,
+          "light_version": 1,
+          "mode": "realtime_fallback",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "event": "image_written",
+          "height": 600,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/fallback_checksum.png",
+          "width": 800
+        },
+        {
+          "different_pixels": 0,
+          "event": "image_comparison",
+          "height": 600,
+          "max_channel_difference": 0,
+          "mean_absolute_difference": 0.0,
+          "passed": true,
+          "reference": "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+          "threshold": 1,
+          "width": 800
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "--snapshot-load",
+        "--scene",
+        "/home/liang/feedback/uid78/sample_scene.json",
+        "--snapshot",
+        "/home/liang/feedback/uid78/artifacts/validation_run/corrupt/truncated.dgsnap",
+        "--output",
+        "/home/liang/feedback/uid78/artifacts/validation_run/fallback_truncated.png",
+        "--compare",
+        "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+        "--frames",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": [
+        {
+          "code": "ERR_SNAPSHOT_CORRUPT",
+          "event": "snapshot_load",
+          "fallback": "realtime",
+          "format_version": 1,
+          "level": "error",
+          "light_version": 1,
+          "message": "snapshot file size metadata mismatch",
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/corrupt/truncated.dgsnap",
+          "supported_format_version": 1
+        }
+      ],
+      "stdout": [
+        {
+          "event": "startup",
+          "height": 600,
+          "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+          "version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+          "width": 800
+        },
+        {
+          "cpu_ms": 135.626723,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 1,
+          "gpu_ms": 143.532174,
+          "light_version": 1,
+          "mode": "realtime_fallback",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms_mean": 135.626723,
+          "cpu_ms_median": 135.626723,
+          "directional_lights": 8,
+          "event": "summary",
+          "frames": 1,
+          "gpu_ms_mean": 143.532174,
+          "gpu_ms_median": 143.532174,
+          "light_version": 1,
+          "mode": "realtime_fallback",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "event": "image_written",
+          "height": 600,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/fallback_truncated.png",
+          "width": 800
+        },
+        {
+          "different_pixels": 0,
+          "event": "image_comparison",
+          "height": 600,
+          "max_channel_difference": 0,
+          "mean_absolute_difference": 0.0,
+          "passed": true,
+          "reference": "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+          "threshold": 1,
+          "width": 800
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "--snapshot-load",
+        "--scene",
+        "/home/liang/feedback/uid78/sample_scene.json",
+        "--snapshot",
+        "/home/liang/feedback/uid78/artifacts/validation_run/corrupt/version.dgsnap",
+        "--output",
+        "/home/liang/feedback/uid78/artifacts/validation_run/fallback_version.png",
+        "--compare",
+        "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+        "--frames",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": [
+        {
+          "code": "ERR_SNAPSHOT_VERSION",
+          "event": "snapshot_load",
+          "fallback": "realtime",
+          "format_version": 2,
+          "level": "error",
+          "light_version": 1,
+          "message": "snapshot format version is unsupported",
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/corrupt/version.dgsnap",
+          "supported_format_version": 1
+        }
+      ],
+      "stdout": [
+        {
+          "event": "startup",
+          "height": 600,
+          "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+          "version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+          "width": 800
+        },
+        {
+          "cpu_ms": 110.794916,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 1,
+          "gpu_ms": 119.529211,
+          "light_version": 1,
+          "mode": "realtime_fallback",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms_mean": 110.794916,
+          "cpu_ms_median": 110.794916,
+          "directional_lights": 8,
+          "event": "summary",
+          "frames": 1,
+          "gpu_ms_mean": 119.529211,
+          "gpu_ms_median": 119.529211,
+          "light_version": 1,
+          "mode": "realtime_fallback",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "event": "image_written",
+          "height": 600,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/fallback_version.png",
+          "width": 800
+        },
+        {
+          "different_pixels": 0,
+          "event": "image_comparison",
+          "height": 600,
+          "max_channel_difference": 0,
+          "mean_absolute_difference": 0.0,
+          "passed": true,
+          "reference": "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+          "threshold": 1,
+          "width": 800
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "--snapshot-load",
+        "--scene",
+        "/home/liang/feedback/uid78/sample_scene.json",
+        "--snapshot",
+        "/home/liang/feedback/uid78/artifacts/validation_run/corrupt/missing.dgsnap",
+        "--output",
+        "/home/liang/feedback/uid78/artifacts/validation_run/fallback_missing.png",
+        "--compare",
+        "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+        "--frames",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": [
+        {
+          "code": "ERR_SNAPSHOT_NOT_FOUND",
+          "event": "snapshot_load",
+          "fallback": "realtime",
+          "format_version": 0,
+          "level": "error",
+          "light_version": 0,
+          "message": "cannot open snapshot file",
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/corrupt/missing.dgsnap",
+          "supported_format_version": 1
+        }
+      ],
+      "stdout": [
+        {
+          "event": "startup",
+          "height": 600,
+          "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+          "version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+          "width": 800
+        },
+        {
+          "cpu_ms": 135.098871,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 1,
+          "gpu_ms": 142.73855,
+          "light_version": 1,
+          "mode": "realtime_fallback",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms_mean": 135.098871,
+          "cpu_ms_median": 135.098871,
+          "directional_lights": 8,
+          "event": "summary",
+          "frames": 1,
+          "gpu_ms_mean": 142.73855,
+          "gpu_ms_median": 142.73855,
+          "light_version": 1,
+          "mode": "realtime_fallback",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "event": "image_written",
+          "height": 600,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/fallback_missing.png",
+          "width": 800
+        },
+        {
+          "different_pixels": 0,
+          "event": "image_comparison",
+          "height": 600,
+          "max_channel_difference": 0,
+          "mean_absolute_difference": 0.0,
+          "passed": true,
+          "reference": "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+          "threshold": 1,
+          "width": 800
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "--render",
+        "--scene",
+        "/home/liang/feedback/uid78/sample_scene.json",
+        "--output",
+        "/home/liang/feedback/uid78/artifacts/validation_run/perf_live.png",
+        "--frames",
+        "7",
+        "--warmup",
+        "2"
+      ],
+      "returncode": 0,
+      "stderr": [],
+      "stdout": [
+        {
+          "event": "startup",
+          "height": 600,
+          "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+          "version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+          "width": 800
+        },
+        {
+          "cpu_ms": 121.876901,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 1,
+          "gpu_ms": 131.560455,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 110.079674,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 2,
+          "gpu_ms": 117.79644,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 117.773374,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 3,
+          "gpu_ms": 125.357871,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 110.420692,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 4,
+          "gpu_ms": 119.167974,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 101.316026,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 5,
+          "gpu_ms": 108.907837,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 110.209038,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 6,
+          "gpu_ms": 117.606288,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 106.951918,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 7,
+          "gpu_ms": 114.767875,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms_mean": 111.23251757142855,
+          "cpu_ms_median": 110.209038,
+          "directional_lights": 8,
+          "event": "summary",
+          "frames": 7,
+          "gpu_ms_mean": 119.30924857142857,
+          "gpu_ms_median": 117.79644,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "event": "image_written",
+          "height": 600,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/perf_live.png",
+          "width": 800
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "--snapshot-load",
+        "--scene",
+        "/home/liang/feedback/uid78/sample_scene.json",
+        "--snapshot",
+        "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting.v1.dgsnap",
+        "--output",
+        "/home/liang/feedback/uid78/artifacts/validation_run/perf_snapshot.png",
+        "--compare",
+        "/home/liang/feedback/uid78/artifacts/validation_run/perf_live.png",
+        "--frames",
+        "7",
+        "--warmup",
+        "2"
+      ],
+      "returncode": 0,
+      "stderr": [],
+      "stdout": [
+        {
+          "event": "startup",
+          "height": 600,
+          "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+          "version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+          "width": 800
+        },
+        {
+          "cpu_ms": 0.776436,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 1,
+          "gpu_ms": 11.430594,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 0.711862,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 2,
+          "gpu_ms": 11.107711,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 0.89071,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 3,
+          "gpu_ms": 8.669333,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 0.716291,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 4,
+          "gpu_ms": 8.341006,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 1.131207,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 5,
+          "gpu_ms": 9.680574,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 1.091764,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 6,
+          "gpu_ms": 8.923406,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms": 0.968899,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 7,
+          "gpu_ms": 8.719012,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms_mean": 0.898167,
+          "cpu_ms_median": 0.89071,
+          "directional_lights": 8,
+          "event": "summary",
+          "frames": 7,
+          "gpu_ms_mean": 9.553090857142857,
+          "gpu_ms_median": 8.923406,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "event": "image_written",
+          "height": 600,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/perf_snapshot.png",
+          "width": 800
+        },
+        {
+          "different_pixels": 0,
+          "event": "image_comparison",
+          "height": 600,
+          "max_channel_difference": 0,
+          "mean_absolute_difference": 0.0,
+          "passed": true,
+          "reference": "/home/liang/feedback/uid78/artifacts/validation_run/perf_live.png",
+          "threshold": 1,
+          "width": 800
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "--snapshot-save",
+        "--snapshot",
+        "/home/liang/feedback/uid78/artifacts/validation_run/asan_snapshots/lighting",
+        "--output",
+        "/home/liang/feedback/uid78/artifacts/validation_run/asan_live.png",
+        "--frames",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": [],
+      "stdout": [
+        {
+          "event": "startup",
+          "height": 600,
+          "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+          "version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+          "width": 800
+        },
+        {
+          "cpu_ms": 137.611756,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 1,
+          "gpu_ms": 145.061919,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms_mean": 137.611756,
+          "cpu_ms_median": 137.611756,
+          "directional_lights": 8,
+          "event": "summary",
+          "frames": 1,
+          "gpu_ms_mean": 145.061919,
+          "gpu_ms_median": 145.061919,
+          "light_version": 1,
+          "mode": "realtime",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "event": "image_written",
+          "height": 600,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/asan_live.png",
+          "width": 800
+        },
+        {
+          "directional_lights": 8,
+          "event": "snapshot_saved",
+          "format_version": 1,
+          "height": 600,
+          "light_version": 1,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/asan_snapshots/lighting.v1.dgsnap",
+          "point_lights": 64,
+          "width": 800
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "--snapshot-load",
+        "--snapshot",
+        "/home/liang/feedback/uid78/artifacts/validation_run/snapshots/lighting.v1.dgsnap",
+        "--output",
+        "/home/liang/feedback/uid78/artifacts/validation_run/asan_restore.png",
+        "--frames",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": [],
+      "stdout": [
+        {
+          "event": "startup",
+          "height": 600,
+          "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+          "version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+          "width": 800
+        },
+        {
+          "cpu_ms": 5.316288,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 1,
+          "gpu_ms": 12.351246,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms_mean": 5.316288,
+          "cpu_ms_median": 5.316288,
+          "directional_lights": 8,
+          "event": "summary",
+          "frames": 1,
+          "gpu_ms_mean": 12.351246,
+          "gpu_ms_median": 12.351246,
+          "light_version": 1,
+          "mode": "snapshot_restore",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "event": "image_written",
+          "height": 600,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/asan_restore.png",
+          "width": 800
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "--snapshot-load",
+        "--snapshot",
+        "/home/liang/feedback/uid78/artifacts/validation_run/corrupt/checksum.dgsnap",
+        "--output",
+        "/home/liang/feedback/uid78/artifacts/validation_run/asan_fallback.png",
+        "--compare",
+        "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+        "--frames",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": [
+        {
+          "code": "ERR_SNAPSHOT_CORRUPT",
+          "event": "snapshot_load",
+          "fallback": "realtime",
+          "format_version": 1,
+          "level": "error",
+          "light_version": 1,
+          "message": "snapshot payload checksum mismatch",
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/corrupt/checksum.dgsnap",
+          "supported_format_version": 1
+        }
+      ],
+      "stdout": [
+        {
+          "event": "startup",
+          "height": 600,
+          "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+          "version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+          "width": 800
+        },
+        {
+          "cpu_ms": 105.538715,
+          "directional_lights": 8,
+          "event": "frame",
+          "frame": 1,
+          "gpu_ms": 112.713554,
+          "light_version": 1,
+          "mode": "realtime_fallback",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "cpu_ms_mean": 105.538715,
+          "cpu_ms_median": 105.538715,
+          "directional_lights": 8,
+          "event": "summary",
+          "frames": 1,
+          "gpu_ms_mean": 112.713554,
+          "gpu_ms_median": 112.713554,
+          "light_version": 1,
+          "mode": "realtime_fallback",
+          "point_lights": 64,
+          "total_lights": 72
+        },
+        {
+          "event": "image_written",
+          "height": 600,
+          "path": "/home/liang/feedback/uid78/artifacts/validation_run/asan_fallback.png",
+          "width": 800
+        },
+        {
+          "different_pixels": 0,
+          "event": "image_comparison",
+          "height": 600,
+          "max_channel_difference": 0,
+          "mean_absolute_difference": 0.0,
+          "passed": true,
+          "reference": "/home/liang/feedback/uid78/artifacts/validation_run/live.png",
+          "threshold": 1,
+          "width": 800
+        }
+      ]
+    }
+  ],
+  "scene": "/home/liang/feedback/uid78/sample_scene.json",
+  "scene_sha256": "47ed19a5b1a1664d1d948465fe9efdc5d9b61d4dcd8ab99b702315d895683a05",
+  "snapshot_headers": {
+    "lighting.v1.dgsnap": {
+      "actual_file_size": 21123256,
+      "directional_lights": 8,
+      "file_size": 21123256,
+      "format_version": 1,
+      "height": 600,
+      "light_version": 1,
+      "magic": "DGSNAP01",
+      "point_lights": 64,
+      "width": 800
+    },
+    "lighting.v2.dgsnap": {
+      "actual_file_size": 21123299,
+      "directional_lights": 8,
+      "file_size": 21123299,
+      "format_version": 1,
+      "height": 600,
+      "light_version": 2,
+      "magic": "DGSNAP01",
+      "point_lights": 65,
+      "width": 800
+    },
+    "lighting.v3.dgsnap": {
+      "actual_file_size": 21123256,
+      "directional_lights": 8,
+      "file_size": 21123256,
+      "format_version": 1,
+      "height": 600,
+      "light_version": 3,
+      "magic": "DGSNAP01",
+      "point_lights": 64,
+      "width": 800
+    }
+  }
+}
