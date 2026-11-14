@@ -1,0 +1,9 @@
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/render_data/
+/out/
+/.vs/
+*.user
+*.suo
+

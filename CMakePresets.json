@@ -1,0 +1,57 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "windows-vcpkg",
+      "displayName": "Windows x64 + vcpkg",
+      "generator": "Visual Studio 17 2022",
+      "architecture": "x64",
+      "binaryDir": "${sourceDir}/build/windows",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "CHARACTER_RENDER_OPENGL": "ON",
+        "CHARACTER_RENDER_TESTS": "ON"
+      }
+    },
+    {
+      "name": "linux-cpu",
+      "displayName": "Linux CPU reference backend",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/linux",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CHARACTER_RENDER_OPENGL": "OFF",
+        "CHARACTER_RENDER_TESTS": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "windows-release",
+      "configurePreset": "windows-vcpkg",
+      "configuration": "Release"
+    },
+    {
+      "name": "linux-release",
+      "configurePreset": "linux-cpu"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "windows-release",
+      "configurePreset": "windows-vcpkg",
+      "configuration": "Release",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "linux-release",
+      "configurePreset": "linux-cpu",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}
+

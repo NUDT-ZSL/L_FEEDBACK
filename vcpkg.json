@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "character-layered-renderer",
+  "version": "1.0.0",
+  "description": "Deterministic layered-material deferred renderer with versioned light snapshots",
+  "dependencies": [
+    "glfw3",
+    "glm",
+    "stb",
+    "nlohmann-json"
+  ],
+  "builtin-baseline": "4702e381dbbd9b54d3f7e1eb565cd8981c1814cd"
+}
+
