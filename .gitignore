@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+*.staging/
+artifacts/accept_*/
+artifacts/acceptance_report.txt
+.pytest_cache/
