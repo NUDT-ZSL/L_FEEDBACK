@@ -1,0 +1,10 @@
+{
+  "render": {
+    "width": 320,
+    "height": 180
+  },
+  "volumetric": {
+    "steps": 96
+  }
+}
+

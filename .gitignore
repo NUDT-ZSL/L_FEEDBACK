@@ -1,0 +1,5 @@
+build/
+build_gpu/
+artifacts/test_offline/
+*.user
+.vs/

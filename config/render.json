@@ -1,0 +1,26 @@
+{
+  "render": {
+    "width": 640,
+    "height": 360,
+    "offscreenSamples": 1,
+    "maxFrames": 0
+  },
+  "volumetric": {
+    "enabled": true,
+    "steps": 28,
+    "densityScale": 0.11,
+    "maxDistance": 34.0,
+    "noiseScale": 0.19,
+    "absorption": 1.15,
+    "scattering": 0.85
+  },
+  "transparent": {
+    "sortingEnabled": true,
+    "exactSortLimit": 1024,
+    "bucketCount": 2048
+  },
+  "lights": {
+    "maxLights": 8
+  }
+}
+
