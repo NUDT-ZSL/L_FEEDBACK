@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skin-bake"
+version = "1.0.0"
+description = "Deterministic offline baker for skinned normal-space displacement curves"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+viewer = [
+  "PyOpenGL>=3.1.6",
+]
+test = [
+  "pytest>=8",
+]
+
+[project.scripts]
+skin-bake = "skin_bake.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+

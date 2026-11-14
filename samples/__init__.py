@@ -1,0 +1,2 @@
+"""Deterministic sample scene generators."""
+
