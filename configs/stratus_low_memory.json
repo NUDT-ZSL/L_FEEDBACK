@@ -1,0 +1,43 @@
+{
+  "outputDir": "artifacts/stratus_low_memory",
+  "outputName": "frame",
+  "width": 640,
+  "height": 360,
+  "startFrame": 0,
+  "endFrame": 2,
+  "seed": 424242,
+  "cloudType": "stratus",
+  "renderScale": 2,
+  "maxSteps": 64,
+  "lightSteps": 5,
+  "async": true,
+  "threads": 4,
+  "camera": {
+    "fovDeg": 52,
+    "near": 0.05,
+    "far": 100,
+    "orbit": {
+      "enabled": true,
+      "center": [0.5, 0.47, 0.5],
+      "radius": 2.25,
+      "height": 1.05,
+      "startDegrees": 20,
+      "degreesPerFrame": 0.8
+    }
+  },
+  "sun": {
+    "direction": [0.55, 0.72, 0.18],
+    "color": [1.0, 0.93, 0.82],
+    "ambient": 0.18
+  },
+  "memory": {
+    "availableMB": 40
+  },
+  "snapshot": {
+    "version": 2,
+    "savePath": "artifacts/stratus_low_memory/snapshot.cld",
+    "saveEveryFrames": 1,
+    "stopAfterSave": false
+  }
+}
+

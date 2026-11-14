@@ -1,0 +1,50 @@
+{
+  "outputDir": "artifacts/full_hd_quality",
+  "outputName": "frame",
+  "width": 1280,
+  "height": 720,
+  "startFrame": 0,
+  "endFrame": 1,
+  "seed": 1337,
+  "cloudType": "cumulus",
+  "renderScale": 2,
+  "maxSteps": 64,
+  "lightSteps": 5,
+  "densityExtinction": 8.0,
+  "lightExtinction": 10.0,
+  "exposure": 1.15,
+  "maxHistoryLength": 8,
+  "async": true,
+  "threads": 4,
+  "camera": {
+    "position": [1.85, 1.2, 1.85],
+    "target": [0.5, 0.47, 0.5],
+    "up": [0, 1, 0],
+    "fovDeg": 50,
+    "near": 0.05,
+    "far": 100,
+    "orbit": {
+      "enabled": false
+    }
+  },
+  "sun": {
+    "direction": [0.45, 0.82, 0.25],
+    "color": [1.0, 0.95, 0.86],
+    "ambient": 0.16,
+    "degreesPerFrame": 0.0
+  },
+  "memory": {
+    "availableMB": 512
+  },
+  "snapshot": {
+    "version": 2,
+    "savePath": "artifacts/full_hd_quality/snapshot.cld",
+    "saveEveryFrames": 1,
+    "stopAfterSave": false
+  },
+  "quality": {
+    "compareAgainstFullResolution": true,
+    "writeFullResolutionReference": true
+  }
+}
+

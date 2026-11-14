@@ -1,0 +1,44 @@
+{
+  "outputDir": "artifacts/temporal_demo",
+  "outputName": "frame",
+  "width": 640,
+  "height": 360,
+  "startFrame": 0,
+  "endFrame": 5,
+  "seed": 1337,
+  "cloudType": "cumulus",
+  "renderScale": 2,
+  "maxSteps": 64,
+  "lightSteps": 5,
+  "maxHistoryLength": 8,
+  "async": true,
+  "threads": 4,
+  "camera": {
+    "fovDeg": 50,
+    "near": 0.05,
+    "far": 100,
+    "orbit": {
+      "enabled": true,
+      "center": [0.5, 0.47, 0.5],
+      "radius": 2.35,
+      "height": 0.95,
+      "startDegrees": 35,
+      "degreesPerFrame": 1.1
+    }
+  },
+  "sun": {
+    "direction": [0.45, 0.82, 0.25],
+    "color": [1.0, 0.95, 0.86],
+    "ambient": 0.16
+  },
+  "memory": {
+    "availableMB": 512
+  },
+  "snapshot": {
+    "version": 2,
+    "savePath": "artifacts/temporal_demo/snapshot.cld",
+    "saveEveryFrames": 1,
+    "stopAfterSave": false
+  }
+}
+
