@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "immersive-audio"
+version = "1.0.0"
+description = "Deterministic offline object-based panoramic audio pipeline"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.24",
+  "soundfile>=0.12",
+]
+
+[project.scripts]
+immersive-audio = "immersive_audio.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["immersive_audio*"]

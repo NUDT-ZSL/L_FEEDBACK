@@ -1,0 +1,41 @@
+from __future__ import annotations
+
+from dataclasses import dataclass
+
+
+@dataclass(eq=False)
+class PipelineError(Exception):
+    code: str
+    message: str
+    exit_status: int = 2
+
+    def __str__(self) -> str:
+        return f"{self.code}: {self.message}"
+
+
+SCENE_NOT_FOUND = "E1001"
+SCENE_INVALID_JSON = "E1002"
+SCENE_SCHEMA = "E1003"
+SCENE_SAMPLE_RATE = "E1004"
+SCENE_FRAME_LENGTH = "E1005"
+SCENE_OBJECT_COUNT = "E1006"
+SCENE_TIMESTAMPS = "E1007"
+SCENE_DURATION = "E1008"
+SCENE_DUPLICATE_ID = "E1009"
+
+AUDIO_NOT_FOUND = "E2001"
+AUDIO_DECODE = "E2002"
+AUDIO_FORMAT = "E2003"
+AUDIO_IO = "E2004"
+
+CONTAINER_MAGIC = "E3001"
+CONTAINER_VERSION = "E3002"
+CONTAINER_TRUNCATED = "E3003"
+CONTAINER_LAYOUT = "E3004"
+CONTAINER_CHECKSUM = "E3005"
+CONTAINER_COMMENT = "E3006"
+
+RENDER_IO = "E4001"
+RENDER_INVALID = "E4002"
+
+PIPELINE_UNEXPECTED = "E9999"
