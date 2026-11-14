@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voxel-gi-sh9"
+version = "1.0.0"
+description = "Deterministic voxelized SH-9 irradiance cache baker"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22"]
+
+[project.scripts]
+voxel-gi = "voxel_gi.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["voxel_gi*"]
