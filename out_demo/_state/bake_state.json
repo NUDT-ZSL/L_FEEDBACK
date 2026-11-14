@@ -1,0 +1,726 @@
+{
+ "config_hash": "cbd4c1be9aa754abe15ccbfaf0d8d24d8eba70836fe59ceae006ec6a8854db85",
+ "tasks": {
+  "0,0,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.33797310334961145,
+    "mean_angle_deg": 0.17242904921646326,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_000_000/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_000_000/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "0,0,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3377273358007123,
+    "mean_angle_deg": 0.1700695638371083,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_000_000/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_000_000/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "0,0,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3033800336716088,
+    "mean_angle_deg": 0.17470606905441824,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_000_000/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_000_000/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "0,1,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3310966731530768,
+    "mean_angle_deg": 0.17128063388324383,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_000_001/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_000_001/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "0,1,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3360150984344572,
+    "mean_angle_deg": 0.17152190711521187,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_000_001/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_000_001/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "0,1,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3155241840756165,
+    "mean_angle_deg": 0.16796660521252882,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_000_001/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_000_001/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "0,2,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3327343464815688,
+    "mean_angle_deg": 0.17213816462127984,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_000_002/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_000_002/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "0,2,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3245566798822905,
+    "mean_angle_deg": 0.1681557755286224,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_000_002/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_000_002/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "0,2,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3044343335070811,
+    "mean_angle_deg": 0.1703672704478179,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_000_002/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_000_002/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "0,3,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.33465503557946974,
+    "mean_angle_deg": 0.17354219078183222,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_000_003/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_000_003/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "0,3,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.31873765931806186,
+    "mean_angle_deg": 0.17332919057996657,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_000_003/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_000_003/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "0,3,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.30984946427299287,
+    "mean_angle_deg": 0.16892608337017867,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_000_003/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_000_003/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "1,0,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3338934786779874,
+    "mean_angle_deg": 0.1715174058013482,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_001_000/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_001_000/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "1,0,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3240159968715586,
+    "mean_angle_deg": 0.1761509613516349,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_001_000/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_001_000/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "1,0,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.30777464568424073,
+    "mean_angle_deg": 0.1611959780682609,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_001_000/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_001_000/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "1,1,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.33631610881618823,
+    "mean_angle_deg": 0.17171447405340226,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_001_001/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_001_001/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "1,1,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.32995513808676835,
+    "mean_angle_deg": 0.1719388970828477,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_001_001/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_001_001/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "1,1,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.31344257144436705,
+    "mean_angle_deg": 0.17518153625661384,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_001_001/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_001_001/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "1,2,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.33685226909303906,
+    "mean_angle_deg": 0.1710083620151913,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_001_002/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_001_002/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "1,2,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.31478401400586936,
+    "mean_angle_deg": 0.17351413490056633,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_001_002/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_001_002/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "1,2,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3210813723995989,
+    "mean_angle_deg": 0.17192803177915345,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_001_002/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_001_002/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "1,3,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3351482417772111,
+    "mean_angle_deg": 0.1727790598000353,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_001_003/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_001_003/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "1,3,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.333936763845902,
+    "mean_angle_deg": 0.17121331189958852,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_001_003/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_001_003/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "1,3,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3047366866189745,
+    "mean_angle_deg": 0.17322389791968987,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_001_003/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_001_003/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "2,0,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3334091474819529,
+    "mean_angle_deg": 0.172692584052641,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_002_000/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_002_000/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "2,0,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.31526113901028546,
+    "mean_angle_deg": 0.17197141687256234,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_002_000/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_002_000/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "2,0,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3097149286381643,
+    "mean_angle_deg": 0.17456334906524762,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_002_000/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_002_000/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "2,1,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3308268868345307,
+    "mean_angle_deg": 0.17282216923837382,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_002_001/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_002_001/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "2,1,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3503481544089351,
+    "mean_angle_deg": 0.17346520110535987,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_002_001/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_002_001/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "2,1,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.31563565431165713,
+    "mean_angle_deg": 0.1678919840409985,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_002_001/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_002_001/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "2,2,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3325483139933045,
+    "mean_angle_deg": 0.17287520361825343,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_002_002/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_002_002/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "2,2,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3205497489121836,
+    "mean_angle_deg": 0.16998930706322654,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_002_002/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_002_002/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "2,2,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3240278191052188,
+    "mean_angle_deg": 0.1676298980252472,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_002_002/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_002_002/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "2,3,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3225457447299007,
+    "mean_angle_deg": 0.1727524640354317,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_002_003/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_002_003/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "2,3,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3268059387719249,
+    "mean_angle_deg": 0.17340718435497046,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_002_003/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_002_003/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "2,3,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.31317479642644586,
+    "mean_angle_deg": 0.16870387858058003,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_002_003/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_002_003/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "3,0,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.34739796135109535,
+    "mean_angle_deg": 0.17209020165751482,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_003_000/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_003_000/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "3,0,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.31559740576517803,
+    "mean_angle_deg": 0.17406346085857405,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_003_000/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_003_000/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "3,0,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.30497836783171156,
+    "mean_angle_deg": 0.1664310721789158,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_003_000/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_003_000/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "3,1,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.33948496920302773,
+    "mean_angle_deg": 0.17086800141721556,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_003_001/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_003_001/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "3,1,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.32543375894485493,
+    "mean_angle_deg": 0.17081181143646187,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_003_001/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_003_001/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "3,1,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.30847276979411165,
+    "mean_angle_deg": 0.17201747096129505,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_003_001/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_003_001/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "3,2,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3447189544242383,
+    "mean_angle_deg": 0.16992942765115096,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_003_002/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_003_002/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "3,2,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.32830537617499955,
+    "mean_angle_deg": 0.1711294241250299,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_003_002/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_003_002/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "3,2,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.32431291746686347,
+    "mean_angle_deg": 0.17647187598836184,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_003_002/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_003_002/normal_lod2.png"
+   },
+   "status": "done"
+  },
+  "3,3,0": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3422016423128968,
+    "mean_angle_deg": 0.17271046192343195,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_003_003/mesh_lod0.npz",
+    "normal_map": "out_demo/chunk_003_003/normal_lod0.png"
+   },
+   "status": "done"
+  },
+  "3,3,1": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.322229333188095,
+    "mean_angle_deg": 0.1664849404289937,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_003_003/mesh_lod1.npz",
+    "normal_map": "out_demo/chunk_003_003/normal_lod1.png"
+   },
+   "status": "done"
+  },
+  "3,3,2": {
+   "consistency": {
+    "bad_vertices": 0,
+    "max_angle_deg": 0.3148346452767988,
+    "mean_angle_deg": 0.1759688921189048,
+    "ok": true,
+    "threshold_deg": 2.0
+   },
+   "error": null,
+   "outputs": {
+    "mesh": "out_demo/chunk_003_003/mesh_lod2.npz",
+    "normal_map": "out_demo/chunk_003_003/normal_lod2.png"
+   },
+   "status": "done"
+  }
+ },
+ "version": 1
+}

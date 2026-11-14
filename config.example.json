@@ -1,0 +1,26 @@
+{
+  "seed": 20261115,
+  "heightfield": {
+    "resolution": 257,
+    "chunk_size": 65,
+    "world_size": 1000.0,
+    "min_height": 0.0,
+    "max_height": 120.0,
+    "noise": {
+      "octaves": 5,
+      "base_frequency": 3.0,
+      "gain": 0.5,
+      "lacunarity": 2.0
+    }
+  },
+  "lods": {
+    "levels": 3,
+    "normal_threshold_deg": 2.0
+  },
+  "view": {
+    "position": [500.0, 500.0, 300.0],
+    "fov_y_deg": 60.0,
+    "viewport_height_px": 1080,
+    "screen_error_threshold_px": 2.0
+  }
+}
