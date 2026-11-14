@@ -1,0 +1,5 @@
+/build/
+/build-*/
+/artifacts/*.ppm
+/.cache/
+compile_commands.json
