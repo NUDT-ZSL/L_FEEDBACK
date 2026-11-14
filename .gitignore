@@ -1,0 +1,10 @@
+/build/
+/build-core/
+/lf_runtime/
+/lf_verify/
+/lf_engine_error.log
+/*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
