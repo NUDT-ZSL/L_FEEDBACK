@@ -1,0 +1,222 @@
+{
+  "channels": {
+    "albedo": {
+      "mean": [
+        127.5280987394958,
+        112.20544467787114,
+        104.50280112044818
+      ],
+      "sample_count": 11424,
+      "variance": [
+        1840.2541124216193,
+        160.62962371681738,
+        1969.384445935152
+      ]
+    },
+    "bitangent": {
+      "mean": [
+        127.51339285714286,
+        127.48914565826331,
+        127.50516456582633
+      ],
+      "sample_count": 11424,
+      "variance": [
+        0.6011861775960915,
+        16172.13748722661,
+        100.1867730471466
+      ]
+    },
+    "metallic": {
+      "mean": [
+        119.4453781512605
+      ],
+      "sample_count": 11424,
+      "variance": [
+        6505.425587882212
+      ]
+    },
+    "normal": {
+      "mean": [
+        127.49334733893558,
+        127.49010854341736,
+        253.56460084033614
+      ],
+      "sample_count": 11424,
+      "variance": [
+        322.16749775890366,
+        45.44195397981439,
+        2.655490596974286
+      ]
+    },
+    "roughness": {
+      "mean": [
+        119.83727240896359
+      ],
+      "sample_count": 11424,
+      "variance": [
+        219.19804704203992
+      ]
+    },
+    "tangent": {
+      "mean": [
+        127.36913515406162,
+        127.53728991596638,
+        127.46157212885154
+      ],
+      "sample_count": 11424,
+      "variance": [
+        15969.385710526245,
+        0.24860946216720883,
+        297.28423758443245
+      ]
+    }
+  },
+  "dilation": {
+    "added_mask_pixels": 1312,
+    "coverage_after": 12736,
+    "coverage_before": 11424,
+    "dilated_pixels": 1312,
+    "radius": 2,
+    "seam_pixels": 644,
+    "valid_pixels_overwritten": 0
+  },
+  "normal_consistency": {
+    "alternate_convention": "directx",
+    "alternate_mask_file": "normal_consistency_alternate_mask.png",
+    "alternate_mismatch_pixels": 564,
+    "alternate_mismatch_ratio": 0.04936974789915966,
+    "alternate_y_axis_mismatch_detected": true,
+    "compare_pixels": 11424,
+    "dot_threshold": 0.98,
+    "mismatch_pixels": 0,
+    "mismatch_ratio": 0.0,
+    "selected_convention": "opengl",
+    "selected_green_multiplier": 1,
+    "selected_mask_file": "normal_consistency_mask.png",
+    "selected_y_axis_consistent": true
+  },
+  "outputs": {
+    "png_formats": {
+      "albedo.png": "rgb",
+      "bitangent.png": "rgb",
+      "coverage_mask.png": "gray",
+      "coverage_mask_dilated.png": "gray",
+      "dilation_difference.png": "gray",
+      "metallic.png": "gray",
+      "normal.png": "rgb",
+      "normal_consistency_alternate_mask.png": "gray",
+      "normal_consistency_mask.png": "gray",
+      "preview.png": "rgb",
+      "roughness.png": "gray",
+      "tangent.png": "rgb",
+      "triangle_index.png": "gray16"
+    },
+    "texture_files": [
+      "albedo.png",
+      "bitangent.png",
+      "coverage_mask.png",
+      "coverage_mask_dilated.png",
+      "dilation_difference.png",
+      "metallic.png",
+      "normal.png",
+      "normal_consistency_alternate_mask.png",
+      "normal_consistency_mask.png",
+      "preview.png",
+      "roughness.png",
+      "tangent.png",
+      "triangle_index.png"
+    ],
+    "texture_sha256": {
+      "albedo.png": "ca20521ea56653ae23c26af64734a8c00130539704f2cbfd27ee7e4d29b74c35",
+      "bitangent.png": "8ca1fcfa1023266ea31cc19ab58155dc2e6a6bc7699b68586d55c718a377dc5e",
+      "coverage_mask.png": "567bc60520a2da9f2ba9477278daf7921f344b2b49f5386fe2e525506965d7ae",
+      "coverage_mask_dilated.png": "5aeb7cf44e41d010558058459d7f71fad91705a9d5296964bab79c4ce5ba153d",
+      "dilation_difference.png": "00ca68aa96bbc7a0f9e03234b5fc3ad8909a598c22fe775adfd129af3396dba7",
+      "metallic.png": "39a915bf6dbdebb64549ae08a732f76136f77da86d0f29b27e2ba7f1dad82635",
+      "normal.png": "d803222a599fe4ad8a2f281f6ea80491994e6041df42b9be36c81614cdb985ac",
+      "normal_consistency_alternate_mask.png": "9b801385eab4caba1b48ff4224112250b2fa8a12cced4ca48d0f3ef0aa704e2a",
+      "normal_consistency_mask.png": "c1bb079a3298e3eda500bba7f01ebf32dd4bc3ca023868bcd907a3769e96a845",
+      "preview.png": "d18fb1ec9601a7bf7c95f77415cac912ae5640df0cb372bfccfa1f20c5a8e0b7",
+      "roughness.png": "e8c1aacf7f1c0a3f505dacc734b1472c9be5564adad7410bbfe07132d0d01630",
+      "tangent.png": "b0be4c62f64d4b72ddda3efea2dc33aebbe36512a06d1c285a997d35ee4172ca",
+      "triangle_index.png": "169305b6aaa4be3d278649b3b57eaad505a16f3515e767468d655383d56e6178"
+    }
+  },
+  "parameters": {
+    "backface_culling": true,
+    "dilation_radius": 2,
+    "max_resolution": 512,
+    "miss_threshold": 0.02,
+    "normal_convention": "opengl",
+    "normal_dot_threshold": 0.98,
+    "ray_direction": "interpolated_geometric_normal_via_tbn_0001",
+    "resolution": 128,
+    "scenario": "default",
+    "texture_row_order": "top_to_bottom",
+    "uv_origin": "bottom_left"
+  },
+  "preview": {
+    "culled_backface_triangles": 0,
+    "file": "preview.png",
+    "height": 128,
+    "mean_luminance": 146.35227226313205,
+    "normal_convention": "opengl",
+    "rasterized_triangle_pixels": 384,
+    "rendered_pixels": 6111,
+    "renderer": "numpy_software_orthographic",
+    "uses_same_tbn": true,
+    "width": 128
+  },
+  "rasterization": {
+    "clipped_triangles": 0,
+    "coverage_pixels": 11424,
+    "coverage_ratio": 0.697265625,
+    "culled_backface_triangles": 0,
+    "degenerate_uv_triangles": 0,
+    "one_triangle_per_pixel": true,
+    "pixel_assignments": 11424,
+    "rasterized_triangles": 384
+  },
+  "raycast": {
+    "bvh_leaf_count": 512,
+    "candidate_leaf_tests": 21125,
+    "fallback_pixels": 0,
+    "fallback_ratio": 0.0,
+    "hit_pixels": 11424,
+    "miss_threshold": 0.02,
+    "nearest_hit": true,
+    "ray_count": 11424,
+    "ray_triangle_tests": 166745
+  },
+  "sample": {
+    "high_triangle_count": 4032,
+    "low_triangle_count": 384,
+    "mirrored_uv_island": true,
+    "sample_id": "procedural_two_island_v1",
+    "scenario": "default"
+  },
+  "schema": "offline-pbr-bake/v1",
+  "status": "ok",
+  "tbn": {
+    "adjacent_tangent_flips": 0,
+    "degenerate_uv_triangles": 0,
+    "fallback_vertex_count": 0,
+    "handedness": "right_handed_B_equals_cross_N_T",
+    "mirrored_uv_triangles": 192,
+    "vertex_count": 234
+  },
+  "texture_space": {
+    "height": 128,
+    "pixel_center_rule": "u=(x+0.5)/W, v=1-(y+0.5)/H",
+    "row_order": "top_to_bottom",
+    "uv_origin": "bottom_left",
+    "width": 128
+  },
+  "timing": {
+    "actual_elapsed_ms_file": "runtime_profile.json",
+    "note": "Physical wall time is recorded in runtime_profile.json and is excluded from byte determinism.",
+    "timing_model": "deterministic_cost_model_v1",
+    "total_elapsed_ms": 0.966284,
+    "work_units": 483142
+  }
+}

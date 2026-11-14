@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "offline-pbr-bake"
+version = "1.0.0"
+description = "Deterministic offline PBR texture baker with a NumPy software preview renderer"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pillow>=10.0",
+]
+
+[project.scripts]
+offline-pbr-bake = "bake_tool.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bake_tool*"]
+
