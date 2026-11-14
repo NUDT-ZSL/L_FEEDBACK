@@ -1,0 +1,202 @@
+{
+  "camera": {
+    "far": 100.0,
+    "fov_y_deg": 50.0,
+    "near": 0.1,
+    "position": [
+      0.0,
+      3.2,
+      7.5
+    ],
+    "target": [
+      0.0,
+      0.7,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "directional_light": {
+    "color": [
+      1.0,
+      0.96,
+      0.9
+    ],
+    "direction": [
+      -0.559716,
+      -0.730125,
+      -0.391963
+    ],
+    "intensity": 2.2
+  },
+  "ground": {
+    "material_id": 4,
+    "size": 20.0
+  },
+  "materials": [
+    {
+      "albedo": [
+        0.59258,
+        0.81572,
+        0.71606
+      ],
+      "emissive": [
+        0.35,
+        0.12,
+        0.05
+      ],
+      "id": 0,
+      "metallic": 0.30017,
+      "name": "material_0",
+      "roughness": 0.27593
+    },
+    {
+      "albedo": [
+        0.79631,
+        0.08432,
+        0.75341
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "id": 1,
+      "metallic": 0.46793,
+      "name": "material_1",
+      "roughness": 0.77345
+    },
+    {
+      "albedo": [
+        0.32849,
+        0.30831,
+        0.28899
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "id": 2,
+      "metallic": 0.50455,
+      "name": "material_2",
+      "roughness": 0.46722
+    },
+    {
+      "albedo": [
+        0.53387,
+        0.89631,
+        0.72998
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "id": 3,
+      "metallic": 0.98896,
+      "name": "material_3",
+      "roughness": 0.6213
+    },
+    {
+      "albedo": [
+        0.32,
+        0.33,
+        0.36
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "id": 4,
+      "metallic": 0.0,
+      "name": "material_4",
+      "roughness": 0.85
+    }
+  ],
+  "point_lights": [
+    {
+      "color": [
+        0.8898,
+        0.62767,
+        0.98725
+      ],
+      "id": 0,
+      "intensity": 21.43987,
+      "position": [
+        -0.89895,
+        -1.41571,
+        -2.7984
+      ],
+      "range": 11.63034
+    },
+    {
+      "color": [
+        0.66419,
+        0.54374,
+        0.6415
+      ],
+      "id": 1,
+      "intensity": 13.54727,
+      "position": [
+        1.10397,
+        1.4116,
+        -2.7937
+      ],
+      "range": 13.80697
+    }
+  ],
+  "rng": "numpy.random.default_rng",
+  "seed": 7,
+  "spheres": [
+    {
+      "angular_speed": 0.30424,
+      "height": 0.9975,
+      "id": 0,
+      "material_id": 0,
+      "orbit_radius": 3.23434,
+      "phase": 3.95355,
+      "radius": 0.65979
+    },
+    {
+      "angular_speed": 0.35761,
+      "height": 0.76049,
+      "id": 1,
+      "material_id": 2,
+      "orbit_radius": 1.42359,
+      "phase": 1.2089,
+      "radius": 0.56138
+    },
+    {
+      "angular_speed": 0.23028,
+      "height": 1.30427,
+      "id": 2,
+      "material_id": 3,
+      "orbit_radius": 3.0601,
+      "phase": 0.97051,
+      "radius": 0.45168
+    },
+    {
+      "angular_speed": 0.37253,
+      "height": 0.6732,
+      "id": 3,
+      "material_id": 1,
+      "orbit_radius": 3.0943,
+      "phase": 4.01946,
+      "radius": 0.67941
+    },
+    {
+      "angular_speed": 0.32946,
+      "height": 0.6474,
+      "id": 4,
+      "material_id": 1,
+      "orbit_radius": 3.14268,
+      "phase": 2.26989,
+      "radius": 0.6785
+    }
+  ]
+}

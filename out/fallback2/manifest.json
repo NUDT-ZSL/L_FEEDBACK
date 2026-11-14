@@ -1,0 +1,73 @@
+{
+  "active_formats": {
+    "albedo_material": "RGBA8",
+    "world_normal": "RGB16F",
+    "world_position": "RGBA32F"
+  },
+  "errors": [],
+  "events": [],
+  "frame_size": {
+    "height": 512,
+    "width": 512
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "gbuffer_verify_sha256": "f736a1219d7d2bb9f68ec15f4bb8eac97d2365685f8839380687c662f2a97f39",
+      "gbuffer_write_sha256": "f736a1219d7d2bb9f68ec15f4bb8eac97d2365685f8839380687c662f2a97f39",
+      "png": "frame_0000.png",
+      "png_sha256": "f79c2832c6cf4a4fa2f30a84da43ee8335805ef484512d812ba62d1a5cf2dd2a"
+    },
+    {
+      "frame": 1,
+      "gbuffer_verify_sha256": "f736a1219d7d2bb9f68ec15f4bb8eac97d2365685f8839380687c662f2a97f39",
+      "gbuffer_write_sha256": "f736a1219d7d2bb9f68ec15f4bb8eac97d2365685f8839380687c662f2a97f39",
+      "png": "frame_0001.png",
+      "png_sha256": "b6223b652dac5a884729a3062b46305178307d0db67cda258c0d907db21a3802"
+    },
+    {
+      "frame": 2,
+      "gbuffer_verify_sha256": "f736a1219d7d2bb9f68ec15f4bb8eac97d2365685f8839380687c662f2a97f39",
+      "gbuffer_write_sha256": "f736a1219d7d2bb9f68ec15f4bb8eac97d2365685f8839380687c662f2a97f39",
+      "png": "frame_0002.png",
+      "png_sha256": "8558f7be386a337d75ef1209c497b7b121083d826752c561513f517e345e0858"
+    }
+  ],
+  "generated_at_utc": "2026-11-14T23:37:33.831206+00:00",
+  "gpu": {
+    "glfw_version": "3.4.0 X11 GLX Null EGL OSMesa monotonic shared",
+    "glsl_version": "4.50",
+    "opengl_version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+    "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+    "vendor": "Mesa"
+  },
+  "precision_mode": "float32",
+  "rebuild_after_frame": 10,
+  "rebuild_enabled": true,
+  "requested_formats": {
+    "albedo_material": "RGBA8",
+    "world_normal": "RGB16F",
+    "world_position": "UNSUPPORTED"
+  },
+  "scene_file": "scene.json",
+  "scene_sha256": "5f189fa86dd37f7676c110b8e42e13e229a2ac7f24935bbd90275f001639fa63",
+  "seed": 42,
+  "status": "ok",
+  "warnings": [
+    {
+      "attachment": "world_position",
+      "code": "RENDER_FBO_INCOMPLETE",
+      "fallback_format": "RGBA32F",
+      "gl_errors": [
+        {
+          "code": 1281,
+          "name": "GL_INVALID_VALUE"
+        }
+      ],
+      "message": "Requested format 'UNSUPPORTED' for attachment 'world_position' was rejected; falling back to 'RGBA32F'.",
+      "requested_format": "UNSUPPORTED",
+      "slot": 0,
+      "stage": "glTexImage2D"
+    }
+  ]
+}

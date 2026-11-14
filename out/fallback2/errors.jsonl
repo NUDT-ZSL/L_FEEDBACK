@@ -1,0 +1,1 @@
+{"attachment": "world_position", "code": "RENDER_FBO_INCOMPLETE", "fallback_format": "RGBA32F", "gl_errors": [{"code": 1281, "name": "GL_INVALID_VALUE"}], "message": "Requested format 'UNSUPPORTED' for attachment 'world_position' was rejected; falling back to 'RGBA32F'.", "requested_format": "UNSUPPORTED", "slot": 0, "stage": "glTexImage2D"}
