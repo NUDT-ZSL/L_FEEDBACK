@@ -1,0 +1,6 @@
+/build*/
+/artifacts/auto_test/
+/artifacts/screenshots/
+*.png
+*.log
+
