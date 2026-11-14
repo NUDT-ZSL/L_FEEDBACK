@@ -1,0 +1,16 @@
+{
+  "jobs": [
+    {
+      "job_id": "score_alpha",
+      "config_path": "work/scene_alpha.json",
+      "output_path": "work/out/alpha.wav",
+      "state_file": "work/out/alpha.state.json"
+    },
+    {
+      "job_id": "score_beta",
+      "config_path": "work/scene_beta.json",
+      "output_path": "work/out/beta.wav",
+      "state_file": "work/out/beta.state.json"
+    }
+  ]
+}
