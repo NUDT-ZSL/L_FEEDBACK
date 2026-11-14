@@ -1,0 +1,5 @@
+numpy>=1.26
+moderngl>=5.10
+PyGLM>=2.7
+Pillow>=10
+

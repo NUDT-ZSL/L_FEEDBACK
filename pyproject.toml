@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fogcity-preview"
+version = "0.1.0"
+description = "Deterministic offline OpenGL 4.1 keyframe preview renderer for foggy city scenes"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "moderngl>=5.10",
+  "PyGLM>=2.7",
+  "Pillow>=10",
+]
+
+[project.scripts]
+fogcity = "fogcity.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fogcity*"]
+
+[tool.setuptools.package-data]
+fogcity = ["shaders/*.vert", "shaders/*.frag"]
+

@@ -1,0 +1,1294 @@
+{
+  "frames": [
+    {
+      "camera": {
+        "far": 90.0,
+        "forward": [
+          -0.330239,
+          0.025947,
+          -0.943541
+        ],
+        "fov_y_deg": 50.0,
+        "frame_index": 0,
+        "interpolation": {
+          "fov": "linear",
+          "near_far": "linear",
+          "orientation": "shortest_path_slerp_normalized",
+          "position": "linear"
+        },
+        "near": 0.1,
+        "orientation_xyzw": [
+          0.012791,
+          0.167529,
+          -0.002174,
+          0.985782
+        ],
+        "position": [
+          7.0,
+          2.25,
+          18.0
+        ],
+        "right": [
+          0.943858,
+          0.0,
+          -0.33035
+        ],
+        "segment": {
+          "alpha": 0.0,
+          "from_keyframe_index": 0,
+          "from_time": 0.0,
+          "to_keyframe_index": 1,
+          "to_time": 2.0
+        },
+        "time": 0.0,
+        "up": [
+          0.008572,
+          0.999663,
+          0.024491
+        ]
+      },
+      "counts": {
+        "building_count": 8,
+        "building_triangle_count": 108,
+        "panel_count": 5,
+        "panels_backface_culled": 1,
+        "panels_behind_camera": 0,
+        "panels_drawn": 4
+      },
+      "fog_color": [
+        0.52,
+        0.65,
+        0.74
+      ],
+      "frame_index": 0,
+      "image": "frame_0000.png",
+      "image_sha256": "98ba5ccba01e3c393b664dc25bddc8bdec404f4bebeb46c879f4efe36bfc527c",
+      "light_color": [
+        1.0,
+        0.82,
+        0.58
+      ],
+      "light_direction": [
+        -0.420758,
+        -0.621119,
+        0.661191
+      ],
+      "light_intensity": 4.6,
+      "output_quantization": "floor(clamp(rgb,0,1)*255+0.5) uint8",
+      "schema_version": 1,
+      "stats_file": "frame_0000.json",
+      "time": 0.0,
+      "transparent_sort": {
+        "depth_quantization": "1e-6",
+        "drawn_order_indices": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "drawn_panel_colors": [
+          [
+            0.68,
+            0.73,
+            0.72,
+            0.76
+          ],
+          [
+            0.23,
+            0.62,
+            0.68,
+            0.64
+          ],
+          [
+            0.74,
+            0.58,
+            0.28,
+            0.7
+          ],
+          [
+            0.31,
+            0.48,
+            0.78,
+            0.57
+          ]
+        ],
+        "drawn_panel_ids": [
+          104,
+          101,
+          102,
+          103
+        ],
+        "panels": [
+          {
+            "behind_camera": false,
+            "depth_key": 14.694347,
+            "front_facing": false,
+            "order_index": 0,
+            "panel_id": 105,
+            "rendered": false,
+            "view_depth": 14.694347
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 13.165457,
+            "front_facing": true,
+            "order_index": 1,
+            "panel_id": 104,
+            "rendered": true,
+            "view_depth": 13.165457
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 9.937605,
+            "front_facing": true,
+            "order_index": 2,
+            "panel_id": 101,
+            "rendered": true,
+            "view_depth": 9.937605
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 9.8909,
+            "front_facing": true,
+            "order_index": 3,
+            "panel_id": 102,
+            "rendered": true,
+            "view_depth": 9.8909
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 7.448309,
+            "front_facing": true,
+            "order_index": 4,
+            "panel_id": 103,
+            "rendered": true,
+            "view_depth": 7.448309
+          }
+        ],
+        "rule": "quantized_view_depth_desc_then_panel_id_asc",
+        "view_depth_definition": "dot(panel_center - camera_position, camera_forward)"
+      },
+      "volume": {
+        "ambient": 0.5,
+        "anisotropy": 0.62,
+        "composite": "base_rgb * transmittance + inscribed_fog_rgb",
+        "density": 0.018,
+        "extinction": 1.25,
+        "far": 90.0,
+        "integral": "inscatter += exp(-sigma_t*t) * sigma_s * HG(-dot(ray,L),g) * light_color * intensity * shadow_visibility * dt",
+        "near": 0.1,
+        "ray_space": "camera_view_distance",
+        "scattering": 0.95,
+        "sigma_s": 0.021375,
+        "sigma_t": 0.0225,
+        "step_count": 32,
+        "step_length": 2.809375,
+        "step_rule": "fixed_near_to_far_step_with_ray_end_clamp"
+      }
+    },
+    {
+      "camera": {
+        "far": 90.0,
+        "forward": [
+          -0.245677,
+          0.024117,
+          -0.969052
+        ],
+        "fov_y_deg": 52.0,
+        "frame_index": 1,
+        "interpolation": {
+          "fov": "linear",
+          "near_far": "linear",
+          "orientation": "shortest_path_slerp_normalized",
+          "position": "linear"
+        },
+        "near": 0.1,
+        "orientation_xyzw": [
+          0.011962,
+          0.123819,
+          -0.001533,
+          0.992232
+        ],
+        "position": [
+          4.25,
+          2.55,
+          16.0
+        ],
+        "right": [
+          0.969333,
+          -8.1e-05,
+          -0.245751
+        ],
+        "segment": {
+          "alpha": 0.5,
+          "from_keyframe_index": 0,
+          "from_time": 0.0,
+          "to_keyframe_index": 1,
+          "to_time": 2.0
+        },
+        "time": 1.0,
+        "up": [
+          0.006005,
+          0.999709,
+          0.023358
+        ]
+      },
+      "counts": {
+        "building_count": 8,
+        "building_triangle_count": 108,
+        "panel_count": 5,
+        "panels_backface_culled": 1,
+        "panels_behind_camera": 0,
+        "panels_drawn": 4
+      },
+      "fog_color": [
+        0.52,
+        0.65,
+        0.74
+      ],
+      "frame_index": 1,
+      "image": "frame_0001.png",
+      "image_sha256": "7246f5c35a12e69a61dffcc0c535ec02fa7d36654dc4f13b139d8bcd0fa862bb",
+      "light_color": [
+        1.0,
+        0.82,
+        0.58
+      ],
+      "light_direction": [
+        -0.420758,
+        -0.621119,
+        0.661191
+      ],
+      "light_intensity": 4.6,
+      "output_quantization": "floor(clamp(rgb,0,1)*255+0.5) uint8",
+      "schema_version": 1,
+      "stats_file": "frame_0001.json",
+      "time": 1.0,
+      "transparent_sort": {
+        "depth_quantization": "1e-6",
+        "drawn_order_indices": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "drawn_panel_colors": [
+          [
+            0.68,
+            0.73,
+            0.72,
+            0.76
+          ],
+          [
+            0.74,
+            0.58,
+            0.28,
+            0.7
+          ],
+          [
+            0.23,
+            0.62,
+            0.68,
+            0.64
+          ],
+          [
+            0.31,
+            0.48,
+            0.78,
+            0.57
+          ]
+        ],
+        "drawn_panel_ids": [
+          104,
+          102,
+          101,
+          103
+        ],
+        "panels": [
+          {
+            "behind_camera": false,
+            "depth_key": 11.115205,
+            "front_facing": false,
+            "order_index": 0,
+            "panel_id": 105,
+            "rendered": false,
+            "view_depth": 11.115205
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 10.273321,
+            "front_facing": true,
+            "order_index": 1,
+            "panel_id": 104,
+            "rendered": true,
+            "view_depth": 10.273321
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 7.088366,
+            "front_facing": true,
+            "order_index": 2,
+            "panel_id": 102,
+            "rendered": true,
+            "view_depth": 7.088366
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 6.641339,
+            "front_facing": true,
+            "order_index": 3,
+            "panel_id": 101,
+            "rendered": true,
+            "view_depth": 6.641339
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 5.001708,
+            "front_facing": true,
+            "order_index": 4,
+            "panel_id": 103,
+            "rendered": true,
+            "view_depth": 5.001708
+          }
+        ],
+        "rule": "quantized_view_depth_desc_then_panel_id_asc",
+        "view_depth_definition": "dot(panel_center - camera_position, camera_forward)"
+      },
+      "volume": {
+        "ambient": 0.5,
+        "anisotropy": 0.62,
+        "composite": "base_rgb * transmittance + inscribed_fog_rgb",
+        "density": 0.018,
+        "extinction": 1.25,
+        "far": 90.0,
+        "integral": "inscatter += exp(-sigma_t*t) * sigma_s * HG(-dot(ray,L),g) * light_color * intensity * shadow_visibility * dt",
+        "near": 0.1,
+        "ray_space": "camera_view_distance",
+        "scattering": 0.95,
+        "sigma_s": 0.021375,
+        "sigma_t": 0.0225,
+        "step_count": 32,
+        "step_length": 2.809375,
+        "step_rule": "fixed_near_to_far_step_with_ray_end_clamp"
+      }
+    },
+    {
+      "camera": {
+        "far": 90.0,
+        "forward": [
+          -0.159193,
+          0.022287,
+          -0.986996
+        ],
+        "fov_y_deg": 54.0,
+        "frame_index": 2,
+        "interpolation": {
+          "fov": "linear",
+          "near_far": "linear",
+          "orientation": "shortest_path_slerp_normalized",
+          "position": "linear"
+        },
+        "near": 0.1,
+        "orientation_xyzw": [
+          0.011109,
+          0.079866,
+          -0.00089,
+          0.996743
+        ],
+        "position": [
+          1.5,
+          2.85,
+          14.0
+        ],
+        "right": [
+          0.987241,
+          0.0,
+          -0.159232
+        ],
+        "segment": {
+          "alpha": 0.0,
+          "from_keyframe_index": 1,
+          "from_time": 2.0,
+          "to_keyframe_index": 2,
+          "to_time": 4.0
+        },
+        "time": 2.0,
+        "up": [
+          0.003549,
+          0.999752,
+          0.022003
+        ]
+      },
+      "counts": {
+        "building_count": 8,
+        "building_triangle_count": 108,
+        "panel_count": 5,
+        "panels_backface_culled": 1,
+        "panels_behind_camera": 0,
+        "panels_drawn": 4
+      },
+      "fog_color": [
+        0.52,
+        0.65,
+        0.74
+      ],
+      "frame_index": 2,
+      "image": "frame_0002.png",
+      "image_sha256": "643acaeca46f725c4fa05f95e0f4bf95594f2d9170b90176569356b758679556",
+      "light_color": [
+        1.0,
+        0.82,
+        0.58
+      ],
+      "light_direction": [
+        -0.420758,
+        -0.621119,
+        0.661191
+      ],
+      "light_intensity": 4.6,
+      "output_quantization": "floor(clamp(rgb,0,1)*255+0.5) uint8",
+      "schema_version": 1,
+      "stats_file": "frame_0002.json",
+      "time": 2.0,
+      "transparent_sort": {
+        "depth_quantization": "1e-6",
+        "drawn_order_indices": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "drawn_panel_colors": [
+          [
+            0.68,
+            0.73,
+            0.72,
+            0.76
+          ],
+          [
+            0.74,
+            0.58,
+            0.28,
+            0.7
+          ],
+          [
+            0.23,
+            0.62,
+            0.68,
+            0.64
+          ],
+          [
+            0.31,
+            0.48,
+            0.78,
+            0.57
+          ]
+        ],
+        "drawn_panel_ids": [
+          104,
+          102,
+          101,
+          103
+        ],
+        "panels": [
+          {
+            "behind_camera": false,
+            "depth_key": 7.833723,
+            "front_facing": false,
+            "order_index": 0,
+            "panel_id": 105,
+            "rendered": false,
+            "view_depth": 7.833723
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 7.685514,
+            "front_facing": true,
+            "order_index": 1,
+            "panel_id": 104,
+            "rendered": true,
+            "view_depth": 7.685514
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 4.615002,
+            "front_facing": true,
+            "order_index": 2,
+            "panel_id": 102,
+            "rendered": true,
+            "view_depth": 4.615002
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 3.677674,
+            "front_facing": true,
+            "order_index": 3,
+            "panel_id": 101,
+            "rendered": true,
+            "view_depth": 3.677674
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 2.900495,
+            "front_facing": true,
+            "order_index": 4,
+            "panel_id": 103,
+            "rendered": true,
+            "view_depth": 2.900495
+          }
+        ],
+        "rule": "quantized_view_depth_desc_then_panel_id_asc",
+        "view_depth_definition": "dot(panel_center - camera_position, camera_forward)"
+      },
+      "volume": {
+        "ambient": 0.5,
+        "anisotropy": 0.62,
+        "composite": "base_rgb * transmittance + inscribed_fog_rgb",
+        "density": 0.018,
+        "extinction": 1.25,
+        "far": 90.0,
+        "integral": "inscatter += exp(-sigma_t*t) * sigma_s * HG(-dot(ray,L),g) * light_color * intensity * shadow_visibility * dt",
+        "near": 0.1,
+        "ray_space": "camera_view_distance",
+        "scattering": 0.95,
+        "sigma_s": 0.021375,
+        "sigma_t": 0.0225,
+        "step_count": 32,
+        "step_length": 2.809375,
+        "step_rule": "fixed_near_to_far_step_with_ray_end_clamp"
+      }
+    },
+    {
+      "camera": {
+        "far": 90.0,
+        "forward": [
+          0.159637,
+          -0.019653,
+          -0.98698
+        ],
+        "fov_y_deg": 56.0,
+        "frame_index": 3,
+        "interpolation": {
+          "fov": "linear",
+          "near_far": "linear",
+          "orientation": "shortest_path_slerp_normalized",
+          "position": "linear"
+        },
+        "near": 0.1,
+        "orientation_xyzw": [
+          -0.009524,
+          -0.08012,
+          -0.004166,
+          0.996731
+        ],
+        "position": [
+          -1.5,
+          3.025,
+          11.5
+        ],
+        "right": [
+          0.987127,
+          -0.006778,
+          0.159795
+        ],
+        "segment": {
+          "alpha": 0.5,
+          "from_keyframe_index": 1,
+          "from_time": 2.0,
+          "to_keyframe_index": 2,
+          "to_time": 4.0
+        },
+        "time": 3.0,
+        "up": [
+          0.00983,
+          0.999784,
+          -0.018318
+        ]
+      },
+      "counts": {
+        "building_count": 8,
+        "building_triangle_count": 108,
+        "panel_count": 5,
+        "panels_backface_culled": 1,
+        "panels_behind_camera": 0,
+        "panels_drawn": 4
+      },
+      "fog_color": [
+        0.52,
+        0.65,
+        0.74
+      ],
+      "frame_index": 3,
+      "image": "frame_0003.png",
+      "image_sha256": "4bd6090655e86e59c130b95aba0371713181e7fba46ccb6a598ff271ed9b1b8d",
+      "light_color": [
+        1.0,
+        0.82,
+        0.58
+      ],
+      "light_direction": [
+        -0.420758,
+        -0.621119,
+        0.661191
+      ],
+      "light_intensity": 4.6,
+      "output_quantization": "floor(clamp(rgb,0,1)*255+0.5) uint8",
+      "schema_version": 1,
+      "stats_file": "frame_0003.json",
+      "time": 3.0,
+      "transparent_sort": {
+        "depth_quantization": "1e-6",
+        "drawn_order_indices": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "drawn_panel_colors": [
+          [
+            0.68,
+            0.73,
+            0.72,
+            0.76
+          ],
+          [
+            0.74,
+            0.58,
+            0.28,
+            0.7
+          ],
+          [
+            0.31,
+            0.48,
+            0.78,
+            0.57
+          ],
+          [
+            0.23,
+            0.62,
+            0.68,
+            0.64
+          ]
+        ],
+        "drawn_panel_ids": [
+          104,
+          102,
+          103,
+          101
+        ],
+        "panels": [
+          {
+            "behind_camera": false,
+            "depth_key": 5.33028,
+            "front_facing": true,
+            "order_index": 0,
+            "panel_id": 104,
+            "rendered": true,
+            "view_depth": 5.33028
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 3.006314,
+            "front_facing": false,
+            "order_index": 1,
+            "panel_id": 105,
+            "rendered": false,
+            "view_depth": 3.006314
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 2.873976,
+            "front_facing": true,
+            "order_index": 2,
+            "panel_id": 102,
+            "rendered": true,
+            "view_depth": 2.873976
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 2.615187,
+            "front_facing": true,
+            "order_index": 3,
+            "panel_id": 103,
+            "rendered": true,
+            "view_depth": 2.615187
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 0.255267,
+            "front_facing": true,
+            "order_index": 4,
+            "panel_id": 101,
+            "rendered": true,
+            "view_depth": 0.255267
+          }
+        ],
+        "rule": "quantized_view_depth_desc_then_panel_id_asc",
+        "view_depth_definition": "dot(panel_center - camera_position, camera_forward)"
+      },
+      "volume": {
+        "ambient": 0.5,
+        "anisotropy": 0.62,
+        "composite": "base_rgb * transmittance + inscribed_fog_rgb",
+        "density": 0.018,
+        "extinction": 1.25,
+        "far": 90.0,
+        "integral": "inscatter += exp(-sigma_t*t) * sigma_s * HG(-dot(ray,L),g) * light_color * intensity * shadow_visibility * dt",
+        "near": 0.1,
+        "ray_space": "camera_view_distance",
+        "scattering": 0.95,
+        "sigma_s": 0.021375,
+        "sigma_t": 0.0225,
+        "step_count": 32,
+        "step_length": 2.809375,
+        "step_rule": "fixed_near_to_far_step_with_ray_end_clamp"
+      }
+    },
+    {
+      "camera": {
+        "far": 90.0,
+        "forward": [
+          0.461689,
+          -0.061558,
+          -0.884903
+        ],
+        "fov_y_deg": 58.0,
+        "frame_index": 4,
+        "interpolation": {
+          "fov": "linear",
+          "near_far": "linear",
+          "orientation": "shortest_path_slerp_normalized",
+          "position": "linear"
+        },
+        "near": 0.1,
+        "orientation_xyzw": [
+          -0.029908,
+          -0.238021,
+          -0.007333,
+          0.970772
+        ],
+        "position": [
+          -4.5,
+          3.2,
+          9.0
+        ],
+        "right": [
+          0.886585,
+          0.0,
+          0.462566
+        ],
+        "segment": {
+          "alpha": 0.0,
+          "from_keyframe_index": 2,
+          "from_time": 4.0,
+          "to_keyframe_index": 3,
+          "to_time": 6.0
+        },
+        "time": 4.0,
+        "up": [
+          0.028475,
+          0.998103,
+          -0.054577
+        ]
+      },
+      "counts": {
+        "building_count": 8,
+        "building_triangle_count": 108,
+        "panel_count": 5,
+        "panels_backface_culled": 2,
+        "panels_behind_camera": 1,
+        "panels_drawn": 3
+      },
+      "fog_color": [
+        0.52,
+        0.65,
+        0.74
+      ],
+      "frame_index": 4,
+      "image": "frame_0004.png",
+      "image_sha256": "021bf12a31ed1eda555158eb730d82ae074bb75ce7036ff803bace3efe0e237c",
+      "light_color": [
+        1.0,
+        0.82,
+        0.58
+      ],
+      "light_direction": [
+        -0.420758,
+        -0.621119,
+        0.661191
+      ],
+      "light_intensity": 4.6,
+      "output_quantization": "floor(clamp(rgb,0,1)*255+0.5) uint8",
+      "schema_version": 1,
+      "stats_file": "frame_0004.json",
+      "time": 4.0,
+      "transparent_sort": {
+        "depth_quantization": "1e-6",
+        "drawn_order_indices": [
+          0,
+          1,
+          2
+        ],
+        "drawn_panel_colors": [
+          [
+            0.68,
+            0.73,
+            0.72,
+            0.76
+          ],
+          [
+            0.31,
+            0.48,
+            0.78,
+            0.57
+          ],
+          [
+            0.74,
+            0.58,
+            0.28,
+            0.7
+          ]
+        ],
+        "drawn_panel_ids": [
+          104,
+          103,
+          102
+        ],
+        "panels": [
+          {
+            "behind_camera": false,
+            "depth_key": 4.556868,
+            "front_facing": true,
+            "order_index": 0,
+            "panel_id": 104,
+            "rendered": true,
+            "view_depth": 4.556868
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 4.192134,
+            "front_facing": true,
+            "order_index": 1,
+            "panel_id": 103,
+            "rendered": true,
+            "view_depth": 4.192134
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 2.968659,
+            "front_facing": true,
+            "order_index": 2,
+            "panel_id": 102,
+            "rendered": true,
+            "view_depth": 2.968659
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 0.003847,
+            "front_facing": false,
+            "order_index": 3,
+            "panel_id": 105,
+            "rendered": false,
+            "view_depth": 0.003847
+          },
+          {
+            "behind_camera": true,
+            "depth_key": -1.058806,
+            "front_facing": false,
+            "order_index": 4,
+            "panel_id": 101,
+            "rendered": false,
+            "view_depth": -1.058806
+          }
+        ],
+        "rule": "quantized_view_depth_desc_then_panel_id_asc",
+        "view_depth_definition": "dot(panel_center - camera_position, camera_forward)"
+      },
+      "volume": {
+        "ambient": 0.5,
+        "anisotropy": 0.62,
+        "composite": "base_rgb * transmittance + inscribed_fog_rgb",
+        "density": 0.018,
+        "extinction": 1.25,
+        "far": 90.0,
+        "integral": "inscatter += exp(-sigma_t*t) * sigma_s * HG(-dot(ray,L),g) * light_color * intensity * shadow_visibility * dt",
+        "near": 0.1,
+        "ray_space": "camera_view_distance",
+        "scattering": 0.95,
+        "sigma_s": 0.021375,
+        "sigma_t": 0.0225,
+        "step_count": 32,
+        "step_length": 2.809375,
+        "step_rule": "fixed_near_to_far_step_with_ray_end_clamp"
+      }
+    },
+    {
+      "camera": {
+        "far": 90.0,
+        "forward": [
+          -0.004659,
+          -0.051353,
+          -0.99867
+        ],
+        "fov_y_deg": 55.0,
+        "frame_index": 5,
+        "interpolation": {
+          "fov": "linear",
+          "near_far": "linear",
+          "orientation": "shortest_path_slerp_normalized",
+          "position": "linear"
+        },
+        "near": 0.1,
+        "orientation_xyzw": [
+          -0.025688,
+          0.002299,
+          -0.001207,
+          0.999667
+        ],
+        "position": [
+          2.75,
+          3.5,
+          10.0
+        ],
+        "right": [
+          0.999987,
+          -0.002531,
+          -0.004535
+        ],
+        "segment": {
+          "alpha": 0.5,
+          "from_keyframe_index": 2,
+          "from_time": 4.0,
+          "to_keyframe_index": 3,
+          "to_time": 6.0
+        },
+        "time": 5.0,
+        "up": [
+          0.002295,
+          0.998677,
+          -0.051364
+        ]
+      },
+      "counts": {
+        "building_count": 8,
+        "building_triangle_count": 108,
+        "panel_count": 5,
+        "panels_backface_culled": 1,
+        "panels_behind_camera": 2,
+        "panels_drawn": 2
+      },
+      "fog_color": [
+        0.52,
+        0.65,
+        0.74
+      ],
+      "frame_index": 5,
+      "image": "frame_0005.png",
+      "image_sha256": "b652eebc042089988995851323a5298047032c66663fded1d7bf24d2fb8b2047",
+      "light_color": [
+        1.0,
+        0.82,
+        0.58
+      ],
+      "light_direction": [
+        -0.420758,
+        -0.621119,
+        0.661191
+      ],
+      "light_intensity": 4.6,
+      "output_quantization": "floor(clamp(rgb,0,1)*255+0.5) uint8",
+      "schema_version": 1,
+      "stats_file": "frame_0005.json",
+      "time": 5.0,
+      "transparent_sort": {
+        "depth_quantization": "1e-6",
+        "drawn_order_indices": [
+          0,
+          2
+        ],
+        "drawn_panel_colors": [
+          [
+            0.68,
+            0.73,
+            0.72,
+            0.76
+          ],
+          [
+            0.74,
+            0.58,
+            0.28,
+            0.7
+          ]
+        ],
+        "drawn_panel_ids": [
+          104,
+          102
+        ],
+        "panels": [
+          {
+            "behind_camera": false,
+            "depth_key": 3.65541,
+            "front_facing": true,
+            "order_index": 0,
+            "panel_id": 104,
+            "rendered": true,
+            "view_depth": 3.65541
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 2.611187,
+            "front_facing": false,
+            "order_index": 1,
+            "panel_id": 105,
+            "rendered": false,
+            "view_depth": 2.611187
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 0.860554,
+            "front_facing": true,
+            "order_index": 2,
+            "panel_id": 102,
+            "rendered": true,
+            "view_depth": 0.860554
+          },
+          {
+            "behind_camera": true,
+            "depth_key": -0.133405,
+            "front_facing": true,
+            "order_index": 3,
+            "panel_id": 103,
+            "rendered": false,
+            "view_depth": -0.133405
+          },
+          {
+            "behind_camera": true,
+            "depth_key": -0.902089,
+            "front_facing": true,
+            "order_index": 4,
+            "panel_id": 101,
+            "rendered": false,
+            "view_depth": -0.902089
+          }
+        ],
+        "rule": "quantized_view_depth_desc_then_panel_id_asc",
+        "view_depth_definition": "dot(panel_center - camera_position, camera_forward)"
+      },
+      "volume": {
+        "ambient": 0.5,
+        "anisotropy": 0.62,
+        "composite": "base_rgb * transmittance + inscribed_fog_rgb",
+        "density": 0.018,
+        "extinction": 1.25,
+        "far": 90.0,
+        "integral": "inscatter += exp(-sigma_t*t) * sigma_s * HG(-dot(ray,L),g) * light_color * intensity * shadow_visibility * dt",
+        "near": 0.1,
+        "ray_space": "camera_view_distance",
+        "scattering": 0.95,
+        "sigma_s": 0.021375,
+        "sigma_t": 0.0225,
+        "step_count": 32,
+        "step_length": 2.809375,
+        "step_rule": "fixed_near_to_far_step_with_ray_end_clamp"
+      }
+    },
+    {
+      "camera": {
+        "far": 90.0,
+        "forward": [
+          -0.47019,
+          -0.041142,
+          -0.881606
+        ],
+        "fov_y_deg": 52.0,
+        "frame_index": 6,
+        "interpolation": {
+          "fov": "linear",
+          "near_far": "linear",
+          "orientation": "shortest_path_slerp_normalized",
+          "position": "linear"
+        },
+        "near": 0.1,
+        "orientation_xyzw": [
+          -0.019961,
+          0.242484,
+          0.00499,
+          0.969937
+        ],
+        "position": [
+          10.0,
+          3.8,
+          11.0
+        ],
+        "right": [
+          0.882353,
+          0.0,
+          -0.470588
+        ],
+        "segment": {
+          "alpha": 1.0,
+          "from_keyframe_index": 2,
+          "from_time": 4.0,
+          "to_keyframe_index": 3,
+          "to_time": 6.0
+        },
+        "time": 6.0,
+        "up": [
+          -0.019361,
+          0.999153,
+          -0.036301
+        ]
+      },
+      "counts": {
+        "building_count": 8,
+        "building_triangle_count": 108,
+        "panel_count": 5,
+        "panels_backface_culled": 3,
+        "panels_behind_camera": 0,
+        "panels_drawn": 2
+      },
+      "fog_color": [
+        0.52,
+        0.65,
+        0.74
+      ],
+      "frame_index": 6,
+      "image": "frame_0006.png",
+      "image_sha256": "ae3f6221e90f20f01d6fe06964c792ad9f29f17962364672825d5576c7539525",
+      "light_color": [
+        1.0,
+        0.82,
+        0.58
+      ],
+      "light_direction": [
+        -0.420758,
+        -0.621119,
+        0.661191
+      ],
+      "light_intensity": 4.6,
+      "output_quantization": "floor(clamp(rgb,0,1)*255+0.5) uint8",
+      "schema_version": 1,
+      "stats_file": "frame_0006.json",
+      "time": 6.0,
+      "transparent_sort": {
+        "depth_quantization": "1e-6",
+        "drawn_order_indices": [
+          1,
+          2
+        ],
+        "drawn_panel_colors": [
+          [
+            0.68,
+            0.73,
+            0.72,
+            0.76
+          ],
+          [
+            0.23,
+            0.62,
+            0.68,
+            0.64
+          ]
+        ],
+        "drawn_panel_ids": [
+          104,
+          101
+        ],
+        "panels": [
+          {
+            "behind_camera": false,
+            "depth_key": 11.379768,
+            "front_facing": false,
+            "order_index": 0,
+            "panel_id": 105,
+            "rendered": false,
+            "view_depth": 11.379768
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 8.667655,
+            "front_facing": true,
+            "order_index": 1,
+            "panel_id": 104,
+            "rendered": true,
+            "view_depth": 8.667655
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 6.22737,
+            "front_facing": true,
+            "order_index": 2,
+            "panel_id": 101,
+            "rendered": true,
+            "view_depth": 6.22737
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 5.314026,
+            "front_facing": false,
+            "order_index": 3,
+            "panel_id": 102,
+            "rendered": false,
+            "view_depth": 5.314026
+          },
+          {
+            "behind_camera": false,
+            "depth_key": 2.337137,
+            "front_facing": false,
+            "order_index": 4,
+            "panel_id": 103,
+            "rendered": false,
+            "view_depth": 2.337137
+          }
+        ],
+        "rule": "quantized_view_depth_desc_then_panel_id_asc",
+        "view_depth_definition": "dot(panel_center - camera_position, camera_forward)"
+      },
+      "volume": {
+        "ambient": 0.5,
+        "anisotropy": 0.62,
+        "composite": "base_rgb * transmittance + inscribed_fog_rgb",
+        "density": 0.018,
+        "extinction": 1.25,
+        "far": 90.0,
+        "integral": "inscatter += exp(-sigma_t*t) * sigma_s * HG(-dot(ray,L),g) * light_color * intensity * shadow_visibility * dt",
+        "near": 0.1,
+        "ray_space": "camera_view_distance",
+        "scattering": 0.95,
+        "sigma_s": 0.021375,
+        "sigma_t": 0.0225,
+        "step_count": 32,
+        "step_length": 2.809375,
+        "step_rule": "fixed_near_to_far_step_with_ray_end_clamp"
+      }
+    }
+  ],
+  "generated_at": "2026-11-14T21:06:17Z",
+  "renderer": {
+    "name": "fogcity-preview",
+    "opengl_renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+    "opengl_vendor": "Mesa",
+    "opengl_version": "4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3",
+    "required_opengl": "4.1 core",
+    "version": "0.1.0"
+  },
+  "reproduction": {
+    "interpolation": "alpha=(time-t0)/(t1-t0); position=(1-alpha)*p0+alpha*p1; orientation=normalize(shortest_path_slerp(q0,q1,alpha)); fov/near/far are linear; quaternion is xyzw",
+    "panel_sort": "view_depth=dot(center-camera_position,camera_forward); round to 1e-6; sort desc; tie by panel id asc",
+    "render_order": "opaque prepass -> shadow ID/depth prepass -> base color -> volume composite -> transparent panels far-to-near"
+  },
+  "scene": {
+    "end_time": 6.0,
+    "fps": 1.0,
+    "frame_count": 7,
+    "keyframe_count": 4,
+    "name": "deterministic_fog_city_sample",
+    "resolution": [
+      480,
+      270
+    ],
+    "sha256": "c02dbcb94dfcf7b3df3518c886a5fe659c818a9fc73c77245f1b42416582217f",
+    "start_time": 0.0
+  },
+  "schema_version": 1
+}
