@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loudness-pipeline"
+version = "1.0.0"
+description = "Deterministic offline BS.1770-4 / EBU R128 loudness normalization for multichannel WAV files"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.22",
+    "soundfile>=0.11",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+loudness-normalize = "loudness_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["loudness_pipeline*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
