@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+*.tmp
+demo_data/
+validation/
+out/

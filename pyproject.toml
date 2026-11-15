@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio-event-mixer"
+version = "1.0.0"
+description = "Deterministic offline game-audio event mixer"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22"]
+
+[project.scripts]
+audio-event-mixer = "audio_event_mixer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["audio_event_mixer*"]
