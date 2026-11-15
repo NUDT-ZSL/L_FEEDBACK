@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/terrain-bake/bake_manifest.schema.json",
+  "title": "Terrain bake manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "status",
+    "error",
+    "error_message",
+    "error_details",
+    "seed",
+    "request",
+    "source",
+    "backend",
+    "timings_ms",
+    "lods",
+    "normal_map",
+    "material_preview",
+    "preview",
+    "seam",
+    "checksums",
+    "artifacts",
+    "warnings"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "status": {"enum": ["ok", "error"]},
+    "error": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "enum": [
+            "E_INVALID_ARGUMENT",
+            "E_INVALID_HEIGHTFIELD",
+            "E_WEIGHT_MISMATCH",
+            "E_GEOMETRY_INVALID",
+            "E_RENDER_FAILED",
+            "E_IO_ERROR",
+            "E_INTERNAL_ERROR"
+          ]
+        }
+      ]
+    },
+    "error_message": {"type": ["string", "null"]},
+    "error_details": {"type": "object"},
+    "seed": {"type": "integer", "minimum": 0, "maximum": 18446744073709551615},
+    "request": {
+      "type": "object",
+      "required": [
+        "size",
+        "seed",
+        "lod_count",
+        "normal_resolution",
+        "preview_resolution",
+        "max_relative_error",
+        "weight_tolerance",
+        "lod_target_ratios",
+        "lod_error_thresholds",
+        "preview_backend",
+        "output_dir"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "kind",
+        "heightfield_path",
+        "material_weights_path",
+        "heightfield_sha256",
+        "material_weights_sha256",
+        "height_min",
+        "height_max",
+        "weight_sum_max_error"
+      ]
+    },
+    "backend": {
+      "type": "object",
+      "required": ["requested", "attempted", "used", "fallback_reason"]
+    },
+    "timings_ms": {
+      "type": "object",
+      "additionalProperties": {"type": "number"}
+    },
+    "lods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "level",
+          "path",
+          "vertex_count",
+          "face_count",
+          "simplification_error",
+          "relative_simplification_error",
+          "error_threshold",
+          "target_vertices",
+          "reached_target",
+          "collapse_count",
+          "topology",
+          "sha256"
+        ]
+      }
+    },
+    "normal_map": {
+      "type": "object",
+      "required": [
+        "path",
+        "metadata_path",
+        "resolution",
+        "pixel_step",
+        "height_scale",
+        "tangent_axis",
+        "bitangent_axis",
+        "normal_axis",
+        "sha256",
+        "metadata_sha256"
+      ]
+    },
+    "material_preview": {
+      "type": "object",
+      "required": ["path", "resolution", "sha256"]
+    },
+    "preview": {
+      "type": "object",
+      "required": ["path", "backend", "resolution", "sha256"]
+    },
+    "seam": {
+      "type": "object",
+      "required": ["pairs", "all_manifold", "t_junction_count"]
+    },
+    "checksums": {
+      "type": "object",
+      "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "warnings": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}
+

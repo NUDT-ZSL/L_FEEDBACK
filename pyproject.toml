@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "terrain-bake"
+version = "1.0.0"
+description = "Deterministic offline terrain LOD and normal-map baking pipeline"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "Pillow>=10",
+    "PyOpenGL>=3.1",
+    "glfw>=2.6",
+]
+
+[project.scripts]
+terrain-bake = "terrain_bake.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["terrain_bake*"]
+
