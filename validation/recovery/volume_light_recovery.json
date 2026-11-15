@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "complete": true,
+  "scene": "/home/liang/feedback/uid90/sample/scene.json",
+  "sceneSha256": "b83825fda81b233929e567911696c079e1818dc5a53489a73e33f30c0450f4bc",
+  "frameIndex": 1,
+  "width": 384,
+  "height": 216,
+  "pixelSha256": "f8997139a83898197c1b4eb97c65886dbc290e151f939f0724c39f72933b2f3e",
+  "rawFile": "volume_light_recovery.rgba"
+}

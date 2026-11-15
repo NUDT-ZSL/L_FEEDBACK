@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "status": "ok",
+  "scene": {
+    "path": "/home/liang/feedback/uid90/sample/scene.json",
+    "name": "deterministic-volume-shadow-sample",
+    "schemaVersion": 1,
+    "sha256": "b83825fda81b233929e567911696c079e1818dc5a53489a73e33f30c0450f4bc"
+  },
+  "device": {
+    "name": "llvmpipe (LLVM 21.1.8, 256 bits)",
+    "apiVersion": "1.4.335",
+    "driverVersion": 109051912,
+    "validationLayers": true
+  },
+  "output": {
+    "png": "/home/liang/feedback/uid90/validation/render.png",
+    "width": 384,
+    "height": 216,
+    "pngSha256": "4b4a5e6082ddb6b4061aed6e98d1913d3b913e356cab5559ec5ad88705927c62",
+    "frameASha256": "4b4a5e6082ddb6b4061aed6e98d1913d3b913e356cab5559ec5ad88705927c62",
+    "frameBSha256": "4b4a5e6082ddb6b4061aed6e98d1913d3b913e356cab5559ec5ad88705927c62",
+    "framesIdentical": true
+  },
+  "reference": {
+    "enabled": true,
+    "png": "/home/liang/feedback/uid90/validation/reference.png",
+    "pngSha256": "138e6f97c3d49d47c63c9dcd5ec77b74139ea5093a30bd57bd8b97e21533d1cf",
+    "source": "same renderer; fixed seed from scene noise; reference stepMeters=0.030; reference maxSteps=512; same camera, lights, medium, PCF and exposure; Rec.709 linear luminance",
+    "noiseSeed": 1337,
+    "stepMeters": 0.030000,
+    "maxSteps": 512,
+    "meanAbsoluteLuminanceError": 0.000278,
+    "threshold": 0.020000,
+    "passed": true
+  },
+  "statistics": {
+    "framesRendered": 3,
+    "volumeStepMeters": 0.120000,
+    "volumeMaxSteps": 192,
+    "volumeSamplesFrameA": 6659011,
+    "volumeSamplesFrameB": 6659011,
+    "volumeSamplesPerPixelFrameA": 80.283215,
+    "volumeSamplesReference": 26508149,
+    "shadowMapMilliseconds": 23.649746,
+    "frameAMilliseconds": 203.645225,
+    "frameBMilliseconds": 151.469711,
+    "referenceMilliseconds": 510.577542
+  },
+  "determinism": {
+    "sameInputSamePng": true,
+    "framePixelSha256A": "f8997139a83898197c1b4eb97c65886dbc290e151f939f0724c39f72933b2f3e",
+    "framePixelSha256B": "f8997139a83898197c1b4eb97c65886dbc290e151f939f0724c39f72933b2f3e"
+  }
+}

@@ -1,0 +1,147 @@
+#version 460
+
+#extension GL_GOOGLE_include_directive : require
+
+#include "common.glsl"
+
+layout(local_size_x = 8, local_size_y = 8, local_size_z = 1) in;
+
+layout(set = 0, binding = 1) uniform sampler3D noiseTexture;
+layout(set = 0, binding = 2) uniform sampler2D directionalShadowMap;
+layout(set = 0, binding = 3) uniform sampler2DArray pointShadowMap;
+layout(set = 0, binding = 4) uniform sampler2D depthTexture;
+layout(set = 0, binding = 6, rgba16f) uniform image2D volumeImage;
+
+layout(set = 0, binding = 7, std430) buffer SampleCounter {
+    uint sampleCount;
+} counters;
+
+bool intersectVolumeBounds(vec3 origin, vec3 direction,
+                           out float enterDistance, out float exitDistance) {
+    const vec3 minimum = ubo.volumeBoundsMin.xyz;
+    const vec3 maximum = ubo.volumeBoundsMax.xyz;
+    float tNear = -1.0e30;
+    float tFar = 1.0e30;
+    for (int axis = 0; axis < 3; ++axis) {
+        if (abs(direction[axis]) < 1.0e-8) {
+            if (origin[axis] < minimum[axis] || origin[axis] > maximum[axis]) {
+                return false;
+            }
+        } else {
+            float t1 = (minimum[axis] - origin[axis]) / direction[axis];
+            float t2 = (maximum[axis] - origin[axis]) / direction[axis];
+            if (t1 > t2) {
+                const float swapValue = t1;
+                t1 = t2;
+                t2 = swapValue;
+            }
+            tNear = max(tNear, t1);
+            tFar = min(tFar, t2);
+        }
+    }
+    enterDistance = tNear;
+    exitDistance = tFar;
+    return tFar > max(tNear, 0.0);
+}
+
+void main() {
+    const ivec2 pixel = ivec2(gl_GlobalInvocationID.xy);
+    const ivec2 imageSize = imageSize(volumeImage);
+    if (pixel.x >= imageSize.x || pixel.y >= imageSize.y) {
+        return;
+    }
+
+    const vec2 uv = (vec2(pixel) + 0.5) / vec2(imageSize);
+    const float depth = textureLod(depthTexture, uv, 0.0).r;
+    const vec4 farClip = ubo.invViewProj * vec4(uv * 2.0 - 1.0, 1.0, 1.0);
+    if (abs(farClip.w) < 1.0e-8) {
+        imageStore(volumeImage, pixel, vec4(0.0));
+        return;
+    }
+    const vec3 farWorld = farClip.xyz / farClip.w;
+    const vec3 rayDirection = normalize(farWorld - ubo.cameraPos.xyz);
+    const float farDistance = length(farWorld - ubo.cameraPos.xyz);
+
+    float sceneDistance = farDistance;
+    if (depth < 0.999999) {
+        const vec4 sceneClip = ubo.invViewProj * vec4(uv * 2.0 - 1.0, depth, 1.0);
+        if (abs(sceneClip.w) > 1.0e-8) {
+            const vec3 sceneWorld = sceneClip.xyz / sceneClip.w;
+            sceneDistance = min(farDistance, length(sceneWorld - ubo.cameraPos.xyz));
+        }
+    }
+
+    float enterDistance;
+    float exitDistance;
+    if (!intersectVolumeBounds(ubo.cameraPos.xyz, rayDirection,
+                               enterDistance, exitDistance)) {
+        imageStore(volumeImage, pixel, vec4(0.0));
+        return;
+    }
+    const float startDistance = max(0.0, enterDistance);
+    const float endDistance = min(sceneDistance, exitDistance);
+    if (endDistance <= startDistance + 1.0e-5) {
+        imageStore(volumeImage, pixel, vec4(0.0));
+        return;
+    }
+
+    const float segmentLength = endDistance - startDistance;
+    const int maxSteps = max(1, int(ubo.renderParams.x + 0.5));
+    const float requestedStep = max(1.0e-4, ubo.noiseParams.w);
+    const int steps = max(1, min(maxSteps,
+        int(ceil(segmentLength / requestedStep))));
+    const float stepLength = segmentLength / float(steps);
+    const vec3 directionalToLight = -normalize(ubo.dirLightDirection.xyz);
+    const float density = ubo.mediumCoefficients.z;
+    const float absorption = ubo.mediumCoefficients.x;
+    const float scattering = ubo.mediumCoefficients.y;
+    const float anisotropy = ubo.mediumCoefficients.w;
+
+    vec3 accumulated = vec3(0.0);
+    float transmittance = 1.0;
+    int executedSteps = 0;
+    for (int stepIndex = 0; stepIndex < steps; ++stepIndex) {
+        const float distanceAlongRay =
+            startDistance + (float(stepIndex) + 0.5) * stepLength;
+        const vec3 position = ubo.cameraPos.xyz + rayDirection * distanceAlongRay;
+        const float noiseSample =
+            textureLod(noiseTexture, position * ubo.noiseParams.x, 0.0).r;
+        const float densityModulation = clamp(0.35 + 1.30 * noiseSample, 0.15, 1.8);
+        const float sigmaS = scattering * density * densityModulation;
+        const float sigmaA = absorption * density * densityModulation;
+        const float sigmaT = max(sigmaS + sigmaA, 1.0e-6);
+
+        const float directionalCos =
+            clamp(dot(rayDirection, directionalToLight), -1.0, 1.0);
+        const float directionalPhase = henyeyGreenstein(directionalCos, anisotropy);
+        const float directionalShadow =
+            directionalVisibility(directionalShadowMap, position);
+        vec3 directionalInScatter =
+            ubo.dirLightColor.rgb * ubo.dirLightDirection.w *
+            directionalPhase * directionalShadow;
+
+        vec3 pointInScatter = vec3(0.0);
+        const vec3 toPoint = ubo.pointLightPosition.xyz - position;
+        const float pointDistance = length(toPoint);
+        if (pointDistance > 1.0e-5 && pointDistance < ubo.pointLightPosition.w) {
+            const vec3 pointDirection = toPoint / pointDistance;
+            const float pointCos =
+                clamp(dot(rayDirection, pointDirection), -1.0, 1.0);
+            const float pointPhase = henyeyGreenstein(pointCos, anisotropy);
+            const float pointShadow = pointVisibility(pointShadowMap, position);
+            const float rangeRatio = pointDistance / ubo.pointLightPosition.w;
+            const float window = pow(max(1.0 - pow(rangeRatio, 4.0), 0.0), 2.0);
+            const float attenuation = window / (1.0 + pointDistance * pointDistance);
+            pointInScatter = ubo.pointLightColor.rgb * ubo.pointLightColor.w *
+                             pointPhase * attenuation * pointShadow;
+        }
+
+        const vec3 inScatter = directionalInScatter + pointInScatter;
+        accumulated += transmittance * sigmaS * inScatter * stepLength;
+        transmittance *= exp(-sigmaT * stepLength);
+        ++executedSteps;
+    }
+
+    atomicAdd(counters.sampleCount, uint(executedSteps));
+    imageStore(volumeImage, pixel, vec4(accumulated, 1.0));
+}

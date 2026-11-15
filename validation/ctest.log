@@ -1,0 +1,11 @@
+Internal ctest changing into directory: /home/liang/feedback/uid90/build-linux
+Test project /home/liang/feedback/uid90/build-linux
+    Start 1: volume_renderer_acceptance
+1/1 Test #1: volume_renderer_acceptance .......   Passed    5.79 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+acceptance    =   5.79 sec*proc (1 test)
+
+Total Test time (real) =   5.79 sec

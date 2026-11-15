@@ -1,0 +1,11 @@
+/build/
+/build-*/
+/artifacts/
+/validation-final/
+/validation-run*/
+/validation-look*/
+/validation-steps/
+/validation-errors/
+/run/
+__pycache__/
+*.pyc

@@ -1,0 +1,6 @@
+PASS
+png_sha256=4b4a5e6082ddb6b4061aed6e98d1913d3b913e356cab5559ec5ad88705927c62
+reference_luminance_error=0.000278
+step_errors=[0.00046063, 0.00027783, 0.00015525]
+injection_codes=E_SHADER,E_ALLOC,E_DESC,E_DEVICE_LOST
+recovery=verified

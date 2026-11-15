@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "name": "deterministic-volume-shadow-sample",
+  "camera": {
+    "position": [4.2, 2.8, 6.5],
+    "target": [0.0, 1.2, 0.0],
+    "up": [0.0, 1.0, 0.0],
+    "fovYDegrees": 46.0,
+    "nearMeters": 0.1,
+    "farMeters": 40.0
+  },
+  "output": {
+    "width": 384,
+    "height": 216,
+    "exposure": 1.0,
+    "gain": 1.0,
+    "pngPath": "render.png",
+    "statsPath": "stats.json",
+    "referencePngPath": "render.reference.png",
+    "background": [0.006, 0.012, 0.022]
+  },
+  "noise": {
+    "path": "noise.raw",
+    "dimension": 32,
+    "seed": 1337
+  },
+  "volume": {
+    "boundsMin": [-6.0, 0.0, -6.0],
+    "boundsMax": [6.0, 5.0, 6.0],
+    "density": 0.105,
+    "absorption": 0.025,
+    "scattering": 0.58,
+    "anisotropy": 0.28,
+    "stepMeters": 0.12,
+    "maxSteps": 192,
+    "noiseFrequencyPerMeter": 0.16
+  },
+  "directionalLight": {
+    "direction": [0.82, -0.28, -0.35],
+    "color": [1.0, 0.92, 0.78],
+    "intensity": 4.5
+  },
+  "pointLight": {
+    "position": [2.4, 2.35, 1.7],
+    "color": [1.0, 0.52, 0.22],
+    "intensity": 10.0,
+    "rangeMeters": 12.0
+  },
+  "shadows": {
+    "resolution": 1024,
+    "pcfKernel": 5,
+    "directionalBias": 0.008,
+    "pointBias": 0.003
+  },
+  "geometry": {
+    "ground": {
+      "height": 0.0,
+      "sizeMeters": 10.0,
+      "albedo": [0.24, 0.22, 0.19]
+    },
+    "spheres": [
+      {"center": [-1.35, 0.85, -0.55], "radius": 0.85, "albedo": [0.78, 0.28, 0.16]},
+      {"center": [1.05, 0.62, 0.15], "radius": 0.62, "albedo": [0.18, 0.62, 0.42]},
+      {"center": [0.20, 1.75, -1.55], "radius": 0.55, "albedo": [0.24, 0.42, 0.82]},
+      {"center": [-2.15, 2.15, -1.25], "radius": 0.90, "albedo": [0.52, 0.32, 0.62]}
+    ]
+  }
+}
