@@ -1,0 +1,57 @@
+[
+  {
+    "name": "pbr_metal",
+    "description": "Polished PBR metal",
+    "vertex_shader": "shaders/pbr_metal.vert",
+    "fragment_shader": "shaders/pbr_metal.frag",
+    "texture": {
+      "path": "textures/pbr_metal_albedo.npy",
+      "format": "RGBA8",
+      "unit": 0
+    },
+    "uniforms": {
+      "base_color": [0.95, 0.78, 0.42],
+      "metallic": 1.0,
+      "roughness": 0.18,
+      "emissive_strength": 0.0,
+      "uv_scale": 2.0
+    }
+  },
+  {
+    "name": "rough_plastic",
+    "description": "Rough dielectric plastic",
+    "vertex_shader": "shaders/rough_plastic.vert",
+    "fragment_shader": "shaders/rough_plastic.frag",
+    "texture": {
+      "path": "textures/rough_plastic_albedo.npy",
+      "format": "RGBA8",
+      "unit": 0
+    },
+    "uniforms": {
+      "base_color": [0.16, 0.48, 0.92],
+      "metallic": 0.0,
+      "roughness": 0.82,
+      "emissive_strength": 0.0,
+      "uv_scale": 3.0
+    }
+  },
+  {
+    "name": "emissive",
+    "description": "Emissive ceramic-like material",
+    "vertex_shader": "shaders/emissive.vert",
+    "fragment_shader": "shaders/emissive.frag",
+    "texture": {
+      "path": "textures/emissive_albedo.npy",
+      "format": "RGBA32F",
+      "unit": 0
+    },
+    "uniforms": {
+      "base_color": [1.0, 0.28, 0.08],
+      "metallic": 0.0,
+      "roughness": 0.46,
+      "emissive_strength": 2.5,
+      "uv_scale": 1.5
+    }
+  }
+]
+

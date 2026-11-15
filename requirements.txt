@@ -1,0 +1,9 @@
+numpy==1.26.4
+glcontext==2.3.7
+moderngl==5.10.0
+
+# moderngl 5.10.0's PyPI metadata requires glcontext>=2.5.0, which conflicts
+# with the task-pinned glcontext==2.3.7. All runtime packages are listed
+# explicitly above, so install the exact set while ignoring that metadata edge:
+#   python -m pip install --no-deps -r requirements.txt
+
