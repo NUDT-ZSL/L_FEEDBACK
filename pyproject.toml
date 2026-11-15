@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hls-audio-builder"
+version = "1.0.0"
+description = "Sample-aligned multi-bitrate AAC HLS audio builder"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.scripts]
+hls-audio-builder = "hls_audio_builder.cli:main"
+
+[project.optional-dependencies]
+test = ["numpy>=1.20"]
+
+[tool.setuptools.packages.find]
+include = ["hls_audio_builder*"]
+
