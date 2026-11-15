@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "path": "samples/tone_48k_16bit_stereo.wav",
+      "offset_ms": 0
+    },
+    {
+      "path": "samples/voice_44k1_24bit_mono.wav",
+      "offset_ms": 250
+    },
+    {
+      "path": "samples/surround_96k_float_5_1.wav",
+      "offset_ms": 500
+    },
+    {
+      "path": "samples/quiet_32k_16bit_stereo.wav",
+      "offset_ms": 0
+    },
+    {
+      "path": "samples/hot_clicks_48k_24bit_stereo.wav",
+      "offset_ms": 100
+    },
+    {
+      "path": "samples/loud_48k_16bit_stereo.wav",
+      "offset_ms": 0
+    },
+    {
+      "path": "samples/offset_music.ogg",
+      "offset_ms": 2497.098
+    },
+    {
+      "path": "samples/mismatch_voice.ogg",
+      "offset_ms": 0
+    },
+    {
+      "path": "samples/garbage.wav",
+      "offset_ms": 0
+    },
+    {
+      "path": "samples/corrupted_frames.mp3",
+      "offset_ms": 0
+    }
+  ]
+}
