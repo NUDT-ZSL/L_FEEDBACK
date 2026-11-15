@@ -1,0 +1,132 @@
+{
+  "blend_formulas": {
+    "add": "dst = dst + src*alpha; weight += alpha",
+    "albedo": "a = material_color * (0.7 + 0.6 * fbm_rotated)",
+    "alpha": "alpha = clip(opacity * mask_noise, 0, 1)",
+    "height": "h = base_noise + height_scale * (fbm_rotated - 0.5) * 2",
+    "multiply": "dst = dst*(1-alpha+alpha*src); weight += alpha*0.5",
+    "normals": "n = normalize(-sobel_x*strength, -sobel_y*strength, 8)",
+    "over": "dst = dst*(1-alpha) + src*alpha; weight += alpha*remaining",
+    "weights": "per-material weights normalized per pixel to sum to 1"
+  },
+  "cache": {
+    "format": "TBCACHE1",
+    "version": 1
+  },
+  "generator": "terrain-baker/1.0.0",
+  "layers": [
+    {
+      "blend_mode": "over",
+      "index": 0,
+      "material_id": "grass",
+      "max_height": 1.241108,
+      "mean_albedo": [
+        0.933457,
+        0.83414,
+        0.566931
+      ],
+      "min_height": -0.338485
+    },
+    {
+      "blend_mode": "add",
+      "index": 1,
+      "material_id": "rock",
+      "max_height": 0.981147,
+      "mean_albedo": [
+        0.476297,
+        0.374781,
+        0.632111
+      ],
+      "min_height": -0.131612
+    },
+    {
+      "blend_mode": "multiply",
+      "index": 2,
+      "material_id": "sand",
+      "max_height": 1.09495,
+      "mean_albedo": [
+        0.939151,
+        0.725573,
+        0.649634
+      ],
+      "min_height": 0.257051
+    },
+    {
+      "blend_mode": "over",
+      "index": 3,
+      "material_id": "snow",
+      "max_height": 1.206419,
+      "mean_albedo": [
+        0.740363,
+        0.51292,
+        0.428508
+      ],
+      "min_height": 0.019581
+    }
+  ],
+  "normal_correction_factor": 0.999204302,
+  "outputs": {
+    "diffuse": {
+      "file": "diffuse.png",
+      "sha256": "f2d667e9aab255cbe3295b90e6b4e56740b47f0c0ed7b3a89d7ffae42bb6080c"
+    },
+    "normal": {
+      "file": "normal.png",
+      "sha256": "10110d0a5c04d92f9be6d6b347e3eaed1a56039904c39a42c61380627f9761f5"
+    },
+    "weights": {
+      "file": "weights.png",
+      "sha256": "3d6361fab35852cf6eea6fe6d6ade350a5dee4c5a49c015172aa1ca20960643d"
+    }
+  },
+  "params": {
+    "layers": [
+      {
+        "blend_mode": "over",
+        "height_scale": 1.0,
+        "material_id": "grass",
+        "opacity": 1.0,
+        "rotation_deg": 0.0,
+        "tile_scale": 6.0
+      },
+      {
+        "blend_mode": "add",
+        "height_scale": 0.6,
+        "material_id": "rock",
+        "opacity": 0.7,
+        "rotation_deg": 35.0,
+        "tile_scale": 16.0
+      },
+      {
+        "blend_mode": "multiply",
+        "height_scale": 0.4,
+        "material_id": "sand",
+        "opacity": 0.5,
+        "rotation_deg": -20.0,
+        "tile_scale": 10.0
+      },
+      {
+        "blend_mode": "over",
+        "height_scale": 0.8,
+        "material_id": "snow",
+        "opacity": 0.6,
+        "rotation_deg": 75.0,
+        "tile_scale": 5.0
+      }
+    ],
+    "materials": [
+      "grass",
+      "rock",
+      "sand",
+      "snow"
+    ],
+    "normal_strength": 6.0,
+    "resolution": {
+      "height": 512,
+      "width": 512
+    },
+    "seed": 20261116,
+    "tile_size": 128
+  },
+  "params_hash": "43ac499607c1839c46eef9bb6a9b7c38e69ece08f2fefb42259275c13713a860"
+}

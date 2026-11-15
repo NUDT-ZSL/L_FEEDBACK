@@ -1,0 +1,49 @@
+{
+  "seed": 20261116,
+  "resolution": {
+    "width": 512,
+    "height": 512
+  },
+  "tile_size": 128,
+  "normal_strength": 6.0,
+  "materials": [
+    "grass",
+    "rock",
+    "sand",
+    "snow"
+  ],
+  "layers": [
+    {
+      "material_id": "grass",
+      "tile_scale": 6.0,
+      "rotation_deg": 0.0,
+      "blend_mode": "over",
+      "height_scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "material_id": "rock",
+      "tile_scale": 16.0,
+      "rotation_deg": 35.0,
+      "blend_mode": "add",
+      "height_scale": 0.6,
+      "opacity": 0.7
+    },
+    {
+      "material_id": "sand",
+      "tile_scale": 10.0,
+      "rotation_deg": -20.0,
+      "blend_mode": "multiply",
+      "height_scale": 0.4,
+      "opacity": 0.5
+    },
+    {
+      "material_id": "snow",
+      "tile_scale": 5.0,
+      "rotation_deg": 75.0,
+      "blend_mode": "over",
+      "height_scale": 0.8,
+      "opacity": 0.6
+    }
+  ]
+}
