@@ -1,0 +1,41 @@
+{
+  "project_name": "demo_cutscene",
+  "sources": {
+    "dlg_take_a": {"sample_rate": 44100, "channels": 1, "bit_depth": 16},
+    "dlg_take_b": {"sample_rate": 44100, "channels": 1, "bit_depth": 16},
+    "sfx_boom": {"sample_rate": 44100, "channels": 1, "bit_depth": 16},
+    "sfx_whoosh": {"sample_rate": 44100, "channels": 1, "bit_depth": 16},
+    "music_theme": {"sample_rate": 44100, "channels": 1, "bit_depth": 16},
+    "music_sting": {"sample_rate": 44100, "channels": 1, "bit_depth": 16},
+    "bad_stereo_src": {"sample_rate": 44100, "channels": 2, "bit_depth": 16}
+  },
+  "tracks": {
+    "dialogue": {"gain_db": 0.0},
+    "sfx": {"gain_db": -4.0},
+    "music": {"gain_db": -8.0}
+  },
+  "timeline": {
+    "duration": 12.0,
+    "events": [
+      {"event_id": "dlg_001", "track": "dialogue", "start": 0.5, "duration": 2.0, "source": "dlg_take_a"},
+      {"event_id": "dlg_002", "track": "dialogue", "start": 3.0, "duration": 1.5, "source": "dlg_take_b"},
+      {"event_id": "dlg_003", "track": "dialogue", "start": 6.25, "duration": 2.0, "source": "dlg_take_a"},
+      {"event_id": "sfx_001", "track": "sfx", "start": 2.0, "duration": 0.8, "source": "sfx_boom"},
+      {"event_id": "sfx_002", "track": "sfx", "start": 7.5, "duration": 1.2, "source": "sfx_whoosh"},
+      {"event_id": "mus_001", "track": "music", "start": 0.0, "duration": 10.0, "source": "music_theme"},
+      {"event_id": "mus_002", "track": "music", "start": 9.0, "duration": 2.5, "source": "music_sting"},
+      {"event_id": "bad_neg", "track": "dialogue", "start": 4.0, "duration": -1.0, "source": "dlg_take_a"},
+      {"event_id": "bad_track", "track": "ambient", "start": 1.0, "duration": 1.0, "source": "dlg_take_a"},
+      {"event_id": "bad_src", "track": "sfx", "start": 5.0, "duration": 1.0, "source": "no_such_source"},
+      {"event_id": "bad_fmt", "track": "sfx", "start": 8.0, "duration": 1.0, "source": "bad_stereo_src"}
+    ]
+  },
+  "chapters": [
+    {"title": "Opening", "start": 0.0},
+    {"title": "Confrontation", "start": 3.0},
+    {"title": "Resolution", "start": 6.25},
+    {"title": "OutOfRange", "start": 99.0}
+  ],
+  "video": {"width": 1280, "height": 720, "fps": 30, "color": "0x1a2b3c"},
+  "loudness": {"target_lufs": -16.0, "true_peak_dbtp": -1.0}
+}

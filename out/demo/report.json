@@ -1,0 +1,205 @@
+{
+  "report_version": 1,
+  "tool": {
+    "name": "cutscene-pipeline",
+    "version": "1.0.0"
+  },
+  "mode": "normal",
+  "project": "demo_cutscene",
+  "input_event_count": 11,
+  "processed_event_count": 7,
+  "skipped_event_count": 4,
+  "skipped_events": [
+    {
+      "event_id": "bad_neg",
+      "reason": "negative_duration"
+    },
+    {
+      "event_id": "bad_track",
+      "reason": "unknown_track"
+    },
+    {
+      "event_id": "bad_src",
+      "reason": "missing_source"
+    },
+    {
+      "event_id": "bad_fmt",
+      "reason": "format_mismatch"
+    }
+  ],
+  "validation": [
+    {
+      "type": "overlap",
+      "track": "music",
+      "message": "overlap on track 'music': 'mus_001' ends at 10.000s but 'mus_002' starts at 9.000s"
+    }
+  ],
+  "timeline": {
+    "sample_rate": 48000,
+    "duration_s": 12.0,
+    "alignment": [
+      {
+        "event_id": "dlg_001",
+        "track": "dialogue",
+        "start_s": 0.5,
+        "sample_offset": 24000,
+        "offset_error_ms": 0.0,
+        "samples": 96001
+      },
+      {
+        "event_id": "dlg_002",
+        "track": "dialogue",
+        "start_s": 3.0,
+        "sample_offset": 144000,
+        "offset_error_ms": 0.0,
+        "samples": 72000
+      },
+      {
+        "event_id": "dlg_003",
+        "track": "dialogue",
+        "start_s": 6.25,
+        "sample_offset": 300000,
+        "offset_error_ms": 0.0,
+        "samples": 96001
+      },
+      {
+        "event_id": "mus_001",
+        "track": "music",
+        "start_s": 0.0,
+        "sample_offset": 0,
+        "offset_error_ms": 0.0,
+        "samples": 480001
+      },
+      {
+        "event_id": "mus_002",
+        "track": "music",
+        "start_s": 9.0,
+        "sample_offset": 432000,
+        "offset_error_ms": 0.0,
+        "samples": 120001
+      },
+      {
+        "event_id": "sfx_001",
+        "track": "sfx",
+        "start_s": 2.0,
+        "sample_offset": 96000,
+        "offset_error_ms": 0.0,
+        "samples": 38400
+      },
+      {
+        "event_id": "sfx_002",
+        "track": "sfx",
+        "start_s": 7.5,
+        "sample_offset": 360000,
+        "offset_error_ms": 0.0,
+        "samples": 57601
+      }
+    ]
+  },
+  "mix": {
+    "tracks": {
+      "dialogue": {
+        "gain_db": 0.0,
+        "peak_linear": 0.5782921523069152,
+        "peak_dbfs": -4.757054024684731
+      },
+      "sfx": {
+        "gain_db": -4.0,
+        "peak_linear": 0.3780720186489319,
+        "peak_dbfs": -8.448509277189807
+      },
+      "music": {
+        "gain_db": -8.0,
+        "peak_linear": 0.4200585873234811,
+        "peak_dbfs": -7.5338026502889495
+      }
+    },
+    "mix_peak_linear": 0.9370236885699805,
+    "mix_peak_dbfs": -0.5649885945137135
+  },
+  "loudness": {
+    "before": {
+      "integrated_lufs": -11.22,
+      "true_peak_dbtp": -0.565
+    },
+    "after": {
+      "integrated_lufs": -16.0,
+      "true_peak_dbtp": -5.345
+    },
+    "target_lufs": -16.0,
+    "true_peak_ceiling_dbtp": -1.0,
+    "gain_db": -4.78,
+    "limiter_engaged": false
+  },
+  "chapters": [
+    {
+      "title": "Opening",
+      "start": 0.0
+    },
+    {
+      "title": "Confrontation",
+      "start": 3.0
+    },
+    {
+      "title": "Resolution",
+      "start": 6.25
+    }
+  ],
+  "mux": {
+    "output": "out/demo/cutscene.mp4",
+    "chapters_written": 3,
+    "video": {
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "color": "0x1a2b3c"
+    },
+    "duration_s": 12.0
+  },
+  "stage_timings_s": {
+    "parse_validate": 0.000152,
+    "align": 1.350812,
+    "mix": 0.012094,
+    "loudness": 3.623455,
+    "mux": 0.708375,
+    "total": 5.733331
+  },
+  "warnings": [
+    {
+      "type": "negative_duration",
+      "message": "event 'bad_neg': duration -1.0 <= 0",
+      "event_id": "bad_neg"
+    },
+    {
+      "type": "unknown_track",
+      "message": "event 'bad_track': unknown track 'ambient'",
+      "event_id": "bad_track"
+    },
+    {
+      "type": "missing_source",
+      "message": "event 'bad_src': source 'no_such_source' not declared",
+      "event_id": "bad_src"
+    },
+    {
+      "type": "format_mismatch",
+      "message": "event 'bad_fmt': source format {'sample_rate': 44100, 'channels': 2, 'bit_depth': 16} != {'sample_rate': 44100, 'channels': 1, 'bit_depth': 16}",
+      "event_id": "bad_fmt"
+    },
+    {
+      "type": "overlap",
+      "message": "overlap on track 'music': 'mus_001' ends at 10.000s but 'mus_002' starts at 9.000s",
+      "event_id": "mus_002"
+    },
+    {
+      "type": "chapter_out_of_range",
+      "message": "chapter 'OutOfRange' start 99.000s outside [0, 12.000s); dropped"
+    }
+  ],
+  "files": {
+    "aligned_dir": "out/demo/aligned",
+    "mix_wav": "out/demo/mix_48k_24bit_stereo.wav",
+    "normalized_wav": "out/demo/normalized_48k_24bit_stereo.wav",
+    "mp4": "out/demo/cutscene.mp4",
+    "report": "out/demo/report.json"
+  }
+}
