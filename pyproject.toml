@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "broadcast-audiorepair"
+version = "1.0.0"
+description = "Deterministic EBU R128 segmented repair with anchored WSOLA"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21"]
+
+[project.scripts]
+audiorepair = "audiorepair.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["audiorepair*"]
+
