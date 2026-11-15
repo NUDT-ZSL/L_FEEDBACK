@@ -1,0 +1,84 @@
+{
+  "sample_rate": 48000,
+  "output": "out/cabin_mix.wav",
+  "report": "out/cabin_mix_report.json",
+  "log_dir": "logs",
+  "log_file": "automix.log",
+  "master_gain_db": 0.0,
+  "drc": {
+    "enabled": true,
+    "threshold_db": -10.0,
+    "ratio": 2.0,
+    "attack_ms": 20.0,
+    "release_ms": 180.0,
+    "knee_db": 6.0
+  },
+  "limiter": {
+    "enabled": true,
+    "threshold_dbfs": -3.0,
+    "lookahead_ms": 10.0,
+    "release_ms": 80.0
+  },
+  "tracks": [
+    {
+      "name": "navigation",
+      "input": "samples/nav_44k1_16bit_mono.wav",
+      "gain_db": -2.0,
+      "mute": false,
+      "solo": false,
+      "drc": {
+        "enabled": true,
+        "threshold_db": -18.0,
+        "ratio": 3.5,
+        "attack_ms": 8.0,
+        "release_ms": 120.0,
+        "knee_db": 4.0
+      }
+    },
+    {
+      "name": "media",
+      "input": "samples/media_48k_24bit_stereo.wav",
+      "gain_db": -3.0,
+      "mute": false,
+      "solo": false,
+      "drc": {
+        "enabled": true,
+        "threshold_db": -20.0,
+        "ratio": 2.5,
+        "attack_ms": 15.0,
+        "release_ms": 150.0,
+        "knee_db": 6.0
+      }
+    },
+    {
+      "name": "phone",
+      "input": "samples/phone_48k_float32_mono.wav",
+      "gain_db": 0.0,
+      "mute": false,
+      "solo": false,
+      "drc": {
+        "enabled": true,
+        "threshold_db": -22.0,
+        "ratio": 3.0,
+        "attack_ms": 10.0,
+        "release_ms": 180.0,
+        "knee_db": 5.0
+      }
+    },
+    {
+      "name": "system",
+      "input": "samples/system_44k1_16bit_stereo.wav",
+      "gain_db": -4.0,
+      "mute": false,
+      "solo": false,
+      "drc": {
+        "enabled": true,
+        "threshold_db": -20.0,
+        "ratio": 4.0,
+        "attack_ms": 6.0,
+        "release_ms": 100.0,
+        "knee_db": 3.0
+      }
+    }
+  ]
+}

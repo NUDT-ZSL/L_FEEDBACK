@@ -1,0 +1,10 @@
+/build*/
+/out/
+/logs/
+/examples/out/
+/examples/samples/
+/examples/logs/
+__pycache__/
+*.pyc
+*.wav
+*.part
