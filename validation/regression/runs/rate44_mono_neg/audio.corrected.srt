@@ -1,0 +1,19 @@
+1
+00:00:01,151 --> 00:00:02,351
+The evening bulletin begins now.
+
+2
+00:00:02,351 --> 00:00:03,651
+Markets closed higher across the region.
+
+3
+00:00:04,351 --> 00:00:07,351
+Weather remains clear with light winds and a cool overnight period.
+
+4
+00:00:12,551 --> 00:00:14,151
+This is a deterministic broadcast alignment test signal.
+
+5
+00:00:15,151 --> 00:00:16,351
+End of the local news segment.

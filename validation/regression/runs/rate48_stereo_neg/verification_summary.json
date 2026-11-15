@@ -1,0 +1,29 @@
+{
+  "status": "ok",
+  "ts_path": "validation/regression/runs/rate48_stereo_neg/audio.with_scte35.ts",
+  "ts_size": 1154696,
+  "pmt_pid": 4096,
+  "audio_pid": "0x102",
+  "scte35_pid": 256,
+  "subtitle_pid": 288,
+  "scte35_event_count": 3,
+  "scte35_event_ids": [
+    49002,
+    50002,
+    51002
+  ],
+  "dvb_display_sets": 5,
+  "dvb_clear_sets": 4,
+  "ffprobe_audio_codec": "aac",
+  "ffprobe_audio_sample_rate": "48000",
+  "ffprobe_subtitle_codec": "dvb_subtitle",
+  "ffprobe_data_codec": "scte_35",
+  "audio_pts_packet_count": 939,
+  "audio_pts_continuous": true,
+  "audio_pts_step_90k_values": [
+    1920
+  ],
+  "ffmpeg_decode_check": "ok",
+  "subtitle_overlay_max_channel": 255,
+  "subtitle_visual_check": "ok"
+}

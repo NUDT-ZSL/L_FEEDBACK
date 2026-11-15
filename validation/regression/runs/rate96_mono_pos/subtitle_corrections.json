@@ -1,0 +1,24 @@
+{
+  "policy": "truncate",
+  "correction_count": 2,
+  "corrections": [
+    {
+      "cue_index": 1,
+      "action": "truncate",
+      "reason": "overlap",
+      "old_start_ms": 3200.0,
+      "old_end_ms": 4500.0,
+      "new_start_ms": 3200.0,
+      "new_end_ms": 3600.0
+    },
+    {
+      "cue_index": 0,
+      "action": "truncate",
+      "reason": "overlap_clip_previous",
+      "old_start_ms": 2000.0,
+      "old_end_ms": 3600.0,
+      "new_start_ms": 2000.0,
+      "new_end_ms": 3200.0
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "status": "ok",
+  "sample_count": 6,
+  "results": [
+    {
+      "name": "rate44_mono_neg",
+      "status": "ok",
+      "expected_offset_ms": -850,
+      "estimated_offset_ms": -848.6875,
+      "offset_error_ms": 1.312,
+      "confidence": 0.719122,
+      "ts": "validation/regression/runs/rate44_mono_neg/audio.with_scte35.ts",
+      "verification": {
+        "status": "ok",
+        "ts_path": "validation/regression/runs/rate44_mono_neg/audio.with_scte35.ts",
+        "ts_size": 1185152,
+        "pmt_pid": 4096,
+        "audio_pid": "0x102",
+        "scte35_pid": 256,
+        "subtitle_pid": 288,
+        "scte35_event_count": 3,
+        "scte35_event_ids": [
+          45101,
+          46101,
+          47101
+        ],
+        "dvb_display_sets": 5,
+        "dvb_clear_sets": 4,
+        "ffprobe_audio_codec": "aac",
+        "ffprobe_audio_sample_rate": "48000",
+        "ffprobe_subtitle_codec": "dvb_subtitle",
+        "ffprobe_data_codec": "scte_35",
+        "audio_pts_packet_count": 939,
+        "audio_pts_continuous": true,
+        "audio_pts_step_90k_values": [
+          1920
+        ],
+        "ffmpeg_decode_check": "ok",
+        "subtitle_overlay_max_channel": 255,
+        "subtitle_visual_check": "ok"
+      }
+    },
+    {
+      "name": "rate44_stereo_pos",
+      "status": "ok",
+      "expected_offset_ms": 950,
+      "estimated_offset_ms": 950.0,
+      "offset_error_ms": 0.0,
+      "confidence": 0.715227,
+      "ts": "validation/regression/runs/rate44_stereo_pos/audio.with_scte35.ts",
+      "verification": {
+        "status": "ok",
+        "ts_path": "validation/regression/runs/rate44_stereo_pos/audio.with_scte35.ts",
+        "ts_size": 1146048,
+        "pmt_pid": 4096,
+        "audio_pid": "0x102",
+        "scte35_pid": 256,
+        "subtitle_pid": 288,
+        "scte35_event_count": 3,
+        "scte35_event_ids": [
+          45102,
+          46102,
+          47102
+        ],
+        "dvb_display_sets": 5,
+        "dvb_clear_sets": 4,
+        "ffprobe_audio_codec": "aac",
+        "ffprobe_audio_sample_rate": "48000",
+        "ffprobe_subtitle_codec": "dvb_subtitle",
+        "ffprobe_data_codec": "scte_35",
+        "audio_pts_packet_count": 939,
+        "audio_pts_continuous": true,
+        "audio_pts_step_90k_values": [
+          1920
+        ],
+        "ffmpeg_decode_check": "ok",
+        "subtitle_overlay_max_channel": 255,
+        "subtitle_visual_check": "ok"
+      }
+    },
+    {
+      "name": "rate48_mono_pos",
+      "status": "ok",
+      "expected_offset_ms": 250,
+      "estimated_offset_ms": 250.0,
+      "offset_error_ms": 0.0,
+      "confidence": 0.735645,
+      "ts": "validation/regression/runs/rate48_mono_pos/audio.with_scte35.ts",
+      "verification": {
+        "status": "ok",
+        "ts_path": "validation/regression/runs/rate48_mono_pos/audio.with_scte35.ts",
+        "ts_size": 1150184,
+        "pmt_pid": 4096,
+        "audio_pid": "0x102",
+        "scte35_pid": 256,
+        "subtitle_pid": 288,
+        "scte35_event_count": 3,
+        "scte35_event_ids": [
+          49001,
+          50001,
+          51001
+        ],
+        "dvb_display_sets": 5,
+        "dvb_clear_sets": 4,
+        "ffprobe_audio_codec": "aac",
+        "ffprobe_audio_sample_rate": "48000",
+        "ffprobe_subtitle_codec": "dvb_subtitle",
+        "ffprobe_data_codec": "scte_35",
+        "audio_pts_packet_count": 939,
+        "audio_pts_continuous": true,
+        "audio_pts_step_90k_values": [
+          1920
+        ],
+        "ffmpeg_decode_check": "ok",
+        "subtitle_overlay_max_channel": 255,
+        "subtitle_visual_check": "ok"
+      }
+    },
+    {
+      "name": "rate48_stereo_neg",
+      "status": "ok",
+      "expected_offset_ms": -400,
+      "estimated_offset_ms": -398.979167,
+      "offset_error_ms": 1.021,
+      "confidence": 0.718382,
+      "ts": "validation/regression/runs/rate48_stereo_neg/audio.with_scte35.ts",
+      "verification": {
+        "status": "ok",
+        "ts_path": "validation/regression/runs/rate48_stereo_neg/audio.with_scte35.ts",
+        "ts_size": 1154696,
+        "pmt_pid": 4096,
+        "audio_pid": "0x102",
+        "scte35_pid": 256,
+        "subtitle_pid": 288,
+        "scte35_event_count": 3,
+        "scte35_event_ids": [
+          49002,
+          50002,
+          51002
+        ],
+        "dvb_display_sets": 5,
+        "dvb_clear_sets": 4,
+        "ffprobe_audio_codec": "aac",
+        "ffprobe_audio_sample_rate": "48000",
+        "ffprobe_subtitle_codec": "dvb_subtitle",
+        "ffprobe_data_codec": "scte_35",
+        "audio_pts_packet_count": 939,
+        "audio_pts_continuous": true,
+        "audio_pts_step_90k_values": [
+          1920
+        ],
+        "ffmpeg_decode_check": "ok",
+        "subtitle_overlay_max_channel": 255,
+        "subtitle_visual_check": "ok"
+      }
+    },
+    {
+      "name": "rate96_mono_pos",
+      "status": "ok",
+      "expected_offset_ms": 1500,
+      "estimated_offset_ms": 1500.0,
+      "offset_error_ms": 0.0,
+      "confidence": 0.706174,
+      "ts": "validation/regression/runs/rate96_mono_pos/audio.with_scte35.ts",
+      "verification": {
+        "status": "ok",
+        "ts_path": "validation/regression/runs/rate96_mono_pos/audio.with_scte35.ts",
+        "ts_size": 1143792,
+        "pmt_pid": 4096,
+        "audio_pid": "0x102",
+        "scte35_pid": 256,
+        "subtitle_pid": 288,
+        "scte35_event_count": 3,
+        "scte35_event_ids": [
+          97001,
+          98001,
+          99001
+        ],
+        "dvb_display_sets": 5,
+        "dvb_clear_sets": 4,
+        "ffprobe_audio_codec": "aac",
+        "ffprobe_audio_sample_rate": "48000",
+        "ffprobe_subtitle_codec": "dvb_subtitle",
+        "ffprobe_data_codec": "scte_35",
+        "audio_pts_packet_count": 939,
+        "audio_pts_continuous": true,
+        "audio_pts_step_90k_values": [
+          1920
+        ],
+        "ffmpeg_decode_check": "ok",
+        "subtitle_overlay_max_channel": 255,
+        "subtitle_visual_check": "ok"
+      }
+    },
+    {
+      "name": "rate96_stereo_neg",
+      "status": "ok",
+      "expected_offset_ms": -1500,
+      "estimated_offset_ms": -1499.166667,
+      "offset_error_ms": 0.833,
+      "confidence": 0.714469,
+      "ts": "validation/regression/runs/rate96_stereo_neg/audio.with_scte35.ts",
+      "verification": {
+        "status": "ok",
+        "ts_path": "validation/regression/runs/rate96_stereo_neg/audio.with_scte35.ts",
+        "ts_size": 1145296,
+        "pmt_pid": 4096,
+        "audio_pid": "0x102",
+        "scte35_pid": 256,
+        "subtitle_pid": 288,
+        "scte35_event_count": 3,
+        "scte35_event_ids": [
+          97002,
+          98002,
+          99002
+        ],
+        "dvb_display_sets": 5,
+        "dvb_clear_sets": 4,
+        "ffprobe_audio_codec": "aac",
+        "ffprobe_audio_sample_rate": "48000",
+        "ffprobe_subtitle_codec": "dvb_subtitle",
+        "ffprobe_data_codec": "scte_35",
+        "audio_pts_packet_count": 939,
+        "audio_pts_continuous": true,
+        "audio_pts_step_90k_values": [
+          1920
+        ],
+        "ffmpeg_decode_check": "ok",
+        "subtitle_overlay_max_channel": 255,
+        "subtitle_visual_check": "ok"
+      }
+    }
+  ]
+}

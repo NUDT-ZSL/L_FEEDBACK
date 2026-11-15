@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bcsubts"
+version = "1.0.0"
+description = "Broadcast subtitle alignment and SCTE-35 insertion tool"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.scripts]
+bcsubts = "bcsubts.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bcsubts*"]

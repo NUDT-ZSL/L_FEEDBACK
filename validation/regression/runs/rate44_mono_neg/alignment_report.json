@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "tool_version": "1.0.0",
+  "status": "ok",
+  "inputs": {
+    "audio": "validation/regression/samples/rate44_mono_neg/audio.wav",
+    "subtitles": "validation/regression/samples/rate44_mono_neg/subtitles.srt",
+    "scte35": "validation/regression/samples/rate44_mono_neg/scte35.json",
+    "fingerprint": {
+      "audio_sha256": "e82f40ec42d94e94d4bd9455a0b5a59a4c44be517e7af5650171d0d67191e438",
+      "subtitles_sha256": "452dcf6516616b78c25bd5d3fc7683ad8830dc30388468946fe183a0f1b74d43",
+      "scte35_sha256": "91f705f9cd0be6a798632c7a4e1b306a70cda87915b9dd69d9d90fd6ce920cce",
+      "overlap_policy": "truncate",
+      "tool_version": "1.0.0"
+    }
+  },
+  "audio": {
+    "source_sample_rate": 44100,
+    "source_channels": 1,
+    "channel_layout": "mono",
+    "source_format": "PCM_S16LE",
+    "source_frames": 882000,
+    "internal_sample_rate": 48000,
+    "internal_frames": 960000,
+    "internal_duration_ms": 20000.0,
+    "resampler": "windowed-sinc, 24 zero crossings, anti-alias low-pass",
+    "resampled_wav": "validation/regression/runs/rate44_mono_neg/.work/resampled_48k.wav"
+  },
+  "subtitles": {
+    "input_format": "srt",
+    "raw_cue_count": 5,
+    "corrected_cue_count": 5,
+    "overlap_policy": "truncate",
+    "raw_metrics": {
+      "cue_count": 5,
+      "negative_duration_count": 0,
+      "overlap_count": 1,
+      "gap_over_5s_count": 1,
+      "overlaps": [
+        {
+          "first_index": 0,
+          "second_index": 1,
+          "overlap_ms": 400.0
+        }
+      ],
+      "gaps_over_5s": [
+        {
+          "after_index": 2,
+          "before_index": 3,
+          "gap_ms": 5200.0
+        }
+      ]
+    },
+    "after_structural_correction": {
+      "cue_count": 5,
+      "negative_duration_count": 0,
+      "overlap_count": 0,
+      "gap_over_5s_count": 1,
+      "overlaps": [],
+      "gaps_over_5s": [
+        {
+          "after_index": 2,
+          "before_index": 3,
+          "gap_ms": 5200.0
+        }
+      ]
+    },
+    "after_global_offset": {
+      "cue_count": 5,
+      "negative_duration_count": 0,
+      "overlap_count": 0,
+      "gap_over_5s_count": 1,
+      "overlaps": [],
+      "gaps_over_5s": [
+        {
+          "after_index": 2,
+          "before_index": 3,
+          "gap_ms": 5200.0
+        }
+      ]
+    },
+    "correction_log": "validation/regression/runs/rate44_mono_neg/subtitle_corrections.json",
+    "corrected_srt": "validation/regression/runs/rate44_mono_neg/audio.corrected.srt",
+    "corrected_starts_ms": [
+      1151.312,
+      2351.312,
+      4351.312,
+      12551.312,
+      15151.312
+    ]
+  },
+  "alignment": {
+    "estimated_offset_ms": -848.6875,
+    "offset_samples_48k": -40737,
+    "coarse_offset_ms": -850.0,
+    "confidence": 0.719122,
+    "residual_variance": 0.043158486,
+    "residual_rmse": 0.242337315,
+    "search_range_ms": 2000,
+    "coarse_step_ms": 10,
+    "fine_step_samples": 1,
+    "offset_before_metrics": {
+      "cue_count": 5,
+      "negative_duration_count": 0,
+      "overlap_count": 0,
+      "gap_over_5s_count": 1,
+      "overlaps": [],
+      "gaps_over_5s": [
+        {
+          "after_index": 2,
+          "before_index": 3,
+          "gap_ms": 5200.0
+        }
+      ]
+    },
+    "offset_after_metrics": {
+      "cue_count": 5,
+      "negative_duration_count": 0,
+      "overlap_count": 0,
+      "gap_over_5s_count": 1,
+      "overlaps": [],
+      "gaps_over_5s": [
+        {
+          "after_index": 2,
+          "before_index": 3,
+          "gap_ms": 5200.0
+        }
+      ]
+    }
+  },
+  "scte35": {
+    "event_count": 3,
+    "log": "validation/regression/runs/rate44_mono_neg/scte35_log.json",
+    "pid": 256
+  },
+  "embedding": {
+    "format": "DVB subtitles (EN 300 743)",
+    "pid": 288,
+    "page_id": 1,
+    "render_methods": {
+      "ffmpeg_libass": 5
+    },
+    "display_sets": 5,
+    "clear_sets": 4,
+    "suppressed_abutting_clears": 1
+  },
+  "transport": {
+    "pmt_pid": 4096,
+    "audio_pid": 258,
+    "origin_pts_90k": 1680,
+    "aux_action_count": 12
+  },
+  "outputs": {
+    "mpeg_ts": "validation/regression/runs/rate44_mono_neg/audio.with_scte35.ts",
+    "alignment_report": "validation/regression/runs/rate44_mono_neg/alignment_report.json",
+    "scte35_log": "validation/regression/runs/rate44_mono_neg/scte35_log.json",
+    "verification": "validation/regression/runs/rate44_mono_neg/verification_summary.json"
+  },
+  "verification": {
+    "status": "ok",
+    "ts_path": "validation/regression/runs/rate44_mono_neg/audio.with_scte35.ts",
+    "ts_size": 1185152,
+    "pmt_pid": 4096,
+    "audio_pid": "0x102",
+    "scte35_pid": 256,
+    "subtitle_pid": 288,
+    "scte35_event_count": 3,
+    "scte35_event_ids": [
+      45101,
+      46101,
+      47101
+    ],
+    "dvb_display_sets": 5,
+    "dvb_clear_sets": 4,
+    "ffprobe_audio_codec": "aac",
+    "ffprobe_audio_sample_rate": "48000",
+    "ffprobe_subtitle_codec": "dvb_subtitle",
+    "ffprobe_data_codec": "scte_35",
+    "audio_pts_packet_count": 939,
+    "audio_pts_continuous": true,
+    "audio_pts_step_90k_values": [
+      1920
+    ],
+    "ffmpeg_decode_check": "ok",
+    "subtitle_overlay_max_channel": 255,
+    "subtitle_visual_check": "ok"
+  }
+}
