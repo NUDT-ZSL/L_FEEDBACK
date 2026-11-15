@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "sample_rate": 48000,
+  "channels": 1,
+  "sample_format": "pcm_s16le",
+  "stretch": {
+    "min_ratio": 0.75,
+    "max_ratio": 1.25
+  },
+  "synthesis": {
+    "crossfade_ms": 4.0,
+    "attack_ms": 6.0,
+    "release_ms": 9.0
+  },
+  "mix": {
+    "target_peak_dbfs": -1.0
+  },
+  "pack": {
+    "chunk_alignment": 64
+  }
+}

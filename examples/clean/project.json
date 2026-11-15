@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "project_id": "harbor_night_clean",
+  "locales": [
+    "zh-CN",
+    "en-US",
+    "ja-JP"
+  ],
+  "roles": {
+    "narrator": {
+      "gain_db": -2.0,
+      "voice": {
+        "fundamental_hz": 142.0,
+        "amplitude": 0.28,
+        "vibrato_hz": 4.6,
+        "vibrato_depth_rad": 0.006,
+        "harmonics": [
+          {
+            "multiple": 1.0,
+            "gain": 1.0,
+            "phase_deg": 0.0
+          },
+          {
+            "multiple": 2.0,
+            "gain": 0.28,
+            "phase_deg": 31.0
+          },
+          {
+            "multiple": 3.0,
+            "gain": 0.13,
+            "phase_deg": -17.0
+          },
+          {
+            "multiple": 4.5,
+            "gain": 0.05,
+            "phase_deg": 67.0
+          }
+        ]
+      }
+    },
+    "heroine": {
+      "gain_db": 1.5,
+      "voice": {
+        "fundamental_hz": 219.0,
+        "amplitude": 0.32,
+        "vibrato_hz": 4.6,
+        "vibrato_depth_rad": 0.006,
+        "harmonics": [
+          {
+            "multiple": 1.0,
+            "gain": 1.0,
+            "phase_deg": 0.0
+          },
+          {
+            "multiple": 2.0,
+            "gain": 0.28,
+            "phase_deg": 31.0
+          },
+          {
+            "multiple": 3.0,
+            "gain": 0.13,
+            "phase_deg": -17.0
+          },
+          {
+            "multiple": 4.5,
+            "gain": 0.05,
+            "phase_deg": 67.0
+          }
+        ]
+      }
+    },
+    "rival": {
+      "gain_db": 1.0,
+      "voice": {
+        "fundamental_hz": 188.0,
+        "amplitude": 0.34,
+        "vibrato_hz": 4.6,
+        "vibrato_depth_rad": 0.006,
+        "harmonics": [
+          {
+            "multiple": 1.0,
+            "gain": 1.0,
+            "phase_deg": 0.0
+          },
+          {
+            "multiple": 2.0,
+            "gain": 0.28,
+            "phase_deg": 31.0
+          },
+          {
+            "multiple": 3.0,
+            "gain": 0.13,
+            "phase_deg": -17.0
+          },
+          {
+            "multiple": 4.5,
+            "gain": 0.05,
+            "phase_deg": 67.0
+          }
+        ]
+      }
+    },
+    "guard": {
+      "gain_db": 0.5,
+      "voice": {
+        "fundamental_hz": 121.0,
+        "amplitude": 0.36,
+        "vibrato_hz": 4.6,
+        "vibrato_depth_rad": 0.006,
+        "harmonics": [
+          {
+            "multiple": 1.0,
+            "gain": 1.0,
+            "phase_deg": 0.0
+          },
+          {
+            "multiple": 2.0,
+            "gain": 0.28,
+            "phase_deg": 31.0
+          },
+          {
+            "multiple": 3.0,
+            "gain": 0.13,
+            "phase_deg": -17.0
+          },
+          {
+            "multiple": 4.5,
+            "gain": 0.05,
+            "phase_deg": 67.0
+          }
+        ]
+      }
+    }
+  },
+  "tables": [
+    "tables/scene01.json",
+    "tables/scene02.json"
+  ]
+}

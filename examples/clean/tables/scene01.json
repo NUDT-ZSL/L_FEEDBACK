@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "table_id": "scene01",
+  "slots": [
+    {
+      "slot_id": "scene_open",
+      "role": "narrator",
+      "start_sample": 0,
+      "duration_samples": 24000,
+      "lines": {
+        "zh-CN": {
+          "text": "夜幕降临港口",
+          "syllables": [
+            {
+              "text": "夜",
+              "duration_samples": 4211
+            },
+            {
+              "text": "幕",
+              "duration_samples": 3789
+            },
+            {
+              "text": "降",
+              "duration_samples": 4632
+            },
+            {
+              "text": "临",
+              "duration_samples": 3368
+            },
+            {
+              "text": "港",
+              "duration_samples": 4211
+            },
+            {
+              "text": "口",
+              "duration_samples": 3789
+            }
+          ]
+        },
+        "en-US": {
+          "text": "Nightfallsovertheharbor",
+          "syllables": [
+            {
+              "text": "Night",
+              "duration_samples": 4596
+            },
+            {
+              "text": "falls",
+              "duration_samples": 4136
+            },
+            {
+              "text": "over",
+              "duration_samples": 4596
+            },
+            {
+              "text": "the",
+              "duration_samples": 2757
+            },
+            {
+              "text": "harbor",
+              "duration_samples": 5515
+            }
+          ]
+        },
+        "ja-JP": {
+          "text": "夜が港に降りる",
+          "syllables": [
+            {
+              "text": "夜",
+              "duration_samples": 4222
+            },
+            {
+              "text": "が",
+              "duration_samples": 2111
+            },
+            {
+              "text": "港",
+              "duration_samples": 4223
+            },
+            {
+              "text": "に",
+              "duration_samples": 2533
+            },
+            {
+              "text": "降",
+              "duration_samples": 4222
+            },
+            {
+              "text": "り",
+              "duration_samples": 2111
+            },
+            {
+              "text": "る",
+              "duration_samples": 3378
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slot_id": "market_heroine",
+      "role": "heroine",
+      "start_sample": 12000,
+      "duration_samples": 30000,
+      "lines": {
+        "zh-CN": {
+          "text": "快看那边的灯",
+          "syllables": [
+            {
+              "text": "快",
+              "duration_samples": 4702
+            },
+            {
+              "text": "看",
+              "duration_samples": 5290
+            },
+            {
+              "text": "那",
+              "duration_samples": 3526
+            },
+            {
+              "text": "边",
+              "duration_samples": 5290
+            },
+            {
+              "text": "的",
+              "duration_samples": 2939
+            },
+            {
+              "text": "灯",
+              "duration_samples": 7053
+            }
+          ]
+        },
+        "en-US": {
+          "text": "Lookatthoselightsacrossthesquare",
+          "syllables": [
+            {
+              "text": "Look",
+              "duration_samples": 3520
+            },
+            {
+              "text": "at",
+              "duration_samples": 2200
+            },
+            {
+              "text": "those",
+              "duration_samples": 4400
+            },
+            {
+              "text": "lights",
+              "duration_samples": 4400
+            },
+            {
+              "text": "across",
+              "duration_samples": 4840
+            },
+            {
+              "text": "the",
+              "duration_samples": 2200
+            },
+            {
+              "text": "square",
+              "duration_samples": 4840
+            }
+          ]
+        },
+        "ja-JP": {
+          "text": "あの灯りを見て",
+          "syllables": [
+            {
+              "text": "あ",
+              "duration_samples": 3645
+            },
+            {
+              "text": "の",
+              "duration_samples": 2604
+            },
+            {
+              "text": "灯",
+              "duration_samples": 5208
+            },
+            {
+              "text": "り",
+              "duration_samples": 4166
+            },
+            {
+              "text": "を",
+              "duration_samples": 3124
+            },
+            {
+              "text": "見",
+              "duration_samples": 4687
+            },
+            {
+              "text": "て",
+              "duration_samples": 4166
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slot_id": "market_rival",
+      "role": "rival",
+      "start_sample": 18000,
+      "duration_samples": 27000,
+      "lines": {
+        "zh-CN": {
+          "text": "别靠近那扇门",
+          "syllables": [
+            {
+              "text": "别",
+              "duration_samples": 3877
+            },
+            {
+              "text": "靠",
+              "duration_samples": 4361
+            },
+            {
+              "text": "近",
+              "duration_samples": 4847
+            },
+            {
+              "text": "那",
+              "duration_samples": 2907
+            },
+            {
+              "text": "扇",
+              "duration_samples": 4362
+            },
+            {
+              "text": "门",
+              "duration_samples": 4846
+            }
+          ]
+        },
+        "en-US": {
+          "text": "Stayawayfromthatdoor",
+          "syllables": [
+            {
+              "text": "Stay",
+              "duration_samples": 5106
+            },
+            {
+              "text": "away",
+              "duration_samples": 5107
+            },
+            {
+              "text": "from",
+              "duration_samples": 4085
+            },
+            {
+              "text": "that",
+              "duration_samples": 4085
+            },
+            {
+              "text": "door",
+              "duration_samples": 5617
+            }
+          ]
+        },
+        "ja-JP": {
+          "text": "その扉に近づくな",
+          "syllables": [
+            {
+              "text": "そ",
+              "duration_samples": 2669
+            },
+            {
+              "text": "の",
+              "duration_samples": 2224
+            },
+            {
+              "text": "扉",
+              "duration_samples": 4448
+            },
+            {
+              "text": "に",
+              "duration_samples": 2669
+            },
+            {
+              "text": "近",
+              "duration_samples": 3559
+            },
+            {
+              "text": "づ",
+              "duration_samples": 4448
+            },
+            {
+              "text": "く",
+              "duration_samples": 2224
+            },
+            {
+              "text": "な",
+              "duration_samples": 3559
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

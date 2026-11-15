@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dialogue-baker"
+version = "1.0.1"
+description = "Deterministic offline multilingual dialogue resource baker"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+dialogue-baker = "dialogue_baker.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dialogue_baker*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+

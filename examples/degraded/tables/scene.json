@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "table_id": "degraded_scene",
+  "slots": [
+    {
+      "slot_id": "valid_first",
+      "role": "heroine",
+      "start_sample": 0,
+      "duration_samples": 24000,
+      "lines": {
+        "zh-CN": {
+          "text": "灯火不灭",
+          "syllables": [
+            {
+              "text": "灯",
+              "duration_samples": 6316
+            },
+            {
+              "text": "火",
+              "duration_samples": 6316
+            },
+            {
+              "text": "不",
+              "duration_samples": 5052
+            },
+            {
+              "text": "灭",
+              "duration_samples": 6316
+            }
+          ]
+        },
+        "en-US": {
+          "text": "Keepthelanternburning",
+          "syllables": [
+            {
+              "text": "Keep",
+              "duration_samples": 6154
+            },
+            {
+              "text": "the",
+              "duration_samples": 4923
+            },
+            {
+              "text": "lantern",
+              "duration_samples": 6769
+            },
+            {
+              "text": "burning",
+              "duration_samples": 6154
+            }
+          ]
+        },
+        "ja-JP": {
+          "text": "灯を消すな",
+          "syllables": [
+            {
+              "text": "灯",
+              "duration_samples": 5189
+            },
+            {
+              "text": "を",
+              "duration_samples": 3892
+            },
+            {
+              "text": "消",
+              "duration_samples": 5838
+            },
+            {
+              "text": "す",
+              "duration_samples": 3892
+            },
+            {
+              "text": "な",
+              "duration_samples": 5189
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slot_id": "degraded_middle",
+      "role": "rival",
+      "start_sample": 24000,
+      "duration_samples": 48000,
+      "lines": {
+        "zh-CN": {
+          "text": "   ",
+          "syllables": [
+            {
+              "text": "空",
+              "duration_samples": 24000
+            }
+          ]
+        },
+        "ja-JP": {
+          "text": "短すぎる",
+          "syllables": [
+            {
+              "text": "短",
+              "duration_samples": 6000
+            },
+            {
+              "text": "すぎる",
+              "duration_samples": 6000
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slot_id": "valid_last",
+      "role": "narrator",
+      "start_sample": 78000,
+      "duration_samples": 20000,
+      "lines": {
+        "zh-CN": {
+          "text": "Gowhiletheroadisclear",
+          "syllables": [
+            {
+              "text": "Go",
+              "duration_samples": 2857
+            },
+            {
+              "text": "while",
+              "duration_samples": 4082
+            },
+            {
+              "text": "the",
+              "duration_samples": 2857
+            },
+            {
+              "text": "road",
+              "duration_samples": 3673
+            },
+            {
+              "text": "is",
+              "duration_samples": 2449
+            },
+            {
+              "text": "clear",
+              "duration_samples": 4082
+            }
+          ]
+        },
+        "en-US": {
+          "text": "Gowhiletheroadisclear",
+          "syllables": [
+            {
+              "text": "Go",
+              "duration_samples": 2857
+            },
+            {
+              "text": "while",
+              "duration_samples": 4082
+            },
+            {
+              "text": "the",
+              "duration_samples": 2857
+            },
+            {
+              "text": "road",
+              "duration_samples": 3673
+            },
+            {
+              "text": "is",
+              "duration_samples": 2449
+            },
+            {
+              "text": "clear",
+              "duration_samples": 4082
+            }
+          ]
+        },
+        "ja-JP": {
+          "text": "静かに進め",
+          "syllables": [
+            {
+              "text": "静",
+              "duration_samples": 3902
+            },
+            {
+              "text": "か",
+              "duration_samples": 3415
+            },
+            {
+              "text": "に",
+              "duration_samples": 3415
+            },
+            {
+              "text": "進",
+              "duration_samples": 4878
+            },
+            {
+              "text": "め",
+              "duration_samples": 4390
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

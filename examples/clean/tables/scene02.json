@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "table_id": "scene02",
+  "slots": [
+    {
+      "slot_id": "market_guard",
+      "role": "guard",
+      "start_sample": 21000,
+      "duration_samples": 26000,
+      "lines": {
+        "zh-CN": {
+          "text": "所有人退后",
+          "syllables": [
+            {
+              "text": "所",
+              "duration_samples": 5000
+            },
+            {
+              "text": "有",
+              "duration_samples": 4500
+            },
+            {
+              "text": "人",
+              "duration_samples": 4500
+            },
+            {
+              "text": "退",
+              "duration_samples": 5000
+            },
+            {
+              "text": "后",
+              "duration_samples": 5500
+            }
+          ]
+        },
+        "en-US": {
+          "text": "Everyonestepbacknow",
+          "syllables": [
+            {
+              "text": "Everyone",
+              "duration_samples": 7389
+            },
+            {
+              "text": "step",
+              "duration_samples": 5543
+            },
+            {
+              "text": "back",
+              "duration_samples": 5542
+            },
+            {
+              "text": "now",
+              "duration_samples": 4926
+            }
+          ]
+        },
+        "ja-JP": {
+          "text": "全員下がれ",
+          "syllables": [
+            {
+              "text": "全",
+              "duration_samples": 5455
+            },
+            {
+              "text": "員",
+              "duration_samples": 5454
+            },
+            {
+              "text": "下",
+              "duration_samples": 4364
+            },
+            {
+              "text": "が",
+              "duration_samples": 3272
+            },
+            {
+              "text": "れ",
+              "duration_samples": 5455
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slot_id": "aftermath",
+      "role": "narrator",
+      "start_sample": 54000,
+      "duration_samples": 24000,
+      "lines": {
+        "zh-CN": {
+          "text": "钟声仍在回响",
+          "syllables": [
+            {
+              "text": "钟",
+              "duration_samples": 3508
+            },
+            {
+              "text": "声",
+              "duration_samples": 3946
+            },
+            {
+              "text": "仍",
+              "duration_samples": 3946
+            },
+            {
+              "text": "在",
+              "duration_samples": 3069
+            },
+            {
+              "text": "回",
+              "duration_samples": 3946
+            },
+            {
+              "text": "响",
+              "duration_samples": 4385
+            }
+          ]
+        },
+        "en-US": {
+          "text": "Thebellstillechoes",
+          "syllables": [
+            {
+              "text": "The",
+              "duration_samples": 4200
+            },
+            {
+              "text": "bell",
+              "duration_samples": 5400
+            },
+            {
+              "text": "still",
+              "duration_samples": 5400
+            },
+            {
+              "text": "echoes",
+              "duration_samples": 6600
+            }
+          ]
+        },
+        "ja-JP": {
+          "text": "鐘の音が響く",
+          "syllables": [
+            {
+              "text": "鐘",
+              "duration_samples": 4213
+            },
+            {
+              "text": "の",
+              "duration_samples": 2340
+            },
+            {
+              "text": "音",
+              "duration_samples": 4213
+            },
+            {
+              "text": "が",
+              "duration_samples": 2808
+            },
+            {
+              "text": "響",
+              "duration_samples": 4681
+            },
+            {
+              "text": "く",
+              "duration_samples": 3745
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
