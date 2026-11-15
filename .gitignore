@@ -1,0 +1,6 @@
+/build/
+*.ppm
+*.user
+*.suo
+.vs/
+out/
