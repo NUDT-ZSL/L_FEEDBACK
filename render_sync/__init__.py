@@ -1,0 +1,60 @@
+"""Deterministic layered render-state synchronization core."""
+
+from .core import (
+    MutationResult,
+    RECOVERY_ROLLBACK,
+    RECOVERY_READY,
+    RenderFrame,
+    RenderSyncCore,
+    RenderTicket,
+)
+from .errors import BusinessError, ErrorCode, SyncError
+from .model import (
+    ANIMATION_BLEND_MODES,
+    ANIMATION_ORDER,
+    LOGIC_STEP_TICKS,
+    MATERIAL_BLEND_MODES,
+    MATERIAL_ORDER,
+    MATERIAL_PARAM_COUNTS,
+    TICKS_PER_SECOND,
+    AnimationLayer,
+    Keyframe,
+    Light,
+    MaterialLayer,
+    RenderCache,
+    RenderCacheChannel,
+    StateSnapshot,
+    make_default_state,
+)
+from .patch import DeltaPatch, PatchOperation, replay_delta_patch, state_digest
+
+__all__ = [
+    "ANIMATION_BLEND_MODES",
+    "ANIMATION_ORDER",
+    "AnimationLayer",
+    "BusinessError",
+    "DeltaPatch",
+    "ErrorCode",
+    "Keyframe",
+    "LOGIC_STEP_TICKS",
+    "Light",
+    "MATERIAL_BLEND_MODES",
+    "MATERIAL_ORDER",
+    "MATERIAL_PARAM_COUNTS",
+    "MaterialLayer",
+    "MutationResult",
+    "PatchOperation",
+    "RECOVERY_READY",
+    "RECOVERY_ROLLBACK",
+    "RenderCache",
+    "RenderCacheChannel",
+    "RenderFrame",
+    "RenderSyncCore",
+    "RenderTicket",
+    "StateSnapshot",
+    "SyncError",
+    "TICKS_PER_SECOND",
+    "make_default_state",
+    "replay_delta_patch",
+    "state_digest",
+]

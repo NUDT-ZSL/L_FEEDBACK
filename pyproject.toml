@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "render-sync-core"
+version = "1.0.0"
+description = "Deterministic layered render-state synchronization core"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+packages = ["render_sync"]
