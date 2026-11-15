@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+demo_input/
+demo_output/
+test_tmp/
+acceptance_run/
+*.wav
+*.mp4
+*.json
+!artifacts/workspace.json
+

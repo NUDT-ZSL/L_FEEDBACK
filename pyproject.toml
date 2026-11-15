@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cinema-audio-master"
+version = "1.0.0"
+description = "Deterministic offline surround dialogue-priority mastering tool"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.23",
+  "soundfile>=0.12",
+]
+
+[project.scripts]
+cinema-master = "cinema_master.cli:main"
+cinema-sample = "cinema_master.samplegen:main"
+
+[tool.setuptools.packages.find]
+include = ["cinema_master*"]
+
