@@ -1,0 +1,122 @@
+{
+  "camera": {
+    "position": [0.0, 0.75, 9.5],
+    "target": [0.0, 0.0, 0.0],
+    "up": [0.0, 1.0, 0.0],
+    "focal_length_mm": 50.0,
+    "sensor_size_mm": [36.0, 36.0],
+    "f_number": 2.8,
+    "focus_distance": 9.5,
+    "exposure_time": 0.0166666667
+  },
+  "motion": {
+    "lateral": 2.8,
+    "vertical": 1.2,
+    "depth": 0.8,
+    "cycles": 1.0
+  },
+  "environment": {
+    "zenith": [0.12, 0.23, 0.55],
+    "horizon": [0.55, 0.68, 0.90],
+    "ground": [0.045, 0.042, 0.038],
+    "sun_direction": [-0.25, 0.70, 0.40],
+    "sun_radiance": [14.0, 12.0, 9.0],
+    "sun_angular_radius_degrees": 2.2
+  },
+  "materials": [
+    {
+      "name": "polished_gold",
+      "base_color": [1.00, 0.72, 0.28],
+      "metallic": 1.0,
+      "roughness": 0.12,
+      "anisotropy": 0.0,
+      "anisotropy_rotation_degrees": 0.0,
+      "ior": 1.5
+    },
+    {
+      "name": "rough_copper",
+      "base_color": [0.95, 0.42, 0.20],
+      "metallic": 1.0,
+      "roughness": 0.48,
+      "anisotropy": 0.0,
+      "anisotropy_rotation_degrees": 0.0,
+      "ior": 1.5
+    },
+    {
+      "name": "smooth_glass",
+      "base_color": [0.16, 0.42, 0.82],
+      "metallic": 0.0,
+      "roughness": 0.08,
+      "anisotropy": 0.0,
+      "anisotropy_rotation_degrees": 0.0,
+      "ior": 1.52
+    },
+    {
+      "name": "rough_ceramic",
+      "base_color": [0.76, 0.78, 0.72],
+      "metallic": 0.0,
+      "roughness": 0.64,
+      "anisotropy": 0.0,
+      "anisotropy_rotation_degrees": 0.0,
+      "ior": 1.46
+    },
+    {
+      "name": "anisotropic_steel",
+      "base_color": [0.62, 0.72, 0.88],
+      "metallic": 1.0,
+      "roughness": 0.27,
+      "anisotropy": 0.82,
+      "anisotropy_rotation_degrees": 35.0,
+      "ior": 1.5
+    }
+  ],
+  "spheres": [
+    {"position": [-2.40, 0.02, 0.42], "radius": 0.58, "material_id": 0},
+    {"position": [-1.20, -0.02, 0.10], "radius": 0.58, "material_id": 1},
+    {"position": [0.00, 0.00, -0.12], "radius": 0.58, "material_id": 2},
+    {"position": [1.20, 0.01, 0.08], "radius": 0.58, "material_id": 3},
+    {"position": [2.40, 0.03, 0.38], "radius": 0.58, "material_id": 4}
+  ],
+  "lights": [
+    {
+      "type": "point",
+      "position": [-3.5, 4.5, 5.0],
+      "color": [1.0, 0.82, 0.68],
+      "power": 220.0
+    },
+    {
+      "type": "point",
+      "position": [3.8, 2.5, 4.0],
+      "color": [0.65, 0.78, 1.0],
+      "power": 140.0
+    },
+    {
+      "type": "point",
+      "position": [0.0, 4.0, -4.5],
+      "color": [0.85, 0.90, 1.0],
+      "power": 180.0
+    },
+    {
+      "type": "point",
+      "position": [0.8, 6.0, 0.0],
+      "color": [1.0, 0.95, 0.90],
+      "power": 200.0
+    },
+    {
+      "type": "rect",
+      "center": [-2.0, 3.2, 2.5],
+      "normal": [0.0, -1.0, 0.0],
+      "tangent": [1.0, 0.0, 0.0],
+      "half_size": [1.6, 0.8],
+      "radiance": [4.2, 3.9, 3.4]
+    },
+    {
+      "type": "rect",
+      "center": [4.0, 1.5, 1.0],
+      "normal": [-1.0, 0.0, 0.0],
+      "tangent": [0.0, 0.0, 1.0],
+      "half_size": [0.35, 1.8],
+      "radiance": [1.6, 2.4, 3.5]
+    }
+  ]
+}
