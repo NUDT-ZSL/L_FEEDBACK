@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfr-offline-renderer"
+version = "1.0.0"
+description = "Deterministic offline renderer with ModernGL GPU and NumPy software backends"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "moderngl>=5.8",
+    "PyOpenGL>=3.1.6",
+    "Pillow>=10.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.scripts]
+rfr = "rfr.cli:main"
+
+[tool.setuptools]
+packages = ["rfr", "rfr.backends"]

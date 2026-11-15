@@ -1,0 +1,9 @@
+# Pinned versions requested by the task target Python 3.10/3.11 on Windows.
+# The validation host only provides Python 3.14, where these exact pins have no
+# wheels; the API used here is stable across both, so compatible newer releases
+# were installed and recorded in VALIDATION.md. On Python 3.10/3.11 prefer:
+numpy==1.24.3
+moderngl==5.8.2
+PyOpenGL==3.1.6
+Pillow==10.0.0
+pytest==7.4.0
