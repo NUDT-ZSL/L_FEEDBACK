@@ -1,0 +1,106 @@
+{
+  "scene_name": "ssao_contact_contrast",
+  "resolution": {
+    "width": 384,
+    "height": 256
+  },
+  "camera": {
+    "position": [0.0, 0.12, 4.2],
+    "target": [0.0, -0.05, 0.0],
+    "up": [0.0, 1.0, 0.0],
+    "fov_y_deg": 50.0,
+    "near": 0.001,
+    "far": 100.0
+  },
+  "light": {
+    "direction": [-0.55, -1.0, -0.45],
+    "color": [1.0, 0.95, 0.88],
+    "intensity": 0.42
+  },
+  "background": {
+    "color": [0.004, 0.005, 0.007],
+    "ambient": 3.0,
+    "ambient_color": [0.93, 0.96, 1.0]
+  },
+  "ssao": {
+    "enabled": true,
+    "radius": 1.2,
+    "intensity": 2.8,
+    "samples": 32
+  },
+  "spheres": [
+    {
+      "name": "contact_00",
+      "center": [-1.6, -0.10, 0.0],
+      "radius": 0.9,
+      "base_color": [0.62, 0.62, 0.62],
+      "metallic": 0.0,
+      "roughness": 0.55,
+      "normal_perturbation": 0.0
+    },
+    {
+      "name": "contact_01",
+      "center": [-0.8, -0.10, 0.0],
+      "radius": 0.9,
+      "base_color": [0.62, 0.62, 0.62],
+      "metallic": 0.0,
+      "roughness": 0.55,
+      "normal_perturbation": 0.0
+    },
+    {
+      "name": "contact_02",
+      "center": [0.0, -0.10, 0.0],
+      "radius": 0.9,
+      "base_color": [0.62, 0.62, 0.62],
+      "metallic": 0.0,
+      "roughness": 0.55,
+      "normal_perturbation": 0.0
+    },
+    {
+      "name": "contact_03",
+      "center": [0.8, -0.10, 0.0],
+      "radius": 0.9,
+      "base_color": [0.62, 0.62, 0.62],
+      "metallic": 0.0,
+      "roughness": 0.55,
+      "normal_perturbation": 0.0
+    },
+    {
+      "name": "contact_04",
+      "center": [1.6, -0.10, 0.0],
+      "radius": 0.9,
+      "base_color": [0.62, 0.62, 0.62],
+      "metallic": 0.0,
+      "roughness": 0.55,
+      "normal_perturbation": 0.0
+    },
+    {
+      "name": "rear_00",
+      "center": [-1.14, 0.85, -1.0],
+      "radius": 0.7,
+      "base_color": [0.60, 0.63, 0.66],
+      "metallic": 0.0,
+      "roughness": 0.50,
+      "normal_perturbation": 0.0
+    },
+    {
+      "name": "rear_01",
+      "center": [0.0, 0.85, -1.0],
+      "radius": 0.7,
+      "base_color": [0.62, 0.60, 0.58],
+      "metallic": 0.0,
+      "roughness": 0.50,
+      "normal_perturbation": 0.0
+    },
+    {
+      "name": "rear_02",
+      "center": [1.14, 0.85, -1.0],
+      "radius": 0.7,
+      "base_color": [0.58, 0.62, 0.61],
+      "metallic": 0.0,
+      "roughness": 0.50,
+      "normal_perturbation": 0.0
+    }
+  ]
+}
+

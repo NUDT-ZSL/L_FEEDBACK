@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matrender"
+version = "1.0.0"
+description = "Deterministic CPU material-sphere renderer for HDR regression tests"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "Pillow>=10.0",
+]
+
+[project.scripts]
+matrender = "matrender.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["matrender*"]
+

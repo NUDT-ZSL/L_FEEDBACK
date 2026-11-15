@@ -1,0 +1,118 @@
+{
+  "dominant_hue_method": "HSV hue of mean linear RGB, normalized by max channel",
+  "linear_space": "Rec.709 RGB",
+  "luminance_weights": {
+    "b": 0.0722,
+    "g": 0.7152,
+    "r": 0.2126
+  },
+  "regions": [
+    {
+      "average_luminance": 1.9161046265330446,
+      "dominant_hue_deg": 214.26390469251604,
+      "index": 0,
+      "mask_pixels": 8059,
+      "max_luminance": 1.9749691044330597,
+      "mean_linear_rgb": [
+        1.865146322487014,
+        1.9228225255820484,
+        1.9996100841554647
+      ],
+      "name": "contact_00"
+    },
+    {
+      "average_luminance": 1.9257388354312563,
+      "dominant_hue_deg": 214.25505822046924,
+      "index": 1,
+      "mask_pixels": 7188,
+      "max_luminance": 1.9739709903240203,
+      "mean_linear_rgb": [
+        1.874562013096191,
+        1.9324893342101979,
+        2.009564814679677
+      ],
+      "name": "contact_01"
+    },
+    {
+      "average_luminance": 1.9250501161967262,
+      "dominant_hue_deg": 214.2718545585586,
+      "index": 2,
+      "mask_pixels": 7160,
+      "max_luminance": 1.9724046619176865,
+      "mean_linear_rgb": [
+        1.8741515569763476,
+        1.9317567479094313,
+        2.008491261478243
+      ],
+      "name": "contact_02"
+    },
+    {
+      "average_luminance": 1.9247926503804405,
+      "dominant_hue_deg": 214.18931932735669,
+      "index": 3,
+      "mask_pixels": 7188,
+      "max_luminance": 1.971145219373703,
+      "mean_linear_rgb": [
+        1.8735644313349749,
+        1.931578070970131,
+        2.0084240432241987
+      ],
+      "name": "contact_03"
+    },
+    {
+      "average_luminance": 1.9183057596385402,
+      "dominant_hue_deg": 214.24316782804854,
+      "index": 4,
+      "mask_pixels": 8059,
+      "max_luminance": 1.9711176773786545,
+      "mean_linear_rgb": [
+        1.8674420952920705,
+        1.9250200137058935,
+        2.001568647880763
+      ],
+      "name": "contact_04"
+    },
+    {
+      "average_luminance": 1.9437956799289369,
+      "dominant_hue_deg": 212.40689149874075,
+      "index": 5,
+      "mask_pixels": 1894,
+      "max_luminance": 1.996080498242378,
+      "mean_linear_rgb": [
+        1.8196428276292602,
+        1.961988002139536,
+        2.1291661446642647
+      ],
+      "name": "rear_00"
+    },
+    {
+      "average_luminance": 1.8721966549326645,
+      "dominant_hue_deg": 246.14229128825198,
+      "index": 6,
+      "mask_pixels": 1916,
+      "max_luminance": 1.9252930570840834,
+      "mean_linear_rgb": [
+        1.8723023320042231,
+        1.8710155602382197,
+        1.8835851865123554
+      ],
+      "name": "rear_01"
+    },
+    {
+      "average_luminance": 1.89520272476641,
+      "dominant_hue_deg": 192.54722278558518,
+      "index": 7,
+      "mask_pixels": 1894,
+      "max_luminance": 1.9479045858860016,
+      "mean_linear_rgb": [
+        1.7581700069034214,
+        1.9280823295279048,
+        1.9730096844928742
+      ],
+      "name": "rear_02"
+    }
+  ],
+  "scene_name": "ssao_contact_contrast",
+  "schema_version": "1.0",
+  "source": "scenes/ssao_contrast.json"
+}

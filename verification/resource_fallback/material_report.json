@@ -1,0 +1,170 @@
+{
+  "dominant_hue_method": "HSV hue of mean linear RGB, normalized by max channel",
+  "linear_space": "Rec.709 RGB",
+  "luminance_weights": {
+    "b": 0.0722,
+    "g": 0.7152,
+    "r": 0.2126
+  },
+  "regions": [
+    {
+      "average_luminance": 0.1456657498044138,
+      "dominant_hue_deg": 3.5770599711534623,
+      "index": 0,
+      "mask_pixels": 37,
+      "max_luminance": 0.28447724362611765,
+      "mean_linear_rgb": [
+        0.42163163544358434,
+        0.07317986570902772,
+        0.05108897720237036
+      ],
+      "name": "m00_r008"
+    },
+    {
+      "average_luminance": 0.24657720055676097,
+      "dominant_hue_deg": 128.15021747976976,
+      "index": 1,
+      "mask_pixels": 33,
+      "max_luminance": 1.5194113498687742,
+      "mean_linear_rgb": [
+        0.0991735692615762,
+        0.30248683961954986,
+        0.12679102542725476
+      ],
+      "name": "m00_r020"
+    },
+    {
+      "average_luminance": 0.13493933352762552,
+      "dominant_hue_deg": 226.22970777712325,
+      "index": 2,
+      "mask_pixels": 33,
+      "max_luminance": 0.3811747066915035,
+      "mean_linear_rgb": [
+        0.05950405663161567,
+        0.13275710515903705,
+        0.3786826797507026
+      ],
+      "name": "m00_r038"
+    },
+    {
+      "average_luminance": 0.28359013717893417,
+      "dominant_hue_deg": 37.38865265290158,
+      "index": 3,
+      "mask_pixels": 37,
+      "max_luminance": 0.6200902112618089,
+      "mean_linear_rgb": [
+        0.4026451545792657,
+        0.2713516414970965,
+        0.05425323153267036
+      ],
+      "name": "m00_r065"
+    },
+    {
+      "average_luminance": 0.09634162800532457,
+      "dominant_hue_deg": 4.284377990941808,
+      "index": 4,
+      "mask_pixels": 36,
+      "max_luminance": 0.15729458415806297,
+      "mean_linear_rgb": [
+        0.26204712895883453,
+        0.053074196343206696,
+        0.03700475296419528
+      ],
+      "name": "m05_r008"
+    },
+    {
+      "average_luminance": 0.2086547863385058,
+      "dominant_hue_deg": 129.30360226378724,
+      "index": 5,
+      "mask_pixels": 32,
+      "max_luminance": 2.1776288438916205,
+      "mean_linear_rgb": [
+        0.06756911420961842,
+        0.2617962318472564,
+        0.09768597839865834
+      ],
+      "name": "m05_r020"
+    },
+    {
+      "average_luminance": 0.12031549106285674,
+      "dominant_hue_deg": 225.0600046754821,
+      "index": 6,
+      "mask_pixels": 32,
+      "max_luminance": 0.9187587796449661,
+      "mean_linear_rgb": [
+        0.05131545808399096,
+        0.11996128340251744,
+        0.32700158981606364
+      ],
+      "name": "m05_r038"
+    },
+    {
+      "average_luminance": 0.2214246587012998,
+      "dominant_hue_deg": 39.56797286343921,
+      "index": 7,
+      "mask_pixels": 36,
+      "max_luminance": 0.6146142065927387,
+      "mean_linear_rgb": [
+        0.3044114096297158,
+        0.21491081226203176,
+        0.04158698177585999
+      ],
+      "name": "m05_r065"
+    },
+    {
+      "average_luminance": 0.05400256102349912,
+      "dominant_hue_deg": 3.408942607680534,
+      "index": 8,
+      "mask_pixels": 37,
+      "max_luminance": 0.08543291521109642,
+      "mean_linear_rgb": [
+        0.16083446185331088,
+        0.02590296935994883,
+        0.017774941097642924
+      ],
+      "name": "m10_r008"
+    },
+    {
+      "average_luminance": 0.09864260273231475,
+      "dominant_hue_deg": 130.00671746319014,
+      "index": 9,
+      "mask_pixels": 33,
+      "max_luminance": 0.6079696001082658,
+      "mean_linear_rgb": [
+        0.02594513384004434,
+        0.12590845719431387,
+        0.042616879398172554
+      ],
+      "name": "m10_r020"
+    },
+    {
+      "average_luminance": 0.0682506402492128,
+      "dominant_hue_deg": 226.5156501769242,
+      "index": 10,
+      "mask_pixels": 33,
+      "max_luminance": 0.3061217562034726,
+      "mean_linear_rgb": [
+        0.02412988558750261,
+        0.0666985313097636,
+        0.21354344848430518
+      ],
+      "name": "m10_r038"
+    },
+    {
+      "average_luminance": 0.2193502692555254,
+      "dominant_hue_deg": 37.57754933169693,
+      "index": 11,
+      "mask_pixels": 37,
+      "max_luminance": 0.8116049603089689,
+      "mean_linear_rgb": [
+        0.3156378885378709,
+        0.20964085874525276,
+        0.03200155093863204
+      ],
+      "name": "m10_r065"
+    }
+  ],
+  "scene_name": "metallic_roughness_grid",
+  "schema_version": "1.0",
+  "source": "scenes/material_grid.json"
+}

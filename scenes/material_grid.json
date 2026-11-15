@@ -1,0 +1,142 @@
+{
+  "scene_name": "metallic_roughness_grid",
+  "resolution": {
+    "width": 640,
+    "height": 480
+  },
+  "camera": {
+    "position": [0.0, 0.0, 6.0],
+    "target": [0.0, 0.0, 0.0],
+    "up": [0.0, 1.0, 0.0],
+    "fov_y_deg": 40.0,
+    "near": 0.001,
+    "far": 100.0
+  },
+  "light": {
+    "direction": [-0.45, -1.0, -0.60],
+    "color": [1.0, 0.97, 0.92],
+    "intensity": 3.0
+  },
+  "background": {
+    "color": [0.008, 0.010, 0.014],
+    "ambient": 0.22,
+    "ambient_color": [0.95, 0.97, 1.0]
+  },
+  "ssao": {
+    "enabled": true,
+    "radius": 0.26,
+    "intensity": 0.9,
+    "samples": 20
+  },
+  "spheres": [
+    {
+      "name": "m00_r008",
+      "center": [-1.35, 0.78, 0.0],
+      "radius": 0.36,
+      "base_color": [0.76, 0.12, 0.08],
+      "metallic": 0.0,
+      "roughness": 0.08,
+      "normal_perturbation": 0.012
+    },
+    {
+      "name": "m00_r020",
+      "center": [-0.45, 0.78, 0.0],
+      "radius": 0.36,
+      "base_color": [0.10, 0.48, 0.16],
+      "metallic": 0.0,
+      "roughness": 0.20,
+      "normal_perturbation": 0.012
+    },
+    {
+      "name": "m00_r038",
+      "center": [0.45, 0.78, 0.0],
+      "radius": 0.36,
+      "base_color": [0.08, 0.22, 0.70],
+      "metallic": 0.0,
+      "roughness": 0.38,
+      "normal_perturbation": 0.012
+    },
+    {
+      "name": "m00_r065",
+      "center": [1.35, 0.78, 0.0],
+      "radius": 0.36,
+      "base_color": [0.78, 0.52, 0.08],
+      "metallic": 0.0,
+      "roughness": 0.65,
+      "normal_perturbation": 0.012
+    },
+    {
+      "name": "m05_r008",
+      "center": [-1.35, 0.0, 0.0],
+      "radius": 0.36,
+      "base_color": [0.76, 0.12, 0.08],
+      "metallic": 0.5,
+      "roughness": 0.08,
+      "normal_perturbation": 0.012
+    },
+    {
+      "name": "m05_r020",
+      "center": [-0.45, 0.0, 0.0],
+      "radius": 0.36,
+      "base_color": [0.10, 0.48, 0.16],
+      "metallic": 0.5,
+      "roughness": 0.20,
+      "normal_perturbation": 0.012
+    },
+    {
+      "name": "m05_r038",
+      "center": [0.45, 0.0, 0.0],
+      "radius": 0.36,
+      "base_color": [0.08, 0.22, 0.70],
+      "metallic": 0.5,
+      "roughness": 0.38,
+      "normal_perturbation": 0.012
+    },
+    {
+      "name": "m05_r065",
+      "center": [1.35, 0.0, 0.0],
+      "radius": 0.36,
+      "base_color": [0.78, 0.52, 0.08],
+      "metallic": 0.5,
+      "roughness": 0.65,
+      "normal_perturbation": 0.012
+    },
+    {
+      "name": "m10_r008",
+      "center": [-1.35, -0.78, 0.0],
+      "radius": 0.36,
+      "base_color": [0.76, 0.12, 0.08],
+      "metallic": 1.0,
+      "roughness": 0.08,
+      "normal_perturbation": 0.012
+    },
+    {
+      "name": "m10_r020",
+      "center": [-0.45, -0.78, 0.0],
+      "radius": 0.36,
+      "base_color": [0.10, 0.48, 0.16],
+      "metallic": 1.0,
+      "roughness": 0.20,
+      "normal_perturbation": 0.012
+    },
+    {
+      "name": "m10_r038",
+      "center": [0.45, -0.78, 0.0],
+      "radius": 0.36,
+      "base_color": [0.08, 0.22, 0.70],
+      "metallic": 1.0,
+      "roughness": 0.38,
+      "normal_perturbation": 0.012
+    },
+    {
+      "name": "m10_r065",
+      "center": [1.35, -0.78, 0.0],
+      "radius": 0.36,
+      "base_color": [0.78, 0.52, 0.08],
+      "metallic": 1.0,
+      "roughness": 0.65,
+      "normal_perturbation": 0.012
+    }
+  ]
+}
+

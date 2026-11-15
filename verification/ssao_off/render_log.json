@@ -1,0 +1,300 @@
+{
+  "color": {
+    "aces_coefficients": {
+      "a": 2.51,
+      "b": 0.03,
+      "c": 2.43,
+      "d": 0.59,
+      "e": 0.14
+    },
+    "display_transform": "Narkowicz ACES filmic approximation",
+    "quantization": "round(encoded * 255)",
+    "render_space": "linear Rec.709 RGB, float32",
+    "transfer_function": "sRGB IEC 61966-2-1"
+  },
+  "linear_hdr": {
+    "dtype": "float32",
+    "global": {
+      "linear_hdr_max": [
+        1.9276660680770874,
+        2.0143680572509766,
+        2.1813178062438965
+      ],
+      "linear_hdr_min": [
+        0.004000000189989805,
+        0.004999999888241291,
+        0.007000000216066837
+      ],
+      "linear_scalar_max": 2.1813178062438965,
+      "linear_scalar_min": 0.004000000189989805,
+      "luminance_max": 1.996080498242378,
+      "luminance_min": 0.004931799976062029,
+      "mean_linear_rgb": [
+        0.8263697602459246,
+        0.8551155724152579,
+        0.890069889066685
+      ],
+      "pixels": 98304
+    },
+    "path": "linear_hdr.npy",
+    "sha256": "5e7da27dced6f9ca880cb0c1c34e37a277415855f5a4b8fc60449908f53ef7d6",
+    "shape": [
+      256,
+      384,
+      3
+    ]
+  },
+  "outputs": {
+    "linear_hdr": "/home/liang/feedback/uid121/verification/ssao_off/linear_hdr.npy",
+    "material_report": "/home/liang/feedback/uid121/verification/ssao_off/material_report.json",
+    "output_dir": "/home/liang/feedback/uid121/verification/ssao_off",
+    "preview_png": "/home/liang/feedback/uid121/verification/ssao_off/preview_aces_srgb.png",
+    "render_log": "/home/liang/feedback/uid121/verification/ssao_off/render_log.json",
+    "sphere_masks": "/home/liang/feedback/uid121/verification/ssao_off/sphere_masks.npz"
+  },
+  "regions": [
+    {
+      "index": 0,
+      "linear_hdr_max": [
+        1.926248550415039,
+        1.9814062118530273,
+        2.108802556991577
+      ],
+      "linear_hdr_min": [
+        0.004000000189989805,
+        0.004999999888241291,
+        0.007000000216066837
+      ],
+      "linear_scalar_max": 2.108802556991577,
+      "linear_scalar_min": 0.004000000189989805,
+      "luminance_max": 1.9749691044330597,
+      "luminance_min": 0.004931799976062029,
+      "mean_linear_rgb": [
+        1.865146322487014,
+        1.9228225255820484,
+        1.9996100841554647
+      ],
+      "name": "contact_00",
+      "pixels": 8059
+    },
+    {
+      "index": 1,
+      "linear_hdr_max": [
+        1.9252040386199951,
+        1.9804139137268066,
+        2.1448514461517334
+      ],
+      "linear_hdr_min": [
+        1.799121618270874,
+        1.8431999683380127,
+        1.8600000143051147
+      ],
+      "linear_scalar_max": 2.1448514461517334,
+      "linear_scalar_min": 1.799121618270874,
+      "luminance_max": 1.9739709903240203,
+      "luminance_min": 1.844030264186859,
+      "mean_linear_rgb": [
+        1.874562013096191,
+        1.9324893342101979,
+        2.009564814679677
+      ],
+      "name": "contact_01",
+      "pixels": 7188
+    },
+    {
+      "index": 2,
+      "linear_hdr_max": [
+        1.9235650300979614,
+        1.9788566827774048,
+        2.052305221557617
+      ],
+      "linear_hdr_min": [
+        0.9226999878883362,
+        0.9528999924659729,
+        0.9934999942779541
+      ],
+      "linear_scalar_max": 2.052305221557617,
+      "linear_scalar_min": 0.9226999878883362,
+      "luminance_max": 1.9724046619176865,
+      "luminance_min": 0.9494107916235923,
+      "mean_linear_rgb": [
+        1.8741515569763476,
+        1.9317567479094313,
+        2.008491261478243
+      ],
+      "name": "contact_02",
+      "pixels": 7160
+    },
+    {
+      "index": 3,
+      "linear_hdr_max": [
+        1.9222469329833984,
+        1.977604627609253,
+        2.051145315170288
+      ],
+      "linear_hdr_min": [
+        1.7297999858856201,
+        1.9007999897003174,
+        1.9500000476837158
+      ],
+      "linear_scalar_max": 2.051145315170288,
+      "linear_scalar_min": 1.7297999858856201,
+      "luminance_max": 1.971145219373703,
+      "luminance_min": 1.867997633075714,
+      "mean_linear_rgb": [
+        1.8735644313349749,
+        1.931578070970131,
+        2.0084240432241987
+      ],
+      "name": "contact_03",
+      "pixels": 7188
+    },
+    {
+      "index": 4,
+      "linear_hdr_max": [
+        1.9222182035446167,
+        1.9775772094726562,
+        2.0511200428009033
+      ],
+      "linear_hdr_min": [
+        0.004000000189989805,
+        0.004999999888241291,
+        0.007000000216066837
+      ],
+      "linear_scalar_max": 2.0511200428009033,
+      "linear_scalar_min": 0.004000000189989805,
+      "luminance_max": 1.9711176773786545,
+      "luminance_min": 0.004931799976062029,
+      "mean_linear_rgb": [
+        1.8674420952920705,
+        1.9250200137058935,
+        2.001568647880763
+      ],
+      "name": "contact_04",
+      "pixels": 8059
+    },
+    {
+      "index": 5,
+      "linear_hdr_max": [
+        1.8716524839401245,
+        2.0143680572509766,
+        2.1813178062438965
+      ],
+      "linear_hdr_min": [
+        0.004000000189989805,
+        0.004999999888241291,
+        0.007000000216066837
+      ],
+      "linear_scalar_max": 2.1813178062438965,
+      "linear_scalar_min": 0.004000000189989805,
+      "luminance_max": 1.996080498242378,
+      "luminance_min": 0.004931799976062029,
+      "mean_linear_rgb": [
+        1.8196428276292602,
+        1.961988002139536,
+        2.1291661446642647
+      ],
+      "name": "rear_00",
+      "pixels": 1894
+    },
+    {
+      "index": 6,
+      "linear_hdr_max": [
+        1.9276660680770874,
+        1.9279085397720337,
+        2.018660068511963
+      ],
+      "linear_hdr_min": [
+        0.004000000189989805,
+        0.004999999888241291,
+        0.007000000216066837
+      ],
+      "linear_scalar_max": 2.018660068511963,
+      "linear_scalar_min": 0.004000000189989805,
+      "luminance_max": 1.9252930570840834,
+      "luminance_min": 0.004931799976062029,
+      "mean_linear_rgb": [
+        1.8723023320042231,
+        1.8710155602382197,
+        1.8835851865123554
+      ],
+      "name": "rear_01",
+      "pixels": 1916
+    },
+    {
+      "index": 7,
+      "linear_hdr_max": [
+        1.8223013877868652,
+        1.98113214969635,
+        2.0235495567321777
+      ],
+      "linear_hdr_min": [
+        0.004000000189989805,
+        0.004999999888241291,
+        0.007000000216066837
+      ],
+      "linear_scalar_max": 2.0235495567321777,
+      "linear_scalar_min": 0.004000000189989805,
+      "luminance_max": 1.9479045858860016,
+      "luminance_min": 0.004931799976062029,
+      "mean_linear_rgb": [
+        1.7581700069034214,
+        1.9280823295279048,
+        1.9730096844928742
+      ],
+      "name": "rear_02",
+      "pixels": 1894
+    }
+  ],
+  "render": {
+    "deterministic_aa": "stratified-jitter-from-integer-hash",
+    "effective_resolution": [
+      384,
+      256
+    ],
+    "effective_samples": 2,
+    "requested_resolution": [
+      384,
+      256
+    ],
+    "requested_samples": 2,
+    "tile_order": "row-major",
+    "tile_size": 64
+  },
+  "resource": {
+    "degradation_events": [],
+    "degraded": false,
+    "effective_estimated_bytes": 17432576,
+    "estimate_model": {
+      "accumulation_rgb_bytes": 24,
+      "display_buffer_bytes_per_pixel": 24,
+      "gbuffer_bytes_per_pixel": 60,
+      "per_sample_rgb_bytes": 24
+    },
+    "initial_estimated_bytes": 17432576,
+    "limit_bytes": 2147483648
+  },
+  "scene": {
+    "name": "ssao_contact_contrast",
+    "source": "scenes/ssao_contrast.json",
+    "sphere_count": 8
+  },
+  "schema_version": "1.0",
+  "ssao": {
+    "enabled": false,
+    "inputs": [
+      "depth",
+      "world_normal"
+    ],
+    "intensity": 2.8,
+    "radius": 1.2,
+    "screen_samples": 32
+  },
+  "status": "ok",
+  "threading": {
+    "effective_threads": 4,
+    "logical_cores": 24,
+    "requested_threads": 4
+  },
+  "warnings": []
+}

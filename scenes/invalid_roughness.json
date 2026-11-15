@@ -1,0 +1,29 @@
+{
+  "scene_name": "invalid_roughness",
+  "resolution": {
+    "width": 96,
+    "height": 96
+  },
+  "camera": {
+    "position": [0.0, 0.0, 4.0],
+    "target": [0.0, 0.0, 0.0],
+    "up": [0.0, 1.0, 0.0],
+    "fov_y_deg": 40.0
+  },
+  "light": {
+    "direction": [-0.5, -1.0, -0.5],
+    "intensity": 2.0
+  },
+  "spheres": [
+    {
+      "name": "bad",
+      "center": [0.0, 0.0, 0.0],
+      "radius": 0.8,
+      "base_color": [0.8, 0.2, 0.1],
+      "metallic": 0.0,
+      "roughness": 0.0,
+      "normal_perturbation": 0.0
+    }
+  ]
+}
+
