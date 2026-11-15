@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "material-graph-renderer"
+version = "1.0.0"
+description = "Deterministic material graph to GLSL/OpenGL offscreen renderer"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "PyOpenGL>=3.1.7",
+    "PyOpenGL-accelerate>=3.1.7",
+    "glfw>=2.7",
+    "Pillow>=10.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+material-graph-renderer = "material_tool.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["material_tool*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "gl: requires an OpenGL 3.3 context",
+]
+
