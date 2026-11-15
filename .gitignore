@@ -1,0 +1,8 @@
+/build/
+/build-*/
+/artifacts/acceptance*/
+/artifacts/validation/
+/artifacts/*.log
+*.tmp
+*.user
+

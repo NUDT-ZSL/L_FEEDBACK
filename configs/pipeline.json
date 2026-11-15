@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "clear_color": [0.012, 0.018, 0.030],
+  "stages": [
+    {
+      "name": "geometry",
+      "enabled": true
+    },
+    {
+      "name": "shadow",
+      "enabled": true,
+      "resolution": 1024,
+      "bias": 0.0012,
+      "strength": 0.88
+    },
+    {
+      "name": "deferred",
+      "enabled": true,
+      "ambient": [0.075, 0.085, 0.110]
+    },
+    {
+      "name": "postprocess",
+      "enabled": true,
+      "effects": [
+        {
+          "type": "bloom",
+          "enabled": true,
+          "threshold": 0.9,
+          "intensity": 0.65,
+          "radius": 1.0,
+          "knee": 0.35
+        },
+        {
+          "type": "tonemap",
+          "enabled": true,
+          "mode": "aces",
+          "exposure": 1.0
+        },
+        {
+          "type": "fxaa",
+          "enabled": true,
+          "edge_threshold": 0.08
+        },
+        {
+          "type": "color_grade",
+          "enabled": true,
+          "contrast": 1.04,
+          "saturation": 1.06,
+          "tint": [1.02, 1.0, 0.98],
+          "lift": [0.0, 0.0, 0.0]
+        }
+      ]
+    }
+  ]
+}
+
