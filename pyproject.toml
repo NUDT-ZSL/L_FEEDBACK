@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "podcast-post"
+version = "1.0.0"
+description = "Deterministic offline multitrack podcast post-production"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24"]
+
+[project.scripts]
+postproduce = "podcast_post.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["podcast_post*"]
+
