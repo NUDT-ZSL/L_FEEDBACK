@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scene-mix"
+version = "1.0.0"
+description = "Deterministic multi-camera audio alignment and scene-adaptive mix"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21", "soundfile>=0.11"]
+
+[project.scripts]
+scene-mix = "scene_mix.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["scene_mix*"]
