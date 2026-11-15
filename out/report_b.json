@@ -1,0 +1,75 @@
+{
+  "input": "/home/liang/feedback/uid104/samples/descriptor.json",
+  "output": "/home/liang/feedback/uid104/out/mix_b.wav",
+  "frame_rate": 30.0,
+  "sample_rate": 48000,
+  "bit_depth": 16,
+  "channels": 2,
+  "target_lufs": -16.0,
+  "crossfade_ms": 10.0,
+  "fade_ms": 5.0,
+  "gain_limits_db": {
+    "min": -20.0,
+    "max": 10.0
+  },
+  "tracks": [
+    {
+      "id": "dialog",
+      "path": "dialog.wav",
+      "events": [
+        {
+          "id": "line_a",
+          "frame": 0,
+          "track_sample": 0,
+          "absolute_sample": 0
+        },
+        {
+          "id": "line_b",
+          "frame": 10,
+          "track_sample": 22050,
+          "absolute_sample": 16000
+        }
+      ],
+      "status": "ok",
+      "loudness_lufs": -10.269,
+      "gain_db": -2.045
+    },
+    {
+      "id": "sfx",
+      "path": "sfx.wav",
+      "events": [
+        {
+          "id": "explosion",
+          "frame": 60,
+          "track_sample": 19200,
+          "absolute_sample": 96000
+        }
+      ],
+      "status": "ok",
+      "loudness_lufs": -9.129,
+      "gain_db": -3.185
+    },
+    {
+      "id": "music",
+      "path": "music.wav",
+      "events": [
+        {
+          "id": "theme",
+          "frame": 15,
+          "track_sample": 0,
+          "absolute_sample": 24000
+        }
+      ],
+      "status": "ok",
+      "loudness_lufs": -17.544,
+      "gain_db": 5.23
+    }
+  ],
+  "mix": {
+    "duration_samples": 168000,
+    "duration_seconds": 3.5,
+    "loudness_before_lufs": -8.472,
+    "gain_db": -7.528,
+    "loudness_after_lufs": -16.0
+  }
+}

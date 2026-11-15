@@ -1,0 +1,65 @@
+{
+  "frame_rate": 30.0,
+  "output": {
+    "sample_rate": 48000,
+    "bit_depth": 16,
+    "channels": 2
+  },
+  "crossfade_ms": 10.0,
+  "fade_ms": 5.0,
+  "gain_limits_db": {
+    "min": -20.0,
+    "max": 10.0
+  },
+  "tracks": [
+    {
+      "id": "dialog",
+      "path": "dialog.wav",
+      "events": [
+        {
+          "id": "line_a",
+          "track_sample": 0,
+          "frame": 0
+        },
+        {
+          "id": "line_b",
+          "track_sample": 22050,
+          "frame": 10
+        }
+      ]
+    },
+    {
+      "id": "sfx",
+      "path": "sfx.wav",
+      "events": [
+        {
+          "id": "explosion",
+          "track_sample": 19200,
+          "frame": 60
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "path": "music.wav",
+      "events": [
+        {
+          "id": "theme",
+          "track_sample": 0,
+          "frame": 15
+        }
+      ]
+    },
+    {
+      "id": "missing",
+      "path": "does_not_exist.wav",
+      "events": [
+        {
+          "id": "ghost",
+          "track_sample": 0,
+          "frame": 0
+        }
+      ]
+    }
+  ]
+}
