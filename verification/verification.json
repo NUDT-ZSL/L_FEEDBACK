@@ -1,0 +1,53 @@
+{
+  "determinism": {
+    "two_independent_cli_runs_byte_identical": true
+  },
+  "environment": {
+    "numpy": "2.5.4",
+    "pillow": "13.0.0",
+    "python": "3.14.4"
+  },
+  "invalid_graph": {
+    "error_code": "E_MISSING_INPUT",
+    "exit_code": 2,
+    "no_partial_output_directory": true,
+    "node_id": "base_tex",
+    "node_index": 1
+  },
+  "render": {
+    "counts": {
+      "degenerate_tangent_pixels": 0,
+      "edge_pixels": 932,
+      "normal_fallback_pixels": 0,
+      "shaded_pixels": 45594,
+      "total_pixels": 76800,
+      "valid_pixels": 45594
+    },
+    "file_sha256": {
+      "base_color.png": "be95ed36748fbcf00fb85eece1bb9d0ec5f8a7a289c53beebb62dce14e8f8c01",
+      "emissive.png": "8ba286aaf47135d9ac3a0926b28fa3fe6ed4d684334ea3e31bcf70e8f93b1be6",
+      "final.png": "0115348a76d0dea73a8567abe3a9d32bdc62c568c3efbdb09130c67120a0002f",
+      "material_ir.json": "eb09636d4327c739a3c43210d3f52941efbfbd80c7333eae1b9d59aa6952e82b",
+      "metallic.png": "5987feb1bb645789f26f72e36bedd766d629ca9a91600be037328cc3aa4b4f86",
+      "normal.png": "eb762fba101f3a7ef79e0d42e17a941a67b9d69b9f01f6bb9ea26c89c3f323a1",
+      "report.json": "bc6304334ba6a572e56b4e1c806b65b121c551e349811e1834e1f928c1d8927f",
+      "roughness.png": "963b3d19f8f067e98dd644db0ce3b24f92249770830a1e7502c6d795eef83e87"
+    },
+    "ir_sha256": "abb9f09bd74bd62e4f9007872b40b8350e37c13dcfe3bdddfcd507214b7497d6",
+    "resolution": {
+      "height": 240,
+      "width": 320
+    }
+  },
+  "samples": {
+    "bumps_sha256": "2238e1c1b207c1ce646780d2e61abe823cebc170c9a2542ad7b8a3263ba5284b",
+    "checker_sha256": "2556e1dc9ddbd5b2eaac29452c2f75a2d334c413bfbd2e4e719ee9b2a80790d4",
+    "graph_sha256": "8d40718351338c989a931dd0c6f64cc02e60badec044d35602d9ad11fad9f3f7",
+    "scene_sha256": "1aebf197159b1437712c5ef6fe496d7fc85168f935b2898c58b93d9d62556ca0"
+  },
+  "schema": "verification/v1",
+  "tests": {
+    "exit_code": 0,
+    "summary": "OK"
+  }
+}

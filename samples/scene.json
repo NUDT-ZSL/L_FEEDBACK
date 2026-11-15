@@ -1,0 +1,87 @@
+{
+  "camera": {
+    "fov_degrees": 43.0,
+    "position": [
+      0.0,
+      1.38,
+      3.45
+    ],
+    "target": [
+      0.0,
+      0.7,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "lights": [
+    {
+      "color": [
+        3.1,
+        2.8,
+        2.5
+      ],
+      "direction": [
+        0.45,
+        0.9,
+        0.35
+      ],
+      "type": "directional"
+    }
+  ],
+  "name": "sphere-on-plane",
+  "objects": [
+    {
+      "center": [
+        0.0,
+        0.72,
+        0.0
+      ],
+      "radius": 0.72,
+      "type": "sphere"
+    },
+    {
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "point": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        8.0,
+        8.0
+      ],
+      "type": "plane"
+    }
+  ],
+  "render": {
+    "ambient": {
+      "ground": [
+        0.03,
+        0.025,
+        0.02
+      ],
+      "sky": [
+        0.18,
+        0.23,
+        0.32
+      ]
+    },
+    "background": [
+      0.012,
+      0.017,
+      0.028
+    ],
+    "exposure": 1.1,
+    "height": 240,
+    "width": 320
+  },
+  "schema": "scene/v1"
+}

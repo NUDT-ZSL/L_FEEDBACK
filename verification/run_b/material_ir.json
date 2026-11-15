@@ -1,0 +1,284 @@
+{
+  "folded_node_count": 8,
+  "folded_nodes": [
+    {
+      "node_id": "base_boost",
+      "node_index": 4,
+      "op": "constant"
+    },
+    {
+      "node_id": "black",
+      "node_index": 11,
+      "op": "constant"
+    },
+    {
+      "node_id": "ior",
+      "node_index": 9,
+      "op": "constant"
+    },
+    {
+      "node_id": "metallic",
+      "node_index": 15,
+      "op": "constant"
+    },
+    {
+      "node_id": "normal_strength",
+      "node_index": 7,
+      "op": "constant"
+    },
+    {
+      "node_id": "rim_color",
+      "node_index": 12,
+      "op": "constant"
+    },
+    {
+      "node_id": "roughness",
+      "node_index": 14,
+      "op": "constant"
+    },
+    {
+      "node_id": "tint",
+      "node_index": 2,
+      "op": "constant"
+    }
+  ],
+  "instruction_count": 8,
+  "instruction_order": [
+    "uv",
+    "base_tex",
+    "normal_tex",
+    "tinted_base",
+    "base_color",
+    "world_normal",
+    "fresnel",
+    "emissive"
+  ],
+  "instructions": [
+    {
+      "attrs": {},
+      "dst": "t0",
+      "node_id": "uv",
+      "node_index": 0,
+      "op": "uv",
+      "operands": {},
+      "result_dim": 2
+    },
+    {
+      "attrs": {
+        "texture": "checker"
+      },
+      "dst": "t1",
+      "node_id": "base_tex",
+      "node_index": 1,
+      "op": "texture_sample",
+      "operands": {
+        "uv": {
+          "dim": 2,
+          "kind": "temp",
+          "name": "t0"
+        }
+      },
+      "result_dim": 3
+    },
+    {
+      "attrs": {
+        "texture": "bumps"
+      },
+      "dst": "t2",
+      "node_id": "normal_tex",
+      "node_index": 6,
+      "op": "texture_sample",
+      "operands": {
+        "uv": {
+          "dim": 2,
+          "kind": "temp",
+          "name": "t0"
+        }
+      },
+      "result_dim": 3
+    },
+    {
+      "attrs": {},
+      "dst": "t3",
+      "node_id": "tinted_base",
+      "node_index": 3,
+      "op": "multiply",
+      "operands": {
+        "a": {
+          "dim": 3,
+          "kind": "temp",
+          "name": "t1"
+        },
+        "b": {
+          "dim": 3,
+          "kind": "constant",
+          "value": [
+            0.92,
+            0.97,
+            1.0
+          ]
+        }
+      },
+      "result_dim": 3
+    },
+    {
+      "attrs": {},
+      "dst": "t4",
+      "node_id": "base_color",
+      "node_index": 5,
+      "op": "add",
+      "operands": {
+        "a": {
+          "dim": 3,
+          "kind": "temp",
+          "name": "t3"
+        },
+        "b": {
+          "dim": 3,
+          "kind": "constant",
+          "value": [
+            0.01,
+            0.012,
+            0.016
+          ]
+        }
+      },
+      "result_dim": 3
+    },
+    {
+      "attrs": {},
+      "dst": "t5",
+      "node_id": "world_normal",
+      "node_index": 8,
+      "op": "normal_map",
+      "operands": {
+        "normal": {
+          "dim": 3,
+          "kind": "temp",
+          "name": "t2"
+        },
+        "strength": {
+          "dim": 1,
+          "kind": "constant",
+          "value": 0.85
+        }
+      },
+      "result_dim": 3
+    },
+    {
+      "attrs": {},
+      "dst": "t6",
+      "node_id": "fresnel",
+      "node_index": 10,
+      "op": "fresnel",
+      "operands": {
+        "ior": {
+          "dim": 1,
+          "kind": "constant",
+          "value": 1.45
+        },
+        "normal": {
+          "dim": 3,
+          "kind": "temp",
+          "name": "t5"
+        }
+      },
+      "result_dim": 1
+    },
+    {
+      "attrs": {},
+      "dst": "t7",
+      "node_id": "emissive",
+      "node_index": 13,
+      "op": "mix",
+      "operands": {
+        "a": {
+          "dim": 3,
+          "kind": "constant",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "b": {
+          "dim": 3,
+          "kind": "constant",
+          "value": [
+            0.035,
+            0.1,
+            0.18
+          ]
+        },
+        "factor": {
+          "dim": 1,
+          "kind": "temp",
+          "name": "t6"
+        }
+      },
+      "result_dim": 3
+    }
+  ],
+  "ir_sha256": "abb9f09bd74bd62e4f9007872b40b8350e37c13dcfe3bdddfcd507214b7497d6",
+  "limits": {
+    "max_graph_depth": 64,
+    "max_height": 1024,
+    "max_json_bytes": 8388608,
+    "max_lights": 8,
+    "max_nodes": 512,
+    "max_objects": 64,
+    "max_pixels": 1048576,
+    "max_texture_bytes": 16777216,
+    "max_texture_dimension": 2048,
+    "max_width": 1024
+  },
+  "name": "deterministic-checker-normal-rim",
+  "node_count": 16,
+  "outputs": {
+    "base_color": {
+      "dim": 3,
+      "kind": "temp",
+      "name": "t4"
+    },
+    "emissive": {
+      "dim": 3,
+      "kind": "temp",
+      "name": "t7"
+    },
+    "metallic": {
+      "dim": 1,
+      "kind": "constant",
+      "value": 0.08
+    },
+    "normal": {
+      "dim": 3,
+      "kind": "temp",
+      "name": "t5"
+    },
+    "roughness": {
+      "dim": 1,
+      "kind": "constant",
+      "value": 0.34
+    }
+  },
+  "schema": "material-ir/v1",
+  "source_schema": "material-graph/v1",
+  "textures": {
+    "bumps": {
+      "color_space": "linear",
+      "filter": "bilinear",
+      "height": 64,
+      "path": "textures/bumps.png",
+      "width": 64,
+      "wrap": "repeat"
+    },
+    "checker": {
+      "color_space": "srgb",
+      "filter": "bilinear",
+      "height": 64,
+      "path": "textures/checker.png",
+      "width": 64,
+      "wrap": "repeat"
+    }
+  }
+}

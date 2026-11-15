@@ -1,0 +1,303 @@
+{
+  "channels": {
+    "base_color": {
+      "count": 45594,
+      "max": [
+        0.7027068394,
+        0.1958891032,
+        0.195922882
+      ],
+      "mean": [
+        0.2697410842,
+        0.1155769799,
+        0.087904821
+      ],
+      "min": [
+        0.0102886615,
+        0.0337122472,
+        0.019947386
+      ]
+    },
+    "emissive": {
+      "count": 45594,
+      "max": [
+        0.035,
+        0.1,
+        0.18
+      ],
+      "mean": [
+        0.0060808955,
+        0.0173739873,
+        0.0312731771
+      ],
+      "min": [
+        0.001180758,
+        0.0033735943,
+        0.0060724698
+      ]
+    },
+    "final_ldr": {
+      "count": 76800,
+      "max": [
+        0.9704560617,
+        0.9177791928,
+        0.8702993477
+      ],
+      "mean": [
+        0.2940254736,
+        0.2900830685,
+        0.2988738745
+      ],
+      "min": [
+        0.0225744733,
+        0.0631452729,
+        0.0803108534
+      ]
+    },
+    "metallic": {
+      "count": 45594,
+      "max": [
+        0.08
+      ],
+      "mean": [
+        0.08
+      ],
+      "min": [
+        0.08
+      ]
+    },
+    "normal": {
+      "count": 45594,
+      "max": [
+        0.9995039194,
+        0.9999999998,
+        0.999999054
+      ],
+      "mean": [
+        -4.052e-06,
+        0.7446959453,
+        0.2052764492
+      ],
+      "min": [
+        -0.9995039194,
+        -0.9608984524,
+        -0.2911805168
+      ]
+    },
+    "roughness": {
+      "count": 45594,
+      "max": [
+        0.34
+      ],
+      "mean": [
+        0.34
+      ],
+      "min": [
+        0.34
+      ]
+    }
+  },
+  "compiler": {
+    "folded_node_count": 8,
+    "folded_nodes": [
+      {
+        "node_id": "base_boost",
+        "node_index": 4,
+        "op": "constant"
+      },
+      {
+        "node_id": "black",
+        "node_index": 11,
+        "op": "constant"
+      },
+      {
+        "node_id": "ior",
+        "node_index": 9,
+        "op": "constant"
+      },
+      {
+        "node_id": "metallic",
+        "node_index": 15,
+        "op": "constant"
+      },
+      {
+        "node_id": "normal_strength",
+        "node_index": 7,
+        "op": "constant"
+      },
+      {
+        "node_id": "rim_color",
+        "node_index": 12,
+        "op": "constant"
+      },
+      {
+        "node_id": "roughness",
+        "node_index": 14,
+        "op": "constant"
+      },
+      {
+        "node_id": "tint",
+        "node_index": 2,
+        "op": "constant"
+      }
+    ],
+    "instruction_count": 8,
+    "instruction_order": [
+      "uv",
+      "base_tex",
+      "normal_tex",
+      "tinted_base",
+      "base_color",
+      "world_normal",
+      "fresnel",
+      "emissive"
+    ],
+    "ir_sha256": "abb9f09bd74bd62e4f9007872b40b8350e37c13dcfe3bdddfcd507214b7497d6"
+  },
+  "counts": {
+    "degenerate_tangent_pixels": 0,
+    "edge_pixels": 932,
+    "normal_fallback_pixels": 0,
+    "shaded_pixels": 45594,
+    "total_pixels": 76800,
+    "valid_pixels": 45594
+  },
+  "g_buffer": {
+    "depth": {
+      "count": 45594,
+      "max": [
+        8.4052946574
+      ],
+      "mean": [
+        3.7452423519
+      ],
+      "min": [
+        2.5635790543
+      ]
+    },
+    "depth_convention": "positive_ray_distance",
+    "edge_depth_method": "analytic_sphere_plane_intersection",
+    "geometric_normal": {
+      "count": 45594,
+      "max": [
+        0.9668311236,
+        1.0,
+        0.9999592581
+      ],
+      "mean": [
+        0.0,
+        0.7595294079,
+        0.2091474048
+      ],
+      "min": [
+        -0.9668311236,
+        -0.8960984915,
+        0.0
+      ]
+    },
+    "world_position": {
+      "count": 45594,
+      "max": [
+        3.8986284581,
+        1.438694001,
+        1.2895550864
+      ],
+      "mean": [
+        0.0,
+        0.2308090615,
+        0.0784393961
+      ],
+      "min": [
+        -3.8986284581,
+        0.0,
+        -3.8674636605
+      ]
+    }
+  },
+  "graph": "deterministic-checker-normal-rim",
+  "inputs": {
+    "graph_sha256": "8d40718351338c989a931dd0c6f64cc02e60badec044d35602d9ad11fad9f3f7",
+    "scene_sha256": "1aebf197159b1437712c5ef6fe496d7fc85168f935b2898c58b93d9d62556ca0"
+  },
+  "lighting": {
+    "direct_lights": 1,
+    "radiance": {
+      "count": 45594,
+      "max": [
+        2.1794059297,
+        0.999065324,
+        0.6667017755
+      ],
+      "mean": [
+        0.218423138,
+        0.111197374,
+        0.1056641536
+      ],
+      "min": [
+        0.005151422,
+        0.0114110362,
+        0.014224116
+      ]
+    },
+    "tone_mapping": "aces_narkowicz_then_srgb"
+  },
+  "limits": {
+    "max_graph_depth": 64,
+    "max_height": 1024,
+    "max_json_bytes": 8388608,
+    "max_lights": 8,
+    "max_nodes": 512,
+    "max_objects": 64,
+    "max_pixels": 1048576,
+    "max_texture_bytes": 16777216,
+    "max_texture_dimension": 2048,
+    "max_width": 1024
+  },
+  "ok": true,
+  "outputs": {
+    "base_color": {
+      "bit_depth": 8,
+      "encoding": "srgb_rgb",
+      "file": "base_color.png"
+    },
+    "emissive": {
+      "bit_depth": 16,
+      "encoding": "linear_rgb_clamped_0_1",
+      "file": "emissive.png"
+    },
+    "final": {
+      "bit_depth": 8,
+      "encoding": "srgb_rgb",
+      "file": "final.png"
+    },
+    "ir": {
+      "encoding": "json",
+      "file": "material_ir.json"
+    },
+    "metallic": {
+      "bit_depth": 16,
+      "encoding": "linear_gray",
+      "file": "metallic.png"
+    },
+    "normal": {
+      "bit_depth": 16,
+      "encoding": "world_space_linear_(n*0.5+0.5)",
+      "file": "normal.png"
+    },
+    "report": {
+      "encoding": "json",
+      "file": "report.json"
+    },
+    "roughness": {
+      "bit_depth": 16,
+      "encoding": "linear_gray",
+      "file": "roughness.png"
+    }
+  },
+  "resolution": {
+    "height": 240,
+    "width": 320
+  },
+  "scene": "sphere-on-plane",
+  "schema": "render-report/v1"
+}

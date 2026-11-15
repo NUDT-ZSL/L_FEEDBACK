@@ -1,0 +1,144 @@
+{
+  "name": "deterministic-checker-normal-rim",
+  "nodes": [
+    {
+      "id": "uv",
+      "type": "uv"
+    },
+    {
+      "id": "base_tex",
+      "inputs": {
+        "uv": "uv"
+      },
+      "texture": "checker",
+      "type": "texture_sample"
+    },
+    {
+      "id": "tint",
+      "type": "constant",
+      "value": [
+        0.92,
+        0.97,
+        1.0
+      ]
+    },
+    {
+      "id": "tinted_base",
+      "inputs": {
+        "a": "base_tex",
+        "b": "tint"
+      },
+      "type": "multiply"
+    },
+    {
+      "id": "base_boost",
+      "type": "constant",
+      "value": [
+        0.01,
+        0.012,
+        0.016
+      ]
+    },
+    {
+      "id": "base_color",
+      "inputs": {
+        "a": "tinted_base",
+        "b": "base_boost"
+      },
+      "type": "add"
+    },
+    {
+      "id": "normal_tex",
+      "inputs": {
+        "uv": "uv"
+      },
+      "texture": "bumps",
+      "type": "texture_sample"
+    },
+    {
+      "id": "normal_strength",
+      "type": "constant",
+      "value": 0.85
+    },
+    {
+      "id": "world_normal",
+      "inputs": {
+        "normal": "normal_tex",
+        "strength": "normal_strength"
+      },
+      "type": "normal_map"
+    },
+    {
+      "id": "ior",
+      "type": "constant",
+      "value": 1.45
+    },
+    {
+      "id": "fresnel",
+      "inputs": {
+        "ior": "ior",
+        "normal": "world_normal"
+      },
+      "type": "fresnel"
+    },
+    {
+      "id": "black",
+      "type": "constant",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "rim_color",
+      "type": "constant",
+      "value": [
+        0.035,
+        0.1,
+        0.18
+      ]
+    },
+    {
+      "id": "emissive",
+      "inputs": {
+        "a": "black",
+        "b": "rim_color",
+        "factor": "fresnel"
+      },
+      "type": "mix"
+    },
+    {
+      "id": "roughness",
+      "type": "constant",
+      "value": 0.34
+    },
+    {
+      "id": "metallic",
+      "type": "constant",
+      "value": 0.08
+    }
+  ],
+  "outputs": {
+    "base_color": "base_color",
+    "emissive": "emissive",
+    "metallic": "metallic",
+    "normal": "world_normal",
+    "roughness": "roughness"
+  },
+  "schema": "material-graph/v1",
+  "textures": {
+    "bumps": {
+      "color_space": "linear",
+      "filter": "bilinear",
+      "path": "textures/bumps.png",
+      "wrap": "repeat"
+    },
+    "checker": {
+      "color_space": "srgb",
+      "filter": "bilinear",
+      "path": "textures/checker.png",
+      "wrap": "repeat"
+    }
+  }
+}
