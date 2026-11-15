@@ -1,0 +1,15 @@
+/build/
+/build-*/
+/out/
+/.vs/
+*.user
+*.suo
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exe
+artifacts/*.ppm
+artifacts/*.stdout
+artifacts/*.stderr
+/artifacts/verify-*/
