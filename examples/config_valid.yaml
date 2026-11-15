@@ -1,0 +1,20 @@
+width: 256
+height: 256
+iterations: 8
+output_prefix: out/terrain
+noise:
+  seed: 20261116
+  base_frequency: 8
+  octaves: 5
+  lacunarity: 2.0
+  persistence: 0.5
+erosion:
+  hydraulic_weight: 0.5
+  thermal_weight: 0.3
+  pipe_factor: 0.1
+  erodibility: 0.3
+  deposition: 0.3
+  evaporation: 0.02
+  rain: 0.1
+  talus: 0.05
+  thermal_carry: 0.5

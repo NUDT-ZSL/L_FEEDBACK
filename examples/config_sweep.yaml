@@ -1,0 +1,14 @@
+width: 256
+height: 256
+iterations: 4
+output_prefix: out/sweep/terrain
+noise:
+  seed: 4242
+  octaves: 4
+erosion:
+  hydraulic_weight: 0.4
+  thermal_weight: 0.2
+sweep_iterations: [8, 2, 4]
+# Test-only hook: forces a RuntimeError at the given 1-based erosion iteration,
+# used to verify sweep failure isolation without touching production code.
+fault_at: 4

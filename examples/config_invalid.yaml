@@ -1,0 +1,4 @@
+width: 128
+height: 256
+iterations: 8
+output_prefix: out/bad
