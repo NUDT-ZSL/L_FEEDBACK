@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dialogue-baker"
+version = "1.0.0"
+description = "Deterministic offline dialogue spatialization and baking pipeline"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pydub>=0.25",
+]
+
+[project.scripts]
+dialogue-baker = "dialogue_baker.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dialogue_baker*"]
+

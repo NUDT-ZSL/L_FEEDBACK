@@ -1,0 +1,19 @@
+{
+  "audio_root": "voices",
+  "distance_reference_m": 1.5,
+  "fade_ms": 5.0,
+  "fps": "24",
+  "limiter": {
+    "lookahead_ms": 5.0,
+    "release_ms": 80.0,
+    "true_peak_oversample": 4
+  },
+  "pan_strength": 0.9,
+  "sample_rate": 48000,
+  "scene": "scene.json",
+  "schema_version": 1,
+  "script": "script.json",
+  "speed_of_sound_mps": 343.0,
+  "target_lufs": -10.0,
+  "true_peak_dbtp": -1.0
+}

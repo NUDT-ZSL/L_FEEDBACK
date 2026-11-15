@@ -1,0 +1,1038 @@
+{
+  "fps": "24",
+  "fps_decimal": 24.0,
+  "frame_count": 120,
+  "frames": [
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 2000,
+      "frame": 0,
+      "start_sample": 0
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 4000,
+      "frame": 1,
+      "start_sample": 2000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 6000,
+      "frame": 2,
+      "start_sample": 4000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 8000,
+      "frame": 3,
+      "start_sample": 6000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 10000,
+      "frame": 4,
+      "start_sample": 8000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 12000,
+      "frame": 5,
+      "start_sample": 10000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 14000,
+      "frame": 6,
+      "start_sample": 12000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 16000,
+      "frame": 7,
+      "start_sample": 14000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 18000,
+      "frame": 8,
+      "start_sample": 16000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 20000,
+      "frame": 9,
+      "start_sample": 18000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 22000,
+      "frame": 10,
+      "start_sample": 20000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 24000,
+      "frame": 11,
+      "start_sample": 22000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 26000,
+      "frame": 12,
+      "start_sample": 24000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 28000,
+      "frame": 13,
+      "start_sample": 26000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 30000,
+      "frame": 14,
+      "start_sample": 28000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 32000,
+      "frame": 15,
+      "start_sample": 30000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 34000,
+      "frame": 16,
+      "start_sample": 32000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 36000,
+      "frame": 17,
+      "start_sample": 34000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 38000,
+      "frame": 18,
+      "start_sample": 36000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 40000,
+      "frame": 19,
+      "start_sample": 38000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 42000,
+      "frame": 20,
+      "start_sample": 40000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 44000,
+      "frame": 21,
+      "start_sample": 42000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 46000,
+      "frame": 22,
+      "start_sample": 44000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 48000,
+      "frame": 23,
+      "start_sample": 46000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 50000,
+      "frame": 24,
+      "start_sample": 48000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 52000,
+      "frame": 25,
+      "start_sample": 50000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 54000,
+      "frame": 26,
+      "start_sample": 52000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 56000,
+      "frame": 27,
+      "start_sample": 54000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 58000,
+      "frame": 28,
+      "start_sample": 56000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 60000,
+      "frame": 29,
+      "start_sample": 58000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 62000,
+      "frame": 30,
+      "start_sample": 60000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 64000,
+      "frame": 31,
+      "start_sample": 62000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 66000,
+      "frame": 32,
+      "start_sample": 64000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 68000,
+      "frame": 33,
+      "start_sample": 66000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 70000,
+      "frame": 34,
+      "start_sample": 68000
+    },
+    {
+      "active_ids": [
+        "d01_narrator"
+      ],
+      "end_sample": 72000,
+      "frame": 35,
+      "start_sample": 70000
+    },
+    {
+      "active_ids": [
+        "d01_narrator",
+        "d02_alice"
+      ],
+      "end_sample": 74000,
+      "frame": 36,
+      "start_sample": 72000
+    },
+    {
+      "active_ids": [
+        "d01_narrator",
+        "d02_alice"
+      ],
+      "end_sample": 76000,
+      "frame": 37,
+      "start_sample": 74000
+    },
+    {
+      "active_ids": [
+        "d01_narrator",
+        "d02_alice"
+      ],
+      "end_sample": 78000,
+      "frame": 38,
+      "start_sample": 76000
+    },
+    {
+      "active_ids": [
+        "d01_narrator",
+        "d02_alice"
+      ],
+      "end_sample": 80000,
+      "frame": 39,
+      "start_sample": 78000
+    },
+    {
+      "active_ids": [
+        "d01_narrator",
+        "d02_alice"
+      ],
+      "end_sample": 82000,
+      "frame": 40,
+      "start_sample": 80000
+    },
+    {
+      "active_ids": [
+        "d01_narrator",
+        "d02_alice"
+      ],
+      "end_sample": 84000,
+      "frame": 41,
+      "start_sample": 82000
+    },
+    {
+      "active_ids": [
+        "d01_narrator",
+        "d02_alice"
+      ],
+      "end_sample": 86000,
+      "frame": 42,
+      "start_sample": 84000
+    },
+    {
+      "active_ids": [
+        "d01_narrator",
+        "d02_alice"
+      ],
+      "end_sample": 88000,
+      "frame": 43,
+      "start_sample": 86000
+    },
+    {
+      "active_ids": [
+        "d01_narrator",
+        "d02_alice"
+      ],
+      "end_sample": 90000,
+      "frame": 44,
+      "start_sample": 88000
+    },
+    {
+      "active_ids": [
+        "d01_narrator",
+        "d02_alice"
+      ],
+      "end_sample": 92000,
+      "frame": 45,
+      "start_sample": 90000
+    },
+    {
+      "active_ids": [
+        "d01_narrator",
+        "d02_alice"
+      ],
+      "end_sample": 94000,
+      "frame": 46,
+      "start_sample": 92000
+    },
+    {
+      "active_ids": [
+        "d01_narrator",
+        "d02_alice"
+      ],
+      "end_sample": 96000,
+      "frame": 47,
+      "start_sample": 94000
+    },
+    {
+      "active_ids": [
+        "d02_alice"
+      ],
+      "end_sample": 98000,
+      "frame": 48,
+      "start_sample": 96000
+    },
+    {
+      "active_ids": [
+        "d02_alice"
+      ],
+      "end_sample": 100000,
+      "frame": 49,
+      "start_sample": 98000
+    },
+    {
+      "active_ids": [
+        "d02_alice"
+      ],
+      "end_sample": 102000,
+      "frame": 50,
+      "start_sample": 100000
+    },
+    {
+      "active_ids": [
+        "d02_alice"
+      ],
+      "end_sample": 104000,
+      "frame": 51,
+      "start_sample": 102000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 106000,
+      "frame": 52,
+      "start_sample": 104000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 108000,
+      "frame": 53,
+      "start_sample": 106000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 110000,
+      "frame": 54,
+      "start_sample": 108000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 112000,
+      "frame": 55,
+      "start_sample": 110000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 114000,
+      "frame": 56,
+      "start_sample": 112000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 116000,
+      "frame": 57,
+      "start_sample": 114000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 118000,
+      "frame": 58,
+      "start_sample": 116000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 120000,
+      "frame": 59,
+      "start_sample": 118000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 122000,
+      "frame": 60,
+      "start_sample": 120000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 124000,
+      "frame": 61,
+      "start_sample": 122000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 126000,
+      "frame": 62,
+      "start_sample": 124000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 128000,
+      "frame": 63,
+      "start_sample": 126000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 130000,
+      "frame": 64,
+      "start_sample": 128000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 132000,
+      "frame": 65,
+      "start_sample": 130000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 134000,
+      "frame": 66,
+      "start_sample": 132000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 136000,
+      "frame": 67,
+      "start_sample": 134000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 138000,
+      "frame": 68,
+      "start_sample": 136000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 140000,
+      "frame": 69,
+      "start_sample": 138000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 142000,
+      "frame": 70,
+      "start_sample": 140000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 144000,
+      "frame": 71,
+      "start_sample": 142000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 146000,
+      "frame": 72,
+      "start_sample": 144000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 148000,
+      "frame": 73,
+      "start_sample": 146000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 150000,
+      "frame": 74,
+      "start_sample": 148000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 152000,
+      "frame": 75,
+      "start_sample": 150000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 154000,
+      "frame": 76,
+      "start_sample": 152000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 156000,
+      "frame": 77,
+      "start_sample": 154000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 158000,
+      "frame": 78,
+      "start_sample": 156000
+    },
+    {
+      "active_ids": [
+        "d02_alice",
+        "d03_bob"
+      ],
+      "end_sample": 160000,
+      "frame": 79,
+      "start_sample": 158000
+    },
+    {
+      "active_ids": [
+        "d03_bob"
+      ],
+      "end_sample": 162000,
+      "frame": 80,
+      "start_sample": 160000
+    },
+    {
+      "active_ids": [
+        "d03_bob"
+      ],
+      "end_sample": 164000,
+      "frame": 81,
+      "start_sample": 162000
+    },
+    {
+      "active_ids": [
+        "d03_bob"
+      ],
+      "end_sample": 166000,
+      "frame": 82,
+      "start_sample": 164000
+    },
+    {
+      "active_ids": [
+        "d03_bob"
+      ],
+      "end_sample": 168000,
+      "frame": 83,
+      "start_sample": 166000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 170000,
+      "frame": 84,
+      "start_sample": 168000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 172000,
+      "frame": 85,
+      "start_sample": 170000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 174000,
+      "frame": 86,
+      "start_sample": 172000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 176000,
+      "frame": 87,
+      "start_sample": 174000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 178000,
+      "frame": 88,
+      "start_sample": 176000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 180000,
+      "frame": 89,
+      "start_sample": 178000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 182000,
+      "frame": 90,
+      "start_sample": 180000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 184000,
+      "frame": 91,
+      "start_sample": 182000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 186000,
+      "frame": 92,
+      "start_sample": 184000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 188000,
+      "frame": 93,
+      "start_sample": 186000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 190000,
+      "frame": 94,
+      "start_sample": 188000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 192000,
+      "frame": 95,
+      "start_sample": 190000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 194000,
+      "frame": 96,
+      "start_sample": 192000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 196000,
+      "frame": 97,
+      "start_sample": 194000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 198000,
+      "frame": 98,
+      "start_sample": 196000
+    },
+    {
+      "active_ids": [
+        "d03_bob",
+        "d04_alice"
+      ],
+      "end_sample": 200000,
+      "frame": 99,
+      "start_sample": 198000
+    },
+    {
+      "active_ids": [
+        "d04_alice"
+      ],
+      "end_sample": 202000,
+      "frame": 100,
+      "start_sample": 200000
+    },
+    {
+      "active_ids": [
+        "d04_alice"
+      ],
+      "end_sample": 204000,
+      "frame": 101,
+      "start_sample": 202000
+    },
+    {
+      "active_ids": [
+        "d04_alice"
+      ],
+      "end_sample": 206000,
+      "frame": 102,
+      "start_sample": 204000
+    },
+    {
+      "active_ids": [
+        "d04_alice"
+      ],
+      "end_sample": 208000,
+      "frame": 103,
+      "start_sample": 206000
+    },
+    {
+      "active_ids": [
+        "d04_alice",
+        "d05_narrator"
+      ],
+      "end_sample": 210000,
+      "frame": 104,
+      "start_sample": 208000
+    },
+    {
+      "active_ids": [
+        "d04_alice",
+        "d05_narrator"
+      ],
+      "end_sample": 212000,
+      "frame": 105,
+      "start_sample": 210000
+    },
+    {
+      "active_ids": [
+        "d04_alice",
+        "d05_narrator"
+      ],
+      "end_sample": 214000,
+      "frame": 106,
+      "start_sample": 212000
+    },
+    {
+      "active_ids": [
+        "d04_alice",
+        "d05_narrator"
+      ],
+      "end_sample": 216000,
+      "frame": 107,
+      "start_sample": 214000
+    },
+    {
+      "active_ids": [
+        "d04_alice",
+        "d05_narrator"
+      ],
+      "end_sample": 218000,
+      "frame": 108,
+      "start_sample": 216000
+    },
+    {
+      "active_ids": [
+        "d04_alice",
+        "d05_narrator"
+      ],
+      "end_sample": 220000,
+      "frame": 109,
+      "start_sample": 218000
+    },
+    {
+      "active_ids": [
+        "d04_alice",
+        "d05_narrator"
+      ],
+      "end_sample": 222000,
+      "frame": 110,
+      "start_sample": 220000
+    },
+    {
+      "active_ids": [
+        "d04_alice",
+        "d05_narrator"
+      ],
+      "end_sample": 224000,
+      "frame": 111,
+      "start_sample": 222000
+    },
+    {
+      "active_ids": [
+        "d04_alice",
+        "d05_narrator"
+      ],
+      "end_sample": 226000,
+      "frame": 112,
+      "start_sample": 224000
+    },
+    {
+      "active_ids": [
+        "d04_alice",
+        "d05_narrator"
+      ],
+      "end_sample": 228000,
+      "frame": 113,
+      "start_sample": 226000
+    },
+    {
+      "active_ids": [
+        "d04_alice",
+        "d05_narrator"
+      ],
+      "end_sample": 230000,
+      "frame": 114,
+      "start_sample": 228000
+    },
+    {
+      "active_ids": [
+        "d04_alice",
+        "d05_narrator"
+      ],
+      "end_sample": 232000,
+      "frame": 115,
+      "start_sample": 230000
+    },
+    {
+      "active_ids": [
+        "d05_narrator"
+      ],
+      "end_sample": 234000,
+      "frame": 116,
+      "start_sample": 232000
+    },
+    {
+      "active_ids": [
+        "d05_narrator"
+      ],
+      "end_sample": 236000,
+      "frame": 117,
+      "start_sample": 234000
+    },
+    {
+      "active_ids": [
+        "d05_narrator"
+      ],
+      "end_sample": 238000,
+      "frame": 118,
+      "start_sample": 236000
+    },
+    {
+      "active_ids": [
+        "d05_narrator"
+      ],
+      "end_sample": 240000,
+      "frame": 119,
+      "start_sample": 238000
+    }
+  ],
+  "sample_rate": 48000,
+  "schema_version": 1,
+  "timeline_rule": "active when dialogue_sample_span intersects frame_sample_span using half-open integer intervals"
+}

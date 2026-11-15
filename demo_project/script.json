@@ -1,0 +1,47 @@
+{
+  "dialogues": [
+    {
+      "audio": "narrator_48k.wav",
+      "end_frame": 48,
+      "id": "d01_narrator",
+      "speaker": "narrator",
+      "start_frame": 0,
+      "text": "The signal begins where the corridor bends."
+    },
+    {
+      "audio": "alice_44k.wav",
+      "end_frame": 80,
+      "id": "d02_alice",
+      "speaker": "alice",
+      "start_frame": 36,
+      "text": "I can hear the relay through the wall."
+    },
+    {
+      "audio": "bob_48k_stereo.wav",
+      "end_frame": 100,
+      "id": "d03_bob",
+      "speaker": "bob",
+      "start_frame": 52,
+      "text": "Then move before the timer resets."
+    },
+    {
+      "audio": "alice_44k_tail.wav",
+      "end_frame": 116,
+      "id": "d04_alice",
+      "speaker": "alice",
+      "start_frame": 84,
+      "text": "The relay is already answering us."
+    },
+    {
+      "audio": "narrator_48k_tail.wav",
+      "end_frame": 120,
+      "id": "d05_narrator",
+      "speaker": "narrator",
+      "start_frame": 104,
+      "text": "And the lights went out."
+    }
+  ],
+  "duration_frames": 120,
+  "fps": "24",
+  "schema_version": 1
+}
