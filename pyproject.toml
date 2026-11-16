@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spatial-audio-renderer"
+version = "1.0.0"
+description = "Deterministic offline first-person spatial audio renderer"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.23",
+    "soundfile>=0.12",
+]
+
+[project.scripts]
+spatial-render = "spatial_audio_renderer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["spatial_audio_renderer*"]
