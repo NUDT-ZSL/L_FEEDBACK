@@ -1,0 +1,17 @@
+{
+  "schema":"lcr-offscreen-report-v1",
+  "seed":1337,
+  "sample_time":2,
+  "gl_version":"4.5 (Core Profile) Mesa 25.1.7-1ubuntu3",
+  "gl_renderer":"llvmpipe (LLVM 20.1.8, 256 bits)",
+  "before":{"equipment":"iron","pixels":2457600,"hash":"db6177eea1a6496b","image":"build/offscreen/reports/offscreen-before.ppm"},
+  "after":{"equipment":"ember","pixels":2457600,"hash":"0b7caf933ea0a3ff","image":"build/offscreen/reports/offscreen-after.ppm"},
+  "changed_pixels":44643,
+  "non_background_pixels":44284,
+  "total_pixels":614400,
+  "switch_max_joint_delta":0,
+  "shader_program_builds":1,
+  "vao_builds":8,
+  "texture_uploads":4,
+  "equipment_pipeline_rebuilds":0
+}

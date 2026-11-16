@@ -1,0 +1,1 @@
+{"error":{"code":"E_SHADER_COMPILE","exit_code":30,"stage":"shader.compile.character.vertex","message":"shader compilation failed:\n0:2(1): preprocessor error: #error forced shader compile failure\n0:4(1): preprocessor error: #version must appear on the first line\n"}}

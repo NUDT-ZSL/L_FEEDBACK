@@ -1,0 +1,17 @@
+{
+  "name": "layered-character-renderer",
+  "version-string": "1.0.0",
+  "description": "Deterministic layered character renderer with procedural assets",
+  "builtin-baseline": "8f363bdc11359ede4bc51e5eb32a2617538049c8",
+  "dependencies": [
+    "glfw3",
+    "glm",
+    {
+      "name": "glad",
+      "features": [
+        "gl-api-33"
+      ]
+    }
+  ]
+}
+

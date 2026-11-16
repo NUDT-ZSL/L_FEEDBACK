@@ -1,0 +1,14 @@
+{
+  "schema":"lcr-state-snapshot-v1",
+  "seed":1337,
+  "logic_tick":360,
+  "logic_time":6,
+  "render_time":6,
+  "interpolation_alpha":0,
+  "equipment":"ember",
+  "assets":{"skeleton_hash":"0b6bd8ea0b650af1","mesh_hash":"6495698dc1fc5c8e","character_hash":"743d69a03bfed51b","equipment_catalog_hash":"a96958b02f68f2c6"},
+  "state_hash":"56830c5da803dee3",
+  "joints":[{"index":0,"name":"Root","position":[0,0,0]},{"index":1,"name":"Pelvis","position":[-0.00487660524,0.960113049,-0.00718398951]},{"index":2,"name":"Spine","position":[-0.00194453215,1.14050758,-0.00168549689]},{"index":3,"name":"Chest","position":[-0.0209891945,1.56780732,0.0232541878]},{"index":4,"name":"Neck","position":[-0.0206841566,1.77681267,0.0285721906]},{"index":5,"name":"Head","position":[-0.0219126958,1.91761899,0.0306116063]},{"index":6,"name":"LeftUpperArm","position":[-0.236113891,1.73103666,-0.0807629377]},{"index":7,"name":"LeftLowerArm","position":[-0.527158916,1.62395787,-0.124989823]},{"index":8,"name":"LeftHand","position":[-0.831129193,1.58974135,-0.129835784]},{"index":9,"name":"RightUpperArm","position":[0.179072887,1.71402681,0.138562381]},{"index":10,"name":"RightLowerArm","position":[0.374776632,1.58561349,0.362682849]},{"index":11,"name":"RightHand","position":[0.6327672,1.56363332,0.529232025]},{"index":12,"name":"LeftThigh","position":[-0.1099777,0.868985951,-0.0438984334]},{"index":13,"name":"LeftShin","position":[-0.0775829256,0.426941723,-0.0918612331]},{"index":14,"name":"LeftFoot","position":[-0.0635955483,-0.0036329627,-0.115818903]},{"index":15,"name":"RightThigh","position":[0.114476129,0.874586344,0.0425637215]},{"index":16,"name":"RightShin","position":[0.138346106,0.43013519,0.0660448074]},{"index":17,"name":"RightFoot","position":[0.161197335,-0.00481039286,0.100622013]},{"index":18,"name":"WeaponMount","position":[0.49687463,1.61347353,0.464158416]},{"index":19,"name":"CapeRoot","position":[0.0460872054,1.59540188,-0.120331973]},{"index":20,"name":"CapeMid","position":[0.0894474834,1.15865684,-0.221809193]},{"index":21,"name":"CapeTip","position":[0.159465775,0.746939063,-0.337664962]}],
+  "equipment_switch":[{"tick":75,"render_time":1.25,"from":"iron","to":"ember","pose_hash_before":"258d224406ccb7e0","pose_hash_after":"258d224406ccb7e0","max_joint_position_delta":0,"triggered":true}],
+  "pipeline":{"initialized":false,"shader_program_builds":0,"vao_builds":0,"texture_uploads":0,"equipment_pipeline_rebuilds":0,"opengl_version":"","renderer":""}
+}
