@@ -1,0 +1,80 @@
+{
+  "terrain": {
+    "rows": 128,
+    "cols": 128,
+    "seed": 20261117,
+    "world_width": 360.0,
+    "world_depth": 280.0,
+    "height_scale": 70.0,
+    "tile_cells": 16,
+    "noise": {
+      "frequency": 3.2,
+      "octaves": 6,
+      "persistence": 0.52,
+      "lacunarity": 2.03
+    }
+  },
+  "camera": {
+    "azimuth_deg": 35.0,
+    "elevation_deg": 32.0,
+    "distance": 470.0,
+    "fov_y_deg": 48.0,
+    "near": 0.5,
+    "far": 1500.0,
+    "target": [0.5, 0.34, 0.5]
+  },
+  "materials": {
+    "elevation_thresholds": [0.22, 0.48, 0.74],
+    "elevation_transition": 0.08,
+    "slope_start": 0.12,
+    "slope_end": 0.38,
+    "slope_rock_strength": 0.82,
+    "layers": [
+      {"name": "sand", "color": [0.82, 0.70, 0.48], "weight": 1.0},
+      {"name": "grass", "color": [0.30, 0.48, 0.22], "weight": 1.0},
+      {"name": "rock", "color": [0.40, 0.38, 0.35], "weight": 1.0},
+      {"name": "snow", "color": [0.90, 0.93, 0.96], "weight": 1.0}
+    ]
+  },
+  "light": {
+    "direction": {"azimuth_deg": 235.0, "elevation_deg": 40.0},
+    "color": [1.0, 0.95, 0.86],
+    "intensity": 1.15,
+    "ambient": {
+      "sky_color": [0.54, 0.70, 0.94],
+      "ground_color": [0.20, 0.18, 0.14],
+      "intensity": 0.60
+    },
+    "shadow": {
+      "enabled": true,
+      "resolution": 512,
+      "depth_bias": 0.0035,
+      "normal_offset": 0.12,
+      "pcf_samples": 16,
+      "filter_radius": 2.5
+    }
+  },
+  "render": {
+    "width": 640,
+    "height": 480,
+    "tile_size": 64,
+    "background_color": [0.055, 0.075, 0.105],
+    "exposure": 1.28,
+    "gamma": 2.2,
+    "write_debug_images": true
+  },
+  "output": {
+    "image": "outputs/sample/preview.png",
+    "normal_image": "outputs/sample/normal.png",
+    "shadow_image": "outputs/sample/shadow.png",
+    "terrain_file": "data/sample_terrain.bin",
+    "tile_report": "outputs/sample/tiles.json",
+    "cache_dir": "outputs/sample/cache"
+  },
+  "limits": {
+    "max_memory_mb": 192.0,
+    "max_total_samples": 50000000,
+    "max_terrain_cells": 2000000
+  }
+}
+
