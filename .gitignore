@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.offline_mixer_*/
+*.report.json
+artifacts/
+examples/demo_audio/
+examples/demo_mix.wav
+examples/demo_mix.report.json
+examples/demo_serial.wav
+examples/demo_serial.report.json
