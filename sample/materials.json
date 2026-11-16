@@ -1,0 +1,60 @@
+{
+  "materials": [
+    {
+      "id": "brushed_steel",
+      "base_color": [
+        0.27,
+        0.32,
+        0.37
+      ],
+      "specular_color": [
+        0.95,
+        0.97,
+        1.0
+      ],
+      "metallic": 0.88,
+      "roughness": 0.24,
+      "tangent_specular_exponent": 34.0,
+      "bitangent_specular_exponent": 240.0,
+      "anisotropy": 0.78,
+      "anisotropy_axis": "tangent",
+      "anisotropy_rotation_deg": 32.0
+    },
+    {
+      "id": "dark_concrete",
+      "base_color": [
+        0.1,
+        0.11,
+        0.12
+      ],
+      "specular_color": [
+        0.35,
+        0.35,
+        0.35
+      ],
+      "metallic": 0.0,
+      "roughness": 0.82,
+      "base_specular_exponent": 16.0,
+      "anisotropy": 0.0
+    },
+    {
+      "id": "brushed_copper",
+      "base_color": [
+        0.56,
+        0.24,
+        0.1
+      ],
+      "specular_color": [
+        1.0,
+        0.72,
+        0.52
+      ],
+      "metallic": 0.92,
+      "roughness": 0.28,
+      "base_specular_exponent": 150.0,
+      "anisotropy": 0.72,
+      "anisotropy_axis": "bitangent",
+      "anisotropy_rotation_deg": -18.0
+    }
+  ]
+}

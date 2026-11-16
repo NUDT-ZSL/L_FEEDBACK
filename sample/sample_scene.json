@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "width": 480,
+  "height": 320,
+  "materials": "materials.json",
+  "camera": {
+    "position": [
+      6.2,
+      4.4,
+      9.2
+    ],
+    "target": [
+      0.0,
+      1.15,
+      -0.2
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov_y_deg": 48.0,
+    "near": 0.1,
+    "far": 50.0
+  },
+  "shadows": {
+    "resolution": 256,
+    "cascade_count": 3,
+    "split_lambda": 0.62,
+    "shadow_distance": 35.0,
+    "pcf_radius": 1
+  },
+  "depth": {
+    "bias": 0.0015,
+    "slope_scale": 3.0,
+    "compare_tolerance": 0.006
+  },
+  "lights": [
+    {
+      "id": "sun",
+      "type": "directional",
+      "direction": [
+        0.3,
+        -0.85,
+        -0.42
+      ],
+      "color": [
+        1.0,
+        0.93,
+        0.8
+      ],
+      "intensity": 2.8
+    },
+    {
+      "id": "point_blue",
+      "type": "point",
+      "position": [
+        -3.0,
+        2.7,
+        1.8
+      ],
+      "range": 8.5,
+      "color": [
+        0.18,
+        0.55,
+        1.0
+      ],
+      "intensity": 22.0
+    },
+    {
+      "id": "spot_amber",
+      "type": "spot",
+      "position": [
+        3.4,
+        4.2,
+        2.6
+      ],
+      "direction": [
+        -0.63,
+        -0.66,
+        -0.41
+      ],
+      "range": 14.0,
+      "inner_angle_deg": 15.0,
+      "outer_angle_deg": 24.0,
+      "color": [
+        1.0,
+        0.28,
+        0.12
+      ],
+      "intensity": 72.0
+    }
+  ],
+  "meshes": [
+    {
+      "name": "ground",
+      "path": "meshes/ground.npz",
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "cast_shadow": true
+    },
+    {
+      "name": "wall",
+      "path": "meshes/wall.npz",
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "cast_shadow": true
+    },
+    {
+      "name": "steel_sphere",
+      "path": "meshes/sphere.npz",
+      "transform": {
+        "translate": [
+          0.0,
+          1.18,
+          0.15
+        ],
+        "scale": [
+          1.13,
+          1.13,
+          1.13
+        ]
+      },
+      "cast_shadow": true
+    },
+    {
+      "name": "copper_box",
+      "path": "meshes/box.npz",
+      "transform": {
+        "translate": [
+          -2.3,
+          0.76,
+          0.9
+        ],
+        "rotate_xyz_deg": [
+          0.0,
+          27.0,
+          0.0
+        ]
+      },
+      "cast_shadow": true
+    },
+    {
+      "name": "small_sphere",
+      "path": "meshes/sphere.npz",
+      "transform": {
+        "translate": [
+          2.05,
+          0.64,
+          0.55
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "cast_shadow": true
+    }
+  ]
+}

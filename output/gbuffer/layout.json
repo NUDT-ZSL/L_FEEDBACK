@@ -1,0 +1,95 @@
+{
+  "background": {
+    "coverage": 0,
+    "depth": 1.0,
+    "material_index": -1
+  },
+  "channels": {
+    "bitangent": {
+      "components": [
+        "x",
+        "y",
+        "z"
+      ],
+      "dtype": "float32",
+      "file": "bitangent.npy",
+      "semantic": "normalized world-space bitangent"
+    },
+    "coverage": {
+      "components": [
+        "covered"
+      ],
+      "dtype": "uint8",
+      "file": "coverage.npy",
+      "semantic": "1 for covered pixels, 0 for background"
+    },
+    "depth": {
+      "components": [
+        "window_depth"
+      ],
+      "dtype": "float32",
+      "file": "depth.npy",
+      "semantic": "perspective NDC depth mapped to [0, 1]"
+    },
+    "material_index": {
+      "components": [
+        "material_index"
+      ],
+      "dtype": "int32",
+      "file": "material_index.npy",
+      "semantic": "index into the scene material table"
+    },
+    "normal": {
+      "components": [
+        "x",
+        "y",
+        "z"
+      ],
+      "dtype": "float32",
+      "file": "normal.npy",
+      "semantic": "normalized world-space geometric normal"
+    },
+    "position": {
+      "components": [
+        "x",
+        "y",
+        "z"
+      ],
+      "dtype": "float32",
+      "file": "position.npy",
+      "semantic": "world-space surface position"
+    },
+    "tangent": {
+      "components": [
+        "x",
+        "y",
+        "z"
+      ],
+      "dtype": "float32",
+      "file": "tangent.npy",
+      "semantic": "normalized world-space tangent"
+    },
+    "uv": {
+      "components": [
+        "u",
+        "v"
+      ],
+      "dtype": "float32",
+      "file": "uv.npy",
+      "semantic": "interpolated texture coordinate"
+    }
+  },
+  "files": {
+    "bitangent": "bitangent.npy",
+    "coverage": "coverage.npy",
+    "depth": "depth.npy",
+    "material_index": "material_index.npy",
+    "normal": "normal.npy",
+    "position": "position.npy",
+    "tangent": "tangent.npy",
+    "uv": "uv.npy"
+  },
+  "height": 320,
+  "schema_version": 1,
+  "width": 480
+}

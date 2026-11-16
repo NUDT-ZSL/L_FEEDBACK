@@ -1,0 +1,506 @@
+{
+  "culling": {
+    "backface_culled_triangles": 1340,
+    "fragments_written": 129265,
+    "mesh_details": [
+      {
+        "bounding_sphere": {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "radius": 12.806248474865697
+        },
+        "frustum_culled": false,
+        "name": "ground",
+        "triangle_count": 336
+      },
+      {
+        "bounding_sphere": {
+          "center": [
+            0.0,
+            2.5,
+            -4.8
+          ],
+          "radius": 7.433034373659253
+        },
+        "frustum_culled": false,
+        "name": "wall",
+        "triangle_count": 64
+      },
+      {
+        "bounding_sphere": {
+          "center": [
+            0.0,
+            1.1799999999999997,
+            0.14999999999999997
+          ],
+          "radius": 1.1300000000000003
+        },
+        "frustum_culled": false,
+        "name": "steel_sphere",
+        "triangle_count": 1224
+      },
+      {
+        "bounding_sphere": {
+          "center": [
+            -2.3,
+            0.76,
+            0.9
+          ],
+          "radius": 1.0182337649086286
+        },
+        "frustum_culled": false,
+        "name": "copper_box",
+        "triangle_count": 12
+      },
+      {
+        "bounding_sphere": {
+          "center": [
+            2.05,
+            0.64,
+            0.55
+          ],
+          "radius": 0.6400000000000002
+        },
+        "frustum_culled": false,
+        "name": "small_sphere",
+        "triangle_count": 1224
+      }
+    ],
+    "mesh_frustum_culled_triangles": 0,
+    "meshes_culled": [],
+    "meshes_total": 5,
+    "near_far_culled_triangles": 0,
+    "offscreen_culled_triangles": 280,
+    "rasterized_triangles": 1240,
+    "triangles_after_culling": 2860,
+    "triangles_after_frustum_culling": 2860,
+    "triangles_before_culling": 2860
+  },
+  "depth_parameters": {
+    "bias": 0.0015,
+    "compare_tolerance": 0.006,
+    "slope_scale": 3.0,
+    "used_for_render_and_query": true
+  },
+  "gbuffer": {
+    "background_depth": 1.0,
+    "covered_pixels": 115647,
+    "layout": {
+      "bitangent": {
+        "components": [
+          "x",
+          "y",
+          "z"
+        ],
+        "dtype": "float32",
+        "file": "bitangent.npy",
+        "semantic": "normalized world-space bitangent"
+      },
+      "coverage": {
+        "components": [
+          "covered"
+        ],
+        "dtype": "uint8",
+        "file": "coverage.npy",
+        "semantic": "1 for covered pixels, 0 for background"
+      },
+      "depth": {
+        "components": [
+          "window_depth"
+        ],
+        "dtype": "float32",
+        "file": "depth.npy",
+        "semantic": "perspective NDC depth mapped to [0, 1]"
+      },
+      "material_index": {
+        "components": [
+          "material_index"
+        ],
+        "dtype": "int32",
+        "file": "material_index.npy",
+        "semantic": "index into the scene material table"
+      },
+      "normal": {
+        "components": [
+          "x",
+          "y",
+          "z"
+        ],
+        "dtype": "float32",
+        "file": "normal.npy",
+        "semantic": "normalized world-space geometric normal"
+      },
+      "position": {
+        "components": [
+          "x",
+          "y",
+          "z"
+        ],
+        "dtype": "float32",
+        "file": "position.npy",
+        "semantic": "world-space surface position"
+      },
+      "tangent": {
+        "components": [
+          "x",
+          "y",
+          "z"
+        ],
+        "dtype": "float32",
+        "file": "tangent.npy",
+        "semantic": "normalized world-space tangent"
+      },
+      "uv": {
+        "components": [
+          "u",
+          "v"
+        ],
+        "dtype": "float32",
+        "file": "uv.npy",
+        "semantic": "interpolated texture coordinate"
+      }
+    }
+  },
+  "hdr": {
+    "dtype": "float32",
+    "file": "hdr_color.npy",
+    "finite": true,
+    "max": 9.022422790527344,
+    "mean": 0.23403812944889069,
+    "min": 0.0,
+    "shape": [
+      320,
+      480,
+      3
+    ],
+    "tone_mapping": "none"
+  },
+  "light_interaction_details": {
+    "point_blue": {
+      "candidate_pixels": 82635,
+      "fully_shadowed_pixels": 0,
+      "lit_pixels": 4015,
+      "shadow_queries": 4015
+    },
+    "spot_amber": {
+      "candidate_pixels": 13572,
+      "fully_shadowed_pixels": 0,
+      "lit_pixels": 486,
+      "shadow_queries": 486
+    },
+    "sun": {
+      "candidate_pixels": 115647,
+      "fully_shadowed_pixels": 1412,
+      "lit_pixels": 112515,
+      "shadow_queries": 113927
+    }
+  },
+  "light_pixel_interactions": {
+    "point_blue": 82635,
+    "spot_amber": 13572,
+    "sun": 115647
+  },
+  "outputs": {
+    "depth_image": "depth.png",
+    "gbuffer_directory": "gbuffer",
+    "hdr": "hdr_color.npy",
+    "report": "report.json",
+    "shadow_map_directory": "shadow_maps",
+    "shadow_map_files": [
+      "shadow_maps/directional_sun_cascade_0.png",
+      "shadow_maps/directional_sun_cascade_1.png",
+      "shadow_maps/directional_sun_cascade_2.png",
+      "shadow_maps/point_point_blue_posX.png",
+      "shadow_maps/point_point_blue_negX.png",
+      "shadow_maps/point_point_blue_posY.png",
+      "shadow_maps/point_point_blue_negY.png",
+      "shadow_maps/point_point_blue_posZ.png",
+      "shadow_maps/point_point_blue_negZ.png",
+      "shadow_maps/spot_spot_amber.png"
+    ]
+  },
+  "peak_memory": {
+    "estimate_mb": 90.711926,
+    "rss_peak_mb": 136.195312,
+    "tracemalloc_current_mb": 16.52959,
+    "tracemalloc_peak_mb": 90.711926,
+    "tracked_numpy_buffers_mb": 14.720287
+  },
+  "resolution": {
+    "height": 320,
+    "width": 480
+  },
+  "scene": {
+    "camera": {
+      "far": 50.0,
+      "fov_y_deg": 48.0,
+      "near": 0.1,
+      "position": [
+        6.2,
+        4.4,
+        9.2
+      ],
+      "target": [
+        0.0,
+        1.15,
+        -0.2
+      ],
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "lights": [
+      {
+        "color": [
+          1.0,
+          0.93,
+          0.8
+        ],
+        "direction": [
+          0.30167899059826675,
+          -0.8547571400284225,
+          -0.4223505868375734
+        ],
+        "id": "sun",
+        "intensity": 2.8,
+        "type": "directional"
+      },
+      {
+        "color": [
+          0.18,
+          0.55,
+          1.0
+        ],
+        "id": "point_blue",
+        "intensity": 22.0,
+        "position": [
+          -3.0,
+          2.7,
+          1.8
+        ],
+        "range": 8.5,
+        "type": "point"
+      },
+      {
+        "color": [
+          1.0,
+          0.28,
+          0.12
+        ],
+        "direction": [
+          -0.6298110850074973,
+          -0.6598020890554733,
+          -0.4098770553223395
+        ],
+        "id": "spot_amber",
+        "inner_angle_deg": 15.0,
+        "intensity": 72.0,
+        "outer_angle_deg": 24.0,
+        "position": [
+          3.4,
+          4.2,
+          2.6
+        ],
+        "range": 14.0,
+        "type": "spot"
+      }
+    ],
+    "materials": [
+      {
+        "anisotropy": 0.78,
+        "anisotropy_axis": "tangent",
+        "anisotropy_rotation_deg": 32.0,
+        "base_color": [
+          0.27,
+          0.32,
+          0.37
+        ],
+        "exponent_bitangent": 240.0,
+        "exponent_tangent": 34.0,
+        "id": "brushed_steel",
+        "metallic": 0.88,
+        "roughness": 0.24,
+        "specular_color": [
+          0.95,
+          0.97,
+          1.0
+        ]
+      },
+      {
+        "anisotropy": 0.0,
+        "anisotropy_axis": "tangent",
+        "anisotropy_rotation_deg": 0.0,
+        "base_color": [
+          0.1,
+          0.11,
+          0.12
+        ],
+        "exponent_bitangent": 16.0,
+        "exponent_tangent": 16.0,
+        "id": "dark_concrete",
+        "metallic": 0.0,
+        "roughness": 0.82,
+        "specular_color": [
+          0.35,
+          0.35,
+          0.35
+        ]
+      },
+      {
+        "anisotropy": 0.72,
+        "anisotropy_axis": "bitangent",
+        "anisotropy_rotation_deg": -18.0,
+        "base_color": [
+          0.56,
+          0.24,
+          0.1
+        ],
+        "exponent_bitangent": 63.60000000000001,
+        "exponent_tangent": 236.4,
+        "id": "brushed_copper",
+        "metallic": 0.92,
+        "roughness": 0.28,
+        "specular_color": [
+          1.0,
+          0.72,
+          0.52
+        ]
+      }
+    ],
+    "mesh_count": 5,
+    "path": "/home/liang/feedback/uid192/sample/sample_scene.json",
+    "sha256": "98b96caf7e065e7281c655ffe71854d253346e5119ea2f556dce1ed6a4c0bda7"
+  },
+  "schema_version": 1,
+  "shadow_maps": {
+    "compare_tolerance": 0.006,
+    "depth_bias": 0.0015,
+    "directional": {
+      "sun": {
+        "cascade_count": 3,
+        "cascade_split_distances": [
+          4.89559918805469,
+          11.958527337309064,
+          35.0
+        ],
+        "cascades": [
+          {
+            "far": 14.511427238612706,
+            "file": "directional_sun_cascade_0.png",
+            "name": "directional_sun_cascade_0",
+            "near": 7.897396155506007,
+            "resolution": 256,
+            "split_far": 4.89559918805469,
+            "split_near": 0.1
+          },
+          {
+            "far": 30.992649299613635,
+            "file": "directional_sun_cascade_1.png",
+            "name": "directional_sun_cascade_1",
+            "near": 14.856829719430808,
+            "resolution": 256,
+            "split_far": 11.958527337309064,
+            "split_near": 4.89559918805469
+          },
+          {
+            "far": 90.13838434996501,
+            "file": "directional_sun_cascade_2.png",
+            "name": "directional_sun_cascade_2",
+            "near": 42.90377131098446,
+            "resolution": 256,
+            "split_far": 35.0,
+            "split_near": 11.958527337309064
+          }
+        ]
+      }
+    },
+    "map_count": 10,
+    "pcf_radius": 1,
+    "point": {
+      "point_blue": {
+        "faces": [
+          {
+            "face": "+x",
+            "far": 8.5,
+            "file": "point_point_blue_posX.png",
+            "name": "point_point_blue_posX",
+            "near": 0.0085,
+            "resolution": 256
+          },
+          {
+            "face": "-x",
+            "far": 8.5,
+            "file": "point_point_blue_negX.png",
+            "name": "point_point_blue_negX",
+            "near": 0.0085,
+            "resolution": 256
+          },
+          {
+            "face": "+y",
+            "far": 8.5,
+            "file": "point_point_blue_posY.png",
+            "name": "point_point_blue_posY",
+            "near": 0.0085,
+            "resolution": 256
+          },
+          {
+            "face": "-y",
+            "far": 8.5,
+            "file": "point_point_blue_negY.png",
+            "name": "point_point_blue_negY",
+            "near": 0.0085,
+            "resolution": 256
+          },
+          {
+            "face": "+z",
+            "far": 8.5,
+            "file": "point_point_blue_posZ.png",
+            "name": "point_point_blue_posZ",
+            "near": 0.0085,
+            "resolution": 256
+          },
+          {
+            "face": "-z",
+            "far": 8.5,
+            "file": "point_point_blue_negZ.png",
+            "name": "point_point_blue_negZ",
+            "near": 0.0085,
+            "resolution": 256
+          }
+        ],
+        "far": 8.5,
+        "near": 0.0085
+      }
+    },
+    "rendered_triangles": 3932,
+    "resolution": 256,
+    "slope_scale": 3.0,
+    "spot": {
+      "spot_amber": {
+        "cone_fov_y_deg": 50.0,
+        "far": 14.0,
+        "file": "spot_spot_amber.png",
+        "name": "spot_spot_amber",
+        "near": 0.014,
+        "resolution": 256
+      }
+    }
+  },
+  "shadow_queries": 118428,
+  "status": "ok",
+  "timing_method": "time.perf_counter_ns single interval per stage",
+  "timings_ms": {
+    "deferred_shading": 735.297439,
+    "gbuffer_rasterization": 6927.719517,
+    "geometry_prepare": 16.677549,
+    "output_write": 128.76173,
+    "scene_load": 104.950833,
+    "shadow_map_generation": 27935.277321,
+    "total_render": 35727.986118
+  }
+}
