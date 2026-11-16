@@ -1,0 +1,292 @@
+{
+  "schema_version": "1.1",
+  "render": {
+    "width": 160,
+    "height": 120,
+    "background": [
+      0.012,
+      0.016,
+      0.024,
+      1.0
+    ],
+    "normal_fallback": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "normal_tolerance": 0.0001
+  },
+  "comparison": {
+    "absolute": 1e-07,
+    "relative": 1e-07,
+    "channels": [
+      "R",
+      "G",
+      "B"
+    ]
+  },
+  "uniform_policy": {
+    "unused_declared": "warn"
+  },
+  "materials": [
+    {
+      "name": "opaque",
+      "vertex_shader": "shaders/standard.vert",
+      "fragment_shader": "shaders/standard.frag",
+      "uniforms": {
+        "u_base_color": {
+          "type": "vec3",
+          "value": [
+            0.42,
+            0.58,
+            0.68
+          ]
+        },
+        "u_metallic": {
+          "type": "float",
+          "value": 0.05
+        },
+        "u_roughness": {
+          "type": "float",
+          "value": 0.75
+        },
+        "u_tint_matrix": {
+          "type": "mat3",
+          "value": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "u_enable_tint": {
+          "type": "bool",
+          "value": true
+        },
+        "u_vertex_offset": {
+          "type": "float",
+          "value": 0.0
+        },
+        "u_opacity": {
+          "type": "float",
+          "value": 1.0
+        }
+      },
+      "blend": {
+        "enabled": false,
+        "src_factor": "one",
+        "dst_factor": "zero",
+        "equation": "add"
+      },
+      "depth": {
+        "test": true,
+        "write": true,
+        "func": "lequal"
+      }
+    },
+    {
+      "name": "glass",
+      "vertex_shader": "shaders/standard.vert",
+      "fragment_shader": "shaders/standard.frag",
+      "uniforms": {
+        "u_base_color": {
+          "type": "vec3",
+          "value": [
+            0.55,
+            0.9,
+            1.0
+          ]
+        },
+        "u_metallic": {
+          "type": "float",
+          "value": 0.0
+        },
+        "u_roughness": {
+          "type": "float",
+          "value": 0.1
+        },
+        "u_tint_matrix": {
+          "type": "mat3",
+          "value": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "u_enable_tint": {
+          "type": "bool",
+          "value": true
+        },
+        "u_vertex_offset": {
+          "type": "float",
+          "value": 0.0
+        },
+        "u_opacity": {
+          "type": "float",
+          "value": 0.42
+        }
+      },
+      "blend": {
+        "enabled": true,
+        "src_factor": "src_alpha",
+        "dst_factor": "one_minus_src_alpha",
+        "equation": "add"
+      },
+      "depth": {
+        "test": true,
+        "write": false,
+        "func": "lequal"
+      }
+    }
+  ],
+  "channels": [
+    {
+      "name": "depth",
+      "kind": "depth_prepass",
+      "materials": [
+        "opaque",
+        "glass"
+      ]
+    },
+    {
+      "name": "normal",
+      "kind": "normal",
+      "materials": [
+        "opaque",
+        "glass"
+      ]
+    },
+    {
+      "name": "deferred",
+      "kind": "deferred",
+      "materials": [
+        "opaque",
+        "glass"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "deterministic_studio",
+      "camera": {
+        "position": [
+          1.65,
+          1.25,
+          4.25
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "fov_y_deg": 42.0,
+        "near": 0.1,
+        "far": 50.0
+      },
+      "lights": [
+        {
+          "name": "key",
+          "type": "directional",
+          "direction": [
+            0.35,
+            -0.8,
+            -0.5
+          ],
+          "color": [
+            1.0,
+            0.95,
+            0.88
+          ],
+          "intensity": 1.15,
+          "radius": 10000.0
+        },
+        {
+          "name": "fill",
+          "type": "point",
+          "position": [
+            -3.0,
+            2.2,
+            3.5
+          ],
+          "color": [
+            0.25,
+            0.42,
+            0.95
+          ],
+          "intensity": 2.8,
+          "radius": 8.0
+        }
+      ],
+      "objects": [
+        {
+          "name": "opaque_cube",
+          "mesh": "cube",
+          "material": "opaque",
+          "position": [
+            -0.45,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            8.0,
+            25.0,
+            0.0
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ]
+        },
+        {
+          "name": "glass_cube",
+          "mesh": "cube",
+          "material": "glass",
+          "position": [
+            0.35,
+            0.05,
+            0.55
+          ],
+          "rotation": [
+            -12.0,
+            35.0,
+            7.0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "schema_version": "1.1",
+  "render": {
+    "width": 160,
+    "height": 120,
+    "background": [
+      0.012,
+      0.016,
+      0.024,
+      1.0
+    ],
+    "normal_fallback": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "normal_tolerance": 0.0001
+  },
+  "comparison": {
+    "absolute": 0.0002,
+    "relative": 0.002,
+    "channels": [
+      "R",
+      "G",
+      "B"
+    ]
+  },
+  "uniform_policy": {
+    "unused_declared": "warn"
+  },
+  "materials": [
+    {
+      "name": "stone",
+      "vertex_shader": "shaders/standard.vert",
+      "fragment_shader": "shaders/standard.frag",
+      "uniforms": {
+        "u_base_color": {
+          "type": "vec3",
+          "value": [
+            0.52,
+            0.61,
+            0.68
+          ]
+        },
+        "u_metallic": {
+          "type": "float",
+          "value": 0.05
+        },
+        "u_roughness": {
+          "type": "float",
+          "value": 0.72
+        },
+        "u_tint_matrix": {
+          "type": "mat3",
+          "value": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "u_enable_tint": {
+          "type": "bool",
+          "value": true
+        },
+        "u_vertex_offset": {
+          "type": "float",
+          "value": 0.0
+        },
+        "u_opacity": {
+          "type": "float",
+          "value": 1.0
+        }
+      },
+      "blend": {
+        "enabled": false,
+        "src_factor": "one",
+        "dst_factor": "zero",
+        "equation": "add"
+      },
+      "depth": {
+        "test": true,
+        "write": true,
+        "func": "lequal"
+      }
+    },
+    {
+      "name": "metal",
+      "vertex_shader": "shaders/standard.vert",
+      "fragment_shader": "shaders/standard.frag",
+      "uniforms": {
+        "u_base_color": {
+          "type": "vec3",
+          "value": [
+            0.73,
+            0.43,
+            0.18
+          ]
+        },
+        "u_metallic": {
+          "type": "float",
+          "value": 0.92
+        },
+        "u_roughness": {
+          "type": "float",
+          "value": 0.22
+        },
+        "u_tint_matrix": {
+          "type": "mat3",
+          "value": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "u_enable_tint": {
+          "type": "bool",
+          "value": true
+        },
+        "u_vertex_offset": {
+          "type": "float",
+          "value": 0.0
+        },
+        "u_opacity": {
+          "type": "float",
+          "value": 1.0
+        }
+      },
+      "blend": {
+        "enabled": false,
+        "src_factor": "one",
+        "dst_factor": "zero",
+        "equation": "add"
+      },
+      "depth": {
+        "test": true,
+        "write": true,
+        "func": "lequal"
+      }
+    }
+  ],
+  "channels": [
+    {
+      "name": "normal",
+      "kind": "normal",
+      "materials": [
+        "stone",
+        "metal"
+      ]
+    },
+    {
+      "name": "depth",
+      "kind": "depth_prepass",
+      "materials": [
+        "stone",
+        "metal"
+      ]
+    },
+    {
+      "name": "deferred",
+      "kind": "deferred",
+      "materials": [
+        "stone",
+        "metal"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "deterministic_studio",
+      "camera": {
+        "position": [
+          1.65,
+          1.25,
+          4.25
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "fov_y_deg": 42.0,
+        "near": 0.1,
+        "far": 50.0
+      },
+      "lights": [
+        {
+          "name": "key",
+          "type": "directional",
+          "direction": [
+            0.35,
+            -0.8,
+            -0.5
+          ],
+          "color": [
+            1.0,
+            0.95,
+            0.88
+          ],
+          "intensity": 1.15,
+          "radius": 10000.0
+        },
+        {
+          "name": "fill",
+          "type": "point",
+          "position": [
+            -3.0,
+            2.2,
+            3.5
+          ],
+          "color": [
+            0.25,
+            0.42,
+            0.95
+          ],
+          "intensity": 2.8,
+          "radius": 8.0
+        }
+      ],
+      "objects": [
+        {
+          "name": "stone_cube",
+          "mesh": "cube",
+          "material": "stone",
+          "position": [
+            -0.62,
+            -0.02,
+            0.0
+          ],
+          "rotation": [
+            12.0,
+            24.0,
+            0.0
+          ],
+          "scale": [
+            0.48,
+            0.48,
+            0.48
+          ]
+        },
+        {
+          "name": "metal_cube",
+          "mesh": "cube",
+          "material": "metal",
+          "position": [
+            0.58,
+            -0.08,
+            0.08
+          ],
+          "rotation": [
+            -16.0,
+            36.0,
+            9.0
+          ],
+          "scale": [
+            0.43,
+            0.57,
+            0.43
+          ]
+        },
+        {
+          "name": "zero_normal_probe",
+          "mesh": "zero_normal_plane",
+          "material": "stone",
+          "position": [
+            0.0,
+            0.62,
+            0.12
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.3,
+            0.18,
+            0.3
+          ]
+        }
+      ]
+    }
+  ]
+}

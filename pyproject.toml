@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "material-validator"
+version = "0.1.0"
+description = "Deterministic offline GLSL material and G-Buffer validator"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23", "moderngl>=5.8"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+material-validator = "material_validator.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["material_validator*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+pythonpath = ["."]
