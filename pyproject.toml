@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "broadcast-master"
+version = "1.0.0"
+description = "Offline multilingual broadcast mastering CLI for Windows"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "numpy>=1.24,<2",
+    "ffmpeg-python==0.2.0",
+]
+
+[project.scripts]
+broadcast-master = "broadcast_master.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["broadcast_master*"]
+
