@@ -1,0 +1,6 @@
+# Deterministic tetrahedron material.
+newmtl tetra
+Kd 1.0 1.0 1.0
+Ks 0.55 0.55 0.55
+Ns 48
+map_Kd tetra_diffuse.png

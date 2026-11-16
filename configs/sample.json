@@ -1,0 +1,36 @@
+{
+  "width": 640,
+  "height": 640,
+  "obj_path": "../assets/tetra.obj",
+  "output_path": "../out/sample.bmp",
+  "double_sided": false,
+  "ambient": [0.035, 0.04, 0.055],
+  "background": [0.015, 0.02, 0.03],
+  "camera": {
+    "position": [3.2, 1.4, 4.8],
+    "target": [0.0, -0.1, 0.0],
+    "up": [0.0, 1.0, 0.0],
+    "vertical_fov_degrees": 42.0,
+    "near": 0.1,
+    "far": 100.0
+  },
+  "lights": [
+    {
+      "type": "directional",
+      "direction": [-0.45, -1.0, -0.55],
+      "color": [1.0, 0.96, 0.88],
+      "intensity": 0.75
+    },
+    {
+      "type": "point",
+      "position": [-1.8, 1.5, 2.4],
+      "color": [1.0, 0.72, 0.45],
+      "intensity": 2.2,
+      "attenuation": {
+        "constant": 1.0,
+        "linear": 0.18,
+        "quadratic": 0.08
+      }
+    }
+  ]
+}
