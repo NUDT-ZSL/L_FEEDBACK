@@ -1,0 +1,13 @@
+build/
+out*/
+output/
+acceptance*/
+verify_run_*/
+custom_final/
+cleanup_check/
+__pycache__/
+*.pyc
+*.user
+*.suo
+*.VC.db
+
