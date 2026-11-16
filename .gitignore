@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Render checkpoints and caches (regenerated at runtime)
+*.state.json
+*.cache.npy
+*.tmp
+
+# Keep the curated demo, ignore throwaway verification workspaces.
+artifacts/corrupt/
+artifacts/missing/
+artifacts/allfail/
+artifacts/recover2/
+artifacts/clean3/
+artifacts/statecorrupt4/
