@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "output_dir": "out",
+  "temp_dir": "tmp",
+  "concurrency": 2,
+  "skills": [
+    {
+      "skill_id": "fireball",
+      "base_sample": "assets/fireball_base.wav",
+      "variant_count": 4,
+      "target_duration": 1.2,
+      "transient_markers": [
+        5292
+      ],
+      "target_loudness_mlfs": -20.0,
+      "random_seed": 1234
+    },
+    {
+      "skill_id": "frost_nova",
+      "base_sample": "assets/frost_nova_base.wav",
+      "variant_count": 4,
+      "target_duration": 1.2,
+      "transient_markers": [
+        3749
+      ],
+      "target_loudness_mlfs": -20.0,
+      "random_seed": 98765
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.py[cod]
+smoke/
+demo/out/
+demo/tmp/
+demo/**/error_report.json
+*.egg-info/
+.pytest_cache/
