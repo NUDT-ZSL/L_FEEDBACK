@@ -1,0 +1,8 @@
+/build/
+/build-win/
+/out/
+/.vs/
+*.user
+*.suo
+*.VC.db
+
