@@ -1,0 +1,18 @@
+[project]
+name = "proc-gi-vpl"
+version = "0.1.0"
+description = "Deterministic OpenGL 3.3 virtual point light global illumination demo"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+  "numpy>=1.26,<3",
+  "PyOpenGL>=3.1.7",
+  "glfw>=2.6",
+  "Pillow>=10",
+]
+
+[tool.setuptools]
+packages = ["proc_gi"]
+
+[tool.setuptools.package-data]
+proc_gi = ["shaders/*.vert", "shaders/*.frag"]
+
