@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "project_id": "harbor_light",
+  "target_language": "en-US",
+  "duration_s": 10.0,
+  "shots": [
+    {
+      "id": "shot_001",
+      "start_s": 0.0,
+      "end_s": 5.0,
+      "events": [
+        {
+          "id": "evt_001",
+          "type": "camera_cut",
+          "at_s": 0.0
+        },
+        {
+          "id": "evt_002",
+          "type": "camera_pan",
+          "at_s": 2.4,
+          "end_s": 4.2
+        }
+      ],
+      "subtitles": [
+        {
+          "id": "sub_001",
+          "start_s": 0.5,
+          "end_s": 3.0,
+          "text": "The lighthouse has been dark for three nights."
+        },
+        {
+          "id": "sub_002",
+          "start_s": 3.4,
+          "end_s": 4.7,
+          "text": "We should go before the tide turns."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "dlg_001",
+          "start_s": 0.5,
+          "end_s": 3.0,
+          "subtitle_id": "sub_001",
+          "text": "The lighthouse has been dark for three nights.",
+          "source_duration_s": 3.25
+        },
+        {
+          "id": "dlg_002",
+          "start_s": 3.4,
+          "end_s": 4.7,
+          "subtitle_id": "sub_002",
+          "text": "We should go before the tide turns.",
+          "source_duration_s": 1.7
+        }
+      ]
+    },
+    {
+      "id": "shot_002",
+      "start_s": 5.0,
+      "end_s": 10.0,
+      "events": [
+        {
+          "id": "evt_003",
+          "type": "camera_cut",
+          "at_s": 5.0
+        },
+        {
+          "id": "evt_004",
+          "type": "camera_zoom",
+          "at_s": 8.0,
+          "end_s": 9.8
+        }
+      ],
+      "subtitles": [
+        {
+          "id": "sub_003",
+          "start_s": 5.2,
+          "end_s": 7.8,
+          "text": "Keep the lamp low until the boat passes."
+        },
+        {
+          "id": "sub_004",
+          "start_s": 8.3,
+          "end_s": 9.6,
+          "text": "Then we run."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "dlg_003",
+          "start_s": 5.2,
+          "end_s": 7.8,
+          "subtitle_id": "sub_003",
+          "text": "Keep the lamp low until the boat passes.",
+          "source_duration_s": 2.9
+        },
+        {
+          "id": "dlg_004",
+          "start_s": 8.3,
+          "end_s": 9.6,
+          "subtitle_id": "sub_004",
+          "text": "Then we run.",
+          "source_duration_s": 1.55
+        }
+      ]
+    }
+  ]
+}
+
