@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "skill_name": "Frost Ring",
+  "variant_count": 4,
+  "seed": 771903,
+  "output": {
+    "sample_rate": 44100,
+    "bit_depth": "float32",
+    "channels": 1,
+    "duration_ms": 2400
+  },
+  "events": [
+    {
+      "role": "impact",
+      "source": "sources/impact_48k_stereo.wav",
+      "offset_ms": 10,
+      "duration_ms": 320,
+      "gain": 0.78,
+      "channel_map": "stereo_to_mono"
+    },
+    {
+      "role": "tail",
+      "source": "sources/tail_44k_mono.wav",
+      "offset_ms": 180,
+      "duration_ms": 2000,
+      "gain": 0.62,
+      "channel_map": "identity"
+    }
+  ],
+  "randomization": {
+    "gain_jitter_db": 0.4,
+    "time_jitter_ms": 0.3,
+    "tail_harmonics": {
+      "enabled": true,
+      "fundamental_hz": 2200.0,
+      "ratios": [1.0, 1.51, 2.23, 3.07],
+      "gain_db_min": -32.0,
+      "gain_db_max": -20.0,
+      "decay_ms": 700.0,
+      "attack_ms": 1.5
+    }
+  },
+  "bus_by_level": {
+    "0": {
+      "compressor": {
+        "threshold_db": -22.0,
+        "ratio": 2.0,
+        "knee_db": 7.0,
+        "attack_ms": 6.0,
+        "release_ms": 110.0
+      },
+      "tail_fade_ms": 350.0,
+      "limiter": {
+        "ceiling_dbtp": -1.2,
+        "lookahead_ms": 5.0,
+        "attack_ms": 0.8,
+        "release_ms": 100.0
+      }
+    },
+    "5": {
+      "compressor": {
+        "threshold_db": -31.0,
+        "ratio": 4.0,
+        "knee_db": 4.0,
+        "attack_ms": 3.0,
+        "release_ms": 65.0
+      },
+      "tail_fade_ms": 280.0,
+      "limiter": {
+        "ceiling_dbtp": -1.2,
+        "lookahead_ms": 6.0,
+        "attack_ms": 0.6,
+        "release_ms": 80.0
+      }
+    }
+  },
+  "normalization": {
+    "target_lufs": -12.0,
+    "min_gain_db": -18.0,
+    "max_gain_db": 18.0
+  },
+  "metadata": {
+    "weapon": "Focus Ring",
+    "description": "44.1 kHz mono float32 example with stereo-to-mono downmix."
+  }
+}

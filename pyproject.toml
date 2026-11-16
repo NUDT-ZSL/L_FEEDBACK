@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skillsfx"
+version = "1.0.0"
+description = "Deterministic layered game-skill sound-effect batch generator"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26"]
+
+[project.scripts]
+skillsfx = "skillsfx.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["skillsfx*"]
