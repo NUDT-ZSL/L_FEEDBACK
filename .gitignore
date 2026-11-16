@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Generated run artifacts (regenerate with run_demo.py / CLI)
+sample_data/
+demo_workdir/
+output/
+output2/
+output_fb/

@@ -1,0 +1,10 @@
+{
+  "stretch_min": 0.75,
+  "stretch_max": 1.25,
+  "align_tolerance_ms": 50.0,
+  "overlap_penalty_weight": 1.0,
+  "silence_threshold_db": -45.0,
+  "silence_min_ms": 500.0,
+  "coverage_min_ratio": 0.5,
+  "simulate_mux_failure": false
+}
