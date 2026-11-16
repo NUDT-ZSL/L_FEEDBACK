@@ -1,0 +1,13 @@
+{
+  "width": 0,
+  "height": 0,
+  "materials": [
+    {
+      "name": "never_rendered",
+      "albedo": [0.7, 0.35, 0.28],
+      "roughness": 0.4,
+      "anisotropy": 0.2
+    }
+  ]
+}
+

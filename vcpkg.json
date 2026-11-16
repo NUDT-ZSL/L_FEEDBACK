@@ -1,0 +1,12 @@
+{
+  "name": "skin-batch-renderer",
+  "version-string": "1.0.0",
+  "description": "Offscreen OpenGL skin material batch renderer",
+  "dependencies": [
+    "glfw3",
+    "glm",
+    "stb",
+    "nlohmann-json"
+  ]
+}
+

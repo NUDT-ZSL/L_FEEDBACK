@@ -1,0 +1,11 @@
+#pragma once
+
+namespace skin::shaders {
+
+inline constexpr const char* kLutVertex = R"SKINRENDER(@LUT_VERTEX_SHADER@)SKINRENDER";
+inline constexpr const char* kLutFragment = R"SKINRENDER(@LUT_FRAGMENT_SHADER@)SKINRENDER";
+inline constexpr const char* kSurfaceVertex = R"SKINRENDER(@SURFACE_VERTEX_SHADER@)SKINRENDER";
+inline constexpr const char* kSurfaceFragment = R"SKINRENDER(@SURFACE_FRAGMENT_SHADER@)SKINRENDER";
+
+}  // namespace skin::shaders
+

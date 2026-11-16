@@ -1,0 +1,9 @@
+/build*/
+/output/
+/output_failure/
+/run_*/
+/render.log
+/diff_stats.json
+*.png
+__pycache__/
+

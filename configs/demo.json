@@ -1,0 +1,94 @@
+{
+  "width": 512,
+  "height": 512,
+  "seed": 12345,
+  "output_dir": "../output",
+  "sss_lut": {
+    "profile_samples": 128,
+    "curvature_samples": 64,
+    "scattering_samples": 24,
+    "curvature_min": 0.0,
+    "curvature_max": 0.12,
+    "scatter_color": [1.0, 0.70, 0.58],
+    "scatter_radius": [0.16, 0.09, 0.055],
+    "wrap": 0.35,
+    "profile_power": 1.35
+  },
+  "tone_mapping": {
+    "mode": "aces",
+    "exposure": 1.08,
+    "gamma": 2.2
+  },
+  "camera": {
+    "position": [0.0, 0.0, 6.2],
+    "target": [0.0, 0.0, 0.0],
+    "up": [0.0, 1.0, 0.0],
+    "fov_y_degrees": 40.0
+  },
+  "light": {
+    "position": [1.7, 2.15, 2.9],
+    "target": [0.0, 0.0, 0.0],
+    "width": 1.15,
+    "height": 0.62,
+    "color": [1.0, 0.92, 0.84],
+    "intensity": 15.0,
+    "samples_x": 6,
+    "samples_y": 6
+  },
+  "environment": {
+    "ambient_sky": [0.12, 0.16, 0.22],
+    "ambient_ground": [0.025, 0.018, 0.014],
+    "ambient_intensity": 0.7
+  },
+  "scene": {
+    "sphere_radius": 1.0,
+    "sphere_spacing": 2.25,
+    "background": [0.008, 0.011, 0.016]
+  },
+  "reference_material": {
+    "name": "reference_skin",
+    "albedo": [0.62, 0.34, 0.27],
+    "roughness": 0.63,
+    "anisotropy": 0.12,
+    "anisotropy_rotation": 0.45,
+    "sss": {
+      "strength": 0.88,
+      "curvature": 0.06,
+      "color": [1.0, 0.73, 0.62]
+    },
+    "specular_f0": 0.028
+  },
+  "materials": [
+    {
+      "name": "skin_satin",
+      "albedo": [0.78, 0.38, 0.30],
+      "roughness": 0.30,
+      "anisotropy": 0.65,
+      "anisotropy_rotation": 0.2,
+      "sss": {
+        "strength": 0.95,
+        "curvature": 0.035,
+        "color": [1.0, 0.72, 0.64]
+      },
+      "specular_f0": 0.028,
+      "baseline": "../baselines/skin_satin.ppm",
+      "baseline_version": "v1"
+    },
+    {
+      "name": "skin_rough",
+      "albedo": [0.68, 0.33, 0.26],
+      "roughness": 0.58,
+      "anisotropy": 0.18,
+      "anisotropy_rotation": 1.1,
+      "sss": {
+        "strength": 0.85,
+        "curvature": 0.06,
+        "color": [1.0, 0.70, 0.60]
+      },
+      "specular_f0": 0.028,
+      "baseline": "../baselines/skin_rough.ppm",
+      "baseline_version": "v1"
+    }
+  ]
+}
+

@@ -1,0 +1,52 @@
+{
+  "width": 256,
+  "height": 192,
+  "seed": 7,
+  "output_dir": "../output_failure",
+  "sss_lut": {
+    "profile_samples": 96,
+    "curvature_samples": 48,
+    "scattering_samples": 16,
+    "curvature_min": 0.0,
+    "curvature_max": 0.12
+  },
+  "tone_mapping": {
+    "mode": "aces",
+    "exposure": 1.0,
+    "gamma": 2.2
+  },
+  "materials": [
+    {
+      "name": "bad_roughness",
+      "albedo": [0.7, 0.35, 0.28],
+      "roughness": -0.1,
+      "anisotropy": 0.4
+    },
+    {
+      "name": "valid_duplicate",
+      "albedo": [0.72, 0.36, 0.30],
+      "roughness": 0.42,
+      "anisotropy": 0.32,
+      "sss": {
+        "strength": 0.9,
+        "curvature": 0.04,
+        "color": [1.0, 0.74, 0.64]
+      },
+      "baseline": "../baselines/missing_baseline.ppm",
+      "baseline_version": "v1"
+    },
+    {
+      "name": "bad_anisotropy",
+      "albedo": [0.65, 0.31, 0.24],
+      "roughness": 0.36,
+      "anisotropy": 1.5
+    },
+    {
+      "name": "valid_duplicate",
+      "albedo": [0.66, 0.31, 0.25],
+      "roughness": 0.68,
+      "anisotropy": 0.08
+    }
+  ]
+}
+
