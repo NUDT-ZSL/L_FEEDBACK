@@ -1,0 +1,10 @@
+/build/
+/build-*/
+/artifacts/verify/
+/artifacts/final/
+*.ppm
+*.tmp.*
+*.render-in-progress.json
+render_output*
+__pycache__/
+*.pyc
