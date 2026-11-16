@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cinemix"
+version = "1.0.0"
+description = "Deterministic cinematic ambience and dialogue-ducking mixer"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.21",
+    "soundfile>=0.12",
+]
+
+[project.scripts]
+cinemix = "cinemix.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cinemix*"]
