@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bpm-grain"
+version = "1.0.0"
+description = "Deterministic BPM-aligned granular audio tool"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.23,<3"]
+
+[project.scripts]
+bpm-grain = "bpm_grains.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bpm_grains*"]
+
