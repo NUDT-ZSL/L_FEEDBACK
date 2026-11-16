@@ -1,0 +1,93 @@
+{
+  "name": "depth_stencil_overlap",
+  "vertex_shader": "overlap.vert",
+  "fragment_shader": "overlap.frag",
+  "width": 48,
+  "height": 32,
+  "max_diff_pixels": 32,
+  "geometry": {
+    "mode": "overlap",
+    "vertices": 3,
+    "instances": 3
+  },
+  "attachments": [
+    {
+      "name": "color",
+      "location": 0,
+      "format": "RGBA8",
+      "clear": [0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "name": "normal",
+      "location": 1,
+      "format": "RGBA16F",
+      "clear": [0.0, 0.0, 0.5, 1.0]
+    }
+  ],
+  "depth_stencil": {
+    "enabled": true,
+    "format": "D24S8",
+    "clear_depth": 1.0,
+    "clear_stencil": 0,
+    "depth_test": true,
+    "depth_write": true,
+    "depth_function": "less",
+    "stencil_test": true,
+    "stencil_function": "always",
+    "stencil_reference": 7,
+    "stencil_read_mask": 255,
+    "stencil_write_mask": 255,
+    "stencil_fail": "keep",
+    "stencil_depth_fail": "keep",
+    "stencil_depth_pass": "replace"
+  },
+  "variants": {
+    "default": []
+  },
+  "default_variants": ["default"],
+  "rules": [
+    {
+      "id": "depth-nearest-instance",
+      "type": "depth_expected",
+      "expected": 0.6,
+      "tolerance": 0.000001
+    },
+    {
+      "id": "stencil-final",
+      "type": "stencil_expected",
+      "expected": 7,
+      "tolerance": 0.0
+    },
+    {
+      "id": "depth-normal",
+      "type": "depth_normal",
+      "source": "depth",
+      "target": "normal",
+      "tolerance": 0.0001
+    },
+    {
+      "id": "nearest-color-r",
+      "type": "channel_expected",
+      "attachment": "color",
+      "attachment_channel": "r",
+      "expected": 0.2,
+      "tolerance": 0.002
+    },
+    {
+      "id": "nearest-color-g",
+      "type": "channel_expected",
+      "attachment": "color",
+      "attachment_channel": "g",
+      "expected": 0.4,
+      "tolerance": 0.002
+    },
+    {
+      "id": "nearest-color-b",
+      "type": "channel_expected",
+      "attachment": "color",
+      "attachment_channel": "b",
+      "expected": 0.6,
+      "tolerance": 0.002
+    }
+  ]
+}

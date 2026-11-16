@@ -1,0 +1,167 @@
+{
+  "name": "multi_attachment_dependency",
+  "vertex_shader": "material.vert",
+  "fragment_shader": "material.frag",
+  "width": 64,
+  "height": 48,
+  "max_diff_pixels": 64,
+  "geometry": {
+    "mode": "fullscreen_triangle",
+    "vertices": 3,
+    "instances": 1
+  },
+  "attachments": [
+    {
+      "name": "color",
+      "location": 0,
+      "format": "RGBA8",
+      "clear": [0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "name": "alphaCopy",
+      "location": 1,
+      "format": "RGBA8",
+      "clear": [0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "name": "normal",
+      "location": 2,
+      "format": "RGBA16F",
+      "clear": [0.0, 0.0, 0.5, 1.0]
+    },
+    {
+      "name": "dependency",
+      "location": 3,
+      "format": "RGBA16F",
+      "clear": [0.0, 0.0, 0.0, 0.0]
+    }
+  ],
+  "depth_stencil": {
+    "enabled": true,
+    "format": "D24S8",
+    "clear_depth": 1.0,
+    "clear_stencil": 0,
+    "depth_test": true,
+    "depth_write": true,
+    "depth_function": "always",
+    "stencil_test": false
+  },
+  "variants": {
+    "default": [],
+    "tinted": ["TINTED_PIPELINE"],
+    "broken_compile": ["BROKEN_COMPILE"]
+  },
+  "default_variants": ["default"],
+  "dependencies": {
+    "textures": [
+      {
+        "name": "albedo",
+        "uniform": "uAlbedo",
+        "width": 8,
+        "height": 8,
+        "seed": 17,
+        "binding": 0
+      },
+      {
+        "name": "detail",
+        "uniform": "uDetail",
+        "width": 5,
+        "height": 3,
+        "seed": 29,
+        "binding": 1
+      }
+    ],
+    "constants": {
+      "block_name": "DepConstants",
+      "binding": 0,
+      "seed": 99,
+      "layout": ["tint", "depth_normal", "packed_data", "seed"],
+      "values": {
+        "tint": [0.25, 0.5, 0.75, 1.0],
+        "depth_normal": [1.0, 0.0, 0.0, 0.0],
+        "packed_data": [0.0, 0.0, 0.0, 0.0],
+        "seed": [99.0, 0.0, 0.0, 0.0]
+      }
+    }
+  },
+  "rules": [
+    {
+      "id": "alpha-copy",
+      "type": "channel_match",
+      "source": "color",
+      "source_channel": "a",
+      "target": "alphaCopy",
+      "target_channel": "r",
+      "tolerance": 0.0
+    },
+    {
+      "id": "depth-normal",
+      "type": "depth_normal",
+      "source": "depth",
+      "target": "normal",
+      "tolerance": 0.0001
+    },
+    {
+      "id": "depth-plane",
+      "type": "depth_expected",
+      "expected": 0.75,
+      "tolerance": 0.000001
+    },
+    {
+      "id": "constant-r",
+      "type": "constant_match",
+      "constant": "tint",
+      "component": 0,
+      "attachment": "color",
+      "attachment_channel": "r",
+      "tolerance": 0.003
+    },
+    {
+      "id": "constant-g",
+      "type": "constant_match",
+      "constant": "tint",
+      "component": 1,
+      "attachment": "color",
+      "attachment_channel": "g",
+      "tolerance": 0.003
+    },
+    {
+      "id": "constant-b",
+      "type": "constant_match",
+      "constant": "tint",
+      "component": 2,
+      "attachment": "color",
+      "attachment_channel": "b",
+      "tolerance": 0.003
+    },
+    {
+      "id": "constant-a",
+      "type": "constant_match",
+      "constant": "tint",
+      "component": 3,
+      "attachment": "dependency",
+      "attachment_channel": "a",
+      "tolerance": 0.0006
+    },
+    {
+      "id": "texture-albedo",
+      "type": "texture_sample",
+      "texture": "albedo",
+      "attachment": "dependency",
+      "channels": "r",
+      "attachment_channel": "r",
+      "sampling": "texel_fetch_mod",
+      "tolerance": 0.0006
+    },
+    {
+      "id": "texture-detail",
+      "type": "texture_sample",
+      "texture": "detail",
+      "attachment": "dependency",
+      "channels": "g",
+      "attachment_channel": "g",
+      "sampling": "texel_fetch_mod",
+      "tolerance": 0.0006
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "bad_fbo",
+  "vertex_shader": "simple.vert",
+  "fragment_shader": "simple.frag",
+  "width": 8,
+  "height": 8,
+  "attachments": [
+    {"name": "invalidColor", "location": 0, "format": "D24S8", "clear": [0, 0, 0, 0]}
+  ],
+  "variants": {"default": []},
+  "default_variants": ["default"],
+  "rules": [
+    {"id": "color", "type": "channel_expected", "attachment": "invalidColor",
+     "attachment_channel": "r", "expected": 1.0, "tolerance": 0.0}
+  ]
+}

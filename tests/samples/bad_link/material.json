@@ -1,0 +1,16 @@
+{
+  "name": "bad_link",
+  "vertex_shader": "bad_link.vert",
+  "fragment_shader": "bad_link.frag",
+  "width": 8,
+  "height": 8,
+  "attachments": [
+    {"name": "color", "location": 0, "format": "RGBA8", "clear": [0, 0, 0, 0]}
+  ],
+  "variants": {"default": []},
+  "default_variants": ["default"],
+  "rules": [
+    {"id": "color", "type": "channel_expected", "attachment": "color",
+     "attachment_channel": "r", "expected": 1.0, "tolerance": 0.0}
+  ]
+}

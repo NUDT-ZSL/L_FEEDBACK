@@ -1,0 +1,11 @@
+{
+  "name": "material-verify",
+  "version-string": "1.0.0",
+  "description": "Deterministic offline OpenGL material validator",
+  "dependencies": [
+    "glfw3",
+    "glad",
+    "glm",
+    "nlohmann-json"
+  ]
+}
