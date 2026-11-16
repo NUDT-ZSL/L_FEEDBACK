@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "canvas": {"width": 512, "height": 384},
+  "background": "#101827",
+  "layers": [
+    {
+      "id": "terrain",
+      "opacity": 1.0,
+      "blend": "normal",
+      "fill_rule": "nonzero",
+      "primitives": [
+        {
+          "type": "polygon",
+          "points": [[0, 0], [512, 0], [512, 384], [0, 384]],
+          "fill": {"color": "#294c60"}
+        },
+        {
+          "type": "polygon",
+          "points": [[36, 48], [250, 28], [306, 164], [80, 214]],
+          "fill": {
+            "color": [188, 220, 188, 255],
+            "texture": "terrain_texture.png",
+            "uv_rect": [0, 0, 1, 1],
+            "repeat": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "lake",
+      "opacity": 0.78,
+      "blend": "normal",
+      "fill_rule": "evenodd",
+      "transform": {
+        "origin": [320, 210],
+        "rotate": -8,
+        "scale": [1.0, 0.82],
+        "translate": [12, 4]
+      },
+      "primitives": [
+        {
+          "type": "polygon",
+          "rings": [
+            [[160, 110], [410, 96], [476, 242], [330, 336], [128, 278]],
+            [[236, 172], [350, 158], [388, 234], [296, 276], [206, 238]]
+          ],
+          "fill": {"color": [38, 132, 190, 220]}
+        }
+      ]
+    },
+    {
+      "id": "roads",
+      "opacity": 0.9,
+      "blend": "add",
+      "primitives": [
+        {
+          "type": "polyline",
+          "points": [[12, 328], [110, 290], [184, 314], [270, 250], [370, 282], [500, 218]],
+          "stroke": {
+            "width": 10,
+            "color": [242, 178, 72, 210],
+            "cap": "round",
+            "join": "round"
+          }
+        },
+        {
+          "type": "polyline",
+          "points": [[94, 44], [132, 126], [210, 168], [226, 278]],
+          "stroke": {
+            "width": 5,
+            "color": [230, 236, 244, 230],
+            "cap": "butt",
+            "join": "miter",
+            "miter_limit": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": "landmark",
+      "opacity": 0.72,
+      "blend": "multiply",
+      "transform": {
+        "origin": [400, 96],
+        "rotate": 24,
+        "scale": 1.15
+      },
+      "primitives": [
+        {
+          "type": "circle",
+          "center": [400, 96],
+          "radius": 54,
+          "fill": {"color": [225, 82, 98, 255]},
+          "stroke": {
+            "width": 7,
+            "color": [24, 28, 38, 255],
+            "cap": "round",
+            "join": "round"
+          }
+        },
+        {
+          "type": "polyline",
+          "points": [[362, 70], [400, 118], [438, 66]],
+          "stroke": {
+            "width": 8,
+            "color": [255, 244, 214, 255],
+            "cap": "round",
+            "join": "round"
+          }
+        }
+      ]
+    }
+  ]
+}
