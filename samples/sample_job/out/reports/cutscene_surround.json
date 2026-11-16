@@ -1,0 +1,111 @@
+{
+  "animation_id": "cutscene_surround",
+  "status": "success",
+  "input": {
+    "original_track": "/home/liang/feedback/uid169/samples/sample_job/cutscene_surround/original.wav",
+    "sample_rate": 48000,
+    "channel_layout": "5.1",
+    "channels": [
+      {
+        "index": 0,
+        "label": "L",
+        "role": "sfx",
+        "language": "none"
+      },
+      {
+        "index": 1,
+        "label": "R",
+        "role": "sfx",
+        "language": "none"
+      },
+      {
+        "index": 2,
+        "label": "C",
+        "role": "target_voice",
+        "language": "zh-CN"
+      },
+      {
+        "index": 3,
+        "label": "LFE",
+        "role": "sfx",
+        "language": "none"
+      },
+      {
+        "index": 4,
+        "label": "BL",
+        "role": "other_voice",
+        "language": "en"
+      },
+      {
+        "index": 5,
+        "label": "BR",
+        "role": "other_voice",
+        "language": "ja"
+      }
+    ]
+  },
+  "output": {
+    "path": "/home/liang/feedback/uid169/samples/sample_job/out/cutscene_surround/cutscene_surround_dialect.wav",
+    "sample_rate": 48000,
+    "channels": 6,
+    "frames": 96000,
+    "duration_ms": 2000,
+    "peak_dbfs": -6.56
+  },
+  "sentences": [
+    {
+      "line_id": "S1",
+      "text": "小心脚下。",
+      "method": "replaced",
+      "dialect_clip": "/home/liang/feedback/uid169/samples/sample_job/cutscene_surround/dialect_s1.wav",
+      "planned_start_ms": 200,
+      "planned_end_ms": 1000,
+      "actual_start_ms": 200,
+      "actual_end_ms": 1000,
+      "duration_ms": 800,
+      "stretch_ratio": 1.4545,
+      "limit_event": null,
+      "peak_dbfs": -6.57,
+      "events": []
+    },
+    {
+      "line_id": "S2",
+      "text": "跟我来。",
+      "method": "replaced",
+      "dialect_clip": "/home/liang/feedback/uid169/samples/sample_job/cutscene_surround/dialect_s2_24k.wav",
+      "planned_start_ms": 1100,
+      "planned_end_ms": 1800,
+      "actual_start_ms": 1100,
+      "actual_end_ms": 1800,
+      "duration_ms": 700,
+      "stretch_ratio": 1.4,
+      "limit_event": null,
+      "peak_dbfs": -6.56,
+      "events": [
+        {
+          "code": "E_SAMPLE_RATE",
+          "level": "warning",
+          "message": "方言片段采样率 48000Hz 已通过 FFmpeg 重采样至 48000Hz: dialect_s2_24k.wav",
+          "hint": null
+        }
+      ]
+    }
+  ],
+  "discarded_clips": [],
+  "events": [
+    {
+      "code": "E_SAMPLE_RATE",
+      "level": "warning",
+      "message": "方言片段采样率 48000Hz 已通过 FFmpeg 重采样至 48000Hz: dialect_s2_24k.wav",
+      "hint": null
+    }
+  ],
+  "summary": {
+    "total_lines": 2,
+    "replaced": 2,
+    "fallback": 0,
+    "failed_lines": 0,
+    "warnings": 1,
+    "discarded": 0
+  }
+}

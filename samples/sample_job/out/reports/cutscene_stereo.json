@@ -1,0 +1,129 @@
+{
+  "animation_id": "cutscene_stereo",
+  "status": "success",
+  "input": {
+    "original_track": "/home/liang/feedback/uid169/samples/sample_job/cutscene_stereo/original.wav",
+    "sample_rate": 48000,
+    "channel_layout": "stereo",
+    "channels": [
+      {
+        "index": 0,
+        "label": "L",
+        "role": "sfx",
+        "language": "none"
+      },
+      {
+        "index": 1,
+        "label": "R",
+        "role": "target_voice",
+        "language": "zh-CN"
+      }
+    ]
+  },
+  "output": {
+    "path": "/home/liang/feedback/uid169/samples/sample_job/out/cutscene_stereo/cutscene_stereo_dialect.wav",
+    "sample_rate": 48000,
+    "channels": 2,
+    "frames": 120000,
+    "duration_ms": 2500,
+    "peak_dbfs": -6.56
+  },
+  "sentences": [
+    {
+      "line_id": "L1",
+      "text": "你好，旅行者。",
+      "method": "replaced",
+      "dialect_clip": "/home/liang/feedback/uid169/samples/sample_job/cutscene_stereo/dialect_l1.wav",
+      "planned_start_ms": 100,
+      "planned_end_ms": 900,
+      "actual_start_ms": 100,
+      "actual_end_ms": 900,
+      "duration_ms": 800,
+      "stretch_ratio": 0.5,
+      "limit_event": "trim",
+      "peak_dbfs": -6.56,
+      "events": [
+        {
+          "code": "E_STRETCH",
+          "level": "warning",
+          "message": "伸缩比 0.400 超出限制 [0.5, 1.5]，已改为裁剪尾部（句 L1）",
+          "hint": null
+        }
+      ]
+    },
+    {
+      "line_id": "L2",
+      "text": "今天天气不错。",
+      "method": "replaced",
+      "dialect_clip": "/home/liang/feedback/uid169/samples/sample_job/cutscene_stereo/dialect_l2.wav",
+      "planned_start_ms": 1000,
+      "planned_end_ms": 1800,
+      "actual_start_ms": 1000,
+      "actual_end_ms": 1800,
+      "duration_ms": 800,
+      "stretch_ratio": 1.5,
+      "limit_event": "pad",
+      "peak_dbfs": -6.56,
+      "events": [
+        {
+          "code": "E_STRETCH",
+          "level": "warning",
+          "message": "伸缩比 1.778 超出限制 [0.5, 1.5]，已改为尾部静音填充（句 L2）",
+          "hint": null
+        }
+      ]
+    },
+    {
+      "line_id": "L3",
+      "text": "该出发了。",
+      "method": "fallback",
+      "dialect_clip": null,
+      "planned_start_ms": 1900,
+      "planned_end_ms": 2400,
+      "actual_start_ms": 1900,
+      "actual_end_ms": 2400,
+      "duration_ms": 500,
+      "stretch_ratio": 1.0,
+      "limit_event": null,
+      "peak_dbfs": -6.56,
+      "events": []
+    }
+  ],
+  "discarded_clips": [
+    {
+      "clip_id": "D9",
+      "path": "/home/liang/feedback/uid169/samples/sample_job/cutscene_stereo/dialect_extra.wav",
+      "nearest_line_id": "L3",
+      "distance_ms": 400,
+      "reason": "多余方言片段，按时间轴最近距离匹配后仍无对应原句，已丢弃"
+    }
+  ],
+  "events": [
+    {
+      "code": "E_STRETCH",
+      "level": "warning",
+      "message": "伸缩比 0.400 超出限制 [0.5, 1.5]，已改为裁剪尾部（句 L1）",
+      "hint": null
+    },
+    {
+      "code": "E_STRETCH",
+      "level": "warning",
+      "message": "伸缩比 1.778 超出限制 [0.5, 1.5]，已改为尾部静音填充（句 L2）",
+      "hint": null
+    },
+    {
+      "code": "E_EXTRA_CLIP",
+      "level": "warning",
+      "message": "多余方言片段已丢弃: dialect_extra.wav（最近原句 L3）",
+      "hint": null
+    }
+  ],
+  "summary": {
+    "total_lines": 3,
+    "replaced": 2,
+    "fallback": 1,
+    "failed_lines": 0,
+    "warnings": 3,
+    "discarded": 1
+  }
+}

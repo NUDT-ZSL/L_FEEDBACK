@@ -1,0 +1,32 @@
+{
+  "job_dir": "/home/liang/feedback/uid169/samples/sample_job/out",
+  "total": 3,
+  "succeeded": 2,
+  "failed": 1,
+  "skipped": 0,
+  "state_version": 1,
+  "results": [
+    {
+      "animation_id": "cutscene_stereo",
+      "status": "success",
+      "report_path": "/home/liang/feedback/uid169/samples/sample_job/out/reports/cutscene_stereo.json",
+      "error": null
+    },
+    {
+      "animation_id": "cutscene_corrupt",
+      "status": "failed",
+      "report_path": "/home/liang/feedback/uid169/samples/sample_job/out/reports/cutscene_corrupt.json",
+      "error": {
+        "code": "E_CORRUPT",
+        "message": "WAV 无法解析（可能已损坏）: /home/liang/feedback/uid169/samples/sample_job/cutscene_corrupt/original.wav (Error opening '/home/liang/feedback/uid169/samples/sample_job/cutscene_corrupt/original.wav': Format not recognised.)",
+        "hint": "文件无法解析，建议用 `ffmpeg -v error -i file.wav -f null -` 校验并重新导出 PCM WAV。"
+      }
+    },
+    {
+      "animation_id": "cutscene_surround",
+      "status": "success",
+      "report_path": "/home/liang/feedback/uid169/samples/sample_job/out/reports/cutscene_surround.json",
+      "error": null
+    }
+  ]
+}

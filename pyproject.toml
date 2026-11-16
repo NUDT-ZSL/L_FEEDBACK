@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dub-replace"
+version = "0.1.0"
+description = "Local batch tool for replacing game cutscene voice tracks with dialect dubs (pitch-preserving WSOLA time-stretch, multi-channel PCM output)."
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "soundfile>=0.12"]
+
+[project.scripts]
+dub-replace = "dub_replace.cli:main"
+
+[tool.setuptools]
+packages = ["dub_replace"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -1,0 +1,53 @@
+{
+  "animation_id": "cutscene_corrupt",
+  "audio": {
+    "original_track": "original.wav",
+    "sample_rate": 48000,
+    "channel_layout": "stereo",
+    "channels": [
+      {
+        "index": 0,
+        "label": "L",
+        "role": "sfx",
+        "language": "none"
+      },
+      {
+        "index": 1,
+        "label": "R",
+        "role": "target_voice",
+        "language": "zh-CN"
+      }
+    ],
+    "channel_labels": [
+      "L",
+      "R"
+    ]
+  },
+  "stretch_limits": {
+    "min": 0.5,
+    "max": 2.0
+  },
+  "dialogue": [
+    {
+      "line_id": "C1",
+      "start_ms": 0,
+      "end_ms": 500,
+      "text": "损坏样本。"
+    }
+  ],
+  "subtitles": [
+    {
+      "start_ms": 0,
+      "end_ms": 500,
+      "text": "损坏样本。"
+    }
+  ],
+  "lip_events": [
+    {
+      "start_ms": 0,
+      "end_ms": 500,
+      "line_id": "C1"
+    }
+  ],
+  "dialect_clips": []
+}

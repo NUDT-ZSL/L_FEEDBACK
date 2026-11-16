@@ -1,0 +1,18 @@
+{
+  "job_dir": "out",
+  "concurrency": 2,
+  "animations": [
+    {
+      "animation_id": "cutscene_stereo",
+      "meta": "cutscene_stereo/meta.json"
+    },
+    {
+      "animation_id": "cutscene_surround",
+      "meta": "cutscene_surround/meta.json"
+    },
+    {
+      "animation_id": "cutscene_corrupt",
+      "meta": "cutscene_corrupt/meta.json"
+    }
+  ]
+}

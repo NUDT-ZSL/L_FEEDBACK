@@ -1,0 +1,104 @@
+{
+  "animation_id": "cutscene_stereo",
+  "audio": {
+    "original_track": "original.wav",
+    "sample_rate": 48000,
+    "channel_layout": "stereo",
+    "channels": [
+      {
+        "index": 0,
+        "label": "L",
+        "role": "sfx",
+        "language": "none"
+      },
+      {
+        "index": 1,
+        "label": "R",
+        "role": "target_voice",
+        "language": "zh-CN"
+      }
+    ],
+    "channel_labels": [
+      "L",
+      "R"
+    ]
+  },
+  "stretch_limits": {
+    "min": 0.5,
+    "max": 1.5
+  },
+  "dialogue": [
+    {
+      "line_id": "L1",
+      "start_ms": 100,
+      "end_ms": 900,
+      "text": "你好，旅行者。"
+    },
+    {
+      "line_id": "L2",
+      "start_ms": 1000,
+      "end_ms": 1800,
+      "text": "今天天气不错。"
+    },
+    {
+      "line_id": "L3",
+      "start_ms": 1900,
+      "end_ms": 2400,
+      "text": "该出发了。"
+    }
+  ],
+  "subtitles": [
+    {
+      "start_ms": 100,
+      "end_ms": 900,
+      "text": "你好，旅行者。"
+    },
+    {
+      "start_ms": 1000,
+      "end_ms": 1800,
+      "text": "今天天气不错。"
+    },
+    {
+      "start_ms": 1900,
+      "end_ms": 2400,
+      "text": "该出发了。"
+    }
+  ],
+  "lip_events": [
+    {
+      "start_ms": 100,
+      "end_ms": 900,
+      "line_id": "L1"
+    },
+    {
+      "start_ms": 1000,
+      "end_ms": 1800,
+      "line_id": "L2"
+    },
+    {
+      "start_ms": 1900,
+      "end_ms": 2400,
+      "line_id": "L3"
+    }
+  ],
+  "dialect_clips": [
+    {
+      "clip_id": "D1",
+      "line_id": "L1",
+      "start_ms": 100,
+      "path": "dialect_l1.wav"
+    },
+    {
+      "clip_id": "D2",
+      "line_id": "L2",
+      "start_ms": 1000,
+      "path": "dialect_l2.wav"
+    },
+    {
+      "clip_id": "D9",
+      "line_id": "L9-X",
+      "start_ms": 2300,
+      "path": "dialect_extra.wav"
+    }
+  ]
+}

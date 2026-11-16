@@ -1,0 +1,110 @@
+{
+  "animation_id": "cutscene_surround",
+  "audio": {
+    "original_track": "original.wav",
+    "sample_rate": 48000,
+    "channel_layout": "5.1",
+    "channels": [
+      {
+        "index": 0,
+        "label": "L",
+        "role": "sfx",
+        "language": "none"
+      },
+      {
+        "index": 1,
+        "label": "R",
+        "role": "sfx",
+        "language": "none"
+      },
+      {
+        "index": 2,
+        "label": "C",
+        "role": "target_voice",
+        "language": "zh-CN"
+      },
+      {
+        "index": 3,
+        "label": "LFE",
+        "role": "sfx",
+        "language": "none"
+      },
+      {
+        "index": 4,
+        "label": "BL",
+        "role": "other_voice",
+        "language": "en"
+      },
+      {
+        "index": 5,
+        "label": "BR",
+        "role": "other_voice",
+        "language": "ja"
+      }
+    ],
+    "channel_labels": [
+      "L",
+      "R",
+      "C",
+      "LFE",
+      "BL",
+      "BR"
+    ]
+  },
+  "stretch_limits": {
+    "min": 0.5,
+    "max": 2.0
+  },
+  "dialogue": [
+    {
+      "line_id": "S1",
+      "start_ms": 200,
+      "end_ms": 1000,
+      "text": "小心脚下。"
+    },
+    {
+      "line_id": "S2",
+      "start_ms": 1100,
+      "end_ms": 1800,
+      "text": "跟我来。"
+    }
+  ],
+  "subtitles": [
+    {
+      "start_ms": 200,
+      "end_ms": 1000,
+      "text": "小心脚下。"
+    },
+    {
+      "start_ms": 1100,
+      "end_ms": 1800,
+      "text": "跟我来。"
+    }
+  ],
+  "lip_events": [
+    {
+      "start_ms": 200,
+      "end_ms": 1000,
+      "line_id": "S1"
+    },
+    {
+      "start_ms": 1100,
+      "end_ms": 1800,
+      "line_id": "S2"
+    }
+  ],
+  "dialect_clips": [
+    {
+      "clip_id": "DS1",
+      "line_id": "S1",
+      "start_ms": 200,
+      "path": "dialect_s1.wav"
+    },
+    {
+      "clip_id": "DS2",
+      "line_id": "S2",
+      "start_ms": 1100,
+      "path": "dialect_s2_24k.wav"
+    }
+  ]
+}

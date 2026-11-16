@@ -1,0 +1,23 @@
+{
+  "animation_id": "cutscene_corrupt",
+  "status": "failed",
+  "input": {
+    "original_track": null
+  },
+  "output": null,
+  "sentences": [],
+  "discarded_clips": [],
+  "events": [],
+  "summary": {
+    "total_lines": 0,
+    "replaced": 0,
+    "fallback": 0,
+    "failed_lines": 0,
+    "warnings": 0
+  },
+  "error": {
+    "code": "E_CORRUPT",
+    "message": "WAV 无法解析（可能已损坏）: /home/liang/feedback/uid169/samples/sample_job/cutscene_corrupt/original.wav (Error opening '/home/liang/feedback/uid169/samples/sample_job/cutscene_corrupt/original.wav': Format not recognised.)",
+    "hint": "文件无法解析，建议用 `ffmpeg -v error -i file.wav -f null -` 校验并重新导出 PCM WAV。"
+  }
+}
