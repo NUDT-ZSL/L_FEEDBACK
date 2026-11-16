@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+output_review/
+.pytest_cache/
+
