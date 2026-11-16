@@ -1,0 +1,12 @@
+{
+  "name": "skelpreview",
+  "version-string": "1.0.0",
+  "description": "Deterministic skeletal animation preview and offline renderer",
+  "dependencies": [
+    "glfw3",
+    "glm",
+    "nlohmann-json",
+    "stb"
+  ]
+}
+

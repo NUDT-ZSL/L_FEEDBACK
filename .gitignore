@@ -1,0 +1,8 @@
+/build/
+/.deps/
+/artifacts/
+*.pfm
+*.ppm
+*.ska
+__pycache__/
+
