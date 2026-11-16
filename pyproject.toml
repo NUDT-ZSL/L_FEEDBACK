@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deferred-validation"
+version = "1.0.0"
+description = "Offline OpenGL 4.5 deferred-rendering consistency validator"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24",
+    "PyOpenGL>=3.1.7",
+    "PyGLM>=2.7",
+    "Pillow>=10.0",
+]
+
+[project.scripts]
+deferred-validation = "deferred_validation.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["deferred_validation*"]
