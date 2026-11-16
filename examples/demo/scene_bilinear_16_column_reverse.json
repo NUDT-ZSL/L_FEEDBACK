@@ -1,0 +1,89 @@
+{
+  "camera": {
+    "far": 100.0,
+    "near": 0.05,
+    "position": [
+      0.0,
+      0.15,
+      3.8
+    ],
+    "target": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "vertical_fov_degrees": 42.0
+  },
+  "environment": {
+    "ground_color": [
+      0.1,
+      0.09,
+      0.08
+    ],
+    "intensity": 0.9,
+    "sky_color": [
+      0.36,
+      0.46,
+      0.62
+    ]
+  },
+  "geometry": {
+    "center": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "radius": 1.0,
+    "type": "sphere"
+  },
+  "light": {
+    "color": [
+      1.0,
+      0.96,
+      0.88
+    ],
+    "direction": [
+      -0.4386331609457214,
+      0.682318250360011,
+      0.5848442145942951
+    ],
+    "intensity": 2.0
+  },
+  "material": {
+    "base_color_texture": "textures/base_color.png",
+    "base_color_tint": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "normal_strength": 0.9,
+    "normal_texture": "textures/normal.png",
+    "roughness_texture": "textures/roughness.png",
+    "specular_strength": 0.35
+  },
+  "output": {
+    "background_color": [
+      0.015,
+      0.02,
+      0.03
+    ],
+    "block_axis": "column",
+    "block_order": "reverse",
+    "block_size": 16,
+    "directory": "outputs/bilinear_16_column_reverse",
+    "height": 128,
+    "texture_filter": "bilinear",
+    "weights": {
+      "ambient": 0.2,
+      "base_color": 0.25,
+      "direct": 0.55
+    },
+    "width": 128
+  },
+  "schema_version": 1
+}

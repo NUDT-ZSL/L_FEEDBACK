@@ -1,0 +1,96 @@
+{
+  "output": {
+    "background_color": [
+      0.015,
+      0.02,
+      0.03
+    ],
+    "block_axis": "row",
+    "block_order": "forward",
+    "block_size": 32,
+    "height": 128,
+    "texture_filter": "nearest",
+    "weights": {
+      "ambient": 0.2,
+      "base_color": 0.25,
+      "direct": 0.55
+    },
+    "width": 128
+  },
+  "outputs": {
+    "channel_quantized_sha256": {
+      "ambient": "53dbec28d2e49d12fd7f7f1a92a2074bee449063376eafee3bcc55981434f92e",
+      "base_color": "d1d6ffd7d6034a0a65d81525064564eef700df586ee2a52682f935eec68ef345",
+      "composite": "464a8539c8f74f29bace2aba6726ae6cce677fc7a88e44f869e73149d69a88db",
+      "direct": "e213a1ca9496a62aaa213581b7126ddf1d9e3249d2f468e2e3f4cec0ed052ade"
+    },
+    "channels": {
+      "ambient": "ambient_light.png",
+      "base_color": "base_color.png",
+      "composite": "composite.png",
+      "direct": "direct_light.png"
+    },
+    "composite_quantized_sha256": "464a8539c8f74f29bace2aba6726ae6cce677fc7a88e44f869e73149d69a88db",
+    "report": "self_check.json"
+  },
+  "render": {
+    "channel_means": {
+      "ambient": 0.06338102054557804,
+      "base_color": 0.21110199971915847,
+      "composite": 0.1011534959340104,
+      "direct": 0.06491234890019122
+    },
+    "channel_means_hit": {
+      "ambient": 0.1271370330172969,
+      "base_color": 0.5006340272734608,
+      "composite": 0.22264077325866663,
+      "direct": 0.13100883606698555
+    },
+    "composite_check": {
+      "max_abs_error": 0.0,
+      "passed": true,
+      "tolerance": 1e-06
+    },
+    "hit_pixels": 6480,
+    "inf_count": 0,
+    "inf_counts": {
+      "ambient": 0,
+      "base_color": 0,
+      "composite": 0,
+      "direct": 0
+    },
+    "miss_pixels": 9904,
+    "nan_count": 0,
+    "nan_counts": {
+      "ambient": 0,
+      "base_color": 0,
+      "composite": 0,
+      "direct": 0
+    },
+    "normal_fallback_breakdown": {
+      "invalid_result": 0,
+      "missing_texture": 0,
+      "zero_length": 0
+    },
+    "normal_fallback_count": 0,
+    "pixel_count": 16384
+  },
+  "scene_file": "examples/demo/scene_nearest_32_row_forward.json",
+  "schema_version": 1,
+  "status": "ok",
+  "textures": {
+    "base_color_size": [
+      64,
+      64
+    ],
+    "normal_size": [
+      64,
+      64
+    ],
+    "normal_texture_missing": false,
+    "roughness_size": [
+      64,
+      64
+    ]
+  }
+}

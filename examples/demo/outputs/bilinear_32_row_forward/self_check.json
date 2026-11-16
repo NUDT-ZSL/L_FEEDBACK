@@ -1,0 +1,96 @@
+{
+  "output": {
+    "background_color": [
+      0.015,
+      0.02,
+      0.03
+    ],
+    "block_axis": "row",
+    "block_order": "forward",
+    "block_size": 32,
+    "height": 128,
+    "texture_filter": "bilinear",
+    "weights": {
+      "ambient": 0.2,
+      "base_color": 0.25,
+      "direct": 0.55
+    },
+    "width": 128
+  },
+  "outputs": {
+    "channel_quantized_sha256": {
+      "ambient": "6ee9ede56575b0f350aa7860cc97c187ebdd611d2375edd15f1f85cf58309a9f",
+      "base_color": "af3cd8333cf29889e3f6559a51dbd9030f7de8374e91d81c3c4f041f99daf39f",
+      "composite": "a5ef78a0cfb377deb94dcfac57078c4d6254430b7eb6d2c9b07ac1e7732d68ae",
+      "direct": "27921d18cd254b65bba4d1d61ccb05b1e0ea506536e3f6b5423c4f6cfe23c6e2"
+    },
+    "channels": {
+      "ambient": "ambient_light.png",
+      "base_color": "base_color.png",
+      "composite": "composite.png",
+      "direct": "direct_light.png"
+    },
+    "composite_quantized_sha256": "a5ef78a0cfb377deb94dcfac57078c4d6254430b7eb6d2c9b07ac1e7732d68ae",
+    "report": "self_check.json"
+  },
+  "render": {
+    "channel_means": {
+      "ambient": 0.06338673311625137,
+      "base_color": 0.21109788801886867,
+      "composite": 0.10114736220520366,
+      "direct": 0.06490098832224768
+    },
+    "channel_means_hit": {
+      "ambient": 0.12715147665277712,
+      "base_color": 0.5006236312707528,
+      "composite": 0.22262526476904168,
+      "direct": 0.13098011203781476
+    },
+    "composite_check": {
+      "max_abs_error": 0.0,
+      "passed": true,
+      "tolerance": 1e-06
+    },
+    "hit_pixels": 6480,
+    "inf_count": 0,
+    "inf_counts": {
+      "ambient": 0,
+      "base_color": 0,
+      "composite": 0,
+      "direct": 0
+    },
+    "miss_pixels": 9904,
+    "nan_count": 0,
+    "nan_counts": {
+      "ambient": 0,
+      "base_color": 0,
+      "composite": 0,
+      "direct": 0
+    },
+    "normal_fallback_breakdown": {
+      "invalid_result": 0,
+      "missing_texture": 0,
+      "zero_length": 0
+    },
+    "normal_fallback_count": 0,
+    "pixel_count": 16384
+  },
+  "scene_file": "examples/demo/scene_bilinear_32_row_forward.json",
+  "schema_version": 1,
+  "status": "ok",
+  "textures": {
+    "base_color_size": [
+      64,
+      64
+    ],
+    "normal_size": [
+      64,
+      64
+    ],
+    "normal_texture_missing": false,
+    "roughness_size": [
+      64,
+      64
+    ]
+  }
+}
