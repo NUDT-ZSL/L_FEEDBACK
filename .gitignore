@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+samples/
+*.intermediate.mp4
+*.audiocache/
+*.state.json
+*.state.json.tmp
+*.tmp
