@@ -1,0 +1,18 @@
+{
+  "width": 640,
+  "height": 640,
+  "shadow_map_size": 1024,
+  "point_shadow_size": 256,
+  "max_point_lights": 3,
+  "directional_light_scale": 1.0,
+  "point_light_scale": 1.0,
+  "exposure": 0.8,
+  "shadow_bias": 0.0015,
+  "shadow_normal_bias": 0.025,
+  "point_shadow_bias": 0.012,
+  "point_shadow_normal_bias": 0.025,
+  "frame_count": 4,
+  "time_step": 0.5,
+  "camera_orbit_speed_deg": 12.0,
+  "output_dir": "output"
+}
