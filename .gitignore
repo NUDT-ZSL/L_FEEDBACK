@@ -1,0 +1,9 @@
+/build/
+/build-*/
+/charview.log
+/frame.ppm
+/frame.bmp
+*.user
+*.suo
+*.VC.db
+
