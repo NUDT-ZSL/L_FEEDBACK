@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "softrender"
+version = "1.0.0"
+description = "Deterministic CPU software renderer for character preview validation"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "Pillow>=9.0",
+]
+
+[project.scripts]
+softrender = "softrender.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["softrender*"]
