@@ -1,0 +1,8 @@
+/build/
+/build-*/
+/out/
+/.cache/
+__pycache__/
+*.bmp
+!tests/data/*.bmp
+
