@@ -1,0 +1,25 @@
+{
+  "description": "ABR live-mix simulation: 3 H.264 video ladders + 1 AAC audio, MPEG-TS output",
+  "video_streams": [
+    {"id": "low", "path": "samples/video_low_800k.mp4", "bitrate_kbps": 800},
+    {"id": "mid", "path": "samples/video_mid_2500k.mp4", "bitrate_kbps": 2500},
+    {"id": "high", "path": "samples/video_high_5000k.mp4", "bitrate_kbps": 5000}
+  ],
+  "audio_stream": {"id": "main", "path": "samples/audio_main.aac", "bitrate_kbps": 128},
+  "switch_policy": {
+    "segment_seconds": 2.0,
+    "min_dwell_seconds": 4.0,
+    "switch_overhead_seconds": 0.5,
+    "buffer_margin": 0.15,
+    "initial_buffer_seconds": 2.0,
+    "buffer_capacity_seconds": 10.0,
+    "min_buffer_seconds": 0.5
+  },
+  "bandwidth_curve": [
+    {"time": 0, "bandwidth_kbps": 6500},
+    {"time": 6, "bandwidth_kbps": 1800},
+    {"time": 12, "bandwidth_kbps": 3400},
+    {"time": 18, "bandwidth_kbps": 1200},
+    {"time": 24, "bandwidth_kbps": 7000}
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "manifest": "manifest.json",
+  "output": "/home/liang/feedback/uid157/out/switched.ts",
+  "switches": [
+    {
+      "time": 4.0,
+      "from": "low",
+      "to": "high",
+      "reason": "bandwidth_headroom"
+    },
+    {
+      "time": 6.0,
+      "from": "high",
+      "to": "low",
+      "reason": "bandwidth_drop"
+    },
+    {
+      "time": 12.0,
+      "from": "low",
+      "to": "mid",
+      "reason": "bandwidth_headroom"
+    },
+    {
+      "time": 18.0,
+      "from": "mid",
+      "to": "low",
+      "reason": "bandwidth_drop"
+    },
+    {
+      "time": 24.0,
+      "from": "low",
+      "to": "high",
+      "reason": "bandwidth_headroom"
+    }
+  ],
+  "fallbacks": [],
+  "timestamp_adjustments": [],
+  "unusable_streams": [],
+  "buffer_underruns": [],
+  "segments": [
+    {
+      "index": 0,
+      "stream": "low",
+      "src_in": 0.0,
+      "src_out": 4.0,
+      "frames": 96,
+      "first_pts": 1.4,
+      "last_pts": 5.358333
+    },
+    {
+      "index": 1,
+      "stream": "high",
+      "src_in": 4.0,
+      "src_out": 6.0,
+      "frames": 48,
+      "first_pts": 1.4,
+      "last_pts": 3.358333
+    },
+    {
+      "index": 2,
+      "stream": "low",
+      "src_in": 6.0,
+      "src_out": 12.0,
+      "frames": 144,
+      "first_pts": 1.4,
+      "last_pts": 7.358333
+    },
+    {
+      "index": 3,
+      "stream": "mid",
+      "src_in": 12.0,
+      "src_out": 18.0,
+      "frames": 144,
+      "first_pts": 1.4,
+      "last_pts": 7.358333
+    },
+    {
+      "index": 4,
+      "stream": "low",
+      "src_in": 18.0,
+      "src_out": 24.0,
+      "frames": 144,
+      "first_pts": 1.4,
+      "last_pts": 7.358333
+    },
+    {
+      "index": 5,
+      "stream": "high",
+      "src_in": 24.0,
+      "src_out": 30.0,
+      "frames": 144,
+      "first_pts": 1.4,
+      "last_pts": 7.358333
+    }
+  ],
+  "buffer_trace": [
+    {
+      "time": 0.0,
+      "buffer_seconds": 3.753846,
+      "stream": "low",
+      "bandwidth_kbps": 6500
+    },
+    {
+      "time": 2.0,
+      "buffer_seconds": 5.507692,
+      "stream": "low",
+      "bandwidth_kbps": 6500
+    },
+    {
+      "time": 4.0,
+      "buffer_seconds": 5.469231,
+      "stream": "high",
+      "bandwidth_kbps": 6500
+    },
+    {
+      "time": 6.0,
+      "buffer_seconds": 6.080342,
+      "stream": "low",
+      "bandwidth_kbps": 1800
+    },
+    {
+      "time": 8.0,
+      "buffer_seconds": 7.191453,
+      "stream": "low",
+      "bandwidth_kbps": 1800
+    },
+    {
+      "time": 10.0,
+      "buffer_seconds": 8.302564,
+      "stream": "low",
+      "bandwidth_kbps": 1800
+    },
+    {
+      "time": 12.0,
+      "buffer_seconds": 8.331976,
+      "stream": "mid",
+      "bandwidth_kbps": 3400
+    },
+    {
+      "time": 14.0,
+      "buffer_seconds": 8.861388,
+      "stream": "mid",
+      "bandwidth_kbps": 3400
+    },
+    {
+      "time": 16.0,
+      "buffer_seconds": 9.390799,
+      "stream": "mid",
+      "bandwidth_kbps": 3400
+    },
+    {
+      "time": 18.0,
+      "buffer_seconds": 9.557466,
+      "stream": "low",
+      "bandwidth_kbps": 1200
+    },
+    {
+      "time": 20.0,
+      "buffer_seconds": 10.0,
+      "stream": "low",
+      "bandwidth_kbps": 1200
+    },
+    {
+      "time": 22.0,
+      "buffer_seconds": 10.0,
+      "stream": "low",
+      "bandwidth_kbps": 1200
+    },
+    {
+      "time": 24.0,
+      "buffer_seconds": 10.0,
+      "stream": "high",
+      "bandwidth_kbps": 7000
+    },
+    {
+      "time": 26.0,
+      "buffer_seconds": 10.0,
+      "stream": "high",
+      "bandwidth_kbps": 7000
+    },
+    {
+      "time": 28.0,
+      "buffer_seconds": 10.0,
+      "stream": "high",
+      "bandwidth_kbps": 7000
+    }
+  ],
+  "verification": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_type": "video",
+        "codec_name": "h264"
+      },
+      {
+        "index": 1,
+        "codec_type": "audio",
+        "codec_name": "aac"
+      }
+    ],
+    "video_frames": 720,
+    "audio_packets": 1408,
+    "video_dts_monotonic": true,
+    "audio_pts_monotonic": true,
+    "sync": {
+      "max_abs_ms": 10.667,
+      "mean_abs_ms": 5.349,
+      "p95_abs_ms": 10.0,
+      "timeline_drift_ms": 6.333,
+      "within_tolerance": true
+    },
+    "per_switch_sync": [
+      {
+        "switch_time": 4.0,
+        "nearest_video_pts": 4.0,
+        "abs_av_diff_ms": 10.667
+      },
+      {
+        "switch_time": 6.0,
+        "nearest_video_pts": 6.0,
+        "abs_av_diff_ms": 5.333
+      },
+      {
+        "switch_time": 12.0,
+        "nearest_video_pts": 12.0,
+        "abs_av_diff_ms": 10.667
+      },
+      {
+        "switch_time": 18.0,
+        "nearest_video_pts": 18.0,
+        "abs_av_diff_ms": 5.333
+      },
+      {
+        "switch_time": 24.0,
+        "nearest_video_pts": 24.0,
+        "abs_av_diff_ms": 0.0
+      }
+    ],
+    "continuity": {
+      "frames": 720,
+      "gaps": [],
+      "duplicates": [],
+      "continuous": true
+    },
+    "ts_structure": {
+      "pmt_pid": 4096,
+      "video_pid": 256,
+      "audio_pid": 257,
+      "video_pes_count": 720,
+      "audio_pes_count": 1408,
+      "pes_length_violations": [],
+      "ts_packets": 51814
+    }
+  }
+}
