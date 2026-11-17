@@ -1,0 +1,6 @@
+/build/
+/build-*/
+/configs/diag.*
+/renders/*.png
+__pycache__/
+*.pyc

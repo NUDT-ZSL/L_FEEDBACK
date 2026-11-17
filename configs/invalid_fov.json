@@ -1,0 +1,56 @@
+{
+  "heightfield": {
+    "size": 64,
+    "frequency": 0.04,
+    "amplitude": 8.0,
+    "seed": 7,
+    "octaves": 3
+  },
+  "camera": {
+    "position": [32.0, 30.0, 80.0],
+    "target": [32.0, 2.0, 20.0],
+    "up": [0.0, 1.0, 0.0],
+    "fov_degrees": 180.0,
+    "near": 0.4,
+    "far": 300.0
+  },
+  "render": {
+    "width": 320,
+    "height": 180,
+    "supersampling": 2
+  },
+  "lod": {
+    "block_size": 32,
+    "lod0_screen_area": 0.02,
+    "lod1_screen_area": 0.005,
+    "lod0_distance": 40.0,
+    "lod1_distance": 90.0
+  },
+  "texture": {
+    "size": 128,
+    "scale": 0.2
+  },
+  "lighting": {
+    "ambient": [0.1, 0.1, 0.1],
+    "directional": [
+      {"direction": [0.0, 1.0, 0.0], "color": [1.0, 1.0, 1.0], "intensity": 1.0},
+      {"direction": [1.0, 1.0, 0.0], "color": [1.0, 1.0, 1.0], "intensity": 1.0},
+      {"direction": [0.0, 1.0, 1.0], "color": [1.0, 1.0, 1.0], "intensity": 1.0},
+      {"direction": [1.0, 0.0, 1.0], "color": [1.0, 1.0, 1.0], "intensity": 1.0}
+    ],
+    "point": [
+      {"position": [8.0, 8.0, 8.0], "color": [1.0, 1.0, 1.0], "intensity": 1.0, "range": 20.0},
+      {"position": [16.0, 8.0, 8.0], "color": [1.0, 1.0, 1.0], "intensity": 1.0, "range": 20.0},
+      {"position": [24.0, 8.0, 8.0], "color": [1.0, 1.0, 1.0], "intensity": 1.0, "range": 20.0},
+      {"position": [32.0, 8.0, 8.0], "color": [1.0, 1.0, 1.0], "intensity": 1.0, "range": 20.0},
+      {"position": [40.0, 8.0, 8.0], "color": [1.0, 1.0, 1.0], "intensity": 1.0, "range": 20.0},
+      {"position": [48.0, 8.0, 8.0], "color": [1.0, 1.0, 1.0], "intensity": 1.0, "range": 20.0},
+      {"position": [56.0, 8.0, 8.0], "color": [1.0, 1.0, 1.0], "intensity": 1.0, "range": 20.0},
+      {"position": [32.0, 12.0, 32.0], "color": [1.0, 1.0, 1.0], "intensity": 1.0, "range": 20.0}
+    ]
+  },
+  "output": {
+    "image": "../renders/invalid.bmp",
+    "report": "../renders/invalid.json"
+  }
+}

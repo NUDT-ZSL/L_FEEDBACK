@@ -1,0 +1,112 @@
+{
+  "heightfield": {
+    "size": 192,
+    "frequency": 0.016,
+    "amplitude": 15.0,
+    "seed": 1337,
+    "octaves": 5
+  },
+  "camera": {
+    "position": [96.0, 52.0, 228.0],
+    "target": [96.0, 7.0, 80.0],
+    "up": [0.0, 1.0, 0.0],
+    "fov_degrees": 58.0,
+    "near": 0.4,
+    "far": 650.0
+  },
+  "render": {
+    "width": 800,
+    "height": 450,
+    "supersampling": 2
+  },
+  "lod": {
+    "block_size": 32,
+    "lod0_screen_area": 0.024,
+    "lod1_screen_area": 0.019,
+    "lod0_distance": 58.0,
+    "lod1_distance": 150.0
+  },
+  "texture": {
+    "size": 256,
+    "scale": 0.08
+  },
+  "lighting": {
+    "ambient": [0.055, 0.075, 0.105],
+    "directional": [
+      {
+        "direction": [-0.36, 0.82, -0.44],
+        "color": [1.00, 0.91, 0.75],
+        "intensity": 0.68
+      },
+      {
+        "direction": [0.58, 0.42, 0.28],
+        "color": [0.48, 0.63, 0.90],
+        "intensity": 0.22
+      },
+      {
+        "direction": [0.12, 0.30, 0.95],
+        "color": [0.76, 0.83, 1.00],
+        "intensity": 0.10
+      },
+      {
+        "direction": [-0.75, 0.22, -0.25],
+        "color": [0.95, 0.62, 0.38],
+        "intensity": 0.07
+      }
+    ],
+    "point": [
+      {
+        "position": [62.0, 25.0, 138.0],
+        "color": [1.00, 0.44, 0.18],
+        "intensity": 6.0,
+        "range": 58.0
+      },
+      {
+        "position": [130.0, 21.0, 128.0],
+        "color": [0.18, 0.62, 1.00],
+        "intensity": 5.5,
+        "range": 54.0
+      },
+      {
+        "position": [82.0, 19.0, 177.0],
+        "color": [1.00, 0.76, 0.36],
+        "intensity": 4.0,
+        "range": 42.0
+      },
+      {
+        "position": [42.0, 16.0, 95.0],
+        "color": [0.42, 1.00, 0.52],
+        "intensity": 3.0,
+        "range": 36.0
+      },
+      {
+        "position": [154.0, 18.0, 90.0],
+        "color": [1.00, 0.28, 0.58],
+        "intensity": 3.5,
+        "range": 38.0
+      },
+      {
+        "position": [48.0, 30.0, 56.0],
+        "color": [0.58, 0.45, 1.00],
+        "intensity": 4.5,
+        "range": 46.0
+      },
+      {
+        "position": [149.0, 28.0, 50.0],
+        "color": [1.00, 0.92, 0.62],
+        "intensity": 4.8,
+        "range": 48.0
+      },
+      {
+        "position": [96.0, 15.0, 188.0],
+        "color": [0.22, 0.86, 0.88],
+        "intensity": 3.0,
+        "range": 34.0
+      }
+    ]
+  },
+  "output": {
+    "image": "../renders/terrain.bmp",
+    "report": "../renders/report.json"
+  }
+}
