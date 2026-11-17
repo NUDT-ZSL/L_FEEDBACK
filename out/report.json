@@ -1,0 +1,127 @@
+{
+  "bpm": 120.0,
+  "ducking": {
+    "duck_gain_db": -6.0,
+    "max_slope_db_per_s": 432.01
+  },
+  "first_beat_offset_s": 0.05,
+  "loop": {
+    "bar_beats": 4,
+    "count": 1,
+    "per_layer": {
+      "ambience": 1,
+      "base": 1,
+      "percussion": 1
+    }
+  },
+  "mix": {
+    "peak_dbfs": -2.08
+  },
+  "output": {
+    "channels": 2,
+    "duration_s": 10.05,
+    "sample_rate": 48000
+  },
+  "quantization": {
+    "events": [
+      {
+        "error_ms": -0.95,
+        "grid": "1/16",
+        "index": 0,
+        "quantized_s": 1.05,
+        "sfx": "hit",
+        "time_s": 1.05
+      },
+      {
+        "error_ms": -3.48,
+        "grid": "1/16",
+        "index": 1,
+        "quantized_s": 1.55,
+        "sfx": "slash",
+        "time_s": 1.55
+      },
+      {
+        "error_ms": 3.88,
+        "grid": "1/4",
+        "index": 2,
+        "quantized_s": 2.05,
+        "sfx": "magic",
+        "time_s": 2.05
+      },
+      {
+        "error_ms": -1.99,
+        "grid": "1/16",
+        "index": 3,
+        "quantized_s": 2.55,
+        "sfx": "hit",
+        "time_s": 2.55
+      },
+      {
+        "error_ms": -1.0,
+        "grid": "1/16",
+        "index": 4,
+        "quantized_s": 2.67,
+        "sfx": "hit",
+        "time_s": 2.68
+      },
+      {
+        "error_ms": -2.57,
+        "grid": "1/16",
+        "index": 5,
+        "quantized_s": 3.55,
+        "sfx": "hit",
+        "time_s": 3.55
+      },
+      {
+        "error_ms": -0.06,
+        "grid": "1/16",
+        "index": 6,
+        "quantized_s": 3.55,
+        "sfx": "slash",
+        "time_s": 3.55
+      },
+      {
+        "error_ms": 2.32,
+        "grid": "1/8",
+        "index": 7,
+        "quantized_s": 4.55,
+        "sfx": "magic",
+        "time_s": 4.55
+      },
+      {
+        "error_ms": 0.31,
+        "grid": "1/16",
+        "index": 8,
+        "quantized_s": 5.55,
+        "sfx": "hit",
+        "time_s": 5.55
+      },
+      {
+        "error_ms": 2.23,
+        "grid": "1/16",
+        "index": 9,
+        "quantized_s": 6.55,
+        "sfx": "slash",
+        "time_s": 6.55
+      },
+      {
+        "error_ms": -0.62,
+        "grid": "1/16",
+        "index": 10,
+        "quantized_s": 7.55,
+        "sfx": "hit",
+        "time_s": 7.55
+      },
+      {
+        "error_ms": -3.75,
+        "grid": "1/16",
+        "index": 11,
+        "quantized_s": 8.05,
+        "sfx": "magic",
+        "time_s": 8.05
+      }
+    ],
+    "max_error_ms": 3.88
+  },
+  "sample_rate": 48000
+}
