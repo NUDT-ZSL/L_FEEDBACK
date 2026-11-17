@@ -1,0 +1,6 @@
+numpy>=1.24
+moderngl>=5.8
+PyOpenGL>=3.1
+pillow>=9.0
+glfw>=2.7; platform_system != "Darwin"
+
