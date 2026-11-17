@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "version": 3,
+  "command": "incremental",
+  "seed": 1337,
+  "yaw_deg": 0.000000,
+  "small_step_world_units": 0.650000,
+  "frame_count": 7,
+  "total_redrawn_blocks": 587,
+  "full_equivalent_blocks": 1344,
+  "savings_percent": 56.324,
+  "correction_blocks": 0,
+  "final_max_channel_diff": 0,
+  "final_differing_pixels": 0,
+  "final_pixels_over_tolerance": 0,
+  "final_within_tolerance": true,
+  "reference_image": "/home/liang/feedback/uid182/outputs/acceptance_test_final/incremental/reference_full.png",
+  "material_warnings": [{"code":"MATW_ZERO","zero_texels":36,"sampled_fallbacks":61,"first_uv":[133,120]}],
+  "data_hash": "5a5bacf99d2f8c06",
+  "frames": [
+    {"index":0,"pan_x":0.000000,"image":"/home/liang/feedback/uid182/outputs/acceptance_test_final/incremental/frame_00.png","redrawn_blocks":192,"reused_blocks":0,"shaded_pixels":202579,"shadow_samples":1686735,"render_time_ms":259},
+    {"index":1,"pan_x":0.650000,"image":"/home/liang/feedback/uid182/outputs/acceptance_test_final/incremental/frame_01.png","redrawn_blocks":66,"reused_blocks":126,"shaded_pixels":202602,"shadow_samples":1686798,"render_time_ms":256},
+    {"index":2,"pan_x":1.300000,"image":"/home/liang/feedback/uid182/outputs/acceptance_test_final/incremental/frame_02.png","redrawn_blocks":66,"reused_blocks":126,"shaded_pixels":202612,"shadow_samples":1686582,"render_time_ms":256},
+    {"index":3,"pan_x":1.950000,"image":"/home/liang/feedback/uid182/outputs/acceptance_test_final/incremental/frame_03.png","redrawn_blocks":65,"reused_blocks":127,"shaded_pixels":202599,"shadow_samples":1686186,"render_time_ms":256},
+    {"index":4,"pan_x":2.600000,"image":"/home/liang/feedback/uid182/outputs/acceptance_test_final/incremental/frame_04.png","redrawn_blocks":65,"reused_blocks":127,"shaded_pixels":202593,"shadow_samples":1685871,"render_time_ms":256},
+    {"index":5,"pan_x":3.250000,"image":"/home/liang/feedback/uid182/outputs/acceptance_test_final/incremental/frame_05.png","redrawn_blocks":66,"reused_blocks":126,"shaded_pixels":202629,"shadow_samples":1685799,"render_time_ms":256},
+    {"index":6,"pan_x":0.000000,"image":"/home/liang/feedback/uid182/outputs/acceptance_test_final/incremental/frame_06.png","redrawn_blocks":67,"reused_blocks":125,"shaded_pixels":202579,"shadow_samples":1686735,"render_time_ms":256}
+  ]
+}

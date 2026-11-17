@@ -1,0 +1,10 @@
+stb_image v2.32 and stb_image_write v1.18
+
+Copyright (c) 2017 Sean Barrett
+
+These single-header libraries are released into the public domain under the
+Unlicense / MIT-0 terms reproduced in their file headers. They may be used,
+modified, and distributed for any purpose, commercial or non-commercial.
+
+Source: https://github.com/nothings/stb
+

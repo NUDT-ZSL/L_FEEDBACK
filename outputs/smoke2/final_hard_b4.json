@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "version": 3,
+  "command": "render",
+  "seed": 1337,
+    "image": "outputs/smoke2/final_hard_b4.png",
+    "width": 1024,
+    "height": 768,
+    "camera": {
+      "eye": [0.000000,180.000000,410.000000],
+      "target": [0.000000,18.000000,0.000000],
+      "yaw_deg": 0.000000,
+      "pan_x": 0.000000,
+      "fov_y_deg": 36.000000,
+      "near": 1.000000,
+      "far": 1200.000000
+    },
+    "light": {"direction": [0.911685,-0.341882,0.227921]},
+    "shadow": {
+      "mode": "hard",
+      "bias_texels": 4.000000,
+      "pcf_kernel": "3x3",
+      "pcf_radius_texels": 8.000000,
+      "map_size": 2048
+    },
+    "render_time_ms": 210,
+    "render_time_model": "fixed_work_v1",
+    "triangle_count": 130050,
+    "redrawn_blocks": 192,
+    "reused_blocks": 0,
+    "total_blocks": 192,
+    "rasterized_triangles": 138823,
+    "shaded_pixels": 204389,
+    "shadow_samples": 189251,
+    "backlit_pixels": 15138,
+    "shadow_map_fragments": 2011610,
+    "shadow_lookups_outside": 0,
+    "shadow_occluded_samples": 0,
+    "shadow_min_delta": -1.14290488,
+    "shadow_max_delta": -0.09508795,
+    "material_warnings": [{"code":"MATW_ZERO","zero_texels":36,"sampled_fallbacks":78,"first_uv":[133,120]}],
+    "data_hash": "683f217a91650ebf"
+}
