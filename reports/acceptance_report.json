@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "tool": "dialogue-mixer-acceptance",
+  "environment": {
+    "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.14.4",
+    "numpy": "2.5.5",
+    "ffmpeg": "ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers"
+  },
+  "samples": {
+    "root": "/home/liang/feedback/uid165/samples",
+    "valid_project": "/home/liang/feedback/uid165/samples/valid/project.json",
+    "invalid_project": "/home/liang/feedback/uid165/samples/invalid/project.json",
+    "fatal_project": "/home/liang/feedback/uid165/samples/fatal/project.json"
+  },
+  "summary": {
+    "passed": true,
+    "checks_passed": 20,
+    "checks_total": 20
+  },
+  "checks": [
+    {
+      "check": "valid exit code",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "check": "valid status",
+      "passed": true,
+      "actual": "success",
+      "expected": "success"
+    },
+    {
+      "check": "WAV sample rate",
+      "passed": true,
+      "actual": 48000,
+      "expected": 48000
+    },
+    {
+      "check": "WAV sample count",
+      "passed": true,
+      "actual": 432000,
+      "expected": 432000
+    },
+    {
+      "check": "peak <= 0 dBFS",
+      "passed": true,
+      "actual": -0.19999996779759982,
+      "expected": "<= 0.0 dBFS"
+    },
+    {
+      "check": "peak <= configured ceiling",
+      "passed": true,
+      "actual": -0.19999996779759982,
+      "expected": "<= -0.200000 dBFS"
+    },
+    {
+      "check": "normalization factor applied",
+      "passed": true,
+      "actual": 0.8793871210292404,
+      "expected": "< 1.0"
+    },
+    {
+      "check": "index alignment <= 1 sample",
+      "passed": true,
+      "actual": 1.4551915228366852e-11,
+      "expected": "<= 1"
+    },
+    {
+      "check": "first stretched segment interval",
+      "passed": true,
+      "actual": {
+        "start_sample": 48000,
+        "duration_samples": 57600,
+        "source_kind": "stretched"
+      },
+      "expected": {
+        "start_sample": 48000,
+        "duration_samples": 57600,
+        "source_kind": "stretched"
+      }
+    },
+    {
+      "check": "ducking and overlap counts",
+      "passed": true,
+      "actual": {
+        "duck_events": 8,
+        "overlap_events": 1
+      },
+      "expected": {
+        "duck_events": 8,
+        "overlap_events": 1
+      }
+    },
+    {
+      "check": "equal-power crossfade metadata",
+      "passed": true,
+      "actual": {
+        "curve": "equal_power",
+        "independent_of_ducking": true
+      },
+      "expected": {
+        "curve": "equal_power",
+        "independent_of_ducking": true
+      }
+    },
+    {
+      "check": "partial exit code",
+      "passed": true,
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "check": "partial business codes",
+      "passed": true,
+      "actual": [
+        "MISSING_AUDIO_FILE",
+        "MISSING_DUCK_TARGET",
+        "UNMERGEABLE_OVERLAP"
+      ],
+      "expected": [
+        "MISSING_AUDIO_FILE",
+        "MISSING_DUCK_TARGET",
+        "UNMERGEABLE_OVERLAP"
+      ]
+    },
+    {
+      "check": "partial outputs retained",
+      "passed": true,
+      "actual": {
+        "audio_exists": true,
+        "index_exists": true
+      },
+      "expected": {
+        "audio_exists": true,
+        "index_exists": true
+      }
+    },
+    {
+      "check": "partial index alignment <= 1 sample",
+      "passed": true,
+      "actual": 2.9103830456733704e-11,
+      "expected": "<= 1"
+    },
+    {
+      "check": "fatal exit code",
+      "passed": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "check": "invalid sample rate code",
+      "passed": true,
+      "actual": [
+        "INVALID_SAMPLE_RATE"
+      ],
+      "expected": [
+        "INVALID_SAMPLE_RATE"
+      ]
+    },
+    {
+      "check": "fatal run emits no mix",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "check": "deterministic rerun",
+      "passed": true,
+      "actual": {
+        "audio_sha256": "36d2652802e8567c8d52de38044e8148d4aea8d68ce792ed19d2484735152d26",
+        "index_sha256": "f28bb78ff35dfe500275e7653f5673d631431a57342a94801c91b5e1c87a5212"
+      },
+      "expected": {
+        "audio_sha256": "36d2652802e8567c8d52de38044e8148d4aea8d68ce792ed19d2484735152d26",
+        "index_sha256": "f28bb78ff35dfe500275e7653f5673d631431a57342a94801c91b5e1c87a5212"
+      }
+    },
+    {
+      "check": "deterministic sample generation",
+      "passed": true,
+      "actual": {
+        "files_checked": 12,
+        "hashes_unchanged": true
+      },
+      "expected": {
+        "files_checked": 12,
+        "hashes_unchanged": true
+      }
+    }
+  ]
+}

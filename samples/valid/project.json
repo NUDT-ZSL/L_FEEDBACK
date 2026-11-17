@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "name": "deterministic_dialogue_demo",
+  "sample_rate": 48000,
+  "duration_seconds": 9.0,
+  "tracks": [
+    {
+      "id": "dialogue",
+      "kind": "dialogue",
+      "gain": 1.0
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "gain": 0.8
+    },
+    {
+      "id": "sfx",
+      "kind": "sfx",
+      "gain": 0.7
+    }
+  ],
+  "clips": [
+    {
+      "id": "voice_zh",
+      "track": "dialogue",
+      "file": "audio/voice_zh.wav",
+      "start": 1.0,
+      "gain": 1.0
+    },
+    {
+      "id": "voice_en",
+      "track": "dialogue",
+      "file": "audio/voice_en.wav",
+      "start": 4.0,
+      "gain": 1.0
+    },
+    {
+      "id": "voice_ja",
+      "track": "dialogue",
+      "file": "audio/voice_ja.wav",
+      "start": 4.5,
+      "gain": 0.95
+    },
+    {
+      "id": "voice_cn2",
+      "track": "dialogue",
+      "file": "audio/voice_cn2.wav",
+      "start": 7.0,
+      "gain": 0.95
+    },
+    {
+      "id": "music_a",
+      "track": "music",
+      "file": "audio/music_a.wav",
+      "start": 0.0,
+      "gain": 0.95
+    },
+    {
+      "id": "music_b",
+      "track": "music",
+      "file": "audio/music_b.wav",
+      "start": 3.5,
+      "gain": 0.92
+    },
+    {
+      "id": "sfx_a",
+      "track": "sfx",
+      "file": "audio/sfx_a.wav",
+      "start": 2.0,
+      "gain": 0.9
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "line_zh_01",
+      "start": 1.0,
+      "end": 2.2,
+      "stretch_ratio": 1.2,
+      "voice_clip_id": "voice_zh",
+      "duck_tracks": [
+        "music",
+        "sfx"
+      ]
+    },
+    {
+      "id": "line_en_02",
+      "start": 4.0,
+      "end": 5.0,
+      "stretch_ratio": 1.25,
+      "voice_clip_id": "voice_en",
+      "duck_tracks": [
+        "music",
+        "sfx"
+      ]
+    },
+    {
+      "id": "line_ja_03",
+      "start": 4.5,
+      "end": 5.5,
+      "stretch_ratio": 1.3333333333,
+      "voice_clip_id": "voice_ja",
+      "duck_tracks": [
+        "music",
+        "sfx"
+      ]
+    },
+    {
+      "id": "line_cn_04",
+      "start": 7.0,
+      "end": 7.9,
+      "stretch_ratio": 1.0,
+      "voice_clip_id": "voice_cn2",
+      "duck_tracks": [
+        "music",
+        "sfx"
+      ]
+    }
+  ],
+  "ducking": {
+    "enabled": true,
+    "target_tracks": [
+      "music",
+      "sfx"
+    ],
+    "depth_db": -12.0,
+    "attack_seconds": 0.06,
+    "release_seconds": 0.35,
+    "attack_curve": "cosine",
+    "release_curve": "cosine"
+  },
+  "crossfades": [
+    {
+      "from_clip_id": "music_a",
+      "to_clip_id": "music_b",
+      "duration_seconds": 0.5
+    }
+  ],
+  "normalization": {
+    "peak_ceiling_dbfs": -0.2
+  },
+  "output": {
+    "audio": "output/demo_mix.wav",
+    "index": "output/track_index.json",
+    "log": "output/run_log.json"
+  }
+}

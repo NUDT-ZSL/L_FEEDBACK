@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "name": "invalid_sample_rate_demo",
+  "sample_rate": 44100.5,
+  "duration_seconds": 3.0,
+  "tracks": [
+    {
+      "id": "music",
+      "kind": "music",
+      "gain": 1.0
+    }
+  ],
+  "clips": [],
+  "dialogues": [],
+  "ducking": {
+    "enabled": true,
+    "target_tracks": [
+      "music"
+    ]
+  },
+  "crossfades": [],
+  "normalization": {
+    "peak_ceiling_dbfs": 0.0
+  },
+  "output": {
+    "audio": "output/should_not_exist.wav",
+    "index": "output/track_index.json",
+    "log": "output/run_log.json"
+  }
+}

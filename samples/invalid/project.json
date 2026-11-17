@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "name": "deterministic_partial_failure_demo",
+  "sample_rate": 48000,
+  "duration_seconds": 6.0,
+  "tracks": [
+    {
+      "id": "dialogue",
+      "kind": "dialogue",
+      "gain": 0.95
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "gain": 0.5
+    },
+    {
+      "id": "sfx",
+      "kind": "sfx",
+      "gain": 0.5
+    }
+  ],
+  "clips": [
+    {
+      "id": "voice_reused",
+      "track": "dialogue",
+      "file": "audio/voice_reused.wav",
+      "start": 1.0,
+      "gain": 0.9
+    },
+    {
+      "id": "missing_music",
+      "track": "music",
+      "file": "audio/does_not_exist.wav",
+      "start": 0.0,
+      "gain": 0.8
+    },
+    {
+      "id": "sfx_ok",
+      "track": "sfx",
+      "file": "audio/sfx_ok.wav",
+      "start": 3.0,
+      "gain": 0.7
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "line_first",
+      "start": 1.0,
+      "end": 2.3,
+      "stretch_ratio": 1.3,
+      "voice_clip_id": "voice_reused",
+      "duck_tracks": [
+        "music",
+        "sfx",
+        "ghost_track"
+      ]
+    },
+    {
+      "id": "line_conflict",
+      "start": 1.6,
+      "end": 2.6,
+      "stretch_ratio": 1.0,
+      "voice_clip_id": "voice_reused",
+      "duck_tracks": [
+        "music",
+        "sfx"
+      ]
+    }
+  ],
+  "ducking": {
+    "enabled": true,
+    "target_tracks": [
+      "music",
+      "sfx"
+    ],
+    "depth_db": -12.0,
+    "attack_seconds": 0.05,
+    "release_seconds": 0.25,
+    "attack_curve": "cosine",
+    "release_curve": "cosine"
+  },
+  "crossfades": [],
+  "normalization": {
+    "peak_ceiling_dbfs": 0.0
+  },
+  "output": {
+    "audio": "output/partial_mix.wav",
+    "index": "output/track_index.json",
+    "log": "output/run_log.json"
+  }
+}

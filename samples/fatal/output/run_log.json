@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "tool": {
+    "name": "dialogue-mixer",
+    "version": "1.0.0"
+  },
+  "project": {
+    "name": "project",
+    "file": "/home/liang/feedback/uid165/samples/fatal/project.json"
+  },
+  "status": "failed",
+  "exit_code": 2,
+  "counts": {
+    "tracks": 0,
+    "clips": 0,
+    "dialogues": 0,
+    "rendered_segments": 0,
+    "time_stretched_segments": 0,
+    "crossfades_applied": 0,
+    "duck_events": 0,
+    "overlap_events": 0,
+    "business_errors": 1,
+    "warnings": 0
+  },
+  "stages": [
+    {
+      "stage": "parse_project",
+      "status": "failed",
+      "summary": {
+        "path": "/home/liang/feedback/uid165/samples/fatal/project.json"
+      }
+    }
+  ],
+  "time_stretch": {
+    "algorithm": "wsola",
+    "segments": []
+  },
+  "ducking": {
+    "enabled": false,
+    "merge_rule": "per_sample_minimum",
+    "event_count": 0,
+    "events": [],
+    "overlaps": [],
+    "per_track_envelopes": {}
+  },
+  "crossfades": {
+    "count": 0,
+    "transitions": [],
+    "independent_of_ducking": true
+  },
+  "normalization": {},
+  "outputs": {
+    "log": "/home/liang/feedback/uid165/samples/fatal/output/run_log.json"
+  },
+  "errors": [
+    {
+      "code": "INVALID_SAMPLE_RATE",
+      "severity": "error",
+      "message": "sample_rate must be an integer from 8000 to 384000",
+      "context": {
+        "sample_rate": "44100.5"
+      }
+    }
+  ],
+  "warnings": [],
+  "business_error_codes": [
+    "INVALID_SAMPLE_RATE"
+  ]
+}
