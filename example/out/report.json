@@ -1,0 +1,39 @@
+{
+  "cache": {
+    "hits": 3,
+    "misses": 0
+  },
+  "durations_ms": {
+    "analyze": 8.786,
+    "mix": 0.089,
+    "resample": 3.705,
+    "total": 28.028,
+    "writeout": 15.248
+  },
+  "engine_version": 1,
+  "errors": [],
+  "exit_code": 0,
+  "manifest": "/home/liang/feedback/uid151/example/manifest.json",
+  "manifest_sha256": "113865536046ed5981c52cdd35db5a86b1d1342282bd84d3cf97125fb1096a80",
+  "output_dir": "/home/liang/feedback/uid151/example/out",
+  "outputs": {
+    "mapping": "/home/liang/feedback/uid151/example/out/mapping.json",
+    "mix_wav": "/home/liang/feedback/uid151/example/out/mix.wav",
+    "summary": "/home/liang/feedback/uid151/example/out/summary.json"
+  },
+  "stage_versions": {
+    "analyze": 1,
+    "mix": 1,
+    "resample": 1,
+    "writeout": 1
+  },
+  "stages": {
+    "mix": {
+      "reused": true
+    }
+  },
+  "state_dir": "/home/liang/feedback/uid151/example/out/_state",
+  "status": "ok",
+  "total_frames": 151200,
+  "workers": 4
+}

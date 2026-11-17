@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "output": {
+    "sample_rate": 48000,
+    "channels": 2,
+    "window_ms": 100
+  },
+  "segments": [
+    {
+      "id": "voice_44k_mono",
+      "path": "samples/voice_44k_mono.wav",
+      "fade_in": {
+        "length_ms": 0,
+        "curve": "linear"
+      },
+      "fade_out": {
+        "length_ms": 250,
+        "curve": "linear"
+      }
+    },
+    {
+      "id": "ambience_48k_stereo",
+      "path": "samples/ambience_48k_stereo.wav",
+      "fade_in": {
+        "length_ms": 250,
+        "curve": "equal_power"
+      },
+      "fade_out": {
+        "length_ms": 300,
+        "curve": "equal_power"
+      }
+    },
+    {
+      "id": "music_44k_stereo",
+      "path": "samples/music_44k_stereo.wav",
+      "fade_in": {
+        "length_ms": 300,
+        "curve": "linear"
+      },
+      "fade_out": {
+        "length_ms": 0,
+        "curve": "linear"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "channels": 2,
+  "frames": 57600,
+  "key": "1d283531bb0ec4c7f92e3d5f8600e840d672279dc7c1dd7509e839fdf3fde708",
+  "sample_rate": 48000,
+  "segment": "voice_44k_mono",
+  "versions": {
+    "analyze": 1,
+    "engine": 1,
+    "resample": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "channels": 2,
+  "frames": 72000,
+  "key": "03ae66ffe626ca1fb4c73c0472d243c1d3de86f513e14267546c91a3a17b0f3c",
+  "sample_rate": 48000,
+  "segment": "ambience_48k_stereo",
+  "versions": {
+    "analyze": 1,
+    "engine": 1,
+    "resample": 1
+  }
+}

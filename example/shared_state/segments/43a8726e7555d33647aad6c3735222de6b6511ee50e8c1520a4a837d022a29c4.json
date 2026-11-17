@@ -1,0 +1,12 @@
+{
+  "channels": 2,
+  "frames": 48000,
+  "key": "43a8726e7555d33647aad6c3735222de6b6511ee50e8c1520a4a837d022a29c4",
+  "sample_rate": 48000,
+  "segment": "music_44k_stereo",
+  "versions": {
+    "analyze": 1,
+    "engine": 1,
+    "resample": 1
+  }
+}

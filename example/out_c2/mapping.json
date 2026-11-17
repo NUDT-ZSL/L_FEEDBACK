@@ -1,0 +1,51 @@
+{
+  "channels": 2,
+  "sample_rate": 48000,
+  "segments": [
+    {
+      "fade_in_frames": 0,
+      "fade_out_frames": 12000,
+      "id": "voice_44k_mono",
+      "index": 0,
+      "input_channels": 1,
+      "input_frames": 52920,
+      "input_rate": 44100,
+      "input_start_frame": 0,
+      "output_end_frame": 57600,
+      "output_start_frame": 0,
+      "overlap_with_next_frames": 12000,
+      "valid_frames": 57600
+    },
+    {
+      "fade_in_frames": 12000,
+      "fade_out_frames": 14400,
+      "id": "ambience_48k_stereo",
+      "index": 1,
+      "input_channels": 2,
+      "input_frames": 72000,
+      "input_rate": 48000,
+      "input_start_frame": 0,
+      "output_end_frame": 117600,
+      "output_start_frame": 45600,
+      "overlap_with_next_frames": 14400,
+      "valid_frames": 72000
+    },
+    {
+      "fade_in_frames": 14400,
+      "fade_out_frames": 0,
+      "id": "music_44k_stereo",
+      "index": 2,
+      "input_channels": 2,
+      "input_frames": 44100,
+      "input_rate": 44100,
+      "input_start_frame": 0,
+      "output_end_frame": 151200,
+      "output_start_frame": 103200,
+      "overlap_with_next_frames": 0,
+      "valid_frames": 48000
+    }
+  ],
+  "total_frames": 151200,
+  "total_ms": 3150.0,
+  "version": 1
+}

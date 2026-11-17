@@ -1,0 +1,9 @@
+{
+  "channels": 2,
+  "engine_version": 1,
+  "inputs_sha256": "11d3a73bdf98197ac8fd88bf6db6f998901876035b6682d0a8cf3ea2ec07656b",
+  "sample_rate": 48000,
+  "stage": "mix",
+  "total_frames": 151200,
+  "version": 1
+}

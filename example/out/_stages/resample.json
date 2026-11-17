@@ -1,0 +1,11 @@
+{
+  "engine_version": 1,
+  "manifest_sha256": "113865536046ed5981c52cdd35db5a86b1d1342282bd84d3cf97125fb1096a80",
+  "segment_keys": [
+    "1d283531bb0ec4c7f92e3d5f8600e840d672279dc7c1dd7509e839fdf3fde708",
+    "03ae66ffe626ca1fb4c73c0472d243c1d3de86f513e14267546c91a3a17b0f3c",
+    "43a8726e7555d33647aad6c3735222de6b6511ee50e8c1520a4a837d022a29c4"
+  ],
+  "stage": "resample",
+  "version": 1
+}

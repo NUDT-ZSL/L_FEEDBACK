@@ -1,0 +1,51 @@
+{
+  "engine_version": 1,
+  "manifest_sha256": "113865536046ed5981c52cdd35db5a86b1d1342282bd84d3cf97125fb1096a80",
+  "output": {
+    "channels": 2,
+    "sample_rate": 48000
+  },
+  "segments": [
+    {
+      "fade_in_curve": "linear",
+      "fade_in_frames": 0,
+      "fade_out_curve": "linear",
+      "fade_out_frames": 12000,
+      "id": "voice_44k_mono",
+      "in_channels": 1,
+      "in_frames": 52920,
+      "in_rate": 44100,
+      "out_frames": 57600,
+      "path": "/home/liang/feedback/uid151/example/samples/voice_44k_mono.wav",
+      "src_sha256": "ff92a68ead8047be2ac964674f3cced63522e9eea20e9bdd32659ae62274b18e"
+    },
+    {
+      "fade_in_curve": "equal_power",
+      "fade_in_frames": 12000,
+      "fade_out_curve": "equal_power",
+      "fade_out_frames": 14400,
+      "id": "ambience_48k_stereo",
+      "in_channels": 2,
+      "in_frames": 72000,
+      "in_rate": 48000,
+      "out_frames": 72000,
+      "path": "/home/liang/feedback/uid151/example/samples/ambience_48k_stereo.wav",
+      "src_sha256": "c65f8b7839afc211332aa6e186a60a8a7b71bcae7aff20fc381030fd3cd5d5f9"
+    },
+    {
+      "fade_in_curve": "linear",
+      "fade_in_frames": 14400,
+      "fade_out_curve": "linear",
+      "fade_out_frames": 0,
+      "id": "music_44k_stereo",
+      "in_channels": 2,
+      "in_frames": 44100,
+      "in_rate": 44100,
+      "out_frames": 48000,
+      "path": "/home/liang/feedback/uid151/example/samples/music_44k_stereo.wav",
+      "src_sha256": "ec2e43aa7ba4bf9969b386a9fe2315a79fbc0cd135fc2f9dacf0efb1f14eec77"
+    }
+  ],
+  "stage": "analyze",
+  "version": 1
+}

@@ -1,0 +1,490 @@
+{
+  "channels": 2,
+  "sample_rate": 48000,
+  "total_frames": 151200,
+  "version": 1,
+  "window_frames": 4800,
+  "window_ms": 100.0,
+  "windows": [
+    {
+      "channels": [
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        },
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        }
+      ],
+      "frames": 4800,
+      "index": 0,
+      "start_frame": 0
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        },
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        }
+      ],
+      "frames": 4800,
+      "index": 1,
+      "start_frame": 4800
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        },
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        }
+      ],
+      "frames": 4800,
+      "index": 2,
+      "start_frame": 9600
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        },
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        }
+      ],
+      "frames": 4800,
+      "index": 3,
+      "start_frame": 14400
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        },
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        }
+      ],
+      "frames": 4800,
+      "index": 4,
+      "start_frame": 19200
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        },
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        }
+      ],
+      "frames": 4800,
+      "index": 5,
+      "start_frame": 24000
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        },
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        }
+      ],
+      "frames": 4800,
+      "index": 6,
+      "start_frame": 28800
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        },
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        }
+      ],
+      "frames": 4800,
+      "index": 7,
+      "start_frame": 33600
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        },
+        {
+          "peak": 0.681845,
+          "rms": 0.442885
+        }
+      ],
+      "frames": 4800,
+      "index": 8,
+      "start_frame": 38400
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.701285,
+          "rms": 0.433841
+        },
+        {
+          "peak": 0.728874,
+          "rms": 0.4216
+        }
+      ],
+      "frames": 4800,
+      "index": 9,
+      "start_frame": 43200
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.729698,
+          "rms": 0.422665
+        },
+        {
+          "peak": 0.8081,
+          "rms": 0.386321
+        }
+      ],
+      "frames": 4800,
+      "index": 10,
+      "start_frame": 48000
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.729514,
+          "rms": 0.449823
+        },
+        {
+          "peak": 0.804193,
+          "rms": 0.425373
+        }
+      ],
+      "frames": 4800,
+      "index": 11,
+      "start_frame": 52800
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681875,
+          "rms": 0.442928
+        },
+        {
+          "peak": 0.681875,
+          "rms": 0.439782
+        }
+      ],
+      "frames": 4800,
+      "index": 12,
+      "start_frame": 57600
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681875,
+          "rms": 0.442928
+        },
+        {
+          "peak": 0.681875,
+          "rms": 0.446052
+        }
+      ],
+      "frames": 4800,
+      "index": 13,
+      "start_frame": 62400
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681875,
+          "rms": 0.442928
+        },
+        {
+          "peak": 0.681875,
+          "rms": 0.439782
+        }
+      ],
+      "frames": 4800,
+      "index": 14,
+      "start_frame": 67200
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681875,
+          "rms": 0.442928
+        },
+        {
+          "peak": 0.681875,
+          "rms": 0.446052
+        }
+      ],
+      "frames": 4800,
+      "index": 15,
+      "start_frame": 72000
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681875,
+          "rms": 0.442928
+        },
+        {
+          "peak": 0.681875,
+          "rms": 0.439782
+        }
+      ],
+      "frames": 4800,
+      "index": 16,
+      "start_frame": 76800
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681875,
+          "rms": 0.442928
+        },
+        {
+          "peak": 0.681875,
+          "rms": 0.446052
+        }
+      ],
+      "frames": 4800,
+      "index": 17,
+      "start_frame": 81600
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681875,
+          "rms": 0.442928
+        },
+        {
+          "peak": 0.681875,
+          "rms": 0.439782
+        }
+      ],
+      "frames": 4800,
+      "index": 18,
+      "start_frame": 86400
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681875,
+          "rms": 0.442928
+        },
+        {
+          "peak": 0.681875,
+          "rms": 0.446052
+        }
+      ],
+      "frames": 4800,
+      "index": 19,
+      "start_frame": 91200
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681875,
+          "rms": 0.442928
+        },
+        {
+          "peak": 0.681875,
+          "rms": 0.439782
+        }
+      ],
+      "frames": 4800,
+      "index": 20,
+      "start_frame": 96000
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681875,
+          "rms": 0.441449
+        },
+        {
+          "peak": 0.681875,
+          "rms": 0.444691
+        }
+      ],
+      "frames": 4800,
+      "index": 21,
+      "start_frame": 100800
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.649648,
+          "rms": 0.410537
+        },
+        {
+          "peak": 0.64919,
+          "rms": 0.407515
+        }
+      ],
+      "frames": 4800,
+      "index": 22,
+      "start_frame": 105600
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.659841,
+          "rms": 0.374464
+        },
+        {
+          "peak": 0.660573,
+          "rms": 0.375767
+        }
+      ],
+      "frames": 4800,
+      "index": 23,
+      "start_frame": 110400
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681814,
+          "rms": 0.427618
+        },
+        {
+          "peak": 0.681753,
+          "rms": 0.428002
+        }
+      ],
+      "frames": 4800,
+      "index": 24,
+      "start_frame": 115200
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681814,
+          "rms": 0.442829
+        },
+        {
+          "peak": 0.681753,
+          "rms": 0.441659
+        }
+      ],
+      "frames": 4800,
+      "index": 25,
+      "start_frame": 120000
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681814,
+          "rms": 0.442829
+        },
+        {
+          "peak": 0.681753,
+          "rms": 0.443743
+        }
+      ],
+      "frames": 4800,
+      "index": 26,
+      "start_frame": 124800
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681814,
+          "rms": 0.442829
+        },
+        {
+          "peak": 0.681753,
+          "rms": 0.441659
+        }
+      ],
+      "frames": 4800,
+      "index": 27,
+      "start_frame": 129600
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681814,
+          "rms": 0.442829
+        },
+        {
+          "peak": 0.681753,
+          "rms": 0.443743
+        }
+      ],
+      "frames": 4800,
+      "index": 28,
+      "start_frame": 134400
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681814,
+          "rms": 0.442829
+        },
+        {
+          "peak": 0.681753,
+          "rms": 0.441659
+        }
+      ],
+      "frames": 4800,
+      "index": 29,
+      "start_frame": 139200
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681814,
+          "rms": 0.442829
+        },
+        {
+          "peak": 0.681753,
+          "rms": 0.443743
+        }
+      ],
+      "frames": 4800,
+      "index": 30,
+      "start_frame": 144000
+    },
+    {
+      "channels": [
+        {
+          "peak": 0.681814,
+          "rms": 0.442829
+        },
+        {
+          "peak": 0.681753,
+          "rms": 0.441744
+        }
+      ],
+      "frames": 2400,
+      "index": 31,
+      "start_frame": 148800
+    }
+  ]
+}
