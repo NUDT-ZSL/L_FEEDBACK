@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "terrain-softrast"
+version = "1.0.0"
+description = "Deterministic CPU terrain software rasterizer for offline level previews"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.0",
+    "Pillow>=10.4",
+]
+
+[project.scripts]
+terrain-softrast = "terrain_softrast.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["terrain_softrast*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
