@@ -1,0 +1,122 @@
+{
+  "width": 96,
+  "height": 96,
+  "seed": 7,
+  "background": [0.02, 0.025, 0.035],
+  "camera": {
+    "position": [0.0, 1.25, 4.6],
+    "look_at": [0.0, 0.65, 0.0],
+    "up": [0.0, 1.0, 0.0],
+    "fov": 43.0
+  },
+  "materials": {
+    "floor": {
+      "type": "layered",
+      "base": {"type": "diffuse", "color": [0.42, 0.44, 0.48]},
+      "coating": {
+        "ior": 1.36,
+        "thickness": 0.001,
+        "tint": [1.0, 1.0, 1.0],
+        "absorption": [0.0, 0.0, 0.0]
+      }
+    },
+    "ceramic": {
+      "type": "layered",
+      "base": {"type": "diffuse", "color": [0.10, 0.32, 0.66]},
+      "coating": {
+        "ior": 1.48,
+        "thickness": 0.002,
+        "tint": [0.98, 0.99, 1.0],
+        "absorption": [0.0, 0.0, 0.0]
+      }
+    },
+    "brass": {
+      "type": "layered",
+      "base": {"type": "metal", "color": [0.90, 0.66, 0.25], "roughness": 0.04},
+      "coating": {
+        "ior": 1.52,
+        "thickness": 0.001,
+        "tint": [1.0, 1.0, 1.0],
+        "absorption": [0.0, 0.0, 0.0]
+      }
+    },
+    "plinth": {
+      "type": "layered",
+      "base": {"type": "diffuse", "color": [0.28, 0.20, 0.15]},
+      "coating": {
+        "ior": 1.4,
+        "thickness": 0.0015,
+        "tint": [1.0, 0.99, 0.97],
+        "absorption": [0.0, 0.0, 0.0]
+      }
+    },
+    "wall": {
+      "type": "layered",
+      "base": {"type": "diffuse", "color": [0.24, 0.27, 0.32]},
+      "coating": {
+        "ior": 1.3,
+        "thickness": 0.001,
+        "tint": [1.0, 1.0, 1.0],
+        "absorption": [0.0, 0.0, 0.0]
+      }
+    }
+  },
+  "geometry": [
+    {
+      "type": "plane",
+      "point": [0.0, 0.0, 0.0],
+      "normal": [0.0, 1.0, 0.0],
+      "material": "floor"
+    },
+    {
+      "type": "aabb",
+      "min": [-1.40, 0.0, -0.30],
+      "max": [-0.65, 0.18, 0.40],
+      "material": "plinth"
+    },
+    {
+      "type": "sphere",
+      "center": [-1.02, 0.72, 0.03],
+      "radius": 0.54,
+      "material": "ceramic"
+    },
+    {
+      "type": "sphere",
+      "center": [0.58, 0.48, 0.0],
+      "radius": 0.48,
+      "material": "brass"
+    },
+    {
+      "type": "triangle",
+      "v0": [-2.4, 0.0, -1.6],
+      "v1": [2.4, 0.0, -1.6],
+      "v2": [0.0, 2.8, -1.7],
+      "material": "wall"
+    }
+  ],
+  "lights": [
+    {
+      "type": "rect",
+      "position": [-1.15, 2.85, 1.35],
+      "right": [1.0, 0.0, 0.0],
+      "up": [0.0, 0.0, -1.0],
+      "width": 4.8,
+      "height": 4.0,
+      "intensity": [0.72, 0.64, 0.50]
+    },
+    {
+      "type": "sphere",
+      "center": [2.8, 2.4, 0.8],
+      "radius": 0.55,
+      "intensity": [0.8, 0.9, 1.05]
+    }
+  ],
+  "render": {
+    "samples_per_pixel": 4,
+    "aa_samples": 2,
+    "shadow_samples": 16,
+    "max_depth": 5,
+    "exposure": 1.3,
+    "self_intersection_epsilon": 0.0001
+  }
+}
